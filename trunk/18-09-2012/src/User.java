@@ -32,6 +32,10 @@ public class User {
 		this.phone = phone;
 	}
 	
-	
-
+	@Override
+	public String toString() {
+		return "User [matricule=" + matricule + ", adress=" + adress
+				+ ", childrenNumber=" + childrenNumber + ", phone=" + phone
+				+ "]";
+	}	
 }
