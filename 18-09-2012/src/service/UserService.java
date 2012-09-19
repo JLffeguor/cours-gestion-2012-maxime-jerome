@@ -1,7 +1,7 @@
 package service;
 
 import Repository.UserRepository;
-import model.User;
+import model.Users;
 
 public class UserService {
 	
@@ -11,10 +11,10 @@ public class UserService {
 		userRepository = new UserRepository();
 	}
 	
-	public User registerUser(String adress, int childrenNumber, String matricule, int phone){
+	public Users registerUser(String adress, int childrenNumber, String matricule, int phone){
 		//TODO search of an already registered user
 		
-		User newUser = new User();
+		Users newUser = new Users();
 		
 		newUser.setAdress(adress);
 		newUser.setChildrenNumber(childrenNumber);
