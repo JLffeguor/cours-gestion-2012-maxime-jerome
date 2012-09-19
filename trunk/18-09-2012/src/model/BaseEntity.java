@@ -1,5 +1,9 @@
 package model;
 
-public class BaseEntity {
+public abstract class BaseEntity {
+	
+	public abstract String toCsv();
+	
+	public abstract String getCsvFieldsName();
 
 }
