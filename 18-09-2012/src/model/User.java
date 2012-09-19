@@ -4,7 +4,7 @@ public class User extends BaseEntity{
 	
 	private String matricule;
 	private String adress;
-	private int childrenNumber;
+	private int childrenCount;
 	private int phone;
 	
 	
@@ -21,10 +21,10 @@ public class User extends BaseEntity{
 		this.adress = adress;
 	}
 	public int getChildrenNumber() {
-		return childrenNumber;
+		return childrenCount;
 	}
 	public void setChildrenNumber(int childrenNumber) {
-		this.childrenNumber = childrenNumber;
+		this.childrenCount = childrenNumber;
 	}
 	public int getPhone() {
 		return phone;
@@ -36,7 +36,18 @@ public class User extends BaseEntity{
 	@Override
 	public String toString() {
 		return "User [matricule=" + matricule + ", adress=" + adress
-				+ ", childrenNumber=" + childrenNumber + ", phone=" + phone
+				+ ", childrenNumber=" + childrenCount + ", phone=" + phone
 				+ "]";
-	}	
+	}
+	@Override
+	public String toCsv(){
+		return adress+","
+				+childrenCount+","
+				+matricule+","
+				+phone;
+	}
+	@Override
+	public String getCsvFieldsName() {
+		return "adress,childrenCount,matricule,phone";
+	}
 }
