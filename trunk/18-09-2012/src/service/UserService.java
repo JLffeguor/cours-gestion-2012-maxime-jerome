@@ -12,6 +12,8 @@ public class UserService {
 	}
 	
 	public User registerUser(String adress, int childrenNumber, String matricule, int phone){
+		//TODO search of an already registered user
+		
 		User newUser = new User();
 		
 		newUser.setAdress(adress);
