@@ -1,17 +1,17 @@
 package Repository;
-import model.User;
+import model.Users;
 
 
 public class UserRepository {
 
 	private final String FILE_PATH = "user.csv";
-	private EntityManager<User> em;
+	private EntityManager<Users> em;
 
 	public UserRepository() {
-		em = new EntityManager<>(FILE_PATH,new User());
+		em = new EntityManager<>(FILE_PATH,new Users());
 	}
 
-	public void persist(User user) {
+	public void persist(Users user) {
 		em.persist(user);
 	}
 }

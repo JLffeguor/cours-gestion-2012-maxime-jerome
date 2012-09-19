@@ -1,6 +1,6 @@
 package model;
 
-public class User extends BaseEntity{
+public class Users extends BaseEntity{
 	
 	private String matricule;
 	private String adress;
@@ -40,11 +40,9 @@ public class User extends BaseEntity{
 				+ "]";
 	}
 	@Override
-	public String toCsv(){
-		return adress+","
-				+childrenCount+","
-				+matricule+","
-				+phone;
+	public String[] toCsv(){
+		String[] fields = {adress,Integer.toString(childrenCount),matricule,Integer.toString(phone)};
+		return fields;
 	}
 	@Override
 	public String getCsvFieldsName() {
