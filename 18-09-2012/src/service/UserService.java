@@ -13,7 +13,9 @@ public class UserService {
 	
 	public Users registerUser(Users newUser){
 		//TODO search of an already registered user
+		
 		userRepository.persist(newUser);
+		
 		return newUser;
 	}
 
