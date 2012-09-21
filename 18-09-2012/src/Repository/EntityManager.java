@@ -2,14 +2,12 @@ package Repository;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-import au.com.bytecode.opencsv.CSVWriter;
-
 import model.BaseEntity;
+import au.com.bytecode.opencsv.CSVWriter;
 
 
 public class EntityManager<E extends BaseEntity> {
@@ -17,10 +15,10 @@ public class EntityManager<E extends BaseEntity> {
 	private String ENCODING="UTF-8";
 	private Path path = null;
 
-	public EntityManager(String filePath,E entity) {
-		path = FileSystems.getDefault().getPath(filePath);
+	public EntityManager(Path path,E entity) {
 
-
+		this.path = path;
+		
 		if(Files.notExists(path)){
 
 			BufferedWriter writer = null;
@@ -57,7 +55,7 @@ public class EntityManager<E extends BaseEntity> {
 		try {
 			writer = Files.newBufferedWriter(path, Charset.forName(ENCODING),StandardOpenOption.WRITE,StandardOpenOption.APPEND);
 			csvWriter = new CSVWriter(writer);
-
+			
 			csvWriter.writeNext(entity.toCsv());
 
 		} catch (IOException ioe) {
