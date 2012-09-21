@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import service.UserService;
 
-public class User {
+public class Saving {
 
 	private static String firstname = "testFirstname";
 	private static String name = "testName";	
@@ -24,7 +24,7 @@ public class User {
 	@BeforeClass
 	public static void initialize() {
 		
-		test.setFirstname(firstname);
+		test.setFirstName(firstname);
 		test.setName(name);
 		test.setMatricule(matricule);
 		test.setAdress(adress);
