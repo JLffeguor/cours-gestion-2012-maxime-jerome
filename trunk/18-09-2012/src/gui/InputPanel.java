@@ -34,8 +34,6 @@ public class InputPanel extends JPanel {
 		width = this.getWidth();
 		height = this.getHeight();
 		
-		System.out.println("i gonna get instan");
-		
 		JLabel label = null;
 		JTextField textField = null;
 		
