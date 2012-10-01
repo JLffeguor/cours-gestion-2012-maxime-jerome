@@ -1,0 +1,8 @@
+jeux de la valise
+
+l'utilisateur doit déterminer une suite de 4chiffres prédeterminé par le programme.
+
+Il doit être affiché toutes les combinaisons déjà jouées .
+
+Il faut colorer en orange les chiffres qui ont été bien pacé 
+ou qui apparaisse dans la combinaison mais à une autre place. 
