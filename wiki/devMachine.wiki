@@ -1,0 +1,31 @@
+#summary configuration a developer computer
+
+= Introduction =
+
+_eclipse configuration
+_project configuration 
+_project development
+_DB configuration
+
+
+= Details =
+
+== eclipse ==
+=== set eclipse in unicode ===
+==== juno ====
+get into the menu in _*Window => Preferences => General => Content Types*_
+set *all types (eclipse doesn't override always subtypes)* int UTF-8 in _Default Encoding_ box in the bottom *and click update*
+*OR*
+modify _org.eclipse.core.runtime.prefs_ file(if exists) in _.metadata/.plugins/org.eclipse.core.runtime/.settings in your workspace and replace all charset to UTF-8
+
+== project configuration ==
+
+== project development ==
+
+== DB configuration ==
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
