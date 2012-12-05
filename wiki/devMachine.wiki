@@ -17,16 +17,21 @@ get into the menu in _*Window => Preferences => General => Content Types*_
 set *all types (eclipse doesn't override always subtypes)* int UTF-8 in _Default Encoding_ box in the bottom *and click update*
 *OR*
 modify _org.eclipse.core.runtime.prefs_ file(if exists) in _.metadata/.plugins/org.eclipse.core.runtime/.settings in your workspace and replace all charset to UTF-8
-=== GWT ===
-main info are here https://developers.google.com/web-toolkit/download?hl=fr but here is the important step:
--add new repository : http://dl.google.com/eclipse/plugin/3.7 (via Help => Install New Software and click on the add buton in top)
--select this repository in combox
--and select google pugin for eclipse , SDKs and GWT designer for GPE 
+
 == project configuration ==
 
 == project development ==
 
 == DB configuration ==
+===mysql===
+install mysql-server on your computer (yum/apt-get/etc... install mysql-server for example)
+connect as root
+
+_mysql --user roor_
+
+create user winecave
+
+_CREATE USER "winecave"@"localhost";_
 
 
 Add your content here.  Format your content with:
