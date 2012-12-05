@@ -29,6 +29,10 @@ connect as root
 
 _mysql --user root_
 
+create database winecave
+
+_CREATE DATABASE winecave;_
+
 create user winecave
 
 _CREATE USER "winecave"@"localhost";_
