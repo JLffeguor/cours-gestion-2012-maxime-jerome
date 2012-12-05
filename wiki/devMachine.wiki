@@ -33,8 +33,10 @@ create user winecave
 
 _CREATE USER "winecave"@"localhost";_
 
+lui donner le password winecave
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+_SET password FOR "winecave"@"localhost" = password('winecave');_
+
+donner tous les privilèges au user sur la db créée (pas top pour le moment mais va changer)
+
+_GRANT ALL ON winecave.`*` TO "winecave"@"localhost";_
