@@ -27,7 +27,7 @@ modify _org.eclipse.core.runtime.prefs_ file(if exists) in _.metadata/.plugins/o
 install mysql-server on your computer (yum/apt-get/etc... install mysql-server for example)
 connect as root
 
-_mysql --user roor_
+_mysql --user root_
 
 create user winecave
 
