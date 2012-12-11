@@ -24,7 +24,7 @@
                     value="org.hibernate.dialect.MySQLDialect" />
 
           <property name="hibernate.hbm2ddl.auto" 
-           			value="create"/><!-- create erase and reconstruct at start -->
+           			value="create-drop"/><!-- create erase and reconstruct at start -->
       </properties>
    </persistence-unit>
 </persistence>
