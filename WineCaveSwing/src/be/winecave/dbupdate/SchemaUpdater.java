@@ -65,14 +65,14 @@ public class SchemaUpdater  {
     public static void main(String[] arg) throws IOException {
         
         ////// 1. Prepare the configuration (connection parameters to the DB, ect.)
-        readPropertiesFile();
+//        readPropertiesFile();
         // Empty map. We add no additional property, everything is already in the persistence.xml
         Map<String,Object> map=new HashMap<String,Object>();   
-        map.put("hibernate.connection.url", url);
-        map.put("hibernate.connection.username", userName);
-        map.put("hibernate.connection.password", password);
+//        map.put("hibernate.connection.url", url);
+//        map.put("hibernate.connection.username", userName);
+//        map.put("hibernate.connection.password", password);
         // Get the config from the persistence.xml file, with the unit name as parameter.
-        Ejb3Configuration conf =  new Ejb3Configuration().configure("Connection",map);
+        Ejb3Configuration conf =  new Ejb3Configuration().configure("ConnectionMySql",map);
         SchemaUpdate schemaUpdate =new SchemaUpdate(conf.getHibernateConfiguration());
 
         /////// 2. Get the SQL

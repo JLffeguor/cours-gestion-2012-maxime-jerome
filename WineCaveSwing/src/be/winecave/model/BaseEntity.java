@@ -24,7 +24,8 @@ public class BaseEntity  {
 
     private static final boolean ENFORCE_CONSISTENT_HASHCODE = false;
 
-    @Id   @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id   
+    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     @OneToOne(fetch=FetchType.LAZY)
     @JoinColumn(nullable=true) //when we are not in a thread web request, no user will be associated to entity creation/update (no logged in user)
