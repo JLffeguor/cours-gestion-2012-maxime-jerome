@@ -1,8 +1,4 @@
 package be.winecave.security;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.Set;
-
 import be.winecave.exception.UnauthorizedAccessException;
 import be.winecave.model.User;
 
@@ -14,6 +10,7 @@ import be.winecave.model.User;
 public  class SecurityContext {
 
 	private static User user;
+	
 	/**
      * Removes the security context associated to the request
      */
