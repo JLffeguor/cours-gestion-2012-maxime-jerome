@@ -22,6 +22,14 @@ public class Region extends BaseEntity {
 	@OneToMany(mappedBy="region")
 	private List<SousRegion> sousRegions;
 	
+	public Region() {
+		
+	}
+	
+	public Region(String nom) {
+		this.nom = nom;
+	}
+	
 	public Pays getPays() {
 		return pays;
 	}
