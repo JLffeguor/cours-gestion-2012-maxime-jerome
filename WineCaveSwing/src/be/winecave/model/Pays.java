@@ -17,6 +17,10 @@ public class Pays extends BaseEntity {
 	
 	@OneToMany(mappedBy="pays")
 	private List<Region> regions;
+	
+	public Pays(String nom) {
+		this.nom = nom;
+	}
 
 	public String getNom() {
 		return nom;

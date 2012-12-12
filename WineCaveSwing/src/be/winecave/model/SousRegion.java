@@ -16,6 +16,14 @@ public class SousRegion extends BaseEntity {
 	@NotBlank
 	private String nom;
 
+	public SousRegion() {
+	}
+	
+	public SousRegion(String nom) {
+		this.nom = nom;
+	}
+	
+	
 	public Region getRegion() {
 		return region;
 	}

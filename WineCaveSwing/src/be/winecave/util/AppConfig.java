@@ -1,5 +1,8 @@
 package be.winecave.util;
 
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.logging.Log;
@@ -54,7 +57,7 @@ public class AppConfig {
 	
 	/**
 	 * méthode ne donnat qu'une seule fois al valuer true.
-	 * Après l'éxécution de cette méthod , le flag de première éxécution ets mis à false
+	 * Après l'éxécution de cette méthode , le flag de première éxécution ets mis à false
 	 * @return
 	 */
 	public static boolean isFirstExecution(){
