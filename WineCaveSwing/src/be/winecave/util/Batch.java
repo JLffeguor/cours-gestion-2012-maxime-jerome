@@ -43,97 +43,107 @@ public class Batch {
 	
 	public static void main(String[] args) {
 	PostInstallData data = new PostInstallData(new ArrayList<Pays>());
-
-	Pays AfrSud = new Pays("Afrique du Sud");
+	
+	
+	
+	////Afrique
 	addPays("Afrique du Sud", getRegionMap());
-	addPays("Allemagne",getRegionMap());
+	addPays("Maroc",getRegionMap());
+	addPays("Tunisie",getRegionMap());
+	
+	////Ameriques
 	addPays("Argentine",getRegionMap());
-	addPays("Australie",getRegionMap());
-	addPays("Autriche",getRegionMap());
 	addPays("Bresil",getRegionMap());
-	addPays("Bulgari",getRegionMap());
 	addPays("Canada",getRegionMap());
 	addPays("Chili",getRegionMap());
-	addPays("Chine",getRegionMap());
-	addPays("Chypre",getRegionMap());
-	addPays("Coree du Sud",getRegionMap());
-	addPays("Espagne",getRegionMap());
 	addPays("Etats-Unis",getRegionMap());
-	addPays("France",ajoutRegionAvecSousRegion("vallée du Rhône", new String[]{},
-					 ajoutRegionAvecSousRegion("vallée de la Loire", new String[]{"Pays nantais", 
-																	  "Anjou",
-																	  "Touraine",
-																	  "Centre"},
-					 ajoutRegionAvecSousRegion("Sud-Ouest", new String[]{"Aquitaine",
-															 "Midi-Pyrénées"},
-				   	 ajoutRegionAvecSousRegion("Savoie", new String[]{},
-					 ajoutRegionAvecSousRegion("Provence", new String[]{},
-					 ajoutRegionAvecSousRegion("Languedoc-Roussillon", new String[]{"coteaux du Languedoc", 
-																		"plaine du Languedoc", 
-																		"coteaux de l'Aude",
-																		"Roussillon"},
-					 ajoutRegionAvecSousRegion("Jura", new String[]{},
-					 ajoutRegionAvecSousRegion("Corse", new String[]{},
-					 ajoutRegionAvecSousRegion("Champagne", new String[]{"côte des blancs",
-															 "côte des Bars",
-															 "montagne de Reims",
-															 "vallée de la Marne"},
-					 ajoutRegionAvecSousRegion("Bourgogne", new String[]{"Beaujolais",
-															 "Bugey",
-															 "Chablis",
-															 "(Côte d'Or) Côte de Nuits",
-															 "(Côte d'Or) Côte de Beaune",
-															 "Mâconnais"},
-					 ajoutRegionAvecSousRegion("Bordeaux", new String[]{"Blayais",
-							 								"Bourgeais",
-							 								"Graves",
-															"Entre-deux-Mers",
-															"Libournais",
-															"Médoc",
-															"Sauternais"}, 
-			         ajoutRegionAvecSousRegion("Alsace", new String[]{},getRegionMap())
-			         )
-			         )
-			         )
-			         )
-			         )
-			         )
-			         )
-			         )
-			         )
-			         )
-			         )
-			);
-	addPays("Georgie",getRegionMap());
-	addPays("Hongrie",getRegionMap());
-	addPays("Inde",getRegionMap());
-	addPays("Israel",getRegionMap());
-	addPays("Italie",getRegionMap());
-	addPays("Japon",getRegionMap());
-	addPays("Liban",getRegionMap());
-	addPays("Maroc",getRegionMap());
 	addPays("Mexique",getRegionMap());
-	addPays("Nouvelle Zelande",getRegionMap());
 	addPays("Perou",getRegionMap());
-	addPays("Portugal",getRegionMap());
-	addPays("Slovenie",getRegionMap());
-	addPays("Tunisie",getRegionMap());
-	addPays("Ukraine",getRegionMap());
 	addPays("Uruguay",getRegionMap());
 	
-	menu.getRégion().add("(Vide)");
-	menu.getRégion().add("Autres");
-	menu.getRégion().add("Beaujolais");
-	menu.getRégion().add("Bordeaux");
-	menu.getRégion().add("Bourgogne");
-	menu.getRégion().add("Champagne");
-	menu.getRégion().add("Corse");
-	menu.getRégion().add("Jura / Savoie");
-	menu.getRégion().add("Languedoc-Roussillon");
-	menu.getRégion().add("Provence");
-	menu.getRégion().add("Rhone");
-	menu.getRégion().add("Sud-Ouest");
-	menu.getRégion().add("Vallee de la Loire"); 
+	////Asie
+	addPays("Chine",getRegionMap());
+	addPays("Coree du Sud",getRegionMap());
+	addPays("Inde",getRegionMap());
+	addPays("Japon",getRegionMap());
+	
+	////Europe occidentale , centrale
+	addPays("Allemagne",getRegionMap());
+	addPays("Autriche",getRegionMap());
+	addPays("Bosnie",getRegionMap());
+	addPays("Bulgarie",getRegionMap());
+	addPays("Chypre",getRegionMap());
+	addPays("Croatie",getRegionMap());
+	addPays("Espagne",getRegionMap());
+	addPays("France",ajoutRegionAvecSousRegion("vallée du Rhône", new String[]{},
+			 ajoutRegionAvecSousRegion("vallée de la Loire", new String[]{"Pays nantais", 
+															  "Anjou",
+															  "Touraine",
+															  "Centre"},
+			 ajoutRegionAvecSousRegion("Sud-Ouest", new String[]{"Aquitaine",
+													 "Midi-Pyrénées"},
+		   	 ajoutRegionAvecSousRegion("Savoie", new String[]{},
+			 ajoutRegionAvecSousRegion("Provence", new String[]{},
+			 ajoutRegionAvecSousRegion("Languedoc-Roussillon", new String[]{"coteaux du Languedoc", 
+																"plaine du Languedoc", 
+																"coteaux de l'Aude",
+																"Roussillon"},
+			 ajoutRegionAvecSousRegion("Jura", new String[]{},
+			 ajoutRegionAvecSousRegion("Corse", new String[]{},
+			 ajoutRegionAvecSousRegion("Champagne", new String[]{"côte des blancs",
+													 "côte des Bars",
+													 "montagne de Reims",
+													 "vallée de la Marne"},
+			 ajoutRegionAvecSousRegion("Bourgogne", new String[]{"Beaujolais",
+													 "Bugey",
+													 "Chablis",
+													 "(Côte d'Or) Côte de Nuits",
+													 "(Côte d'Or) Côte de Beaune",
+													 "Mâconnais"},
+			 ajoutRegionAvecSousRegion("Bordeaux", new String[]{"Blayais",
+					 								"Bourgeais",
+					 								"Graves",
+													"Entre-deux-Mers",
+													"Libournais",
+													"Médoc",
+													"Sauternais"}, 
+	         ajoutRegionAvecSousRegion("Alsace et Lorraine", new String[]{},getRegionMap())
+	         )
+	         )
+	         )
+	         )
+	         )
+	         )
+	         )
+	         )
+	         )
+	         )
+	         )
+	);
+	addPays("Grèce",getRegionMap());
+	addPays("Hongrie",getRegionMap());
+	addPays("Italie",getRegionMap());
+	addPays("Luxembourg",getRegionMap());
+	addPays("Malte",getRegionMap());
+	addPays("Portugal",getRegionMap());
+	addPays("République tchèque",getRegionMap());
+	addPays("République de Macédoine",getRegionMap());
+	addPays("Roumanie",getRegionMap());
+	addPays("Royaume-Uni",getRegionMap());
+	addPays("Slovaquie",getRegionMap());
+	addPays("Slovenie",getRegionMap());
+	addPays("Suisse",getRegionMap());
+	
+	////Europe orientale , Asie occidentale , Proche/Moyen-Orient
+	
+	addPays("Georgie",getRegionMap());
+	addPays("Israel",getRegionMap());
+	addPays("Liban",getRegionMap());
+	addPays("Ukraine",getRegionMap());
+	
+	////Océanie
+	addPays("Australie",getRegionMap());
+	addPays("Nouvelle Zelande",getRegionMap());
 	
 	menu.getAppellation().add("(Vide)");
 	menu.getAppellation().add("Ajaccio");
@@ -685,19 +695,5 @@ public class Batch {
 	menu.getCouleur().add("Champagne");
 	menu.getCouleur().add("Liquoreux");
 	menu.getCouleur().add("Autre");
-	
-	
-	
-	
-	em.persist(user);
-    em.persist(cave);
-    em.persist(bouteille);
-    em.persist(menu);
-    
-    
-    
-    em.getTransaction().commit();
-    em.close();
-    emf.close();
 }
 }

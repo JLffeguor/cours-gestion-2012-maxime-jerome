@@ -1,12 +1,13 @@
 package be.winecave.util;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URISyntaxException;
 import java.nio.file.DirectoryStream;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -21,126 +22,155 @@ import org.apache.commons.lang3.time.DateUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import be.winecave.main.WineCave;
+
 //TODO update class to use in local software --maxime 11/12/12 
 public abstract class FileUtil {
+	private static Log log = LogFactory.getLog(FileUtil.class);
 	
-	final static public String BOOK_SUB_FOLDER = "/book";
-	final static public String BOOK_ORIGINAL_SUB_FOLDER = "/original";
-	final static public String BOOK_RESIZED_SUB_FOLDER = "/resized";
-	final static public String ARTICLE_SUB_FOLDER = "/article";
-	final static public String USER_SUB_FOLDER = "/user";
-	final static public String USER_ORIGINAL_SUB_FOLDER = "/original";
-	final static public String USER_RESIZED_SUB_FOLDER = "/resized";
-	final static public String USER_RESIZED_LARGE_SUB_FOLDER = "/large";
-	final static public String USER_RESIZED_SMALL_SUB_FOLDER = "/small";
-	final static public String GROUP_SUB_FOLDER = "/group";
-	final static public String GROUP_ORIGINAL_SUB_FOLDER = "/original";
-	final static public String GROUP_RESIZED_SUB_FOLDER = "/resized";
-	final static public String LUCENE_INDEX_FOLDER = "/indexLucene";
-	final static public String PDF_FOLDER ="/pdf";
+	private static String JAR_LOCATION;
+	private static String JAR_NAME = "winecave.jar";
+	private static String JAR_PARENTFOLDER_LOCATION;
+	private static final String DEFAULT_FILE_ENCODING = "UTF-8";
+	
+	
+	public static void initialize() {
+		try {
+			//this is the only i found to get the jar filesystem location with avoid special character problems --maxime 13/12/12
+			//TODO test on windows and macOSX systems
+			JAR_LOCATION = new File(WineCave.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getPath();
+			JAR_PARENTFOLDER_LOCATION = JAR_LOCATION.replace(getFileSystemSeparator() + JAR_NAME , "");
 
-    static private Log log = LogFactory.getLog(FileUtil.class);
+			log.debug("JAR_PARENTFOLDER_LOCATION initalized with : "+ JAR_PARENTFOLDER_LOCATION);
+		} catch (URISyntaxException e) {
+			throw new RuntimeException(FileUtil.class + "can't initialize the JAR_LOCATION_FOLDER field",e);
+		}
+	}
+	
+	
+	public static String getJarLocationFolder() {
+		if(JAR_PARENTFOLDER_LOCATION == null) {
+			initialize();
+		}
+		return JAR_PARENTFOLDER_LOCATION;
+	}
 
+	public static String getDefaultFileEncoding() {
+		return DEFAULT_FILE_ENCODING;
+	}
+	
+	public static String getFileSystemSeparator() {
+		return FileSystems.getDefault().getSeparator();
+	}
+	
+	public static Path getFileIntoInstallationFolder(String fileName) {
+		return Paths.get(getJarLocationFolder() + getFileSystemSeparator() + fileName);
+		
+	}
     
-    /** If an uploaded MultipartFile has the name "toto.jpeg", and we give "123" as newNamePrefixFileName, this method will return "123.jpg".
-     * @throws InvalidImageFileException 
-     */
-    public static String assembleImageFileNameWithCorrectExtention(MultipartFile multipartFile, String newPrefixFileName) throws InvalidImageFileException {
-        String type = multipartFile.getContentType();
-        
-        if (!type.contains("image")) {
-            if(log.isDebugEnabled()){
-                log.debug("someone try to upload this fille but this isn't an image : "+multipartFile.getOriginalFilename());}
-            throw new InvalidImageFileException("File is not an image.  Detected type = '"+type+"'");
-        }
-        
-        ////// Get the right extension
-        String extension;
-        switch (type) {
-        case "image/gif":
-            extension = "gif";
-            break;
-        case "image/jpeg" :
-        case "image/pjpeg" ://internet explorer IFuckDevWhenTheyWantToMakeItSimple special MimeType for jpeg
-            extension = "jpg";
-            break;
-        case "image/png" : 
-        case "image/x-png"://internet explorer IFuckDevWhenTheyWantToMakeItSimple special MimeType for png
-            extension = "png";
-            break;
-        case "image/svg+xml" :
-            extension = "svg";
-            break;
-        default:
-            throw new InvalidImageFileException("bad image type : png , svg , jpeg and gif are only accepted. Detected type = '"+type+"'");
-        }
-        
-        // Compute the new file name
-        return newPrefixFileName + "." + extension;
-    }
-    
-    
-    /**
-     * write the picture in the right folder    
-     * @param path
-     * @param multipartFile
-     * @return
-     * @throws InvalidImageFileException 
-     * @throws IOException 
-     * @throws Exception 
-     */
-    public static File uploadFile(MultipartFile multipartFile, String path, String fileName) throws InvalidImageFileException, IOException {
-        if (multipartFile.getSize()>1500000)  {
-            throw new InvalidImageFileException("file is too large 1.5Mo maximum");
-        }
-        if (path == null) {
-            throw new IllegalArgumentException("File path(image) can't be null");
-        }
-        
-        if (fileName == null) {
-            throw new IllegalArgumentException("File name(image) can't be null");
-        }
-        File folder = FileUtil.ensureFolderExists(path);
-        if(log.isDebugEnabled()){
-            log.debug("genFolder : "+folder.getAbsolutePath());
-            log.debug("file type is :"+multipartFile.getContentType());
-            log.debug("file original name is "+multipartFile.getOriginalFilename());
-        }
-        
-        
-        if (multipartFile.isEmpty()){
-            if(log.isDebugEnabled()){
-                log.debug("someone try to submit an empty file : "+multipartFile.getOriginalFilename());}
-            throw new InvalidImageFileException("No file to transfer. File is empty.");
 
-        }
+//TODO uncomment when found Spring mvc MultipartFile remplacement for loca sofwtare use --maxime 13/12/12
+//
+//    /** If an uploaded MultipartFile has the name "toto.jpeg", and we give "123" as newNamePrefixFileName, this method will return "123.jpg".
+//     * @throws InvalidImageFileException 
+//     */
+//    public static String assembleImageFileNameWithCorrectExtention(MultipartFile multipartFile, String newPrefixFileName) throws InvalidImageFileException {
+//        String type = multipartFile.getContentType();
+//        
+//        if (!type.contains("image")) {
+//            if(log.isDebugEnabled()){
+//                log.debug("someone try to upload this fille but this isn't an image : "+multipartFile.getOriginalFilename());}
+//            throw new InvalidImageFileException("File is not an image.  Detected type = '"+type+"'");
+//        }
+//        
+//        ////// Get the right extension
+//        String extension;
+//        switch (type) {
+//        case "image/gif":
+//            extension = "gif";
+//            break;
+//        case "image/jpeg" :
+//        case "image/pjpeg" ://internet explorer IFuckDevWhenTheyWantToMakeItSimple special MimeType for jpeg
+//            extension = "jpg";
+//            break;
+//        case "image/png" : 
+//        case "image/x-png"://internet explorer IFuckDevWhenTheyWantToMakeItSimple special MimeType for png
+//            extension = "png";
+//            break;
+//        case "image/svg+xml" :
+//            extension = "svg";
+//            break;
+//        default:
+//            throw new InvalidImageFileException("bad image type : png , svg , jpeg and gif are only accepted. Detected type = '"+type+"'");
+//        }
+//        
+//        // Compute the new file name
+//        return newPrefixFileName + "." + extension;
+//    }
 
-        File file = new File(folder, fileName);
-         
 
-        FileOutputStream fos = null;
-        fos = new FileOutputStream(file);
-        fos.write(multipartFile.getBytes());
-        fos.close();
-
-        log.debug("file succesfull uploaded : "+file.getCanonicalPath());
-        return file;
-    }
+//TODO uncomment when found Spring mvc MultipartFile remplacement for loca sofwtare use --maxime 13/12/12
+//
+//    /**
+//     * write the picture in the right folder    
+//     * @param path
+//     * @param multipartFile
+//     * @return
+//     * @throws InvalidImageFileException 
+//     * @throws IOException 
+//     * @throws Exception 
+//     */
+//    public static File uploadFile(MultipartFile multipartFile, String path, String fileName) throws InvalidImageFileException, IOException {
+//        if (multipartFile.getSize()>1500000)  {
+//            throw new InvalidImageFileException("file is too large 1.5Mo maximum");
+//        }
+//        if (path == null) {
+//            throw new IllegalArgumentException("File path(image) can't be null");
+//        }
+//        
+//        if (fileName == null) {
+//            throw new IllegalArgumentException("File name(image) can't be null");
+//        }
+//        File folder = FileUtil.ensureFolderExists(path);
+//        if(log.isDebugEnabled()){
+//            log.debug("genFolder : "+folder.getAbsolutePath());
+//            log.debug("file type is :"+multipartFile.getContentType());
+//            log.debug("file original name is "+multipartFile.getOriginalFilename());
+//        }
+//        
+//        
+//        if (multipartFile.isEmpty()){
+//            if(log.isDebugEnabled()){
+//                log.debug("someone try to submit an empty file : "+multipartFile.getOriginalFilename());}
+//            throw new InvalidImageFileException("No file to transfer. File is empty.");
+//
+//        }
+//
+//        File file = new File(folder, fileName);
+//         
+//
+//        FileOutputStream fos = null;
+//        fos = new FileOutputStream(file);
+//        fos.write(multipartFile.getBytes());
+//        fos.close();
+//
+//        log.debug("file succesfull uploaded : "+file.getCanonicalPath());
+//        return file;
+//    }
 
     /**
      * Return a list of file names contained in a given folder.
      * @param folderPath The path to the folder from wich we retrieve the file names
-     * @param extentions The extentions we filter on. No filtering if null.
      * @return the list of file names.
      */
-    public static List<String> getFilesNamesFromFolder(String folderPath){
+    public static List<String> getFilesNamesIntoFolder(String folderPath){
         
         List<String> files = new ArrayList<String>();
         File folder = new File(folderPath);
         if(!folder.exists()){
             return files;
         }
-        if(!folder.isDirectory()){
+        if(!folder.isDirectory()){//FIXME if the folderPath ios a path for a file and we want the folder parent so?
             folder = folder.getParentFile();
         }
         files = Arrays.asList(folder.list());
@@ -153,10 +183,9 @@ public abstract class FileUtil {
     /**
      * Return a list of files contained in a given folder.
      * @param folderPath The path to the folder from wich we retrieve the files
-     * @param extentions The extentions we filter on. No filtering if null.
      * @return the list of files.
      */
-    public static List<File> getFilesFromFolder(String folderPath){
+    public static List<File> getFilesIntoFolder(String folderPath){
         
         List<File> files = new ArrayList<File>();
         File folder = new File(folderPath);
@@ -244,6 +273,29 @@ public abstract class FileUtil {
             mainFolder.mkdirs();
         }
         return mainFolder;
+    }
+    
+    public static File ensureFileExists(String completeFilePath) { //to ensure compatibility with old code (<java7)
+    	return ensureFileExists(Paths.get(completeFilePath)).toFile();
+    }
+    
+    /**
+     * check if File exists and create it if not
+     * @return Path if file already exist or not
+     * @throws RuntimeException in case of {@link IOException}
+     */
+    public static Path ensureFileExists(Path completeFilePath) {
+    	if(Files.exists(completeFilePath)){
+    	
+    		return completeFilePath;
+    	
+    	} else {
+    		try {
+    			return Files.createFile(completeFilePath);
+    		} catch (IOException e) {
+    			throw new RuntimeException(e);
+    		}
+    	}
     }
     
     public void saveDataToFile(byte[] data, String fileName, String absoluteFolderPath) throws IOException {
