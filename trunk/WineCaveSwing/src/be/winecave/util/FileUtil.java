@@ -62,8 +62,10 @@ public abstract class FileUtil {
 	public static String getFileSystemSeparator() {
 		return FileSystems.getDefault().getSeparator();
 	}
-	
-	public static Path getFileIntoInstallationFolder(String fileName) {
+	/**
+	 * installation folder is the folder where the jar is installed  
+	 */
+	public static Path getFilePathIntoInstallationFolder(String fileName) {
 		return Paths.get(getJarLocationFolder() + getFileSystemSeparator() + fileName);
 		
 	}
