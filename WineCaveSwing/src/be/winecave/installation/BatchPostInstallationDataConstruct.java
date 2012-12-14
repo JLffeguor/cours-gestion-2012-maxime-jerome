@@ -1,4 +1,5 @@
-package be.winecave.util;
+
+package be.winecave.installation;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,9 +9,9 @@ import be.winecave.model.Pays;
 import be.winecave.model.Region;
 import be.winecave.model.SousRegion;
 
-public class Batch {
+public class BatchPostInstallationDataConstruct {
 	
-	public static PostInstallData data = new PostInstallData(new ArrayList<Pays>());
+	private static PostInstallationPays paysPostInstallationData = new PostInstallationPays(new ArrayList<Pays>());
 
 	public static void addPays(String nom,Map<String, String[]> regionEtSousRegion){
 		Pays pays = new Pays(nom);
@@ -26,10 +27,10 @@ public class Batch {
 			pays.getRegions().add(region);
 		}
 		
-		data.getListePays().add(pays);
+		paysPostInstallationData.getData().add(pays);
 	}
 	
-	public static HashMap<String, String[]> getRegionMap() {
+	public static HashMap<String, String[]> getNewRegionMap() {
 		return new HashMap<>();
 	}
 	
@@ -42,39 +43,38 @@ public class Batch {
 	}
 	
 	public static void main(String[] args) {
-	PostInstallData data = new PostInstallData(new ArrayList<Pays>());
-	
-	
 	
 	////Afrique
-	addPays("Afrique du Sud", getRegionMap());
-	addPays("Maroc",getRegionMap());
-	addPays("Tunisie",getRegionMap());
+	addPays("Afrique du Sud", getNewRegionMap());
+	addPays("Maroc",getNewRegionMap());
+	addPays("Tunisie",getNewRegionMap());
 	
 	////Ameriques
-	addPays("Argentine",getRegionMap());
-	addPays("Bresil",getRegionMap());
-	addPays("Canada",getRegionMap());
-	addPays("Chili",getRegionMap());
-	addPays("Etats-Unis",getRegionMap());
-	addPays("Mexique",getRegionMap());
-	addPays("Perou",getRegionMap());
-	addPays("Uruguay",getRegionMap());
+	addPays("Argentine",getNewRegionMap());
+	addPays("Bresil",getNewRegionMap());
+	addPays("Bolivie",getNewRegionMap());
+	addPays("Canada",getNewRegionMap());
+	addPays("Chili",getNewRegionMap());
+	addPays("États-Unis",getNewRegionMap());
+	addPays("Mexique",getNewRegionMap());
+	addPays("Perou",getNewRegionMap());
+	addPays("Uruguay",getNewRegionMap());
+	addPays("Vénézuela",getNewRegionMap());
 	
 	////Asie
-	addPays("Chine",getRegionMap());
-	addPays("Coree du Sud",getRegionMap());
-	addPays("Inde",getRegionMap());
-	addPays("Japon",getRegionMap());
+	addPays("Chine",getNewRegionMap());
+	addPays("Coree du Sud",getNewRegionMap());
+	addPays("Inde",getNewRegionMap());
+	addPays("Japon",getNewRegionMap());
 	
 	////Europe occidentale , centrale
-	addPays("Allemagne",getRegionMap());
-	addPays("Autriche",getRegionMap());
-	addPays("Bosnie",getRegionMap());
-	addPays("Bulgarie",getRegionMap());
-	addPays("Chypre",getRegionMap());
-	addPays("Croatie",getRegionMap());
-	addPays("Espagne",getRegionMap());
+	addPays("Allemagne",getNewRegionMap());
+	addPays("Autriche",getNewRegionMap());
+	addPays("Bosnie",getNewRegionMap());
+	addPays("Bulgarie",getNewRegionMap());
+	addPays("Chypre",getNewRegionMap());
+	addPays("Croatie",getNewRegionMap());
+	addPays("Espagne",getNewRegionMap());
 	addPays("France",ajoutRegionAvecSousRegion("vallée du Rhône", new String[]{},
 			 ajoutRegionAvecSousRegion("vallée de la Loire", new String[]{"Pays nantais", 
 															  "Anjou",
@@ -107,7 +107,7 @@ public class Batch {
 													"Libournais",
 													"Médoc",
 													"Sauternais"}, 
-	         ajoutRegionAvecSousRegion("Alsace et Lorraine", new String[]{},getRegionMap())
+	         ajoutRegionAvecSousRegion("Alsace et Lorraine", new String[]{},getNewRegionMap())
 	         )
 	         )
 	         )
@@ -120,30 +120,46 @@ public class Batch {
 	         )
 	         )
 	);
-	addPays("Grèce",getRegionMap());
-	addPays("Hongrie",getRegionMap());
-	addPays("Italie",getRegionMap());
-	addPays("Luxembourg",getRegionMap());
-	addPays("Malte",getRegionMap());
-	addPays("Portugal",getRegionMap());
-	addPays("République tchèque",getRegionMap());
-	addPays("République de Macédoine",getRegionMap());
-	addPays("Roumanie",getRegionMap());
-	addPays("Royaume-Uni",getRegionMap());
-	addPays("Slovaquie",getRegionMap());
-	addPays("Slovenie",getRegionMap());
-	addPays("Suisse",getRegionMap());
+	addPays("Grèce",getNewRegionMap());
+	addPays("Hongrie",getNewRegionMap());
+	addPays("Italie",getNewRegionMap());
+	addPays("Luxembourg",getNewRegionMap());
+	addPays("Malte",getNewRegionMap());
+	addPays("Portugal",getNewRegionMap());
+	addPays("République tchèque",getNewRegionMap());
+	addPays("République de Macédoine",getNewRegionMap());
+	addPays("Roumanie",getNewRegionMap());
+	addPays("Royaume-Uni",getNewRegionMap());
+	addPays("Slovaquie",getNewRegionMap());
+	addPays("Slovenie",getNewRegionMap());
+	addPays("Suisse",getNewRegionMap());
 	
 	////Europe orientale , Asie occidentale , Proche/Moyen-Orient
 	
-	addPays("Georgie",getRegionMap());
-	addPays("Israel",getRegionMap());
-	addPays("Liban",getRegionMap());
-	addPays("Ukraine",getRegionMap());
+	addPays("Afghanistan",getNewRegionMap());
+	addPays("Arménie",getNewRegionMap());
+	addPays("Azerbaïdjan",getNewRegionMap());
+	addPays("Jordanie",getNewRegionMap());
+	addPays("Georgie",getNewRegionMap());
+	addPays("Israël",getNewRegionMap());
+	addPays("Irak",getNewRegionMap());
+	addPays("Iran",getNewRegionMap());
+	addPays("Kazakhstan",getNewRegionMap());
+	addPays("Kirghizistan",getNewRegionMap());
+	addPays("Liban",getNewRegionMap());
+	addPays("Moldavie",getNewRegionMap());
+	addPays("Ouzbekistan",getNewRegionMap());
+	addPays("Russie",getNewRegionMap());
+	addPays("Syrie",getNewRegionMap());
+	addPays("Tadjikistan",getNewRegionMap());
+	addPays("Turkie",getNewRegionMap());
+	addPays("Turkménistan",getNewRegionMap());
+	addPays("Ukraine",getNewRegionMap());
+	addPays("Yémen",getNewRegionMap());
 	
 	////Océanie
-	addPays("Australie",getRegionMap());
-	addPays("Nouvelle Zelande",getRegionMap());
+	addPays("Australie",getNewRegionMap());
+	addPays("Nouvelle Zelande",getNewRegionMap());
 	
 	menu.getAppellation().add("(Vide)");
 	menu.getAppellation().add("Ajaccio");
