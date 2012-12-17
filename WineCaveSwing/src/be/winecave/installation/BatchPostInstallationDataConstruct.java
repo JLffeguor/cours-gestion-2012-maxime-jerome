@@ -1,4 +1,3 @@
-
 package be.winecave.installation;
 
 import java.util.ArrayList;
@@ -7,7 +6,7 @@ import java.util.Map;
 
 import be.winecave.model.Pays;
 import be.winecave.model.Region;
-import be.winecave.model.SousRegion;
+import be.winecave.model.RegionViticole;
 
 public class BatchPostInstallationDataConstruct {
 	
@@ -15,13 +14,13 @@ public class BatchPostInstallationDataConstruct {
 
 	public static void addPays(String nom,Map<String, String[]> regionEtSousRegion){
 		Pays pays = new Pays(nom);
-		Region region = null;
+		RegionViticole region = null;
 		
 		for (String nomRegion : regionEtSousRegion.keySet()) {
-			region = new Region(nomRegion);
+			region = new RegionViticole(nomRegion);
 			
 			for (String nomSousRegion : regionEtSousRegion.get(nomRegion)) {
-				region.getSousRegions().add(new SousRegion(nomSousRegion));
+				region.getSousRegionsViticole().add(new RegionViticole(nomSousRegion));
 			}
 			
 			pays.getRegions().add(region);
