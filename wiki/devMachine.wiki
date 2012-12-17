@@ -29,18 +29,10 @@ connect as root
 
 _mysql --user root_
 
-create database winecave
+and execute following commands :
 
 _CREATE DATABASE winecave;_
 
-create user winecave
-
-_CREATE USER "winecave"@"localhost";_
-
-lui donner le password winecave
-
-_SET password FOR "winecave"@"localhost" = password('winecave');_
-
-donner tous les privilèges au user sur la db créée (pas top pour le moment mais va changer)
+_CREATE USER "winecave"@"localhost" IDENTIFIED BY "winecave" ; --create user winecave with password "winecave";_
 
 _GRANT ALL ON winecave.`*` TO "winecave"@"localhost";_
