@@ -1,10 +1,10 @@
 <?xml version= "1.0" encoding = "UTF-8"?>
 <?xml-stylesheet type = "text/xsl" href="affichage.xsl"?>
-<!-- la deuxièmes ligne sert a configurer l'affichge des informations ( en html par exemple)-->
+<!-- la deuxiÃ¨mes ligne sert a configurer l'affichge des informations ( en html par exemple)-->
 <!DOCTYPE vin SYSTEM "vin.dtd">
-<!-- la DTD si dessus est localisée relativement par rapport a notre fichier xml-->
+<!-- la DTD si dessus est localisÃ©e relativement par rapport a notre fichier xml-->
 <vin>
 	<pays>France</pays>
 	<region>bourgogne</region>
-	<millésime>2010</millésime>
+	<millÃ©sime>2010</millÃ©sime>
 </vin>
