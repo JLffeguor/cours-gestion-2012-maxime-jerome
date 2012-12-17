@@ -4,23 +4,30 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import org.hibernate.validator.constraints.NotBlank;
-@Entity
-public class Region extends BaseEntity {
 
-	@ManyToOne
-	private Pays pays;
-	
-	//TODO definir une taille maximum --maxime 11/12/12
+/**
+ * super classe région étant soit un pays , une région ou une sous région
+ * en db représentera une seule table avec les classes par défaut
+ * @author maxime
+ *
+ */
+@Entity
+public abstract class Region extends BaseEntity {
+
+	//TODO definire une taille maximum --maxime 11/12/12
 	@Column(nullable=false,unique=true)
 	@NotBlank
 	private String nom;
 	
-	@OneToMany(mappedBy="region")
-	private List<SousRegion> sousRegions;
+	/**
+	 * un pays a des enfants de type RegionViticole 
+	 * et une régionViticole peut en avoir aussi
+	 */
+	@OneToMany(mappedBy="parent")
+	private List<RegionViticole> enfants;
 	
 	public Region() {
 		
@@ -30,14 +37,6 @@ public class Region extends BaseEntity {
 		this.nom = nom;
 	}
 	
-	public Pays getPays() {
-		return pays;
-	}
-
-	public void setPays(Pays pays) {
-		this.pays = pays;
-	}
-
 	public String getNom() {
 		return nom;
 	}
@@ -46,8 +45,7 @@ public class Region extends BaseEntity {
 		this.nom = nom;
 	}
 
-	public List<SousRegion> getSousRegions() {
-		return sousRegions;
+	public List<RegionViticole> getEnfants() {
+		return enfants;
 	}
-	
 }
