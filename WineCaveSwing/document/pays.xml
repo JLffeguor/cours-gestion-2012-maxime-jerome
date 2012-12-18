@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vin SYSTEM "data.dtd">
 
-<pays nom ="france" continent="Europe" devise="Euro"/>
-<pays nom ="belgique" continent="Europe" devise="Euro"/> 
+<pays nom ="FRANCE" continent="Europe" devise="Euro"/>
+<pays nom ="ESPAGNE" continent="Europe" devise="Euro"/>
+<pays nom ="ITALIE" continent="Europe" devise="Euro"/>
+<pays nom ="PORTUGAL" continent="Europe" devise="Euro"/>
+<pays nom ="CHILI" continent="Amerique de Sud" devise=""/>
+<pays nom ="ARGENTINE" continent="Amerique de Sud" devise=""/>
+<pays nom ="AFRIQUE DU SUD" continent="Amerique de Sud" devise=""/>
+<pays nom ="AUSTRALIE" continent="Amerique de Sud" devise=""/>
+<pays nom ="USA" continent="Amerique de Sud" devise=""/>
+<pays nom ="ALLEMAGNE" continent="Europe" devise="Euro"/>
