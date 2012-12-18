@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT pays >
+<!ELEMENT regionV> 
+<!ELEMENT ss_region>
+
+<!ATTLIST pays
+	nom CDATA #REQUIRED
+	continent CDATA #IMPLIED
+	devise CDATA #IMPLIED>
+
+<!ATTLIST regionV
+	nom CDATA #REQUIRED
+	nom_pays CDATA #REQUIRED>	
+
+<!ATTLIST ss_region
+	nom CDATA #REQUIRED
+	region CDATA #REQUIRED>
+
+
