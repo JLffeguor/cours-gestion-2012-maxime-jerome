@@ -3,8 +3,24 @@
 <!-- la deuxièmes ligne sert a configurer l'affichge des informations ( en html par exemple)-->
 <!DOCTYPE vin SYSTEM "vin.dtd">
 <!-- la DTD si dessus est localisée relativement par rapport a notre fichier xml-->
+
+<!-- vin avec élément -->
 <vin>
 	<pays>France</pays>
 	<region>bourgogne</region>
+	<ss_region></ss_region>
 	<millésime>2010</millésime>
 </vin>
+
+<!-- vin avec attribut  -->
+<vin pays="France" region="bourgogne" ss_region="" millésime = "2010">
+
+</vin>
+
+<!-- Lorsqu’une valeur est de taille modeste, a peu de
+chance d’évoluer vers une structure plus complexe, et n’est pas répétée, alors l’attribut
+peut tout à fait convenir. Dans tous les autres cas, l’élément reste incontournable. Si vous
+avez un doute entre un attribut et un élément, alors choisissez toujours l’élément qui est
+le plus ouvert et garantira le plus facilement une évolution. -->
+
+
