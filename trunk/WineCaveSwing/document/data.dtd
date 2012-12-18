@@ -2,7 +2,7 @@
 
 <!ELEMENT pays >
 <!ELEMENT regionV> 
-<!ELEMENT ss_region>
+<!ELEMENT ss_regionV>
 
 <!ATTLIST pays
 	nom CDATA #REQUIRED
@@ -13,7 +13,7 @@
 	nom CDATA #REQUIRED
 	nom_pays CDATA #REQUIRED>	
 
-<!ATTLIST ss_region
+<!ATTLIST ss_regionV
 	nom CDATA #REQUIRED
 	region CDATA #REQUIRED>
 

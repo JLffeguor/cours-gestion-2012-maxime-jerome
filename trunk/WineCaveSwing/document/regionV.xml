@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE regionV SYSTEM  "data.dtd">
 
-<regionV nom="bourgogne" nom_pays="france"/>
+<regionV nom="Alsace"nom_pays="france"/>
+<regionV nom="Beaujolais"nom_pays="france"/>
+<regionV nom="Bordeaux"nom_pays="france"/>
+<regionV nom="Bourgogne"nom_pays="france"/>
+<regionV nom="Bugey"nom_pays="france"/>
+<regionV nom="Champagne"nom_pays="france"/>
+<regionV nom="Corse"nom_pays="france"/>
+<regionV nom="Jura"nom_pays="france"/>
+<regionV nom="Languedoc-Roussillon"nom_pays="france"/>
+<regionV nom="Loire"nom_pays="france"/>
+<regionV nom="Lorraine"nom_pays="france"/>
+<regionV nom="Poitou-Charentes"nom_pays="france"/>
+<regionV nom="Provence"nom_pays="france"/>
+<regionV nom="Rhône"nom_pays="france"/>
+<regionV nom="Savoie"nom_pays="france"/>
+<regionV nom="Sud-Ouest"nom_pays="france"/>
+<regionV nom="Vin de Table"nom_pays="france"/>
+<regionV nom="Vins de Pays"nom_pays="france"/>
+
 
 
