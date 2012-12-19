@@ -33,6 +33,6 @@ and execute following commands :
 
 _CREATE DATABASE winecave;_
 
-_CREATE USER "winecave"@"localhost" IDENTIFIED BY "winecave" ; --create user winecave with password "winecave";_
+_CREATE USER "winecave"@"localhost" IDENTIFIED BY "winecave" ;_
 
 _GRANT ALL ON winecave.`*` TO "winecave"@"localhost";_
