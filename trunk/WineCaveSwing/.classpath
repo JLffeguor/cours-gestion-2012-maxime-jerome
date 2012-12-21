@@ -34,6 +34,6 @@
 	<classpathentry kind="lib" path="src/META-INF/lib/validation-api-1.0.0.GA.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/commons-configuration-1.9.jar" sourcepath="/home/maxime/Documents/javadev/commons-configuration-1.9-sources.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/commons-lang-2.6.jar" sourcepath="/home/maxime/Documents/javadev/commons-lang-2.6-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/marco/workspace/WineCaveSwing/swingx-all-1.6.4.jar"/>
+	<classpathentry kind="lib" path="src/META-INF/lib/swingx-all-1.6.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
