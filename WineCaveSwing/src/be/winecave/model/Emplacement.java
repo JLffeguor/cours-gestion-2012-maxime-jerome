@@ -18,30 +18,22 @@ public class Emplacement extends BaseEntity {
 	@Column(nullable=false,unique=true)
 	@NotBlank
 	private String nom;
-	
 	@OneToMany(mappedBy="emplacement")
 	private List<Place> places;
 
 	public Cave getCave() {
 		return cave;
 	}
-
 	public void setCave(Cave cave) {
 		this.cave = cave;
 	}
-
 	public String getNom() {
 		return nom;
 	}
-
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
 	public List<Place> getPlaces() {
 		return places;
 	}
-	
-	
-
 }
