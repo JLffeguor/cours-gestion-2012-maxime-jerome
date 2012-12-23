@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!ELEMENT liste_pays(pays)>
+<!ELEMENT liste_bouteille(bouteille)>
+<!ELEMENT liste_categorie(categorie)>
+<!ELEMENT liste_classement(classement)>
+<!ELEMENT liste_regionV(regionV)>
+<!ELEMENT liste_ss_regionV(ss_regionV)
+<!ELEMENT liste_couleur(couleur)>
+
 <!ELEMENT pays >
 <!ELEMENT regionV> 
 <!ELEMENT ss_regionV>
 <!ELEMENT categorie>
 <!ELEMENT couleur>
 <!ELEMENT classement>
+<!ELEMENT bouteille>
 
 <!ATTLIST pays
 	nom CDATA #REQUIRED
@@ -32,3 +41,6 @@
 
 <!ATTLIST classment
 	nom CDATA #REQUIRED>
+<!ATTLIST bouteille
+	nom_bouteille CDATA #REQUIRED
+	capaciteLitre CDATA #REQUIRED> 
