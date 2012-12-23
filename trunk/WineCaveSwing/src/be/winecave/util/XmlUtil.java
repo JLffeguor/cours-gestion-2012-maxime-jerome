@@ -10,7 +10,7 @@ import org.jdom2.input.SAXBuilder;
 public class XmlUtil {
 	
 	public static Document getXmlDocumentIntoInstallationDirectory(String fileName) {
-		return getXmlDocument(FileUtil.getFilePathIntoInstallationFolder(fileName));
+		return getXmlDocument(FileUtil.getFilePathIntoInstallationFolder("PostInstallationData" + FileUtil.getFileSystemSeparator() + fileName));
 	}
 	
 	public static Document getXmlDocument(Path filePath) {

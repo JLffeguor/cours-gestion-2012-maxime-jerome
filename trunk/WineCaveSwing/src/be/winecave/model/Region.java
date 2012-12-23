@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -15,6 +17,7 @@ import org.hibernate.validator.constraints.NotBlank;
  *
  */
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Region extends BaseEntity {
 
 	//TODO definire une taille maximum --maxime 11/12/12
