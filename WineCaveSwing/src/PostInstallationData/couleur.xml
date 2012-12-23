@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vin SYSTEM "data.dtd">
+
+<liste_couleur>
+<couleur nom="Rouge"/>
+<couleur nom="Blanc"/>
+<couleur nom="Rose"/>
+<couleur nom="Champagne"/>
+<couleur nom="Liquoreux"/>
+<couleur nom="Autre"/>
+</liste_couleur>
