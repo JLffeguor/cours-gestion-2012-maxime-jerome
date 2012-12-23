@@ -5,31 +5,26 @@ import java.util.List;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
+import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.model.PaysViticole;
 import be.winecave.util.XmlUtil;
 
+@Service
+@Scope("singleton")
 public class PostInstallationPays implements PostInstallData<List<PaysViticole>> {
 	
-	private static PostInstallationPays instance;
+	@Autowired 
+	PaysViticoleRepository paysViticoleRepository;
 	
 	private static final String XmlFileName =  ("pays.xml");
-	private static Document xmlDocument;
+	private static Document xmlDocument =  XmlUtil.getXmlDocumentIntoInstallationDirectory(XmlFileName);
 	
 	private List<PaysViticole> listePays = new ArrayList<>();
 
-	private PostInstallationPays() {
-	}
-	
-	public static PostInstallationPays getInstance() {
-		if (instance == null) {
-			instance = new PostInstallationPays();
-			//load xmlFile with instantiation to avoid fileLock problem
-			xmlDocument = XmlUtil.getXmlDocumentIntoInstallationDirectory(XmlFileName);
-		}
-		return instance;
-	}
-	
 	@Override
 	public void loadDataFromXml() {
 		List<Element> elementList = xmlDocument.getRootElement().getChildren();
@@ -47,7 +42,9 @@ public class PostInstallationPays implements PostInstallData<List<PaysViticole>>
 
 	@Override
 	public void saveDataToDb() {
-		// TODO Auto-generated method stub
+		for(PaysViticole pays : listePays) {
+			paysViticoleRepository.persist(pays);
+		}
 	}
 
 	@Override
