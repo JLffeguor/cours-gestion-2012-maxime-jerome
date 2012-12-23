@@ -9,7 +9,6 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import be.winecave.Repository.TestService;
 import be.winecave.installation.PostInstallationPays;
 import be.winecave.util.AppConfig;
 import be.winecave.util.FileUtil;
