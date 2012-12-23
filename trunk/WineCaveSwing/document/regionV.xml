@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE regionV SYSTEM  "data.dtd">
 
+<liste_regionV>
 <regionV nom="Alsace"nom_pays="france"/>
 <regionV nom="Beaujolais"nom_pays="france"/>
 <regionV nom="Bordeaux"nom_pays="france"/>
@@ -163,6 +164,6 @@
 <regionV nom="Saale-Unstrut"nom_pays="ALLEMAGNE"/>
 <regionV nom="Sachsen"nom_pays="ALLEMAGNE"/>
 <regionV nom="Württemberg"nom_pays="ALLEMAGNE"/>
-
+</liste_regionV>
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vin SYSTEM "data.dtd">
+
+<liste_categorie>
+<categorie nom="Aperitifs"/>
+<categorie nom="Bieres"/>
+<categorie nom="Champagnes"/>
+<categorie nom="Spiritueux"/>
+<categorie nom="Vins"/>
+<categorie nom="Autre"/>
+</liste_categorie>

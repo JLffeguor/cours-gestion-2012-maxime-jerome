@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vin SYSTEM "data.dtd">
 
+<liste_pays>
 <pays nom ="FRANCE" continent="Europe" devise="Euro"/>
 <pays nom ="ESPAGNE" continent="Europe" devise="Euro"/>
 <pays nom ="ITALIE" continent="Europe" devise="Euro"/>
@@ -11,3 +12,4 @@
 <pays nom ="AUSTRALIE" continent="Amerique de Sud" devise=""/>
 <pays nom ="USA" continent="Amerique de Sud" devise=""/>
 <pays nom ="ALLEMAGNE" continent="Europe" devise="Euro"/>
+</liste_pays>

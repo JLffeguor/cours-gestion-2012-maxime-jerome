@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ss_regionV SYSTEM "data.dtd">
 
+<liste_ss_regionV>
 <ss_regionV nom="Alsace" region ="Alsace"/>
 <ss_regionV nom="Alsace Grands Crus" region ="Alsace"/>
 <ss_regionV nom="Crémant-d'Alsace" region ="Alsace"/>
@@ -928,3 +929,4 @@
 <ss_regionV nom="Siefersheim"region ="Rheinhessen"/>
 <ss_regionV nom="Weinheim"region ="Rheinhessen"/>
 <ss_regionV nom="Westhofen"region ="Rheinhessen"/>
+</liste_ss_regionV>
