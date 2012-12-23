@@ -3,13 +3,13 @@ package be.winecave.installation;
 import java.util.ArrayList;
 import java.util.List;
 
-import be.winecave.model.Pays;
+import be.winecave.model.PaysViticole;
 
-public class PostInstallationPays implements PostInstallData<List<Pays>> {
+public class PostInstallationPays implements PostInstallData<List<PaysViticole>> {
 	
-	private List<Pays> listePays ;
+	private List<PaysViticole> listePays ;
 	
-	public PostInstallationPays(ArrayList<Pays> listePays) {
+	public PostInstallationPays(ArrayList<PaysViticole> listePays) {
 		setData(listePays);
 	}
 
@@ -32,12 +32,12 @@ public class PostInstallationPays implements PostInstallData<List<Pays>> {
 	}
 
 	@Override
-	public List<Pays> getData() {
+	public List<PaysViticole> getData() {
 		return listePays;
 	}
 
 	@Override
-	public void setData(List<Pays> postInstallData) {
+	public void setData(List<PaysViticole> postInstallData) {
 		listePays = postInstallData;
 		
 	}

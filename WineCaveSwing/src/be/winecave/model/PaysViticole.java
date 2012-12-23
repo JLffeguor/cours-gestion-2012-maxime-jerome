@@ -5,12 +5,12 @@ import java.util.List;
 import javax.persistence.Entity;
 
 @Entity
-public class Pays extends Region {
+public class PaysViticole extends Region {
 
-	public Pays() {
+	public PaysViticole() {
 	}
 	
-	public Pays(String nom) {
+	public PaysViticole(String nom) {
 		super(nom);
 	}
 

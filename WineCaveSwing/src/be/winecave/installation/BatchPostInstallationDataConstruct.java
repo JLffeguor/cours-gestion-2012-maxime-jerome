@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import be.winecave.model.Pays;
+import be.winecave.model.PaysViticole;
 import be.winecave.model.Region;
 import be.winecave.model.RegionViticole;
 
 public class BatchPostInstallationDataConstruct {
 	
-	private static PostInstallationPays paysPostInstallationData = new PostInstallationPays(new ArrayList<Pays>());
+	private static PostInstallationPays paysPostInstallationData = new PostInstallationPays(new ArrayList<PaysViticole>());
 
 	public static void addPays(String nom,Map<String, String[]> regionEtSousRegion){
-		Pays pays = new Pays(nom);
+		PaysViticole pays = new PaysViticole(nom);
 		RegionViticole region = null;
 		
 		for (String nomRegion : regionEtSousRegion.keySet()) {
