@@ -3,18 +3,32 @@
 <!ELEMENT pays >
 <!ELEMENT regionV> 
 <!ELEMENT ss_regionV>
+<!ELEMENT categorie>
+<!ELEMENT couleur>
+<!ELEMENT classement>
 
 <!ATTLIST pays
 	nom CDATA #REQUIRED
 	continent CDATA #IMPLIED
-	devise CDATA #IMPLIED>
+	devise CDATA #IMPLIED
+	isInDB CDATA #REQUIRED>
 
 <!ATTLIST regionV
 	nom CDATA #REQUIRED
-	nom_pays CDATA #REQUIRED>	
+	nom_pays CDATA #REQUIRED
+	isInDB CDATA #REQUIRED>	
 
 <!ATTLIST ss_regionV
 	nom CDATA #REQUIRED
-	region CDATA #REQUIRED>
+	region CDATA #REQUIRED
+	isInDB CDATA #REQUIRED>
 
+<!ATTLIST categorie
+	nom CDATA #REQUIRED>
+	
+<!ATTLIST couleur
+	nom_bouteille CDATA #REQUIRED
+	capaciteLitre CDATA #REQUIRED>
 
+<!ATTLIST classment
+	nom CDATA #REQUIRED>
