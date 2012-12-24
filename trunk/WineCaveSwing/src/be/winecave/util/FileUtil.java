@@ -6,6 +6,7 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URISyntaxException;
+import java.nio.charset.Charset;
 import java.nio.file.DirectoryStream;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -27,47 +28,70 @@ import be.winecave.main.WineCave;
 //TODO update class to use in local software --maxime 11/12/12 
 public abstract class FileUtil {
 	private static Log log = LogFactory.getLog(FileUtil.class);
+	/**
+	 * in case of a jar this the jar location 
+	 * in case of eclipse this is the bin folder location
+	 */
+	private static Path APP_LOCATION;
+	private static Path INSTALLATION_FOLDER;
 	
-	private static String JAR_LOCATION;
-	private static String JAR_NAME = "winecave.jar";
-	private static String JAR_PARENTFOLDER_LOCATION;
-	private static final String DEFAULT_FILE_ENCODING = "UTF-8";
+	private static final String JAR_NAME = "winecave.jar";
+	private static final Charset DEFAULT_FILE_ENCODING = Charset.forName("UTF-8");
 	
+	private static final String CONFIG_DIR_NAME = "Config";
 	
 	public static void initialize() {
 		try {
-			//this is the only i found to get the jar filesystem location with avoid special character problems --maxime 13/12/12
+			//this is the only way i found to get the jar filesystem location with avoid special character problems --maxime 13/12/12
 			//TODO test on windows and macOSX systems
-			JAR_LOCATION = new File(WineCave.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getPath();
-			JAR_PARENTFOLDER_LOCATION = JAR_LOCATION.replace(getFileSystemSeparator() + JAR_NAME , "");
-
-			log.debug("JAR_PARENTFOLDER_LOCATION initalized with : "+ JAR_PARENTFOLDER_LOCATION);
+			APP_LOCATION = Paths.get(WineCave.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+			
+			if (APP_LOCATION.toString().endsWith(JAR_NAME)) { //if the app executing from a jar
+				INSTALLATION_FOLDER = APP_LOCATION.getParent();
+			} else { //otherwise in eclipse i.e. this is the bin folder
+				INSTALLATION_FOLDER = APP_LOCATION;
+			}
+			
+			System.out.println("jar location" + APP_LOCATION);
+			System.out.println("jar parent folder location" + INSTALLATION_FOLDER);
+			log.debug("JAR_PARENTFOLDER_LOCATION initalized with : "+ INSTALLATION_FOLDER);
 		} catch (URISyntaxException e) {
 			throw new RuntimeException(FileUtil.class + "can't initialize the JAR_LOCATION_FOLDER field",e);
 		}
 	}
 	
 	
-	public static String getJarLocationFolder() {
-		if(JAR_PARENTFOLDER_LOCATION == null) {
+	public static Path getInstallationFolder() {
+		if(INSTALLATION_FOLDER == null) {
 			initialize();
 		}
-		return JAR_PARENTFOLDER_LOCATION;
+		return INSTALLATION_FOLDER;
+	}
+	
+	public static Path getJarLocation() {
+		if(APP_LOCATION == null) {
+			initialize();
+		}
+		return APP_LOCATION;
 	}
 
-	public static String getDefaultFileEncoding() {
+	public static Charset getDefaultFileEncoding() {
 		return DEFAULT_FILE_ENCODING;
 	}
 	
 	public static String getFileSystemSeparator() {
 		return FileSystems.getDefault().getSeparator();
 	}
+	
 	/**
-	 * installation folder is the folder where the jar is installed  
+	 * installation folder is the folder where the jar is installed or bin in eclipse  
 	 */
-	public static Path getFilePathIntoInstallationFolder(String fileName) {
-		return Paths.get(getJarLocationFolder() + getFileSystemSeparator() + fileName);
-		
+	public static Path getPathIntoInstallationFolder(String fileName) {
+		return getInstallationFolder().resolve(fileName);
+	}
+	
+	public static Path getPathIntoConfigFolder(String fileName) {
+		return getInstallationFolder().resolve(CONFIG_DIR_NAME + getFileSystemSeparator() + fileName);
 	}
     
 
