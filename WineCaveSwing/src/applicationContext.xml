@@ -12,10 +12,10 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 
     <context:annotation-config />
     
-    <context:component-scan base-package="wineCave" />
+    <context:component-scan base-package="be" />
     
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean" >
-		<property name="persistenceUnitName" value="ConnectionMySql" />
+	<property name="persistenceUnitName" value="ConnectionMySql" />
     </bean>
     
     <!-- Transaction manager for a single JPA EntityManagerFactory (alternative to JTA) -->
