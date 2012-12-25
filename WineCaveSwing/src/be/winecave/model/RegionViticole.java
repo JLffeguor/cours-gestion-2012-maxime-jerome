@@ -30,6 +30,11 @@ public class RegionViticole extends Region {
 	public RegionViticole(String nom) {
 		super(nom);
 	}
+	
+	public RegionViticole(String nom,Region parent) {
+		super(nom);
+		this.setParent(parent);
+	}
 
 	public Region getParent() {
 		return parent;

@@ -6,7 +6,7 @@
 	<classpathentry kind="lib" path="src/META-INF/lib/mysql-connector-java-5.1.22-bin.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.core-3.1.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.context-3.1.2.RELEASE.jar" sourcepath="/home/maxime/Documents/javadev/sources adn doc libs/spring-framework-3.1.2.RELEASE-with-docs.zip"/>
-	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.beans-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.beans-3.1.2.RELEASE.jar" sourcepath="/home/maxime/Documents/javadev/sources adn doc libs/spring-framework-3.1.2.RELEASE-with-docs.zip"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.aop-3.1.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.asm-3.1.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/org.springframework.aspects-3.1.2.RELEASE.jar"/>
@@ -39,5 +39,7 @@
 	<classpathentry kind="lib" path="src/META-INF/lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/asm.jar"/>
 	<classpathentry kind="lib" path="src/META-INF/lib/cglib.jar"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="lib" path="src/META-INF/lib/antlr-2.7.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

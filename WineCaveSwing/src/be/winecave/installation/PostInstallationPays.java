@@ -35,7 +35,7 @@ public class PostInstallationPays extends PostInstallData<PaysViticole> {
 
 	@Override
 	protected PaysViticole ParseXmlElement(Element element) {
-		return new PaysViticole(element.getAttributeValue("nom"));
+		return new PaysViticole(element.getAttributeValue("nom").toLowerCase());
 	}
 
 	@Override
