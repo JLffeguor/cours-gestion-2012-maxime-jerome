@@ -11,34 +11,30 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.Repository.RegionViticoleRepository;
 import be.winecave.model.PaysViticole;
 import be.winecave.model.RegionViticole;
 import be.winecave.util.XmlUtil;
-
 @Component
 @Lazy
 @Scope("singleton")
-public class PostInstallationRegionViticole extends PostInstallData<RegionViticole> {
-	
+public class PostInstallationSousRegionViticole extends PostInstallData<RegionViticole> {
+
 	@Autowired
 	RegionViticoleRepository regionViticoleRepository;
-	@Autowired
-	PaysViticoleRepository paysViticoleRepository;
 	
 	@PostConstruct
 	@Override
 	protected void initalization() {
-		XML_FILE_NAME = "regionV.xml";
-		ELEMENTS_NAME = "regionV";
-		ROOT_ELEMENTS_NAME = "liste_regionV";
+		XML_FILE_NAME = "ss_regionV.xml";
+		ELEMENTS_NAME = "ss_regionV";
+		ROOT_ELEMENTS_NAME = "liste_ss_regionV";
 		xmlDocument = XmlUtil.getPostInstallXmlDocument(XML_FILE_NAME);
 	}
 	
 	@Override
 	protected RegionViticole ParseXmlElement(Element element) {
-		return new RegionViticole(element.getAttributeValue("nom").toLowerCase(),paysViticoleRepository.findByName(element.getAttributeValue("nom_pays").toLowerCase()));
+		return new RegionViticole(element.getAttributeValue("nom").toLowerCase(),regionViticoleRepository.findByName(element.getAttributeValue("region").toLowerCase()));
 	}
 	
 	@Override
@@ -64,9 +60,8 @@ public class PostInstallationRegionViticole extends PostInstallData<RegionVitico
 			
 			regionViticoleRepository.persist(region);
 			
-			PaysViticole parent =  paysViticoleRepository.findByName(regionViticole.getAttributeValue("nom_pays").toLowerCase());
-			paysViticoleRepository.merge(parent);
-			
+			RegionViticole parent =  regionViticoleRepository.findByName(regionViticole.getAttributeValue("region").toLowerCase());
+			regionViticoleRepository.merge(parent);
 			regionViticole.setAttribute("isInDB", "true");
 		}
 		saveDataToXml();
