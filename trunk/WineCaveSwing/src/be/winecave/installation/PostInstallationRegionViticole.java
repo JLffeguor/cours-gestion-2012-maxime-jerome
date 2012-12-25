@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.Repository.RegionViticoleRepository;
 import be.winecave.model.RegionViticole;
 import be.winecave.util.XmlUtil;
@@ -21,7 +22,9 @@ import be.winecave.util.XmlUtil;
 public class PostInstallationRegionViticole extends PostInstallData<RegionViticole> {
 	
 	@Autowired
-	RegionViticoleRepository paysViticoleRepository;
+	RegionViticoleRepository regionViticoleRepository;
+	@Autowired
+	PaysViticoleRepository paysViticoleRepository;
 	
 	@PostConstruct
 	@Override
@@ -34,7 +37,7 @@ public class PostInstallationRegionViticole extends PostInstallData<RegionVitico
 	
 	@Override
 	protected RegionViticole ParseXmlElement(Element element) {
-		return new RegionViticole(element.getAttributeValue("nom"));
+		return new RegionViticole(element.getAttributeValue("nom"),paysViticoleRepository.findByName(element.getAttributeValue("nom_pays").toLowerCase()));
 	}
 	
 	@Override
@@ -56,7 +59,7 @@ public class PostInstallationRegionViticole extends PostInstallData<RegionVitico
 	@Override
 	protected void persistDataList() {
 		for(Element regionViticole : elementList) {
-			paysViticoleRepository.persist(ParseXmlElement(regionViticole));
+			regionViticoleRepository.persist(ParseXmlElement(regionViticole));
 			regionViticole.setAttribute("isInDB", "true");
 		}
 		saveDataToXml();
