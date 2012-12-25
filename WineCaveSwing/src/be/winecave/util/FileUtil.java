@@ -39,6 +39,7 @@ public abstract class FileUtil {
 	private static final Charset DEFAULT_FILE_ENCODING = Charset.forName("UTF-8");
 	
 	private static final String CONFIG_DIR_NAME = "Config";
+	private static final String POSTINSTALLATION_DIR_NAME = "PostInstallationData";
 	
 	public static void initialize() {
 		try {
@@ -88,6 +89,10 @@ public abstract class FileUtil {
 	 */
 	public static Path getPathIntoInstallationFolder(String fileName) {
 		return getInstallationFolder().resolve(fileName);
+	}
+	
+	public static Path getPathIntoPostInstallationFolder(String fileName) {
+		return getInstallationFolder().resolve(POSTINSTALLATION_DIR_NAME + FileUtil.getFileSystemSeparator() + fileName);
 	}
 	
 	public static Path getPathIntoConfigFolder(String fileName) {

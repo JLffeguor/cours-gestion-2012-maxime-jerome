@@ -17,7 +17,9 @@ import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import be.winecave.installation.PostInstallationPays;
+import be.winecave.installation.PostInstallationRegionViticole;
 import be.winecave.model.PaysViticole;
+import be.winecave.model.RegionViticole;
 import be.winecave.util.AppConfig;
 import be.winecave.util.FileUtil;
 import be.winecave.util.JarUtils;
@@ -80,19 +82,14 @@ public class WineCave {
 		if( AppConfig.isFirstExecution() ) {
 			System.out.println("this is first execution");
 			
-			ExportDbSchema(false);
+			ExportDbSchema(true);//TODO set to false in prod --maxime 24/12/12
 			
 			context = new ClassPathXmlApplicationContext("applicationContext.xml");
 			
 			//TODO remplir la db ici avec les données post-install
 			
-			PostInstallationPays postInstallationPays = (PostInstallationPays) context.getBean("postInstallationPays");
-			postInstallationPays.loadDataFromXml();
-			postInstallationPays.saveDataToDb();
-			postInstallationPays.getData().add(new PaysViticole("test"));
-			
-			postInstallationPays.saveDataToXml();
-
+			((PostInstallationPays) context.getBean("postInstallationPays")).saveDataToDb();
+			((PostInstallationRegionViticole) context.getBean("postInstallationRegionViticole")).saveDataToDb();
 			////destruction forcé du spring context pour déchargé les classe postinstallation de la mémoire (nous n'en avons plus besoin)
 			((AbstractApplicationContext) context).registerShutdownHook();
 			context = new ClassPathXmlApplicationContext("applicationContext.xml");
