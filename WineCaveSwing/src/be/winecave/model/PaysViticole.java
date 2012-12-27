@@ -13,7 +13,7 @@ public class PaysViticole extends Region {
 	public PaysViticole(String nom) {
 		super(nom);
 	}
-
+	
 	public List<RegionViticole> getRegions() {
 		return super.getEnfants();
 	}

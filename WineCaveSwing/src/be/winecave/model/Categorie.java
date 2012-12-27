@@ -1,9 +1,10 @@
 package be.winecave.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 
 import org.hibernate.validator.constraints.NotBlank;
-
+@Entity
 public class Categorie extends BaseEntity {
 	
 	@Column(nullable=false,unique=true)

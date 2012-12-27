@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
@@ -29,7 +30,7 @@ public abstract class Region extends BaseEntity {
 	 * un pays a des enfants de type RegionViticole 
 	 * et une régionViticole peut en avoir aussi
 	 */
-	@OneToMany(mappedBy="parent")
+	@OneToMany(mappedBy="parent",fetch=FetchType.EAGER)
 	private List<RegionViticole> enfants;
 	
 	public Region() {
