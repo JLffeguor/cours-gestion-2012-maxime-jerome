@@ -6,12 +6,14 @@ import java.util.List;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import be.winecave.Repository.PaysViticoleRepository;
+import be.winecave.model.BaseEntity;
 import be.winecave.util.XmlUtil;
 
 
-public abstract class PostInstallData<E>{
+public abstract class PostInstallData<E extends BaseEntity>{
 	
 	@Autowired
 	PaysViticoleRepository paysViticoleRepository;
@@ -23,27 +25,23 @@ public abstract class PostInstallData<E>{
 	
 	protected List<Element> elementList = null;
 	
-	public void loadDataFromXml() {
+	public final void loadDataFromXml() {
 		elementList = xmlDocument.getRootElement().getChildren();
 	}
 
-	public void saveDataToXml() {
-		//assuming correct data are already in listePays var
+	public final void saveDataToXml() {
 		XmlUtil.saveElements(XML_FILE_NAME, ROOT_ELEMENTS_NAME,elementList);//really crapy solution but otherwise i get exception with element has already parent and if i try to detch in deppe method i get exception too --maxime 24/12/12
 	}
 
-	public void saveDataToDb() {
-		if (elementList == null) {
-			loadDataFromXml();
-		}
+	public final void saveDataToDb() {
 		persistDataList();
 	}
-
+	
 	/**
 	 * create a local variable containing datalist form elementList
 	 * @see setData(List<E> dataList) to modify the dataList
 	 */
-	public List<E> getData() {
+	public final List<E> getData() {
 		List<E> dataList = new ArrayList<>();
 		for (Element element : elementList) {
 			dataList.add(ParseXmlElement(element));
@@ -51,16 +49,38 @@ public abstract class PostInstallData<E>{
 		return dataList;
 	}
 	
-	public void setData(List<E> dataList) {
+	public final void setData(List<E> dataList) {
 		elementList = buildElementList(dataList);
 	}
 	
 	
-	protected abstract E ParseXmlElement(Element element);
-	
-	protected abstract List<Element> buildElementList(List<E> dataList);
-	
-	protected abstract void persistDataList();
+	private final void persistDataList() {
+		for(Element element : elementList) {
+
+			persistData(ParseXmlElement(element));
+			
+			element.setAttribute("isInDB", "true");
+		}
+		saveDataToXml();
+	}
+
+	private final List<Element> buildElementList(List<E> dataList) {
+		List<Element> elements = new ArrayList<>();
+		
+		for(E data : dataList) {
+			elements.add(buildElement(new Element(ELEMENTS_NAME), data));
+		}
+		
+		return elements;
+	}
 	
 	protected abstract void initalization();
+	
+	protected abstract E ParseXmlElement(Element element);
+	
+	protected abstract void persistData(E data);
+	
+	protected abstract Element buildElement(Element element, E data);
+	
+	
 }

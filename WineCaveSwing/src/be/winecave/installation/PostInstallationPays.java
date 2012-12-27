@@ -1,8 +1,5 @@
 package be.winecave.installation;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.annotation.PostConstruct;
 
 import org.jdom2.Element;
@@ -13,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.model.PaysViticole;
-import be.winecave.model.RegionViticole;
 import be.winecave.util.XmlUtil;
 
 @Component
@@ -31,6 +27,7 @@ public class PostInstallationPays extends PostInstallData<PaysViticole> {
 		ELEMENTS_NAME = "pays";
 		ROOT_ELEMENTS_NAME = "liste_pays";
 		xmlDocument =  XmlUtil.getPostInstallXmlDocument(XML_FILE_NAME);
+		loadDataFromXml();
 	}
 
 	@Override
@@ -39,27 +36,13 @@ public class PostInstallationPays extends PostInstallData<PaysViticole> {
 	}
 
 	@Override
-	protected List<Element> buildElementList(List<PaysViticole> dataList) {
-		Element pays = null;
-		List<Element> elements = new ArrayList<>();
-		
-		for(PaysViticole paysViticole : dataList) {
-			pays= new Element(ELEMENTS_NAME);
-			
-			pays.setAttribute("nom", paysViticole.getNom());
-			
-			elements.add(pays);
-		}
-		
-		return elements;
+	protected void persistData(PaysViticole data) {
+		paysViticoleRepository.persist(data);
 	}
 
 	@Override
-	protected void persistDataList() {
-		for(Element pays : elementList) {
-			paysViticoleRepository.persist(ParseXmlElement(pays));
-			pays.setAttribute("isInDB", "true");
-		}
-		saveDataToXml();
+	protected Element buildElement(Element element, PaysViticole data) {
+		element.setAttribute("nom", data.getNom());
+		return element;
 	}
 }

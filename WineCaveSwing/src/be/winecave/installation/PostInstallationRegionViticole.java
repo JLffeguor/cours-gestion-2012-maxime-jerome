@@ -1,8 +1,5 @@
 package be.winecave.installation;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.annotation.PostConstruct;
 
 import org.jdom2.Element;
@@ -10,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.Repository.RegionViticoleRepository;
@@ -34,42 +32,28 @@ public class PostInstallationRegionViticole extends PostInstallData<RegionVitico
 		ELEMENTS_NAME = "regionV";
 		ROOT_ELEMENTS_NAME = "liste_regionV";
 		xmlDocument = XmlUtil.getPostInstallXmlDocument(XML_FILE_NAME);
+		loadDataFromXml();
 	}
 	
 	@Override
 	protected RegionViticole ParseXmlElement(Element element) {
-		return new RegionViticole(element.getAttributeValue("nom").toLowerCase(),paysViticoleRepository.findByName(element.getAttributeValue("nom_pays").toLowerCase()));
+		return new RegionViticole(element.getAttributeValue("nom").toLowerCase(),
+				paysViticoleRepository.findByName(element.getAttributeValue("nom_pays").toLowerCase()));
 	}
 	
 	@Override
-	protected List<Element> buildElementList(List<RegionViticole> dataList) {
-		Element region = null;
-		List<Element> elements = new ArrayList<>();
-		
-		for(RegionViticole regionViticole : dataList) {
-			region= new Element(ELEMENTS_NAME);
-			
-			region.setAttribute("nom", regionViticole.getNom());
-			
-			elements.add(region);
-		}
-		
-		return elements;
+	protected Element buildElement(Element element, RegionViticole data) {
+		element.setAttribute("nom", data.getNom());
+		return element;
 	}
 	
 	@Override
-	protected void persistDataList() {
-		for(Element regionViticole : elementList) {
-			RegionViticole region = ParseXmlElement(regionViticole);
-			
-			regionViticoleRepository.persist(region);
-			
-			PaysViticole parent =  paysViticoleRepository.findByName(regionViticole.getAttributeValue("nom_pays").toLowerCase());
-			paysViticoleRepository.merge(parent);
-			
-			regionViticole.setAttribute("isInDB", "true");
-		}
-		saveDataToXml();
+	protected void persistData(RegionViticole data) {
+		regionViticoleRepository.persist(data);
+		//assuming parent already set
+		PaysViticole parent = paysViticoleRepository.findByName(data.getParent().getNom());
+		parent.getEnfants().add(data);
+		paysViticoleRepository.merge(parent);
 	}
 
 }
