@@ -31,6 +31,7 @@ public class PostInstallationSousRegionViticole extends PostInstallData<RegionVi
 	
 	@Override
 	protected RegionViticole ParseXmlElement(Element element) {
+		//TODO throw exception when no parent found
 		return new RegionViticole(element.getAttributeValue("nom").toLowerCase(),regionViticoleRepository.findByName(element.getAttributeValue("region").toLowerCase()));
 	}
 	
