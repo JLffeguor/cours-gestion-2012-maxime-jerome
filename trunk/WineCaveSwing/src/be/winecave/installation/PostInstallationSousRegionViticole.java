@@ -1,8 +1,5 @@
 package be.winecave.installation;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.annotation.PostConstruct;
 
 import org.jdom2.Element;
@@ -12,7 +9,6 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import be.winecave.Repository.RegionViticoleRepository;
-import be.winecave.model.PaysViticole;
 import be.winecave.model.RegionViticole;
 import be.winecave.util.XmlUtil;
 @Component
@@ -30,6 +26,7 @@ public class PostInstallationSousRegionViticole extends PostInstallData<RegionVi
 		ELEMENTS_NAME = "ss_regionV";
 		ROOT_ELEMENTS_NAME = "liste_ss_regionV";
 		xmlDocument = XmlUtil.getPostInstallXmlDocument(XML_FILE_NAME);
+		loadDataFromXml();
 	}
 	
 	@Override
@@ -38,33 +35,17 @@ public class PostInstallationSousRegionViticole extends PostInstallData<RegionVi
 	}
 	
 	@Override
-	protected List<Element> buildElementList(List<RegionViticole> dataList) {
-		Element region = null;
-		List<Element> elements = new ArrayList<>();
+	protected void persistData(RegionViticole data) {
+		regionViticoleRepository.persist(data);
+		regionViticoleRepository.merge((RegionViticole) data.getParent());
 		
-		for(RegionViticole regionViticole : dataList) {
-			region= new Element(ELEMENTS_NAME);
-			
-			region.setAttribute("nom", regionViticole.getNom());
-			
-			elements.add(region);
-		}
-		
-		return elements;
 	}
-	
+
 	@Override
-	protected void persistDataList() {
-		for(Element regionViticole : elementList) {
-			RegionViticole region = ParseXmlElement(regionViticole);
-			
-			regionViticoleRepository.persist(region);
-			
-			RegionViticole parent =  regionViticoleRepository.findByName(regionViticole.getAttributeValue("region").toLowerCase());
-			regionViticoleRepository.merge(parent);
-			regionViticole.setAttribute("isInDB", "true");
-		}
-		saveDataToXml();
+	protected Element buildElement(Element element, RegionViticole data) {
+		element.setAttribute("nom", data.getNom());
+		element.setAttribute("region", data.getParent().getNom());
+		return null;
 	}
 
 }
