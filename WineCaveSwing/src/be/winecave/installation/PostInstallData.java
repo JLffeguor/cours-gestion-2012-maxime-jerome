@@ -7,8 +7,8 @@ import org.jdom2.Document;
 import org.jdom2.Element;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.model.BaseEntity;
+import be.winecave.repository.PaysViticoleRepository;
 import be.winecave.util.XmlUtil;
 
 

@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import be.winecave.Repository.BouteilleRepository;
 import be.winecave.model.Bouteille;
+import be.winecave.repository.BouteilleRepository;
 import be.winecave.util.XmlUtil;
 
 @Component
