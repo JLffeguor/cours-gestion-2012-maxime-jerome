@@ -38,7 +38,6 @@ public class WineCave {
 		if(log.isDebugEnabled()) { //TODO check console arg
 			activeDebugMode();
 		}
-		activeDebugMode();//TODO remove it
 		
 		launchCheck();
 		
