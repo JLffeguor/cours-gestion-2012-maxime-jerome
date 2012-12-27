@@ -23,9 +23,9 @@ public class PostInstallationCategorie extends PostInstallData<Categorie> {
 	@Override
 	@PostConstruct
 	protected void initalization() {
-		XML_FILE_NAME = "couleur.xml";
-		ELEMENTS_NAME = "couleur";
-		ROOT_ELEMENTS_NAME = "liste_couleur";
+		XML_FILE_NAME = "categorie.xml";
+		ELEMENTS_NAME = "categorie";
+		ROOT_ELEMENTS_NAME = "liste_categorie";
 		xmlDocument = XmlUtil.getPostInstallXmlDocument(XML_FILE_NAME);
 		loadDataFromXml();
 	}
