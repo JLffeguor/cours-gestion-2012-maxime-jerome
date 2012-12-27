@@ -6,7 +6,6 @@ import java.util.List;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
 
 import be.winecave.Repository.PaysViticoleRepository;
 import be.winecave.model.BaseEntity;
@@ -56,10 +55,11 @@ public abstract class PostInstallData<E extends BaseEntity>{
 	
 	private final void persistDataList() {
 		for(Element element : elementList) {
-
-			persistData(ParseXmlElement(element));
-			
-			element.setAttribute("isInDB", "true");
+			String isINDB = element.getAttributeValue("isInDB");
+			if (isINDB == null || isINDB.isEmpty() || isINDB.equals("false")) {//defensive coding : in normal case isINDB attribute must be true or false
+				persistData(ParseXmlElement(element));
+				element.setAttribute("isInDB", "true");
+			}
 		}
 		saveDataToXml();
 	}
