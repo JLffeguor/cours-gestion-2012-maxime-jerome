@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import be.winecave.Repository.CategorieRepository;
 import be.winecave.model.Categorie;
+import be.winecave.repository.CategorieRepository;
 import be.winecave.util.XmlUtil;
 
 @Component

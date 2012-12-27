@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import be.winecave.Repository.CouleurRepository;
 import be.winecave.model.Couleur;
+import be.winecave.repository.CouleurRepository;
 import be.winecave.util.XmlUtil;
 
 @Component

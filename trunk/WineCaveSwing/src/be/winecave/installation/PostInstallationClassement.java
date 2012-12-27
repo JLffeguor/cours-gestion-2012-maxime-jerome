@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import be.winecave.Repository.ClassementRepository;
 import be.winecave.model.Classement;
+import be.winecave.repository.ClassementRepository;
 import be.winecave.util.XmlUtil;
 
 @Component
