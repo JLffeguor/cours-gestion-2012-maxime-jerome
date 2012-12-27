@@ -59,10 +59,10 @@ public class JarUtils {
 	/**
 	 * copies a directory form a jar file in the parent directory of the jar
 	 */
-	public static void addRessourcesNextJar(JarFile fromJar, String jarDir,boolean overwriteIfExists) throws IOException {
-		Path dest = FileUtil.getInstallationFolder().resolve(jarDir);
+	public static void addRessourcesNextJar(JarFile fromJar, String jarRessource,boolean overwriteIfExists) throws IOException {
+		Path dest = FileUtil.getInstallationFolder().resolve(jarRessource);
 		if( !Files.exists(dest) || overwriteIfExists) {
-			copyResourcesToDirectory(fromJar, jarDir, dest.toString());
+			copyResourcesToDirectory(fromJar, jarRessource, dest.toString());
 		}
 	}
 
