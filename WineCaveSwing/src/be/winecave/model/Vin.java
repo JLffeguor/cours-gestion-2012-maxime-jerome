@@ -8,7 +8,7 @@ public class Vin extends BaseEntity {
 	private String millesime;
 	private String nom;
 	private String producteur;//TODO faire un objet producteur ?
-	private int degre;
+	private double degre;
 	private int note;//TODO faire un objet note (si on stoque la note en int ou en string si au début on décide de faire une note sur 5 et qu'après on décide la faire sur dix il faudrait refaire toutes les notes...)--maxime 27/12/12
 	private String cuvee;//FIXME que veut dire cuvée déjà ?--maxime 27/12/12
 	private String cepage;
@@ -45,10 +45,10 @@ public class Vin extends BaseEntity {
 	public void setProducteur(String producteur) {
 		this.producteur = producteur;
 	}
-	public int getDegre() {
+	public double getDegre() {
 		return degre;
 	}
-	public void setDegre(int degre) {
+	public void setDegre(double degre) {
 		this.degre = degre;
 	}
 	public int getNote() {
@@ -106,9 +106,4 @@ public class Vin extends BaseEntity {
 	public void setClassement(Classement classement) {
 		this.classement = classement;
 	}
-	
-	
-	
-	
-	
 }
