@@ -1,23 +1,23 @@
 package be.winecave.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 
 import org.hibernate.validator.constraints.NotBlank;
-
-public class Bouteille {
+@Entity
+public class Bouteille extends BaseEntity{
 
 	@Column(nullable=false,unique=true)
 	@NotBlank
 	private String nom_bouteille;
 	
 	@Column(nullable=false)
-	@NotBlank
-	private int capaciteLitre;
+	private Double capaciteLitre;
 	
-	public int getCapaciteLitre() {
+	public Double getCapaciteLitre() {
 		return capaciteLitre;
 	}
-	public void setCapaciteLitre(int capaciteLitre) {
+	public void setCapaciteLitre(Double capaciteLitre) {
 		this.capaciteLitre = capaciteLitre;
 	}
 	public String getNom() {

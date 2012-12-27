@@ -1,10 +1,11 @@
 package be.winecave.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 
 import org.hibernate.validator.constraints.NotBlank;
-
-public class Couleur {
+@Entity
+public class Couleur extends BaseEntity{
 
 	@Column(nullable=false,unique=true)
 	@NotBlank
