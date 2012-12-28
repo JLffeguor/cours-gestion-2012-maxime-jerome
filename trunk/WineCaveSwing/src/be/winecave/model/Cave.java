@@ -30,5 +30,9 @@ public class Cave extends BaseEntity {
 	public List<Emplacement> getEmplacements() {
 		return emplacements;
 	}
+	
+	public User getProprietaire() {
+		return getCreatedBy();
+	}
 
 }

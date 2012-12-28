@@ -1,11 +1,16 @@
 package be.winecave.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+
+import org.hibernate.validator.constraints.NotBlank;
 @Entity
 public class Vin extends BaseEntity {
 	
 	private String millesime;
+	@Column(nullable=false)
+	@NotBlank
 	private String nom;
 	private String producteur;//TODO faire un objet producteur ?
 	private double degre;
@@ -24,8 +29,8 @@ public class Vin extends BaseEntity {
 	private Bouteille bouteille;
 	@ManyToOne
 	private Classement classement;
-	
-	
+	@ManyToOne
+	private Conservation conservation;
 	
 	public String getMillesime() {
 		return millesime;
@@ -105,5 +110,11 @@ public class Vin extends BaseEntity {
 	}
 	public void setClassement(Classement classement) {
 		this.classement = classement;
+	}
+	public Conservation getConservation() {
+		return conservation;
+	}
+	public void setConservation(Conservation conservation) {
+		this.conservation = conservation;
 	}
 }
