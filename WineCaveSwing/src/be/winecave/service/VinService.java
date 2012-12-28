@@ -1,12 +1,14 @@
 package be.winecave.service;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import be.winecave.exception.NullObjectException;
 import be.winecave.model.Bouteille;
 import be.winecave.model.Categorie;
 import be.winecave.model.Classement;
+import be.winecave.model.Conservation;
 import be.winecave.model.Couleur;
 import be.winecave.model.Region;
 import be.winecave.model.Vin;
@@ -32,27 +34,35 @@ public class VinService {
 	@Autowired
 	ClassementRepository classementRepository;
 
-	public Vin creerVin(String nomRegion,String nomCategorie,String nomCouleur,String nomBouteille,String nomClassement,
-			String millesime,String nom,String producteur,double degre,int note,String cuvee,String cepage,String commentaire) {
+	public Vin creerVin(String nomRegion,
+						String nomCategorie,
+						String nomCouleur,
+						String nomBouteille,
+						String nomClassement,
+						Date minimumConservation,Date maximumConservation,Date debutApogee,Date finApogee,double temperature,
+			Vin vin) throws Exception {
 		//TODO assert user can do this
+		//TODO check if special categrori "vin de pays , vin de table " user can add specific region but only land
+		if(vin == null){
+			throw new IllegalArgumentException("le nom ne doit pas être vide");//TODO créer une exception pour els champs empty ? --maxime 28/12/12
+		}
+		//un vin doit avoir au minimum un nom donc on regarde si le nom n'est pas null ou vide
+		if(vin.getNom() == null || vin.getNom().isEmpty()){
+			throw new Exception("le nom ne doit pas être vide");//TODO créer une exception pour els champs empty ? --maxime 28/12/12
+		}
 		
 		Region region = regionViticoleRepository.findByName(nomRegion);
 		if (region == null) {
 			region = paysViticoleRepository.findByName(nomRegion);
 		}
-		assertNoTNull(region, Region.class);
 		
 		Categorie categorie = categorieRepository.findByName(nomCategorie);
-		assertNoTNull(categorie, Categorie.class);
-		
 		Couleur couleur = couleurRepository.findByName(nomCouleur);
-		assertNoTNull(couleur, Couleur.class);
-		
 		Bouteille bouteille = bouteilleRepository.findByName(nomBouteille);
-		assertNoTNull(bouteille, Bouteille.class);
-		
 		Classement classement = classementRepository.findByName(nomClassement);
-		assertNoTNull(classement, Classement.class);
+		
+		//TODO chercher dans la db une conservation qui correspondrait en tout point à celle donnée
+		Conservation conservation = new Conservation(minimumConservation, maximumConservation, debutApogee, finApogee, temperature);
 		
 		Vin result = new Vin();
 		
@@ -61,23 +71,8 @@ public class VinService {
 		result.setCouleur(couleur);
 		result.setBouteille(bouteille);
 		result.setClassement(classement);
-		
-		result.setMillesime(millesime);
-		result.setNom(nom);
-		result.setProducteur(producteur);
-		result.setDegre(degre);
-		result.setNote(note);
-		result.setCuvee(cuvee);
-		result.setCepage(cepage);
-		result.setCommentaire(commentaire);
+		result.setConservation(conservation);
 		
 		return result;
-	}
-	
-	//TODO move to an util class
-	public void assertNoTNull(Object object,Class<?> clazz) {
-		if(object == null) {
-			throw new NullObjectException("this " + clazz.getSimpleName() + " object cannot be null");
-		}
 	}
 }
