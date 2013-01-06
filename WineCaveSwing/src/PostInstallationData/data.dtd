@@ -25,14 +25,19 @@
 	isInDB CDATA #REQUIRED>
 
 <!ATTLIST categorie
-	nom CDATA #REQUIRED>
+	nom CDATA #REQUIRED
+	isInDB CDATA #REQUIRED>
 	
 <!ATTLIST couleur
 	nom_bouteille CDATA #REQUIRED
-	capaciteLitre CDATA #REQUIRED>
+	capaciteLitre CDATA #REQUIRED
+	isInDB CDATA #REQUIRED>
 
 <!ATTLIST classment
-	nom CDATA #REQUIRED>
+	nom CDATA #REQUIRED
+	isInDB CDATA #REQUIRED>
+
 <!ATTLIST bouteille
 	nom_bouteille CDATA #REQUIRED
-	capaciteLitre CDATA #REQUIRED> 
+	capaciteLitre CDATA #REQUIRED
+	isInDB CDATA #REQUIRED> 

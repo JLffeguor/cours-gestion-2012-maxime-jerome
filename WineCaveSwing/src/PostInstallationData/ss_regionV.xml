@@ -2,931 +2,931 @@
 <!DOCTYPE ss_regionV SYSTEM "data.dtd">
 
 <liste_ss_regionV>
-<ss_regionV nom="Alsace" region ="Alsace"/>
-<ss_regionV nom="Alsace Grands Crus" region ="Alsace"/>
-<ss_regionV nom="Crémant-d'Alsace" region ="Alsace"/>
-<ss_regionV nom="Beaujolais" region ="Beaujolais"/>
-<ss_regionV nom="Beaujolais Supérieur" region ="Beaujolais"/>
-<ss_regionV nom="Beaujolais Village" region ="Beaujolais"/>
-<ss_regionV nom="Brouilly" region ="Beaujolais"/>
-<ss_regionV nom="Chénas" region ="Beaujolais"/>
-<ss_regionV nom="Chiroubles" region ="Beaujolais"/>
-<ss_regionV nom="Coteaux-du-Lyonnais" region ="Beaujolais"/>
-<ss_regionV nom="Côtes-de-Brouilly" region ="Beaujolais"/>
-<ss_regionV nom="Fleurie" region ="Beaujolais"/>
-<ss_regionV nom="Juliénas" region ="Beaujolais"/>
-<ss_regionV nom="Morgon" region ="Beaujolais"/>
-<ss_regionV nom="Moulin-à-vent" region ="Beaujolais"/>
-<ss_regionV nom="Régnié" region ="Beaujolais"/>
-<ss_regionV nom="Saint-Amour" region ="Beaujolais"/>
-<ss_regionV nom="Blancs Liquoreux" region ="Bordeaux"/>
-<ss_regionV nom="Blayais et Bourgeais" region ="Bordeaux"/>
-<ss_regionV nom="Bordeaux" region ="Bordeaux"/>
-<ss_regionV nom="Bordeaux Clairet" region ="Bordeaux"/>
-<ss_regionV nom="Bordeaux Supérieur" region ="Bordeaux"/>
-<ss_regionV nom="Cotes de Bordeaux" region ="Bordeaux"/>
-<ss_regionV nom="Crémant-de-Bordeaux" region ="Bordeaux"/>
-<ss_regionV nom="Dordogne et Garonne" region ="Bordeaux"/>
-<ss_regionV nom="Graves" region ="Bordeaux"/>
-<ss_regionV nom="Libournais" region ="Bordeaux"/>
-<ss_regionV nom="Médoc" region ="Bordeaux"/>
-<ss_regionV nom="Aligoté" region ="Bourgogne"/>
-<ss_regionV nom="Bourgogne" region ="Bourgogne"/>
-<ss_regionV nom="Bourgogne Côtes du Couchois" region ="Bourgogne"/>
-<ss_regionV nom="Chablisien" region ="Bourgogne"/>
-<ss_regionV nom="Chitry" region ="Bourgogne"/>
-<ss_regionV nom="Côte Chalonnaise" region ="Bourgogne"/>
-<ss_regionV nom="Côte de Beaune" region ="Bourgogne"/>
-<ss_regionV nom="Côte de Nuits" region ="Bourgogne"/>
-<ss_regionV nom="Côte-de-nuits-villages" region ="Bourgogne"/>
-<ss_regionV nom="Coteaux Bourguignons" region ="Bourgogne"/>
-<ss_regionV nom="Coulanges-la-Vineuse" region ="Bourgogne"/>
-<ss_regionV nom="Crémant-de-Bourgogne" region ="Bourgogne"/>
-<ss_regionV nom="Epineuil" region ="Bourgogne"/>
-<ss_regionV nom="Hautes-côtes-de-beaune" region ="Bourgogne"/>
-<ss_regionV nom="Hautes-côtes-de-nuits" region ="Bourgogne"/>
-<ss_regionV nom="Irancy" region ="Bourgogne"/>
-<ss_regionV nom="Mâconnais" region ="Bourgogne"/>
-<ss_regionV nom="Passe-tout-grains" region ="Bourgogne"/>
-<ss_regionV nom="Saint-Bris" region ="Bourgogne"/>
-<ss_regionV nom="Tonnerre" region ="Bourgogne"/>
-<ss_regionV nom="Vézelay" region ="Bourgogne"/>
-<ss_regionV nom="Champagne" region ="Champagne"/>
-<ss_regionV nom="Côteaux-Champenois" region ="Champagne"/>
-<ss_regionV nom="Rosé-des-Riceys" region ="Champagne"/>
-<ss_regionV nom="Ajaccio" region ="Corse"/>
-<ss_regionV nom="Muscat-du-Cap-Corse" region ="Corse"/>
-<ss_regionV nom="Patrimonio" region ="Corse"/>
-<ss_regionV nom="Vins-de-corse" region ="Corse"/>
-<ss_regionV nom="Arbois" region ="Jura"/>
-<ss_regionV nom="Arbois-Pupillin" region ="Jura"/>
-<ss_regionV nom="Château-Chalon" region ="Jura"/>
-<ss_regionV nom="Côtes-du-Jura" region ="Jura"/>
-<ss_regionV nom="Crémant du Jura" region ="Jura"/>
-<ss_regionV nom="L'étoile" region ="Jura"/>
-<ss_regionV nom="Macvin du Jura" region ="Jura"/>
-<ss_regionV nom="Languedoc" region ="Languedoc-Roussillon"/>
-<ss_regionV nom="Roussillon" region ="Languedoc-Roussillon"/>
-<ss_regionV nom="Anjou" region ="Loire"/>
-<ss_regionV nom="Crémant-de-loire" region ="Loire"/>
-<ss_regionV nom="Région du Centre" region ="Loire"/>
-<ss_regionV nom="Région Nantaise" region ="Loire"/>
-<ss_regionV nom="Région Touraine" region ="Loire"/>
-<ss_regionV nom="Rosé-de-loire" region ="Loire"/>
-<ss_regionV nom="Saumur" region ="Loire"/>
-<ss_regionV nom="Côtes-de-toul" region ="Lorraine"/>
-<ss_regionV nom="Moselle" region ="Lorraine"/>
-<ss_regionV nom="Haut-poitou" region ="Poitou-Charentes"/>
-<ss_regionV nom="Pineau-des-charentes" region ="Poitou-Charentes"/>
-<ss_regionV nom="Bandol" region ="Provence"/>
-<ss_regionV nom="Bellet" region ="Provence"/>
-<ss_regionV nom="Cassis" region ="Provence"/>
-<ss_regionV nom="Coteaux-d'aix-en-provence" region ="Provence"/>
-<ss_regionV nom="Coteaux-varois-en-provence" region ="Provence"/>
-<ss_regionV nom="Côtes-de-provence" region ="Provence"/>
-<ss_regionV nom="Les baux-de-provence" region ="Provence"/>
-<ss_regionV nom="Palette" region ="Provence"/>
-<ss_regionV nom="Beaumes-de-venise" region ="Rhône"/>
-<ss_regionV nom="Châtillon-en-diois" region ="Rhône"/>
-<ss_regionV nom="Clairette-de-bellegarde" region ="Rhône"/>
-<ss_regionV nom="Clairette-de-Die" region ="Rhône"/>
-<ss_regionV nom="Costières-de-Nîmes" region ="Rhône"/>
-<ss_regionV nom="Coteaux-de-pierrevert" region ="Rhône"/>
-<ss_regionV nom="Côteaux-du-Tricastin" region ="Rhône"/>
-<ss_regionV nom="Côtes-du-luberon" region ="Rhône"/>
-<ss_regionV nom="Côtes-du-Rhône" region ="Rhône"/>
-<ss_regionV nom="Côtes-du-Rhône-Villages" region ="Rhône"/>
-<ss_regionV nom="Côtes-du-ventoux" region ="Rhône"/>
-<ss_regionV nom="Côtes-du-vivarais" region ="Rhône"/>
-<ss_regionV nom="Crémant-de-die" region ="Rhône"/>
-<ss_regionV nom="Grignan-les-Adhémar" region ="Rhône"/>
-<ss_regionV nom="Muscat de Beaumes-de-Venise" region ="Rhône"/>
-<ss_regionV nom="Rasteau" region ="Rhône"/>
-<ss_regionV nom="Rhône Méridional" region ="Rhône"/>
-<ss_regionV nom="Rhône Septentrional" region ="Rhône"/>
-<ss_regionV nom="Crépy" region ="Savoie"/>
-<ss_regionV nom="Roussette-de-savoie" region ="Savoie"/>
-<ss_regionV nom="Roussette-du-Bugey" region ="Savoie"/>
-<ss_regionV nom="Seyssel" region ="Savoie"/>
-<ss_regionV nom="Vin-de-savoie" region ="Savoie"/>
-<ss_regionV nom="Béarn" region ="Sud-Ouest"/>
-<ss_regionV nom="Bergerac" region ="Sud-Ouest"/>
-<ss_regionV nom="Buzet" region ="Sud-Ouest"/>
-<ss_regionV nom="Cahors" region ="Sud-Ouest"/>
-<ss_regionV nom="Coteaux-du-quercy" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-de-bergerac" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-de-duras" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-de-millau" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-de-Montravel" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-de-saint-mont" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-du-brulhois" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-du-frontonnais" region ="Sud-Ouest"/>
-<ss_regionV nom="Côtes-du-marmandais" region ="Sud-Ouest"/>
-<ss_regionV nom="Entraygues-le-fel" region ="Sud-Ouest"/>
-<ss_regionV nom="Floc-de-gascogne" region ="Sud-Ouest"/>
-<ss_regionV nom="Fronton" region ="Sud-Ouest"/>
-<ss_regionV nom="Gaillac" region ="Sud-Ouest"/>
-<ss_regionV nom="Haut-Montravel" region ="Sud-Ouest"/>
-<ss_regionV nom="Irouleguy" region ="Sud-Ouest"/>
-<ss_regionV nom="Jurançon" region ="Sud-Ouest"/>
-<ss_regionV nom="Jurançon Sec" region ="Sud-Ouest"/>
-<ss_regionV nom="Lavilledieu" region ="Sud-Ouest"/>
-<ss_regionV nom="Madiran" region ="Sud-Ouest"/>
-<ss_regionV nom="Marcillac" region ="Sud-Ouest"/>
-<ss_regionV nom="Monbazillac" region ="Sud-Ouest"/>
-<ss_regionV nom="Montravel" region ="Sud-Ouest"/>
-<ss_regionV nom="Pacherenc-du-vic-bilh" region ="Sud-Ouest"/>
-<ss_regionV nom="Pécharmant" region ="Sud-Ouest"/>
-<ss_regionV nom="Rosette" region ="Sud-Ouest"/>
-<ss_regionV nom="Saussignac" region ="Sud-Ouest"/>
-<ss_regionV nom="Tursan" region ="Sud-Ouest"/>
-<ss_regionV nom="Vins-d'estaing" region ="Sud-Ouest"/>
-<ss_regionV nom="VdP Cathare" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Charentais" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Coteaux Charitois" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Côteaux d'Enserune" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Coteaux de Fontcaude" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Coteaux de Murviel" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Coteaux et terrasses de Montauban" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Côtes de Lastours" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Allobrogie" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Ariège" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Hauterive" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Oc" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Oleron" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Orange" region ="Vins de Pays"/>
-<ss_regionV nom="VdP d'Urfé" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Cassan" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Caux" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Cessenon" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Franche-Comté" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de l'Ardèche" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de l'Aude" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de l'Hérault" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de l'Ile de Beauté" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Bénovie" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Cité de Carcassonne" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la côte Vermeille" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Drôme" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Haute Vallée de l'Aude" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Haute Vallée de l'Orb" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Sainte-Baume" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Vallée du Paradis" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de la Vienne" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Lot" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Méditerranée" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Saint Guilhem le Désert" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Saint-Sardos" region ="Vins de Pays"/>
-<ss_regionV nom="VdP de Sainte Marie La Blanche" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Alpes Maritimes" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Alpilles" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Balmes dauphinoises" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des bouches du Rhone" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Cévennes" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Collines de la Moure" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Collines Rhodaniennes" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux de Bessilles" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côteaux de Cèze" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux de Fenouillèdes" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux de l'Ardèche" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux de Montelimar" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux de Peyriac" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux de Salagou" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des côteaux des Baronnies" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux du Libron" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux du Verdon" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux Flaviens" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Coteaux-de-Miramont" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côtes Catalanes" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côtes de Gascogne" region ="Vins de Pays"/>
-<ss_regionV nom="Vdp des Côtes de Meuse" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côtes de Prouilhe" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côtes de Thau" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côtes de Thongue" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Côtes du Brian" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des côtes du Ceressou" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Cotes du Condomois" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des cotes du Tarn" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Maures" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Pyrénées-Orientales" region ="Vins de Pays"/>
-<ss_regionV nom="VdP des Sables du Golfe du Lion" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Comté de Grignan" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Comté Tolosan" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Gard" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Jardin de la France" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Loir-et-Cher" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Mont Baudile" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Mont Caume" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Périgord" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Puy-de-Dôme" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Torgan" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Val de Cesse" region ="Vins de Pays"/>
-<ss_regionV nom="Vdp du Val de Loire" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Val de Montferrand" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Var" region ="Vins de Pays"/>
-<ss_regionV nom="VdP du Vaucluse" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Duché d'Uzès" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Portes de Méditerranée" region ="Vins de Pays"/>
-<ss_regionV nom="VdP Pyrénées-Atlantiques" region ="Vins de Pays"/>
-<ss_regionV nom="Almería"region ="Andalucia"/>
-<ss_regionV nom="Condado de Huelva"region ="Andalucia"/>
-<ss_regionV nom="Jerez-Manzanilla"region ="Andalucia"/>
-<ss_regionV nom="Málaga-Sierras de Málaga"region ="Andalucia"/>
-<ss_regionV nom="Montilla-Moriles"region ="Andalucia"/>
-<ss_regionV nom="Calatayud"region ="Aragon"/>
-<ss_regionV nom="Campo de Borja"region ="Aragon"/>
-<ss_regionV nom="Cariñena"region ="Aragon"/>
-<ss_regionV nom="Somontano"region ="Aragon"/>
-<ss_regionV nom="Binissalem"region ="Baleares"/>
-<ss_regionV nom="Pla i Llevant"region ="Baleares"/>
-<ss_regionV nom="Achkarren"region ="Baden"/>
-<ss_regionV nom="Iphofen"region ="Franken"/>
-<ss_regionV nom="Bacharach"region ="Mittelrhein"/>
-<ss_regionV nom="Boppard"region ="Mittelrhein"/>
-<ss_regionV nom="Bernkastel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Lower Mosel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Middle Mosel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Upper Mosel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Bockenau"region ="Nahe"/>
-<ss_regionV nom="Meddersheim"region ="Nahe"/>
-<ss_regionV nom="Niederhausen"region ="Nahe"/>
-<ss_regionV nom="Oberhausen an der Nahe"region ="Nahe"/>
-<ss_regionV nom="Albersweiler"region ="Pfalz"/>
-<ss_regionV nom="Bad Durkheim"region ="Pfalz"/>
-<ss_regionV nom="Birkweiler"region ="Pfalz"/>
-<ss_regionV nom="Bissersheim"region ="Pfalz"/>
-<ss_regionV nom="Burrweiler"region ="Pfalz"/>
-<ss_regionV nom="Deidesheim"region ="Pfalz"/>
-<ss_regionV nom="Ellerstadt"region ="Pfalz"/>
-<ss_regionV nom="Flemlingen"region ="Pfalz"/>
-<ss_regionV nom="Forst an der Weinsstrasse"region ="Pfalz"/>
-<ss_regionV nom="Freinsheim"region ="Pfalz"/>
-<ss_regionV nom="Gimmeldingen an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Gleisweiler"region ="Pfalz"/>
-<ss_regionV nom="Grosskarlbach"region ="Pfalz"/>
-<ss_regionV nom="Haardt an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Hambach Weinstrasse"region ="Pfalz"/>
-<ss_regionV nom="Kallstadt"region ="Pfalz"/>
-<ss_regionV nom="Konigsbach an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Muhlheim"region ="Pfalz"/>
-<ss_regionV nom="Mussbach an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Oberhausen"region ="Pfalz"/>
-<ss_regionV nom="Ruppertsberg"region ="Pfalz"/>
-<ss_regionV nom="Siebeldingen"region ="Pfalz"/>
-<ss_regionV nom="St Martin"region ="Pfalz"/>
-<ss_regionV nom="Ungstein"region ="Pfalz"/>
-<ss_regionV nom="Wachenheim"region ="Pfalz"/>
-<ss_regionV nom="Weisenheim am Sand"region ="Pfalz"/>
-<ss_regionV nom="Weyher in der Pfalz"region ="Pfalz"/>
-<ss_regionV nom="Eltville"region ="Rheingau"/>
-<ss_regionV nom="Erbach"region ="Rheingau"/>
-<ss_regionV nom="Geisenheim"region ="Rheingau"/>
-<ss_regionV nom="Hallgarten"region ="Rheingau"/>
-<ss_regionV nom="Hattenheim"region ="Rheingau"/>
-<ss_regionV nom="Hochheim"region ="Rheingau"/>
-<ss_regionV nom="Johannisberg"region ="Rheingau"/>
-<ss_regionV nom="Kiedrich"region ="Rheingau"/>
-<ss_regionV nom="Lorch"region ="Rheingau"/>
-<ss_regionV nom="Mittelheim"region ="Rheingau"/>
-<ss_regionV nom="Oestrich"region ="Rheingau"/>
-<ss_regionV nom="Rauenthal"region ="Rheingau"/>
-<ss_regionV nom="Rudesheim"region ="Rheingau"/>
-<ss_regionV nom="Walluf"region ="Rheingau"/>
-<ss_regionV nom="Winkel"region ="Rheingau"/>
-<ss_regionV nom="Albig"region ="Rheinhessen"/>
-<ss_regionV nom="Bechtheim"region ="Rheinhessen"/>
-<ss_regionV nom="Bingen"region ="Rheinhessen"/>
-<ss_regionV nom="Bodenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Florsheim Dalsheim"region ="Rheinhessen"/>
-<ss_regionV nom="Hackenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Monsheim"region ="Rheinhessen"/>
-<ss_regionV nom="Nackenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Nierstein"region ="Rheinhessen"/>
-<ss_regionV nom="Ockenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Oppenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Siefersheim"region ="Rheinhessen"/>
-<ss_regionV nom="Weinheim"region ="Rheinhessen"/>
-<ss_regionV nom="Westhofen"region ="Rheinhessen"/>
-<ss_regionV nom="Abona"region ="Württemberg"/>
-<ss_regionV nom="El Hierro"region ="Württemberg"/>
-<ss_regionV nom="Gran Canaria"region ="Württemberg"/>
-<ss_regionV nom="La Gomera"region ="Württemberg"/>
-<ss_regionV nom="La Palma"region ="Württemberg"/>
-<ss_regionV nom="Lanzarote"region ="Württemberg"/>
-<ss_regionV nom="Tacoronte - Acentejo"region ="Württemberg"/>
-<ss_regionV nom="Valle de Guimar"region ="Württemberg"/>
-<ss_regionV nom="Valle de la Orotava"region ="Württemberg"/>
-<ss_regionV nom="Ycoden - Daute - Isora"region ="Württemberg"/>
-<ss_regionV nom="Arlanza"region ="Castilla y Leon"/>
-<ss_regionV nom="Arribes"region ="Castilla y Leon"/>
-<ss_regionV nom="Bierzo"region ="Castilla y Leon"/>
-<ss_regionV nom="Cigales"region ="Castilla y Leon"/>
-<ss_regionV nom="Ribera Del Arlanza"region ="Castilla y Leon"/>
-<ss_regionV nom="Ribera del Duero"region ="Castilla y Leon"/>
-<ss_regionV nom="Rueda"region ="Castilla y Leon"/>
-<ss_regionV nom="Tierra del vino de Zamora"region ="Castilla y Leon"/>
-<ss_regionV nom="Toro"region ="Castilla y Leon"/>
-<ss_regionV nom="Almansa"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Dehesa del Carrizal"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Dominio de Valdepusa"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Finca Élez"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Guijoso"region ="Castilla-La Mancha"/>
-<ss_regionV nom="La Mancha"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Manchuela"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Méntrida"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Mondéjar"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Ribera del Júcar"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Toledo"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Uclés"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Valdepeñas"region ="Castilla-La Mancha"/>
-<ss_regionV nom="Alella"region ="Catalogne"/>
-<ss_regionV nom="Cataluña"region ="Catalogne"/>
-<ss_regionV nom="Cava"region ="Catalogne"/>
-<ss_regionV nom="Conca de Barberá"region ="Catalogne"/>
-<ss_regionV nom="Costers del Segre"region ="Catalogne"/>
-<ss_regionV nom="Empordà-Costa Brava"region ="Catalogne"/>
-<ss_regionV nom="Montsant"region ="Catalogne"/>
-<ss_regionV nom="Penedés"region ="Catalogne"/>
-<ss_regionV nom="Plà de Bagés"region ="Catalogne"/>
-<ss_regionV nom="Priorat"region ="Catalogne"/>
-<ss_regionV nom="Tarragona"region ="Catalogne"/>
-<ss_regionV nom="Terra Alta"region ="Catalogne"/>
-<ss_regionV nom="Ribera del Guadiana"region ="Extremadure"/>
-<ss_regionV nom="Monterrei"region ="Galice"/>
-<ss_regionV nom="Rias Baixas"region ="Galice"/>
-<ss_regionV nom="Ribeira Sacra"region ="Galice"/>
-<ss_regionV nom="Ribeiro"region ="Galice"/>
-<ss_regionV nom="Valdeorras"region ="Galice"/>
-<ss_regionV nom="Rioja Alavesa"region ="La Rioja"/>
-<ss_regionV nom="Rioja Alta"region ="La Rioja"/>
-<ss_regionV nom="Rioja Baja"region ="La Rioja"/>
-<ss_regionV nom="Vinos de Madrid"region ="Madrid"/>
-<ss_regionV nom="Bullas"region ="Murcie"/>
-<ss_regionV nom="Jumilla"region ="Murcie"/>
-<ss_regionV nom="Yecla"region ="Murcie"/>
-<ss_regionV nom="Arabako Txakolina"region ="Pays Basque"/>
-<ss_regionV nom="Bizkaiko Txakolina"region ="Pays Basque"/>
-<ss_regionV nom="Getariako Txakolina"region ="Pays Basque"/>
-<ss_regionV nom="Txakoli de Vizcaya"region ="Pays Basque"/>
-<ss_regionV nom="Alicante"region ="Valence"/>
-<ss_regionV nom="Utiel - Requena"region ="Valence"/>
-<ss_regionV nom="Valencia"region ="Valence"/>
-<ss_regionV nom="VT Bajo Aragon"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Cádiz"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Campo de Cartagena"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Castilla"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Castilla y Léon"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Contraviesa Alpujarra"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Cordoba"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT de Formentera"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT El Terrerazo"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Extremadura"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Granada Suroeste"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Ibiza"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Illa de Menorca"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Illes Balears"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT León"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Mallorca"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Medina Del Campo"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Norte de Granada"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Ribera Del Gállego-Cinco Villas"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Ribera del Queiles"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Valdejalón"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Valle De Cinca"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Valle Del Jiloca"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Valles De Sadacia"region ="Vinos de la Tierra"/>
-<ss_regionV nom="VT Zamora"region ="Vinos de la Tierra"/>
-<ss_regionV nom="Castilla y León"region ="Vinos de Mesa"/>
-<ss_regionV nom="Cerasuolo d'Abruzzo DOC"region ="Abruzzes"/>
-<ss_regionV nom="Colline Pescaresi IGT"region ="Abruzzes"/>
-<ss_regionV nom="Colline Teatine IGT"region ="Abruzzes"/>
-<ss_regionV nom="Controguerra DOC"region ="Abruzzes"/>
-<ss_regionV nom="Montepulciano d'Abruzzo Colline Teramane DOCG"region ="Abruzzes"/>
-<ss_regionV nom="Montepulciano d'Abruzzo DOC"region ="Abruzzes"/>
-<ss_regionV nom="Terre di Chieti IGT"region ="Abruzzes"/>
-<ss_regionV nom="Trebbiano d'Abruzzo DOC"region ="Abruzzes"/>
-<ss_regionV nom="Aglianico del Vulture DOC"region ="Basilicata"/>
-<ss_regionV nom="Basilicata IGT"region ="Basilicata"/>
-<ss_regionV nom="Calabria IGT"region ="Calabre"/>
-<ss_regionV nom="Cirò DOC"region ="Calabre"/>
-<ss_regionV nom="Melissa DOC"region ="Calabre"/>
-<ss_regionV nom="Sant'Anna di Isola di Capo Rizzuto DOC"region ="Calabre"/>
-<ss_regionV nom="Savuto DOC"region ="Calabre"/>
-<ss_regionV nom="Scavigna DOC"region ="Calabre"/>
-<ss_regionV nom="Val di Neto IGT"region ="Calabre"/>
-<ss_regionV nom="Aglianico del Taburno DOC"region ="Campanie"/>
-<ss_regionV nom="Aglianico Dell'Irpinia IGT"region ="Campanie"/>
-<ss_regionV nom="Beneventano IGT"region ="Campanie"/>
-<ss_regionV nom="Campania IGT"region ="Campanie"/>
-<ss_regionV nom="Campi Flegrei DOC"region ="Campanie"/>
-<ss_regionV nom="Cilento DOC"region ="Campanie"/>
-<ss_regionV nom="Colli di Salerno IGT"region ="Campanie"/>
-<ss_regionV nom="Costa d'Amalfi DOC"region ="Campanie"/>
-<ss_regionV nom="Falerno del Massico DOC"region ="Campanie"/>
-<ss_regionV nom="Fiano di Avellino DOC"region ="Campanie"/>
-<ss_regionV nom="Fiano di Avellino DOCG"region ="Campanie"/>
-<ss_regionV nom="Gallucio DOC"region ="Campanie"/>
-<ss_regionV nom="Greco di Tufo DOCG"region ="Campanie"/>
-<ss_regionV nom="Irpinia Campi Taurasini DOC"region ="Campanie"/>
-<ss_regionV nom="Irpinia DOC"region ="Campanie"/>
-<ss_regionV nom="Irpinia IGT"region ="Campanie"/>
-<ss_regionV nom="Ischia DOC"region ="Campanie"/>
-<ss_regionV nom="Paestum IGT"region ="Campanie"/>
-<ss_regionV nom="Roccamonfina IGT"region ="Campanie"/>
-<ss_regionV nom="Sannio DOC"region ="Campanie"/>
-<ss_regionV nom="Taurasi DOCG"region ="Campanie"/>
-<ss_regionV nom="Terre del Volturno IGT"region ="Campanie"/>
-<ss_regionV nom="Vesuvio DOC"region ="Campanie"/>
-<ss_regionV nom="Albana di Romagna DOCG"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli Bolognesi Classico Pignoletto DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli Bolognesi DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli d'Imola DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli di Faenza DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli di Rimini DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli di Scandiano e Canossa DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli Piacentini DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli Piacentini Gutturnio DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Colli Piacentini Monterosso Val d'Arda DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Emilia IGT"region ="Emilie-Romagne"/>
-<ss_regionV nom="Forli IGT"region ="Emilie-Romagne"/>
-<ss_regionV nom="Lambrusco di Sorbara DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Lambrusco Emilia IGT"region ="Emilie-Romagne"/>
-<ss_regionV nom="Lambrusco Grasparossa di Castelvetro DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Lambrusco Reggiano DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Lambrusco Salamino DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Ravenna IGT"region ="Emilie-Romagne"/>
-<ss_regionV nom="Romagna Albana Spumante DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Rubicone IGT"region ="Emilie-Romagne"/>
-<ss_regionV nom="Sangiovese di Romagna DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Trebbiano di Romagna DOC"region ="Emilie-Romagne"/>
-<ss_regionV nom="Carso DOC"region ="Frioul"/>
-<ss_regionV nom="Colli Orientali del Friuli DOC"region ="Frioul"/>
-<ss_regionV nom="Colli Trevigiani IGT"region ="Frioul"/>
-<ss_regionV nom="Collio Goriziano DOC"region ="Frioul"/>
-<ss_regionV nom="delle Venezie IGT"region ="Frioul"/>
-<ss_regionV nom="Friuli Aquileia DOC"region ="Frioul"/>
-<ss_regionV nom="Friuli Grave DOC"region ="Frioul"/>
-<ss_regionV nom="Friuli IGT"region ="Frioul"/>
-<ss_regionV nom="Friuli Isonzo DOC"region ="Frioul"/>
-<ss_regionV nom="Lison-Pramaggiore DOC"region ="Frioul"/>
-<ss_regionV nom="Ramandolo DOCG"region ="Frioul"/>
-<ss_regionV nom="Venezia Giulia IGT"region ="Frioul"/>
-<ss_regionV nom="Castelli Romani DOC"region ="Lazio"/>
-<ss_regionV nom="Civitella d'Agliano IGT"region ="Lazio"/>
-<ss_regionV nom="Est! Est!! Est!!! di Montefiascone DOC"region ="Lazio"/>
-<ss_regionV nom="Frascati DOC"region ="Lazio"/>
-<ss_regionV nom="Lazio IGT"region ="Lazio"/>
-<ss_regionV nom="Marino DOC"region ="Lazio"/>
-<ss_regionV nom="Cinque Terre DOC"region ="Ligurie"/>
-<ss_regionV nom="Cinque Terre Sciacchetrà DOC"region ="Ligurie"/>
-<ss_regionV nom="Colli di Luni DOC"region ="Ligurie"/>
-<ss_regionV nom="Riviera Ligure di Ponente DOC"region ="Ligurie"/>
-<ss_regionV nom="Rossese di Dolceacqua DOC"region ="Ligurie"/>
-<ss_regionV nom="Benaco Bresciano IGT"region ="Lombardie"/>
-<ss_regionV nom="Capriano del Colle DOC"region ="Lombardie"/>
-<ss_regionV nom="Collina del'Milanese IGT"region ="Lombardie"/>
-<ss_regionV nom="Curtefranca DOC"region ="Lombardie"/>
-<ss_regionV nom="Franciacorta DOCG"region ="Lombardie"/>
-<ss_regionV nom="Garda DOC"region ="Lombardie"/>
-<ss_regionV nom="Lambrusco Mantovano DOC"region ="Lombardie"/>
-<ss_regionV nom="Lugana DOC"region ="Lombardie"/>
-<ss_regionV nom="Oltrepò Pavese DOC"region ="Lombardie"/>
-<ss_regionV nom="Pavia IGT"region ="Lombardie"/>
-<ss_regionV nom="Rossovivace IGT"region ="Lombardie"/>
-<ss_regionV nom="Sebino IGT"region ="Lombardie"/>
-<ss_regionV nom="Sfursat di Valtellina DOCG"region ="Lombardie"/>
-<ss_regionV nom="Terrazze Retiche di Sondrio IGT"region ="Lombardie"/>
-<ss_regionV nom="Terre di Franciacorta DOC"region ="Lombardie"/>
-<ss_regionV nom="Valcalepio DOC"region ="Lombardie"/>
-<ss_regionV nom="Valcamonica IGT"region ="Lombardie"/>
-<ss_regionV nom="Valtellina Rosso DOC"region ="Lombardie"/>
-<ss_regionV nom="Valtellina Superiore DOCG"region ="Lombardie"/>
-<ss_regionV nom="Bianchello del Metauro DOC"region ="Marche"/>
-<ss_regionV nom="Colli Pesaresi DOC"region ="Marche"/>
-<ss_regionV nom="Falerio dei Colli Ascolani DOC"region ="Marche"/>
-<ss_regionV nom="Lacrima di Morro d'Alba DOC"region ="Marche"/>
-<ss_regionV nom="Marche IGT"region ="Marche"/>
-<ss_regionV nom="Offida DOC"region ="Marche"/>
-<ss_regionV nom="Pergola DOC"region ="Marche"/>
-<ss_regionV nom="Rosso Conero DOC"region ="Marche"/>
-<ss_regionV nom="Rosso Piceno DOC"region ="Marche"/>
-<ss_regionV nom="Serrapetrona DOC"region ="Marche"/>
-<ss_regionV nom="Verdicchio dei Castelli di Jesi DOC"region ="Marche"/>
-<ss_regionV nom="Verdicchio di Matelica DOC"region ="Marche"/>
-<ss_regionV nom="Vernaccia di Serrapetrona DOCG"region ="Marche"/>
-<ss_regionV nom="Biferno DOC"region ="Molise"/>
-<ss_regionV nom="Molise DOC"region ="Molise"/>
-<ss_regionV nom="Terre degli Osci IGT"region ="Molise"/>
-<ss_regionV nom="Assisi DOC"region ="Ombrie"/>
-<ss_regionV nom="Colli Amerini DOC"region ="Ombrie"/>
-<ss_regionV nom="Colli del Trasimeno DOC"region ="Ombrie"/>
-<ss_regionV nom="Colli Martani DOC"region ="Ombrie"/>
-<ss_regionV nom="Colli Perugini DOC"region ="Ombrie"/>
-<ss_regionV nom="Lago di Corbara DOC"region ="Ombrie"/>
-<ss_regionV nom="Montefalco DOC"region ="Ombrie"/>
-<ss_regionV nom="Montefalco Sagrantino DOCG"region ="Ombrie"/>
-<ss_regionV nom="Orvieto Classico DOC"region ="Ombrie"/>
-<ss_regionV nom="Orvieto DOC"region ="Ombrie"/>
-<ss_regionV nom="Rosso Orvietano DOC"region ="Ombrie"/>
-<ss_regionV nom="Torgiano DOC"region ="Ombrie"/>
-<ss_regionV nom="Torgiano Rosso Riserva DOCG"region ="Ombrie"/>
-<ss_regionV nom="Umbria IGT"region ="Ombrie"/>
-<ss_regionV nom="Asti DOCG"region ="Piémont"/>
-<ss_regionV nom="Barbaresco DOCG"region ="Piémont"/>
-<ss_regionV nom="Barbera d'Alba DOC"region ="Piémont"/>
-<ss_regionV nom="Barbera d'Asti DOC"region ="Piémont"/>
-<ss_regionV nom="Barbera del Monferrato DOC"region ="Piémont"/>
-<ss_regionV nom="Barolo DOCG"region ="Piémont"/>
-<ss_regionV nom="Boca DOC"region ="Piémont"/>
-<ss_regionV nom="Brachetto d'Acqui DOCG"region ="Piémont"/>
-<ss_regionV nom="Brachetto Piemonte DOC"region ="Piémont"/>
-<ss_regionV nom="Carema DOC"region ="Piémont"/>
-<ss_regionV nom="Colli Tortonesi DOC"region ="Piémont"/>
-<ss_regionV nom="Colline Novaresi DOC"region ="Piémont"/>
-<ss_regionV nom="Cortese dell’Alto Monferrato DOC"region ="Piémont"/>
-<ss_regionV nom="Coste della Sesia DOC"region ="Piémont"/>
-<ss_regionV nom="Dolcetto d'Alba DOC"region ="Piémont"/>
-<ss_regionV nom="Dolcetto di Diano d'Alba DOC"region ="Piémont"/>
-<ss_regionV nom="Dolcetto di Dogliani DOC"region ="Piémont"/>
-<ss_regionV nom="Fara DOC"region ="Piémont"/>
-<ss_regionV nom="Freisa d'Asti DOC"region ="Piémont"/>
-<ss_regionV nom="Gattinara DOCG"region ="Piémont"/>
-<ss_regionV nom="Gavi DOCG"region ="Piémont"/>
-<ss_regionV nom="Ghemme DOCG"region ="Piémont"/>
-<ss_regionV nom="Grignolino d'Asti DOC"region ="Piémont"/>
-<ss_regionV nom="Langhe DOC"region ="Piémont"/>
-<ss_regionV nom="Lessona DOC"region ="Piémont"/>
-<ss_regionV nom="Monferrato DOC"region ="Piémont"/>
-<ss_regionV nom="Moscato d'Asti DOCG"region ="Piémont"/>
-<ss_regionV nom="Nebbiolo d'Alba DOC"region ="Piémont"/>
-<ss_regionV nom="Piemonte DOC"region ="Piémont"/>
-<ss_regionV nom="Roero Arneis DOCG"region ="Piémont"/>
-<ss_regionV nom="Roero DOCG"region ="Piémont"/>
-<ss_regionV nom="Ruchè di Castagnole Monferrato DOC"region ="Piémont"/>
-<ss_regionV nom="Aleatico di Puglia DOC"region ="Pouilles"/>
-<ss_regionV nom="Alezio DOC"region ="Pouilles"/>
-<ss_regionV nom="Brindisi DOC"region ="Pouilles"/>
-<ss_regionV nom="Castel del Monte DOC"region ="Pouilles"/>
-<ss_regionV nom="Copertino DOC"region ="Pouilles"/>
-<ss_regionV nom="Daunia IGT"region ="Pouilles"/>
-<ss_regionV nom="Gioia del Colle DOC"region ="Pouilles"/>
-<ss_regionV nom="Gravina DOC"region ="Pouilles"/>
-<ss_regionV nom="Leverano DOC"region ="Pouilles"/>
-<ss_regionV nom="Primitivo di Manduria DOC"region ="Pouilles"/>
-<ss_regionV nom="Puglia IGT"region ="Pouilles"/>
-<ss_regionV nom="Salento IGT"region ="Pouilles"/>
-<ss_regionV nom="Salice Salentino DOC"region ="Pouilles"/>
-<ss_regionV nom="San Severo DOC"region ="Pouilles"/>
-<ss_regionV nom="Squinzano DOC"region ="Pouilles"/>
-<ss_regionV nom="Tarantino IGT"region ="Pouilles"/>
-<ss_regionV nom="Alghero DOC"region ="Sardaigne"/>
-<ss_regionV nom="Campidano di Terralba DOC"region ="Sardaigne"/>
-<ss_regionV nom="Cannonau di Sardegna DOC"region ="Sardaigne"/>
-<ss_regionV nom="Carignano del Sulcis DOC"region ="Sardaigne"/>
-<ss_regionV nom="Isola dei Nuraghi IGT"region ="Sardaigne"/>
-<ss_regionV nom="Monica di Sardegna DOC"region ="Sardaigne"/>
-<ss_regionV nom="Nuragus di Cagliari DOC"region ="Sardaigne"/>
-<ss_regionV nom="Romangia IGT"region ="Sardaigne"/>
-<ss_regionV nom="Valle del Tirso IGT"region ="Sardaigne"/>
-<ss_regionV nom="Vermentino di Gallura DOCG"region ="Sardaigne"/>
-<ss_regionV nom="Vermentino di Sardegna DOC"region ="Sardaigne"/>
-<ss_regionV nom="Alcamo DOC"region ="Sicile"/>
-<ss_regionV nom="Camarro IGT"region ="Sicile"/>
-<ss_regionV nom="Cerasuolo di Vittoria DOCG"region ="Sicile"/>
-<ss_regionV nom="Contea di Sclafani DOC"region ="Sicile"/>
-<ss_regionV nom="Contessa Entellina DOC"region ="Sicile"/>
-<ss_regionV nom="Etna DOC"region ="Sicile"/>
-<ss_regionV nom="Faro DOC"region ="Sicile"/>
-<ss_regionV nom="Malvasia delle Lipari DOC"region ="Sicile"/>
-<ss_regionV nom="Marsala DOC"region ="Sicile"/>
-<ss_regionV nom="Moscato di Pantelleria DOC"region ="Sicile"/>
-<ss_regionV nom="Pantelleria Moscato Liquoroso DOC"region ="Sicile"/>
-<ss_regionV nom="Passito di Pantelleria DOC"region ="Sicile"/>
-<ss_regionV nom="Salina IGT"region ="Sicile"/>
-<ss_regionV nom="Santa Margherita di Belice DOC"region ="Sicile"/>
-<ss_regionV nom="Sicilia IGT"region ="Sicile"/>
-<ss_regionV nom="Barco Reale di Carmignano DOC"region ="Toscane"/>
-<ss_regionV nom="Bolgheri Sassicaia DOC"region ="Toscane"/>
-<ss_regionV nom="Alta Valle della Greve IGT"region ="Toscane"/>
-<ss_regionV nom="Ansonica Costa dell'Argentario DOC"region ="Toscane"/>
-<ss_regionV nom="Bianco di Pitigliano DOC"region ="Toscane"/>
-<ss_regionV nom="Bianco Vergine Valdichiana DOC"region ="Toscane"/>
-<ss_regionV nom="Bolgheri DOC"region ="Toscane"/>
-<ss_regionV nom="Brunello di Montalcino DOCG"region ="Toscane"/>
-<ss_regionV nom="Candia dei Colli Apuani DOC"region ="Toscane"/>
-<ss_regionV nom="Carmignano DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Classico DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Colli Arentini DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Colli Fiorentini DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Colli Senesi DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Colline Pisane DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Montalbano DOCG"region ="Toscane"/>
-<ss_regionV nom="Chianti Rufina DOCG"region ="Toscane"/>
-<ss_regionV nom="Colli della Toscana Centrale IGT"region ="Toscane"/>
-<ss_regionV nom="Colline Lucchesi DOC"region ="Toscane"/>
-<ss_regionV nom="Cortona DOC"region ="Toscane"/>
-<ss_regionV nom="Elba DOC"region ="Toscane"/>
-<ss_regionV nom="Maremma DOC"region ="Toscane"/>
-<ss_regionV nom="Montecarlo DOC"region ="Toscane"/>
-<ss_regionV nom="Montecucco DOC"region ="Toscane"/>
-<ss_regionV nom="Monteregio di Massa Marittima DOC"region ="Toscane"/>
-<ss_regionV nom="Montescudaio DOC"region ="Toscane"/>
-<ss_regionV nom="Morellino di Scansano DOC"region ="Toscane"/>
-<ss_regionV nom="Moscadello di Montalcino DOC"region ="Toscane"/>
-<ss_regionV nom="Orcia DOC"region ="Toscane"/>
-<ss_regionV nom="Pomino DOC"region ="Toscane"/>
-<ss_regionV nom="Rosato di Toscana IGT"region ="Toscane"/>
-<ss_regionV nom="Rosso di Montalcino DOC"region ="Toscane"/>
-<ss_regionV nom="Rosso di Montepulciano DOC"region ="Toscane"/>
-<ss_regionV nom="San Gimignano DOC"region ="Toscane"/>
-<ss_regionV nom="Sant'Antimo DOC"region ="Toscane"/>
-<ss_regionV nom="Sovana DOC"region ="Toscane"/>
-<ss_regionV nom="Toscana IGT"region ="Toscane"/>
-<ss_regionV nom="Val di Cornia DOC"region ="Toscane"/>
-<ss_regionV nom="Vernaccia di San Gimignano DOCG"region ="Toscane"/>
-<ss_regionV nom="Vin Santo del Chianti Classico DOC"region ="Toscane"/>
-<ss_regionV nom="Vin Santo del Chianti DOC"region ="Toscane"/>
-<ss_regionV nom="Vin Santo di Montepulciano DOC"region ="Toscane"/>
-<ss_regionV nom="Vino Nobile di Montepulciano DOCG"region ="Toscane"/>
-<ss_regionV nom="Alto Adige DOC"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="delle Venezie IGT"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="Teroldego Rotaliano DOC"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="Trentino DOC"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="Trento DOC"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="Vallagarina IGT"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="Vigneti delle Dolomiti IGT"region ="Trentin-Haut-Adige"/>
-<ss_regionV nom="Valle d'Aosta DOC"region ="Vallée d'Aoste"/>
-<ss_regionV nom="Amarone Della Valpolicella DOC"region ="Vénétie"/>
-<ss_regionV nom="Bardolino DOCG"region ="Vénétie"/>
-<ss_regionV nom="Bianco di Custoza DOC"region ="Vénétie"/>
-<ss_regionV nom="Breganze DOC"region ="Vénétie"/>
-<ss_regionV nom="Colli Berici DOC"region ="Vénétie"/>
-<ss_regionV nom="Colli di Conegliano DOC"region ="Vénétie"/>
-<ss_regionV nom="Colli Euganei DOC"region ="Vénétie"/>
-<ss_regionV nom="Colli Trevigiani IGT"region ="Vénétie"/>
-<ss_regionV nom="delle Venezie IGT"region ="Vénétie"/>
-<ss_regionV nom="Gambellara DOC"region ="Vénétie"/>
-<ss_regionV nom="Garda DOC"region ="Vénétie"/>
-<ss_regionV nom="Lison-Pramaggiore DOC"region ="Vénétie"/>
-<ss_regionV nom="Lugana DOC"region ="Vénétie"/>
-<ss_regionV nom="Marca Trevigiana IGT"region ="Vénétie"/>
-<ss_regionV nom="Montello e Colli Asolani DOC"region ="Vénétie"/>
-<ss_regionV nom="Piave DOC"region ="Vénétie"/>
-<ss_regionV nom="Pinot Grigio IGT"region ="Vénétie"/>
-<ss_regionV nom="Prosecco di Valdobbiadene DOC"region ="Vénétie"/>
-<ss_regionV nom="Recioto della Valpolicella DOC"region ="Vénétie"/>
-<ss_regionV nom="Recioto di Soave DOCG"region ="Vénétie"/>
-<ss_regionV nom="Ripasso della Valpolicella DOC"region ="Vénétie"/>
-<ss_regionV nom="Soave Classico DOC"region ="Vénétie"/>
-<ss_regionV nom="Soave DOC"region ="Vénétie"/>
-<ss_regionV nom="Soave Superiore DOCG"region ="Vénétie"/>
-<ss_regionV nom="Valdadige DOC"region ="Vénétie"/>
-<ss_regionV nom="Valpolicella DOC"region ="Vénétie"/>
-<ss_regionV nom="Veneto IGT"region ="Vénétie"/>
-<ss_regionV nom="Veronese IGT"region ="Vénétie"/>
-<ss_regionV nom="Pico"region ="Açores"/>
-<ss_regionV nom="Alentejo DO"region ="Alentejo"/>
-<ss_regionV nom="Bairrada"region ="Beiras"/>
-<ss_regionV nom="Beira Interior"region ="Beiras"/>
-<ss_regionV nom="Dão"region ="Beiras"/>
-<ss_regionV nom="Távora-Varosa"region ="Beiras"/>
-<ss_regionV nom="Douro DOC"region ="Duriense"/>
-<ss_regionV nom="Porto DOC"region ="Duriense"/>
-<ss_regionV nom="Alenquer"region ="Estramadura"/>
-<ss_regionV nom="Bucelas"region ="Estramadura"/>
-<ss_regionV nom="Colares"region ="Estramadura"/>
-<ss_regionV nom="Obidos"region ="Estramadura"/>
-<ss_regionV nom="Vinho verde"region ="Minho"/>
-<ss_regionV nom="Ribatejano"region ="Ribatejo"/>
-<ss_regionV nom="Ribatejo DO"region ="Ribatejo"/>
-<ss_regionV nom="Palmela"region ="Terras do Sado"/>
-<ss_regionV nom="Setúbal"region ="Terras do Sado"/>
-<ss_regionV nom="Madeira"region ="Terras Madeira"/>
-<ss_regionV nom="Trás-os-Montes"region ="Transmontano"/>
-<ss_regionV nom="Pirque"region ="Maipo Valley"/>
-<ss_regionV nom="Agrelo"region ="Mendoza"/>
-<ss_regionV nom="La Consulta"region ="Mendoza"/>
-<ss_regionV nom="Lujan de Cuyo"region ="Mendoza"/>
-<ss_regionV nom="Lunlunta"region ="Mendoza"/>
-<ss_regionV nom="Maipu"region ="Mendoza"/>
-<ss_regionV nom="Pedriel"region ="Mendoza"/>
-<ss_regionV nom="San Raphael"region ="Mendoza"/>
-<ss_regionV nom="Tupungato"region ="Mendoza"/>
-<ss_regionV nom="Valle de Uco"region ="Mendoza"/>
-<ss_regionV nom="Vista Flores"region ="Mendoza"/>
-<ss_regionV nom="Vistalba"region ="Mendoza"/>
-<ss_regionV nom="Canberra"region ="New South Wales"/>
-<ss_regionV nom="Cowra"region ="New South Wales"/>
-<ss_regionV nom="Ebenezer"region ="New South Wales"/>
-<ss_regionV nom="Hunter Valley"region ="New South Wales"/>
-<ss_regionV nom="Mudgee"region ="New South Wales"/>
-<ss_regionV nom="Orange"region ="New South Wales"/>
-<ss_regionV nom="Riverina"region ="New South Wales"/>
-<ss_regionV nom="Tumbarumba"region ="New South Wales"/>
-<ss_regionV nom="South Burnett"region ="Queensland"/>
-<ss_regionV nom="Adelaide Hills"region ="South Australia"/>
-<ss_regionV nom="Adelaide Plains"region ="South Australia"/>
-<ss_regionV nom="Barossa Valley"region ="South Australia"/>
-<ss_regionV nom="Clare Valley"region ="South Australia"/>
-<ss_regionV nom="Coonawarra"region ="South Australia"/>
-<ss_regionV nom="Eden Valley"region ="South Australia"/>
-<ss_regionV nom="Hindmarsh Island"region ="South Australia"/>
-<ss_regionV nom="Kangaroo Island"region ="South Australia"/>
-<ss_regionV nom="Langhorne Creek"region ="South Australia"/>
-<ss_regionV nom="Lenswood"region ="South Australia"/>
-<ss_regionV nom="McLaren Vale"region ="South Australia"/>
-<ss_regionV nom="Mount Benson"region ="South Australia"/>
-<ss_regionV nom="Padthaway"region ="South Australia"/>
-<ss_regionV nom="Riverland"region ="South Australia"/>
-<ss_regionV nom="Southern Fleurieu"region ="South Australia"/>
-<ss_regionV nom="Southern Flinders Ranges"region ="South Australia"/>
-<ss_regionV nom="Watervale"region ="South Australia"/>
-<ss_regionV nom="Wrattonbully"region ="South Australia"/>
-<ss_regionV nom="Limestone Coast"region ="Southeast Australia"/>
-<ss_regionV nom="Northern Tasmania"region ="Tasmania"/>
-<ss_regionV nom="Beechworth"region ="Victoria"/>
-<ss_regionV nom="Bendigo"region ="Victoria"/>
-<ss_regionV nom="Central Victoria"region ="Victoria"/>
-<ss_regionV nom="Geelong"region ="Victoria"/>
-<ss_regionV nom="Gippsland"region ="Victoria"/>
-<ss_regionV nom="Goulburn Valley"region ="Victoria"/>
-<ss_regionV nom="Grampians"region ="Victoria"/>
-<ss_regionV nom="Great Western"region ="Victoria"/>
-<ss_regionV nom="Heathcote"region ="Victoria"/>
-<ss_regionV nom="King Valley"region ="Victoria"/>
-<ss_regionV nom="Macedon Ranges"region ="Victoria"/>
-<ss_regionV nom="Milawa"region ="Victoria"/>
-<ss_regionV nom="Moonambel"region ="Victoria"/>
-<ss_regionV nom="Mornington Peninsula"region ="Victoria"/>
-<ss_regionV nom="Murray Darling"region ="Victoria"/>
-<ss_regionV nom="Pyrenees"region ="Victoria"/>
-<ss_regionV nom="Rutherglen"region ="Victoria"/>
-<ss_regionV nom="Strathbogie Ranges"region ="Victoria"/>
-<ss_regionV nom="Swan Hill"region ="Victoria"/>
-<ss_regionV nom="Whitlands"region ="Victoria"/>
-<ss_regionV nom="Yarra Valley"region ="Victoria"/>
-<ss_regionV nom="Yea Valley"region ="Victoria"/>
-<ss_regionV nom="Donnybrook"region ="Western Australia"/>
-<ss_regionV nom="Frankland River"region ="Western Australia"/>
-<ss_regionV nom="Geographe"region ="Western Australia"/>
-<ss_regionV nom="Great Southern"region ="Western Australia"/>
-<ss_regionV nom="Margaret River"region ="Western Australia"/>
-<ss_regionV nom="Mount Barker"region ="Western Australia"/>
-<ss_regionV nom="Pemberton"region ="Western Australia"/>
-<ss_regionV nom="Perth Hills"region ="Western Australia"/>
-<ss_regionV nom="Cochise County"region ="Arizona"/>
-<ss_regionV nom="Sonoita (AVA)"region ="Arizona"/>
-<ss_regionV nom="Alexander Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Amador County"region ="Californie"/>
-<ss_regionV nom="Anderson Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Arroyo Grande Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Arroyo Seco (AVA)"region ="Californie"/>
-<ss_regionV nom="Bennett Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Carneros"region ="Californie"/>
-<ss_regionV nom="Central Coast"region ="Californie"/>
-<ss_regionV nom="Central Valley AVA"region ="Californie"/>
-<ss_regionV nom="Chalk Hill (AVA)"region ="Californie"/>
-<ss_regionV nom="Chalone (AVA)"region ="Californie"/>
-<ss_regionV nom="Cienega Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Cole Ranch (AVA)"region ="Californie"/>
-<ss_regionV nom="Contra Costa County"region ="Californie"/>
-<ss_regionV nom="Cucamonga Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Dry Creek Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Dunnigan Hills (AVA)"region ="Californie"/>
-<ss_regionV nom="Edna Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="El Dorado (AVA)"region ="Californie"/>
-<ss_regionV nom="Green Valley of Russian River valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Guenoc Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Humboldt County"region ="Californie"/>
-<ss_regionV nom="Knights Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Lake County"region ="Californie"/>
-<ss_regionV nom="Livermore Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Lodi (AVA)"region ="Californie"/>
-<ss_regionV nom="Marin County"region ="Californie"/>
-<ss_regionV nom="McDowell Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Mendocino (AVA)"region ="Californie"/>
-<ss_regionV nom="Mendocino County"region ="Californie"/>
-<ss_regionV nom="Mendocino Ridge (AVA)"region ="Californie"/>
-<ss_regionV nom="Monterey (AVA)"region ="Californie"/>
-<ss_regionV nom="Monterey County"region ="Californie"/>
-<ss_regionV nom="Mount Harlan (AVA)"region ="Californie"/>
-<ss_regionV nom="Napa Valley"region ="Californie"/>
-<ss_regionV nom="North Coast (AVA)"region ="Californie"/>
-<ss_regionV nom="Northern Sonoma (AVA)"region ="Californie"/>
-<ss_regionV nom="Paso Robles (AVA)"region ="Californie"/>
-<ss_regionV nom="Rockpile (AVA)"region ="Californie"/>
-<ss_regionV nom="Russian River"region ="Californie"/>
-<ss_regionV nom="Russian River Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="San Benito (AVA)"region ="Californie"/>
-<ss_regionV nom="San Francisco Bay (AVA)"region ="Californie"/>
-<ss_regionV nom="San luis Obispo County"region ="Californie"/>
-<ss_regionV nom="Santa Barbara County"region ="Californie"/>
-<ss_regionV nom="Santa Clara County"region ="Californie"/>
-<ss_regionV nom="Santa Cruz County"region ="Californie"/>
-<ss_regionV nom="Santa Cruz Mountains (AVA)"region ="Californie"/>
-<ss_regionV nom="Santa Lucia Highlands (AVA)"region ="Californie"/>
-<ss_regionV nom="Santa Maria Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Santa Ynez Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Shenandoah Valley (CA) (AVA)"region ="Californie"/>
-<ss_regionV nom="Sierra Foothills (AVA)"region ="Californie"/>
-<ss_regionV nom="Solano County Green Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="Sonoma Coast (AVA)"region ="Californie"/>
-<ss_regionV nom="Sonoma County"region ="Californie"/>
-<ss_regionV nom="Sonoma Mountain (AVA)"region ="Californie"/>
-<ss_regionV nom="Sonoma Valley (AVA)"region ="Californie"/>
-<ss_regionV nom="South Coast (AVA)"region ="Californie"/>
-<ss_regionV nom="Sta. Rita Hills (AVA)"region ="Californie"/>
-<ss_regionV nom="Yolo County AVA"region ="Californie"/>
-<ss_regionV nom="York Mountain (AVA)"region ="Californie"/>
-<ss_regionV nom="Yorkville Highlands (AVA)"region ="Californie"/>
-<ss_regionV nom="Columbia Valley"region ="Montana"/>
-<ss_regionV nom="Finger Lakes (AVA)"region ="New York"/>
-<ss_regionV nom="Hudson River Region (AVA)"region ="New York"/>
-<ss_regionV nom="Long Island (AVA)"region ="New York"/>
-<ss_regionV nom="Chehalem Mountains (AVA)"region ="Oregon"/>
-<ss_regionV nom="Columbia Valley"region ="Oregon"/>
-<ss_regionV nom="Dundee Hills (AVA)"region ="Oregon"/>
-<ss_regionV nom="Rogue Valley (AVA)"region ="Oregon"/>
-<ss_regionV nom="Umpqua Valley (AVA)"region ="Oregon"/>
-<ss_regionV nom="Willamette Valley (AVA)"region ="Oregon"/>
-<ss_regionV nom="Yamhill Carlton District (AVA)"region ="Oregon"/>
-<ss_regionV nom="Yamhill County"region ="Oregon"/>
-<ss_regionV nom="Texas High Plains (AVA)"region ="Texas"/>
-<ss_regionV nom="Virginia's Eastern Shore (AVA)"region ="Virginie"/>
-<ss_regionV nom="Columbia Gorge (AVA)"region ="Washington"/>
-<ss_regionV nom="Columbia Valley"region ="Washington"/>
-<ss_regionV nom="Horse Heaven Hills (AVA)"region ="Washington"/>
-<ss_regionV nom="Red Mountain (AVA)"region ="Washington"/>
-<ss_regionV nom="Wahluke Slope (AVA)"region ="Washington"/>
-<ss_regionV nom="Walla Walla Valley (AVA)"region ="Washington"/>
-<ss_regionV nom="Yakima Valley (AVA)"region ="Washington"/>
-<ss_regionV nom="Achkarren"region ="Baden"/>
-<ss_regionV nom="Iphofen"region ="Franken"/>
-<ss_regionV nom="Bacharach"region ="Mittelrhein"/>
-<ss_regionV nom="Boppard"region ="Mittelrhein"/>
-<ss_regionV nom="Bernkastel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Lower Mosel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Middle Mosel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Upper Mosel"region ="Mosel-Saar-Ruwer"/>
-<ss_regionV nom="Bockenau"region ="Nahe"/>
-<ss_regionV nom="Meddersheim"region ="Nahe"/>
-<ss_regionV nom="Niederhausen"region ="Nahe"/>
-<ss_regionV nom="Oberhausen an der Nahe"region ="Nahe"/>
-<ss_regionV nom="Albersweiler"region ="Pfalz"/>
-<ss_regionV nom="Bad Durkheim"region ="Pfalz"/>
-<ss_regionV nom="Birkweiler"region ="Pfalz"/>
-<ss_regionV nom="Bissersheim"region ="Pfalz"/>
-<ss_regionV nom="Burrweiler"region ="Pfalz"/>
-<ss_regionV nom="Deidesheim"region ="Pfalz"/>
-<ss_regionV nom="Ellerstadt"region ="Pfalz"/>
-<ss_regionV nom="Flemlingen"region ="Pfalz"/>
-<ss_regionV nom="Forst an der Weinsstrasse"region ="Pfalz"/>
-<ss_regionV nom="Freinsheim"region ="Pfalz"/>
-<ss_regionV nom="Gimmeldingen an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Gleisweiler"region ="Pfalz"/>
-<ss_regionV nom="Grosskarlbach"region ="Pfalz"/>
-<ss_regionV nom="Haardt an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Hambach Weinstrasse"region ="Pfalz"/>
-<ss_regionV nom="Kallstadt"region ="Pfalz"/>
-<ss_regionV nom="Konigsbach an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Muhlheim"region ="Pfalz"/>
-<ss_regionV nom="Mussbach an der Weinstrabe"region ="Pfalz"/>
-<ss_regionV nom="Oberhausen"region ="Pfalz"/>
-<ss_regionV nom="Ruppertsberg"region ="Pfalz"/>
-<ss_regionV nom="Siebeldingen"region ="Pfalz"/>
-<ss_regionV nom="St Martin"region ="Pfalz"/>
-<ss_regionV nom="Ungstein"region ="Pfalz"/>
-<ss_regionV nom="Wachenheim"region ="Pfalz"/>
-<ss_regionV nom="Weisenheim am Sand"region ="Pfalz"/>
-<ss_regionV nom="Weyher in der Pfalz"region ="Pfalz"/>
-<ss_regionV nom="Eltville"region ="Rheingau"/>
-<ss_regionV nom="Erbach"region ="Rheingau"/>
-<ss_regionV nom="Geisenheim"region ="Rheingau"/>
-<ss_regionV nom="Hallgarten"region ="Rheingau"/>
-<ss_regionV nom="Hattenheim"region ="Rheingau"/>
-<ss_regionV nom="Hochheim"region ="Rheingau"/>
-<ss_regionV nom="Johannisberg"region ="Rheingau"/>
-<ss_regionV nom="Kiedrich"region ="Rheingau"/>
-<ss_regionV nom="Lorch"region ="Rheingau"/>
-<ss_regionV nom="Mittelheim"region ="Rheingau"/>
-<ss_regionV nom="Oestrich"region ="Rheingau"/>
-<ss_regionV nom="Rauenthal"region ="Rheingau"/>
-<ss_regionV nom="Rudesheim"region ="Rheingau"/>
-<ss_regionV nom="Walluf"region ="Rheingau"/>
-<ss_regionV nom="Winkel"region ="Rheingau"/>
-<ss_regionV nom="Albig"region ="Rheinhessen"/>
-<ss_regionV nom="Bechtheim"region ="Rheinhessen"/>
-<ss_regionV nom="Bingen"region ="Rheinhessen"/>
-<ss_regionV nom="Bodenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Florsheim Dalsheim"region ="Rheinhessen"/>
-<ss_regionV nom="Hackenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Monsheim"region ="Rheinhessen"/>
-<ss_regionV nom="Nackenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Nierstein"region ="Rheinhessen"/>
-<ss_regionV nom="Ockenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Oppenheim"region ="Rheinhessen"/>
-<ss_regionV nom="Siefersheim"region ="Rheinhessen"/>
-<ss_regionV nom="Weinheim"region ="Rheinhessen"/>
-<ss_regionV nom="Westhofen"region ="Rheinhessen"/>
+<!-- <ss_regionV nom="Alsace"  region="Alsace" isInDB="false"/> -->
+<ss_regionV nom="Alsace Grands Crus"  region="Alsace" isInDB="false"/>
+<ss_regionV nom="Crémant-d'Alsace"  region="Alsace" isInDB="false"/>
+<!-- <ss_regionV nom="Beaujolais"  region="Beaujolais" isInDB="false"/> -->
+<ss_regionV nom="Beaujolais Supérieur"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Beaujolais Village"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Brouilly"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Chénas"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Chiroubles"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Coteaux-du-Lyonnais"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Côtes-de-Brouilly"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Fleurie"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Juliénas"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Morgon"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Moulin-à-vent"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Régnié"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Saint-Amour"  region="Beaujolais" isInDB="false"/>
+<ss_regionV nom="Blancs Liquoreux"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Blayais et Bourgeais"  region="Bordeaux" isInDB="false"/>
+<!-- <ss_regionV nom="Bordeaux"  region="Bordeaux" isInDB="false"/> -->
+<ss_regionV nom="Bordeaux Clairet"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Bordeaux Supérieur"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Cotes de Bordeaux"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Crémant-de-Bordeaux"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Dordogne et Garonne"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Graves"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Libournais"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Médoc"  region="Bordeaux" isInDB="false"/>
+<ss_regionV nom="Aligoté"  region="Bourgogne" isInDB="false"/>
+<!-- <ss_regionV nom="Bourgogne"  region="Bourgogne" isInDB="false"/> -->
+<ss_regionV nom="Bourgogne Côtes du Couchois"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Chablisien"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Chitry"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Côte Chalonnaise"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Côte de Beaune"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Côte de Nuits"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Côte-de-nuits-villages"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Coteaux Bourguignons"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Coulanges-la-Vineuse"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Crémant-de-Bourgogne"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Epineuil"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Hautes-côtes-de-beaune"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Hautes-côtes-de-nuits"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Irancy"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Mâconnais"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Passe-tout-grains"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Saint-Bris"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Tonnerre"  region="Bourgogne" isInDB="false"/>
+<ss_regionV nom="Vézelay"  region="Bourgogne" isInDB="false"/>
+<!-- <ss_regionV nom="Champagne"  region="Champagne" isInDB="false"/> -->
+<ss_regionV nom="Côteaux-Champenois"  region="Champagne" isInDB="false"/>
+<ss_regionV nom="Rosé-des-Riceys"  region="Champagne" isInDB="false"/>
+<ss_regionV nom="Ajaccio"  region="Corse" isInDB="false"/>
+<ss_regionV nom="Muscat-du-Cap-Corse"  region="Corse" isInDB="false"/>
+<ss_regionV nom="Patrimonio"  region="Corse" isInDB="false"/>
+<ss_regionV nom="Vins-de-corse"  region="Corse" isInDB="false"/>
+<ss_regionV nom="Arbois"  region="Jura" isInDB="false"/>
+<ss_regionV nom="Arbois-Pupillin"  region="Jura" isInDB="false"/>
+<ss_regionV nom="Château-Chalon"  region="Jura" isInDB="false"/>
+<ss_regionV nom="Côtes-du-Jura"  region="Jura" isInDB="false"/>
+<ss_regionV nom="Crémant du Jura"  region="Jura" isInDB="false"/>
+<ss_regionV nom="L'étoile"  region="Jura" isInDB="false"/>
+<ss_regionV nom="Macvin du Jura"  region="Jura" isInDB="false"/>
+<ss_regionV nom="Languedoc"  region="Languedoc-Roussillon" isInDB="false"/>
+<ss_regionV nom="Roussillon"  region="Languedoc-Roussillon" isInDB="false"/>
+<ss_regionV nom="Anjou"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Crémant-de-loire"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Région du Centre"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Région Nantaise"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Région Touraine"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Rosé-de-loire"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Saumur"  region="Loire" isInDB="false"/>
+<ss_regionV nom="Côtes-de-toul"  region="Lorraine" isInDB="false"/>
+<ss_regionV nom="Moselle"  region="Lorraine" isInDB="false"/>
+<ss_regionV nom="Haut-poitou"  region="Poitou-Charentes" isInDB="false"/>
+<ss_regionV nom="Pineau-des-charentes"  region="Poitou-Charentes" isInDB="false"/>
+<ss_regionV nom="Bandol"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Bellet"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Cassis"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Coteaux-d'aix-en-provence"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Coteaux-varois-en-provence"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Côtes-de-provence"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Les baux-de-provence"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Palette"  region="Provence" isInDB="false"/>
+<ss_regionV nom="Beaumes-de-venise"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Châtillon-en-diois"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Clairette-de-bellegarde"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Clairette-de-Die"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Costières-de-Nîmes"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Coteaux-de-pierrevert"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Côteaux-du-Tricastin"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Côtes-du-luberon"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Côtes-du-Rhône"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Côtes-du-Rhône-Villages"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Côtes-du-ventoux"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Côtes-du-vivarais"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Crémant-de-die"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Grignan-les-Adhémar"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Muscat de Beaumes-de-Venise"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Rasteau"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Rhône Méridional"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Rhône Septentrional"  region="Rhône" isInDB="false"/>
+<ss_regionV nom="Crépy"  region="Savoie" isInDB="false"/>
+<ss_regionV nom="Roussette-de-savoie"  region="Savoie" isInDB="false"/>
+<ss_regionV nom="Roussette-du-Bugey"  region="Savoie" isInDB="false"/>
+<ss_regionV nom="Seyssel"  region="Savoie" isInDB="false"/>
+<ss_regionV nom="Vin-de-savoie"  region="Savoie" isInDB="false"/>
+<ss_regionV nom="Béarn"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Bergerac"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Buzet"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Cahors"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Coteaux-du-quercy"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-de-bergerac"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-de-duras"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-de-millau"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-de-Montravel"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-de-saint-mont"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-du-brulhois"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-du-frontonnais"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Côtes-du-marmandais"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Entraygues-le-fel"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Floc-de-gascogne"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Fronton"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Gaillac"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Haut-Montravel"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Irouleguy"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Jurançon"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Jurançon Sec"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Lavilledieu"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Madiran"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Marcillac"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Monbazillac"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Montravel"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Pacherenc-du-vic-bilh"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Pécharmant"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Rosette"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Saussignac"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Tursan"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="Vins-d'estaing"  region="Sud-Ouest" isInDB="false"/>
+<ss_regionV nom="VdP Cathare"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Charentais"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Coteaux Charitois"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Côteaux d'Enserune"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Coteaux de Fontcaude"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Coteaux de Murviel"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Coteaux et terrasses de Montauban"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Côtes de Lastours"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Allobrogie"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Ariège"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Hauterive"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Oc"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Oleron"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Orange"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP d'Urfé"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Cassan"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Caux"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Cessenon"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Franche-Comté"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de l'Ardèche"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de l'Aude"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de l'Hérault"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de l'Ile de Beauté"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Bénovie"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Cité de Carcassonne"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la côte Vermeille"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Drôme"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Haute Vallée de l'Aude"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Haute Vallée de l'Orb"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Sainte-Baume"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Vallée du Paradis"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de la Vienne"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Lot"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Méditerranée"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Saint Guilhem le Désert"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Saint-Sardos"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP de Sainte Marie La Blanche"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Alpes Maritimes"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Alpilles"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Balmes dauphinoises"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des bouches du Rhone"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Cévennes"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Collines de la Moure"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Collines Rhodaniennes"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux de Bessilles"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côteaux de Cèze"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux de Fenouillèdes"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux de l'Ardèche"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux de Montelimar"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux de Peyriac"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux de Salagou"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des côteaux des Baronnies"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux du Libron"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux du Verdon"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux Flaviens"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Coteaux-de-Miramont"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes Catalanes"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes de Gascogne"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes de Meuse"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes de Prouilhe"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes de Thau"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes de Thongue"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Côtes du Brian"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des côtes du Ceressou"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Cotes du Condomois"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des cotes du Tarn"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Maures"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Pyrénées-Orientales"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP des Sables du Golfe du Lion"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Comté de Grignan"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Comté Tolosan"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Gard"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Jardin de la France"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Loir-et-Cher"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Mont Baudile"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Mont Caume"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Périgord"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Puy-de-Dôme"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Torgan"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Val de Cesse"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Val de Loire"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Val de Montferrand"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Var"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP du Vaucluse"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Duché d'Uzès"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Portes de Méditerranée"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="VdP Pyrénées-Atlantiques"  region="Vins de Pays" isInDB="false"/>
+<ss_regionV nom="Almería" region="Andalucia" isInDB="false"/>
+<ss_regionV nom="Condado de Huelva" region="Andalucia" isInDB="false"/>
+<ss_regionV nom="Jerez-Manzanilla" region="Andalucia" isInDB="false"/>
+<ss_regionV nom="Málaga-Sierras de Málaga" region="Andalucia" isInDB="false"/>
+<ss_regionV nom="Montilla-Moriles" region="Andalucia" isInDB="false"/>
+<ss_regionV nom="Calatayud" region="Aragon" isInDB="false"/>
+<ss_regionV nom="Campo de Borja" region="Aragon" isInDB="false"/>
+<ss_regionV nom="Cariñena" region="Aragon" isInDB="false"/>
+<ss_regionV nom="Somontano" region="Aragon" isInDB="false"/>
+<ss_regionV nom="Binissalem" region="Baleares" isInDB="false"/>
+<ss_regionV nom="Pla i Llevant" region="Baleares" isInDB="false"/>
+<ss_regionV nom="Achkarren" region="Baden" isInDB="false"/>
+<ss_regionV nom="Iphofen" region="Franken" isInDB="false"/>
+<ss_regionV nom="Bacharach" region="Mittelrhein" isInDB="false"/>
+<ss_regionV nom="Boppard" region="Mittelrhein" isInDB="false"/>
+<ss_regionV nom="Bernkastel" region="Mosel-Saar-Ruwer" isInDB="false"/>
+<ss_regionV nom="Lower Mosel" region="Mosel-Saar-Ruwer" isInDB="false"/>
+<ss_regionV nom="Middle Mosel" region="Mosel-Saar-Ruwer" isInDB="false"/>
+<ss_regionV nom="Upper Mosel" region="Mosel-Saar-Ruwer" isInDB="false"/>
+<ss_regionV nom="Bockenau" region="Nahe" isInDB="false"/>
+<ss_regionV nom="Meddersheim" region="Nahe" isInDB="false"/>
+<ss_regionV nom="Niederhausen" region="Nahe" isInDB="false"/>
+<ss_regionV nom="Oberhausen an der Nahe" region="Nahe" isInDB="false"/>
+<ss_regionV nom="Albersweiler" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Bad Durkheim" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Birkweiler" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Bissersheim" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Burrweiler" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Deidesheim" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Ellerstadt" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Flemlingen" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Forst an der Weinsstrasse" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Freinsheim" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Gimmeldingen an der Weinstrabe" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Gleisweiler" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Grosskarlbach" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Haardt an der Weinstrabe" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Hambach Weinstrasse" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Kallstadt" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Konigsbach an der Weinstrabe" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Muhlheim" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Mussbach an der Weinstrabe" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Oberhausen" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Ruppertsberg" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Siebeldingen" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="St Martin" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Ungstein" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Wachenheim" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Weisenheim am Sand" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Weyher in der Pfalz" region="Pfalz" isInDB="false"/>
+<ss_regionV nom="Eltville" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Erbach" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Geisenheim" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Hallgarten" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Hattenheim" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Hochheim" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Johannisberg" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Kiedrich" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Lorch" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Mittelheim" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Oestrich" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Rauenthal" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Rudesheim" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Walluf" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Winkel" region="Rheingau" isInDB="false"/>
+<ss_regionV nom="Albig" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Bechtheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Bingen" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Bodenheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Florsheim Dalsheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Hackenheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Monsheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Nackenheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Nierstein" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Ockenheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Oppenheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Siefersheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Weinheim" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Westhofen" region="Rheinhessen" isInDB="false"/>
+<ss_regionV nom="Abona" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="El Hierro" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Gran Canaria" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="La Gomera" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="La Palma" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Lanzarote" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Tacoronte - Acentejo" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Valle de Guimar" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Valle de la Orotava" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Ycoden - Daute - Isora" region="Württemberg" isInDB="false"/>
+<ss_regionV nom="Arlanza" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Arribes" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Bierzo" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Cigales" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Ribera Del Arlanza" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Ribera del Duero" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Rueda" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Tierra del vino de Zamora" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Toro" region="Castilla y Leon" isInDB="false"/>
+<ss_regionV nom="Almansa" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Dehesa del Carrizal" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Dominio de Valdepusa" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Finca Élez" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Guijoso" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="La Mancha" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Manchuela" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Méntrida" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Mondéjar" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Ribera del Júcar" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Toledo" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Uclés" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Valdepeñas" region="Castilla-La Mancha" isInDB="false"/>
+<ss_regionV nom="Alella" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Cataluña" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Cava" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Conca de Barberá" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Costers del Segre" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Empordà-Costa Brava" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Montsant" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Penedés" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Plà de Bagés" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Priorat" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Tarragona" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Terra Alta" region="Catalogne" isInDB="false"/>
+<ss_regionV nom="Ribera del Guadiana" region="Extremadure" isInDB="false"/>
+<ss_regionV nom="Monterrei" region="Galice" isInDB="false"/>
+<ss_regionV nom="Rias Baixas" region="Galice" isInDB="false"/>
+<ss_regionV nom="Ribeira Sacra" region="Galice" isInDB="false"/>
+<ss_regionV nom="Ribeiro" region="Galice" isInDB="false"/>
+<ss_regionV nom="Valdeorras" region="Galice" isInDB="false"/>
+<ss_regionV nom="Rioja Alavesa" region="La Rioja" isInDB="false"/>
+<ss_regionV nom="Rioja Alta" region="La Rioja" isInDB="false"/>
+<ss_regionV nom="Rioja Baja" region="La Rioja" isInDB="false"/>
+<ss_regionV nom="Vinos de Madrid" region="Madrid" isInDB="false"/>
+<ss_regionV nom="Bullas" region="Murcie" isInDB="false"/>
+<ss_regionV nom="Jumilla" region="Murcie" isInDB="false"/>
+<ss_regionV nom="Yecla" region="Murcie" isInDB="false"/>
+<ss_regionV nom="Arabako Txakolina" region="Pays Basque" isInDB="false"/>
+<ss_regionV nom="Bizkaiko Txakolina" region="Pays Basque" isInDB="false"/>
+<ss_regionV nom="Getariako Txakolina" region="Pays Basque" isInDB="false"/>
+<ss_regionV nom="Txakoli de Vizcaya" region="Pays Basque" isInDB="false"/>
+<ss_regionV nom="Alicante" region="Valence" isInDB="false"/>
+<ss_regionV nom="Utiel - Requena" region="Valence" isInDB="false"/>
+<ss_regionV nom="Valencia" region="Valence" isInDB="false"/>
+<ss_regionV nom="VT Bajo Aragon" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Cádiz" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Campo de Cartagena" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Castilla" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Castilla y Léon" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Contraviesa Alpujarra" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Cordoba" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT de Formentera" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT El Terrerazo" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Extremadura" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Granada Suroeste" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Ibiza" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Illa de Menorca" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Illes Balears" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT León" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Mallorca" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Medina Del Campo" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Norte de Granada" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Ribera Del Gállego-Cinco Villas" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Ribera del Queiles" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Valdejalón" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Valle De Cinca" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Valle Del Jiloca" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Valles De Sadacia" region="Vinos de la Tierra" isInDB="false"/>
+<ss_regionV nom="VT Zamora" region="Vinos de la Tierra" isInDB="false"/>
+<!-- <ss_regionV nom="Castilla y León" region="Vinos de Mesa" isInDB="false"/> -->
+<ss_regionV nom="Cerasuolo d'Abruzzo DOC" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Colline Pescaresi IGT" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Colline Teatine IGT" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Controguerra DOC" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Montepulciano d'Abruzzo Colline Teramane DOCG" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Montepulciano d'Abruzzo DOC" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Terre di Chieti IGT" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Trebbiano d'Abruzzo DOC" region="Abruzzes" isInDB="false"/>
+<ss_regionV nom="Aglianico del Vulture DOC" region="Basilicata" isInDB="false"/>
+<ss_regionV nom="Basilicata IGT" region="Basilicata" isInDB="false"/>
+<ss_regionV nom="Calabria IGT" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Cirò DOC" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Melissa DOC" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Sant'Anna di Isola di Capo Rizzuto DOC" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Savuto DOC" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Scavigna DOC" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Val di Neto IGT" region="Calabre" isInDB="false"/>
+<ss_regionV nom="Aglianico del Taburno DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Aglianico Dell'Irpinia IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Beneventano IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Campania IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Campi Flegrei DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Cilento DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Colli di Salerno IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Costa d'Amalfi DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Falerno del Massico DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Fiano di Avellino DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Fiano di Avellino DOCG" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Gallucio DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Greco di Tufo DOCG" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Irpinia Campi Taurasini DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Irpinia DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Irpinia IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Ischia DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Paestum IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Roccamonfina IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Sannio DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Taurasi DOCG" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Terre del Volturno IGT" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Vesuvio DOC" region="Campanie" isInDB="false"/>
+<ss_regionV nom="Albana di Romagna DOCG" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli Bolognesi Classico Pignoletto DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli Bolognesi DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli d'Imola DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli di Faenza DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli di Rimini DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli di Scandiano e Canossa DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli Piacentini DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli Piacentini Gutturnio DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Colli Piacentini Monterosso Val d'Arda DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Emilia IGT" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Forli IGT" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Lambrusco di Sorbara DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Lambrusco Emilia IGT" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Lambrusco Grasparossa di Castelvetro DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Lambrusco Reggiano DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Lambrusco Salamino DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Ravenna IGT" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Romagna Albana Spumante DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Rubicone IGT" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Sangiovese di Romagna DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Trebbiano di Romagna DOC" region="Emilie-Romagne" isInDB="false"/>
+<ss_regionV nom="Carso DOC" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Colli Orientali del Friuli DOC" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Colli Trevigiani IGT" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Collio Goriziano DOC" region="Frioul" isInDB="false"/>
+<!-- <ss_regionV nom="delle Venezie IGT" region="Frioul" isInDB="false"/> -->
+<ss_regionV nom="Friuli Aquileia DOC" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Friuli Grave DOC" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Friuli IGT" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Friuli Isonzo DOC" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Lison-Pramaggiore DOC" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Ramandolo DOCG" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Venezia Giulia IGT" region="Frioul" isInDB="false"/>
+<ss_regionV nom="Castelli Romani DOC" region="Lazio" isInDB="false"/>
+<ss_regionV nom="Civitella d'Agliano IGT" region="Lazio" isInDB="false"/>
+<ss_regionV nom="Est! Est!! Est!!! di Montefiascone DOC" region="Lazio" isInDB="false"/>
+<ss_regionV nom="Frascati DOC" region="Lazio" isInDB="false"/>
+<ss_regionV nom="Lazio IGT" region="Lazio" isInDB="false"/>
+<ss_regionV nom="Marino DOC" region="Lazio" isInDB="false"/>
+<ss_regionV nom="Cinque Terre DOC" region="Ligurie" isInDB="false"/>
+<ss_regionV nom="Cinque Terre Sciacchetrà DOC" region="Ligurie" isInDB="false"/>
+<ss_regionV nom="Colli di Luni DOC" region="Ligurie" isInDB="false"/>
+<ss_regionV nom="Riviera Ligure di Ponente DOC" region="Ligurie" isInDB="false"/>
+<ss_regionV nom="Rossese di Dolceacqua DOC" region="Ligurie" isInDB="false"/>
+<ss_regionV nom="Benaco Bresciano IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Capriano del Colle DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Collina del'Milanese IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Curtefranca DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Franciacorta DOCG" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Garda DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Lambrusco Mantovano DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Lugana DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Oltrepò Pavese DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Pavia IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Rossovivace IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Sebino IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Sfursat di Valtellina DOCG" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Terrazze Retiche di Sondrio IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Terre di Franciacorta DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Valcalepio DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Valcamonica IGT" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Valtellina Rosso DOC" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Valtellina Superiore DOCG" region="Lombardie" isInDB="false"/>
+<ss_regionV nom="Bianchello del Metauro DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Colli Pesaresi DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Falerio dei Colli Ascolani DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Lacrima di Morro d'Alba DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Marche IGT" region="Marche" isInDB="false"/>
+<ss_regionV nom="Offida DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Pergola DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Rosso Conero DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Rosso Piceno DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Serrapetrona DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Verdicchio dei Castelli di Jesi DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Verdicchio di Matelica DOC" region="Marche" isInDB="false"/>
+<ss_regionV nom="Vernaccia di Serrapetrona DOCG" region="Marche" isInDB="false"/>
+<ss_regionV nom="Biferno DOC" region="Molise" isInDB="false"/>
+<ss_regionV nom="Molise DOC" region="Molise" isInDB="false"/>
+<ss_regionV nom="Terre degli Osci IGT" region="Molise" isInDB="false"/>
+<ss_regionV nom="Assisi DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Colli Amerini DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Colli del Trasimeno DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Colli Martani DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Colli Perugini DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Lago di Corbara DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Montefalco DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Montefalco Sagrantino DOCG" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Orvieto Classico DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Orvieto DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Rosso Orvietano DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Torgiano DOC" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Torgiano Rosso Riserva DOCG" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Umbria IGT" region="Ombrie" isInDB="false"/>
+<ss_regionV nom="Asti DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Barbaresco DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Barbera d'Alba DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Barbera d'Asti DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Barbera del Monferrato DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Barolo DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Boca DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Brachetto d'Acqui DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Brachetto Piemonte DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Carema DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Colli Tortonesi DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Colline Novaresi DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Cortese dell’Alto Monferrato DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Coste della Sesia DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Dolcetto d'Alba DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Dolcetto di Diano d'Alba DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Dolcetto di Dogliani DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Fara DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Freisa d'Asti DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Gattinara DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Gavi DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Ghemme DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Grignolino d'Asti DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Langhe DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Lessona DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Monferrato DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Moscato d'Asti DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Nebbiolo d'Alba DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Piemonte DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Roero Arneis DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Roero DOCG" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Ruchè di Castagnole Monferrato DOC" region="Piémont" isInDB="false"/>
+<ss_regionV nom="Aleatico di Puglia DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Alezio DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Brindisi DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Castel del Monte DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Copertino DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Daunia IGT" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Gioia del Colle DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Gravina DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Leverano DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Primitivo di Manduria DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Puglia IGT" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Salento IGT" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Salice Salentino DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="San Severo DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Squinzano DOC" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Tarantino IGT" region="Pouilles" isInDB="false"/>
+<ss_regionV nom="Alghero DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Campidano di Terralba DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Cannonau di Sardegna DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Carignano del Sulcis DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Isola dei Nuraghi IGT" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Monica di Sardegna DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Nuragus di Cagliari DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Romangia IGT" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Valle del Tirso IGT" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Vermentino di Gallura DOCG" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Vermentino di Sardegna DOC" region="Sardaigne" isInDB="false"/>
+<ss_regionV nom="Alcamo DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Camarro IGT" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Cerasuolo di Vittoria DOCG" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Contea di Sclafani DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Contessa Entellina DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Etna DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Faro DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Malvasia delle Lipari DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Marsala DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Moscato di Pantelleria DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Pantelleria Moscato Liquoroso DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Passito di Pantelleria DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Salina IGT" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Santa Margherita di Belice DOC" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Sicilia IGT" region="Sicile" isInDB="false"/>
+<ss_regionV nom="Barco Reale di Carmignano DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Bolgheri Sassicaia DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Alta Valle della Greve IGT" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Ansonica Costa dell'Argentario DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Bianco di Pitigliano DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Bianco Vergine Valdichiana DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Bolgheri DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Brunello di Montalcino DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Candia dei Colli Apuani DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Carmignano DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Classico DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Colli Arentini DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Colli Fiorentini DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Colli Senesi DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Colline Pisane DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Montalbano DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Chianti Rufina DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Colli della Toscana Centrale IGT" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Colline Lucchesi DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Cortona DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Elba DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Maremma DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Montecarlo DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Montecucco DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Monteregio di Massa Marittima DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Montescudaio DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Morellino di Scansano DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Moscadello di Montalcino DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Orcia DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Pomino DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Rosato di Toscana IGT" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Rosso di Montalcino DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Rosso di Montepulciano DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="San Gimignano DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Sant'Antimo DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Sovana DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Toscana IGT" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Val di Cornia DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Vernaccia di San Gimignano DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Vin Santo del Chianti Classico DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Vin Santo del Chianti DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Vin Santo di Montepulciano DOC" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Vino Nobile di Montepulciano DOCG" region="Toscane" isInDB="false"/>
+<ss_regionV nom="Alto Adige DOC" region="Trentin-Haut-Adige" isInDB="false"/>
+<!-- <ss_regionV nom="delle Venezie IGT" region="Trentin-Haut-Adige" isInDB="false"/> -->
+<ss_regionV nom="Teroldego Rotaliano DOC" region="Trentin-Haut-Adige" isInDB="false"/>
+<ss_regionV nom="Trentino DOC" region="Trentin-Haut-Adige" isInDB="false"/>
+<ss_regionV nom="Trento DOC" region="Trentin-Haut-Adige" isInDB="false"/>
+<ss_regionV nom="Vallagarina IGT" region="Trentin-Haut-Adige" isInDB="false"/>
+<ss_regionV nom="Vigneti delle Dolomiti IGT" region="Trentin-Haut-Adige" isInDB="false"/>
+<ss_regionV nom="Valle d'Aosta DOC" region="Vallée d'Aoste" isInDB="false"/>
+<ss_regionV nom="Amarone Della Valpolicella DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Bardolino DOCG" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Bianco di Custoza DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Breganze DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Colli Berici DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Colli di Conegliano DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Colli Euganei DOC" region="Vénétie" isInDB="false"/>
+<!-- <ss_regionV nom="Colli Trevigiani IGT" region="Vénétie" isInDB="false"/> -->
+<ss_regionV nom="delle Venezie IGT" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Gambellara DOC" region="Vénétie" isInDB="false"/>
+<!-- <ss_regionV nom="Garda DOC" region="Vénétie" isInDB="false"/> -->
+<!-- <ss_regionV nom="Lison-Pramaggiore DOC" region="Vénétie" isInDB="false"/> -->
+<!-- <ss_regionV nom="Lugana DOC" region="Vénétie" isInDB="false"/> -->
+<ss_regionV nom="Marca Trevigiana IGT" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Montello e Colli Asolani DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Piave DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Pinot Grigio IGT" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Prosecco di Valdobbiadene DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Recioto della Valpolicella DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Recioto di Soave DOCG" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Ripasso della Valpolicella DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Soave Classico DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Soave DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Soave Superiore DOCG" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Valdadige DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Valpolicella DOC" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Veneto IGT" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Veronese IGT" region="Vénétie" isInDB="false"/>
+<ss_regionV nom="Pico" region="Açores" isInDB="false"/>
+<ss_regionV nom="Alentejo DO" region="Alentejo" isInDB="false"/>
+<ss_regionV nom="Bairrada" region="Beiras" isInDB="false"/>
+<ss_regionV nom="Beira Interior" region="Beiras" isInDB="false"/>
+<ss_regionV nom="Dão" region="Beiras" isInDB="false"/>
+<ss_regionV nom="Távora-Varosa" region="Beiras" isInDB="false"/>
+<ss_regionV nom="Douro DOC" region="Duriense" isInDB="false"/>
+<ss_regionV nom="Porto DOC" region="Duriense" isInDB="false"/>
+<ss_regionV nom="Alenquer" region="Estramadura" isInDB="false"/>
+<ss_regionV nom="Bucelas" region="Estramadura" isInDB="false"/>
+<ss_regionV nom="Colares" region="Estramadura" isInDB="false"/>
+<ss_regionV nom="Obidos" region="Estramadura" isInDB="false"/>
+<ss_regionV nom="Vinho verde" region="Minho" isInDB="false"/>
+<ss_regionV nom="Ribatejano" region="Ribatejo" isInDB="false"/>
+<ss_regionV nom="Ribatejo DO" region="Ribatejo" isInDB="false"/>
+<ss_regionV nom="Palmela" region="Terras do Sado" isInDB="false"/>
+<ss_regionV nom="Setúbal" region="Terras do Sado" isInDB="false"/>
+<ss_regionV nom="Madeira" region="Terras Madeira" isInDB="false"/>
+<ss_regionV nom="Trás-os-Montes" region="Transmontano" isInDB="false"/>
+<ss_regionV nom="Pirque" region="Maipo Valley" isInDB="false"/>
+<ss_regionV nom="Agrelo" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="La Consulta" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Lujan de Cuyo" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Lunlunta" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Maipu" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Pedriel" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="San Raphael" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Tupungato" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Valle de Uco" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Vista Flores" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Vistalba" region="Mendoza" isInDB="false"/>
+<ss_regionV nom="Canberra" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Cowra" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Ebenezer" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Hunter Valley" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Mudgee" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Orange" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Riverina" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="Tumbarumba" region="New South Wales" isInDB="false"/>
+<ss_regionV nom="South Burnett" region="Queensland" isInDB="false"/>
+<ss_regionV nom="Adelaide Hills" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Adelaide Plains" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Barossa Valley" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Clare Valley" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Coonawarra" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Eden Valley" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Hindmarsh Island" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Kangaroo Island" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Langhorne Creek" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Lenswood" region="South Australia" isInDB="false"/>
+<ss_regionV nom="McLaren Vale" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Mount Benson" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Padthaway" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Riverland" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Southern Fleurieu" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Southern Flinders Ranges" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Watervale" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Wrattonbully" region="South Australia" isInDB="false"/>
+<ss_regionV nom="Limestone Coast" region="Southeast Australia" isInDB="false"/>
+<ss_regionV nom="Northern Tasmania" region="Tasmania" isInDB="false"/>
+<ss_regionV nom="Beechworth" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Bendigo" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Central Victoria" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Geelong" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Gippsland" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Goulburn Valley" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Grampians" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Great Western" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Heathcote" region="Victoria" isInDB="false"/>
+<ss_regionV nom="King Valley" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Macedon Ranges" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Milawa" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Moonambel" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Mornington Peninsula" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Murray Darling" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Pyrenees" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Rutherglen" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Strathbogie Ranges" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Swan Hill" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Whitlands" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Yarra Valley" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Yea Valley" region="Victoria" isInDB="false"/>
+<ss_regionV nom="Donnybrook" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Frankland River" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Geographe" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Great Southern" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Margaret River" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Mount Barker" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Pemberton" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Perth Hills" region="Western Australia" isInDB="false"/>
+<ss_regionV nom="Cochise County" region="Arizona" isInDB="false"/>
+<ss_regionV nom="Sonoita (AVA)" region="Arizona" isInDB="false"/>
+<ss_regionV nom="Alexander Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Amador County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Anderson Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Arroyo Grande Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Arroyo Seco (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Bennett Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Carneros" region="Californie" isInDB="false"/>
+<ss_regionV nom="Central Coast" region="Californie" isInDB="false"/>
+<ss_regionV nom="Central Valley AVA" region="Californie" isInDB="false"/>
+<ss_regionV nom="Chalk Hill (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Chalone (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Cienega Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Cole Ranch (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Contra Costa County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Cucamonga Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Dry Creek Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Dunnigan Hills (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Edna Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="El Dorado (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Green Valley of Russian River valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Guenoc Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Humboldt County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Knights Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Lake County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Livermore Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Lodi (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Marin County" region="Californie" isInDB="false"/>
+<ss_regionV nom="McDowell Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Mendocino (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Mendocino County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Mendocino Ridge (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Monterey (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Monterey County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Mount Harlan (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Napa Valley" region="Californie" isInDB="false"/>
+<ss_regionV nom="North Coast (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Northern Sonoma (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Paso Robles (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Rockpile (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Russian River" region="Californie" isInDB="false"/>
+<ss_regionV nom="Russian River Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="San Benito (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="San Francisco Bay (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="San luis Obispo County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Barbara County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Clara County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Cruz County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Cruz Mountains (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Lucia Highlands (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Maria Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Santa Ynez Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Shenandoah Valley (CA) (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Sierra Foothills (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Solano County Green Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Sonoma Coast (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Sonoma County" region="Californie" isInDB="false"/>
+<ss_regionV nom="Sonoma Mountain (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Sonoma Valley (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="South Coast (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Sta. Rita Hills (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Yolo County AVA" region="Californie" isInDB="false"/>
+<ss_regionV nom="York Mountain (AVA)" region="Californie" isInDB="false"/>
+<ss_regionV nom="Yorkville Highlands (AVA)" region="Californie" isInDB="false"/>
+<!-- <ss_regionV nom="Columbia Valley" region="Montana" isInDB="false"/> -->
+<ss_regionV nom="Finger Lakes (AVA)" region="New York" isInDB="false"/>
+<ss_regionV nom="Hudson River Region (AVA)" region="New York" isInDB="false"/>
+<ss_regionV nom="Long Island (AVA)" region="New York" isInDB="false"/>
+<ss_regionV nom="Chehalem Mountains (AVA)" region="Oregon" isInDB="false"/>
+<!-- <ss_regionV nom="Columbia Valley" region="Oregon" isInDB="false"/> -->
+<ss_regionV nom="Dundee Hills (AVA)" region="Oregon" isInDB="false"/>
+<ss_regionV nom="Rogue Valley (AVA)" region="Oregon" isInDB="false"/>
+<ss_regionV nom="Umpqua Valley (AVA)" region="Oregon" isInDB="false"/>
+<ss_regionV nom="Willamette Valley (AVA)" region="Oregon" isInDB="false"/>
+<ss_regionV nom="Yamhill Carlton District (AVA)" region="Oregon" isInDB="false"/>
+<ss_regionV nom="Yamhill County" region="Oregon" isInDB="false"/>
+<ss_regionV nom="Texas High Plains (AVA)" region="Texas" isInDB="false"/>
+<ss_regionV nom="Virginia's Eastern Shore (AVA)" region="Virginie" isInDB="false"/>
+<ss_regionV nom="Columbia Gorge (AVA)" region="Washington" isInDB="false"/>
+<ss_regionV nom="Columbia Valley" region="Washington" isInDB="false"/>
+<ss_regionV nom="Horse Heaven Hills (AVA)" region="Washington" isInDB="false"/>
+<ss_regionV nom="Red Mountain (AVA)" region="Washington" isInDB="false"/>
+<ss_regionV nom="Wahluke Slope (AVA)" region="Washington" isInDB="false"/>
+<ss_regionV nom="Walla Walla Valley (AVA)" region="Washington" isInDB="false"/>
+<ss_regionV nom="Yakima Valley (AVA)" region="Washington" isInDB="false"/>
+<!-- <ss_regionV nom="Achkarren" region="Baden" isInDB="false"/> -->
+<!-- <ss_regionV nom="Iphofen" region="Franken" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bacharach" region="Mittelrhein" isInDB="false"/> -->
+<!-- <ss_regionV nom="Boppard" region="Mittelrhein" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bernkastel" region="Mosel-Saar-Ruwer" isInDB="false"/> -->
+<!-- <ss_regionV nom="Lower Mosel" region="Mosel-Saar-Ruwer" isInDB="false"/> -->
+<!-- <ss_regionV nom="Middle Mosel" region="Mosel-Saar-Ruwer" isInDB="false"/> -->
+<!-- <ss_regionV nom="Upper Mosel" region="Mosel-Saar-Ruwer" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bockenau" region="Nahe" isInDB="false"/> -->
+<!-- <ss_regionV nom="Meddersheim" region="Nahe" isInDB="false"/> -->
+<!-- <ss_regionV nom="Niederhausen" region="Nahe" isInDB="false"/> -->
+<!-- <ss_regionV nom="Oberhausen an der Nahe" region="Nahe" isInDB="false"/> -->
+<!-- <ss_regionV nom="Albersweiler" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bad Durkheim" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Birkweiler" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bissersheim" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Burrweiler" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Deidesheim" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Ellerstadt" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Flemlingen" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Forst an der Weinsstrasse" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Freinsheim" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Gimmeldingen an der Weinstrabe" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Gleisweiler" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Grosskarlbach" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Haardt an der Weinstrabe" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Hambach Weinstrasse" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Kallstadt" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Konigsbach an der Weinstrabe" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Muhlheim" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Mussbach an der Weinstrabe" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Oberhausen" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Ruppertsberg" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Siebeldingen" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="St Martin" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Ungstein" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Wachenheim" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Weisenheim am Sand" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Weyher in der Pfalz" region="Pfalz" isInDB="false"/> -->
+<!-- <ss_regionV nom="Eltville" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Erbach" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Geisenheim" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Hallgarten" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Hattenheim" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Hochheim" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Johannisberg" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Kiedrich" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Lorch" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Mittelheim" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Oestrich" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Rauenthal" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Rudesheim" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Walluf" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Winkel" region="Rheingau" isInDB="false"/> -->
+<!-- <ss_regionV nom="Albig" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bechtheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bingen" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Bodenheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Florsheim Dalsheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Hackenheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Monsheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Nackenheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Nierstein" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Ockenheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Oppenheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Siefersheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Weinheim" region="Rheinhessen" isInDB="false"/> -->
+<!-- <ss_regionV nom="Westhofen" region="Rheinhessen" isInDB="false"/> -->
 </liste_ss_regionV>

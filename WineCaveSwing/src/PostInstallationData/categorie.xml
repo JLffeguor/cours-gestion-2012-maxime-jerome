@@ -2,10 +2,10 @@
 <!DOCTYPE vin SYSTEM "data.dtd">
 
 <liste_categorie>
-<categorie nom="Aperitifs"/>
-<categorie nom="Bieres"/>
-<categorie nom="Champagnes"/>
-<categorie nom="Spiritueux"/>
-<categorie nom="Vins"/>
-<categorie nom="Autre"/>
+<categorie nom="Aperitifs" isInDB="false"/>
+<categorie nom="Bieres" isInDB="false"/>
+<categorie nom="Champagnes" isInDB="false"/>
+<categorie nom="Spiritueux" isInDB="false"/>
+<categorie nom="Vins" isInDB="false"/>
+<categorie nom="Autre" isInDB="false"/>
 </liste_categorie>
