@@ -32,8 +32,6 @@ public class AppConfig {
 		////everything OK we can load property file now
 		try {
 			applicationProperties = new PropertiesConfiguration(PROPERTIE_FILE_PATH.toFile());//we load form outside the jar (src in DEV)
-			System.out.println(PROPERTIE_FILE_PATH.toFile());
-			System.out.println(applicationProperties.getPath());
 			applicationProperties.setEncoding(PROPERTIE_FILE_ENCODING.toString());//doesn't throw exception but it's have more clean code --maxime 13/12/12
 		} catch (ConfigurationException e) {
 			throw new RuntimeException(e);
