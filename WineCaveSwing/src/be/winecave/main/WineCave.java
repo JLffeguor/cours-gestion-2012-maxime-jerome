@@ -16,6 +16,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import be.winecave.fenetre.MainWindow;
 import be.winecave.installation.PostInstallationBouteille;
 import be.winecave.installation.PostInstallationCategorie;
 import be.winecave.installation.PostInstallationClassement;
@@ -42,6 +43,9 @@ public class WineCave {
 		launchCheck();
 		
 		context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		//TODO demarrer  la gui ici
+		MainWindow.drawWindow((GUIConnector) context.getBean("GUIConnector"));
 		
 	}
 	
