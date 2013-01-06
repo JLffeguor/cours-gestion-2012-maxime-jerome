@@ -2,7 +2,6 @@ package be.winecave.service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -48,7 +47,7 @@ public class VinService {
 						String nomCouleur,
 						String nomBouteille,
 						String nomClassement,
-						String anneeMinimumConservation,String anneeMaximumConservation,Date debutApogee,Date finApogee,double temperature,
+						String anneeMinimumConservation,String anneeMaximumConservation,String anneeDebutApogee,String anneeFinApogee,double temperature,
 						Vin vin) {
 		//TODO assert user can do this
 		//TODO check if special categrori "vin de pays , vin de table " user can add specific region but only land
@@ -75,7 +74,7 @@ public class VinService {
 		//TODO chercher dans la db une conservation qui correspondrait en tout point à celle donnée
 		Conservation conservation = null;
 		try {
-			conservation = new Conservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), debutApogee, finApogee, temperature);
+			conservation = new Conservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperature);
 		} catch (ParseException e) {
 			throw new IllegalArgumentException("la date de conservation du vin est dans un mauvais format");
 		}
