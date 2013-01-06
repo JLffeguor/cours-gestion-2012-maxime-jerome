@@ -2,168 +2,168 @@
 <!DOCTYPE regionV SYSTEM  "data.dtd">
 
 <liste_regionV>
-<regionV nom="Alsace"nom_pays="france"/>
-<regionV nom="Beaujolais"nom_pays="france"/>
-<regionV nom="Bordeaux"nom_pays="france"/>
-<regionV nom="Bourgogne"nom_pays="france"/>
-<regionV nom="Bugey"nom_pays="france"/>
-<regionV nom="Champagne"nom_pays="france"/>
-<regionV nom="Corse"nom_pays="france"/>
-<regionV nom="Jura"nom_pays="france"/>
-<regionV nom="Languedoc-Roussillon"nom_pays="france"/>
-<regionV nom="Loire"nom_pays="france"/>
-<regionV nom="Lorraine"nom_pays="france"/>
-<regionV nom="Poitou-Charentes"nom_pays="france"/>
-<regionV nom="Provence"nom_pays="france"/>
-<regionV nom="Rhône"nom_pays="france"/>
-<regionV nom="Savoie"nom_pays="france"/>
-<regionV nom="Sud-Ouest"nom_pays="france"/>
-<regionV nom="Vin de Table"nom_pays="france"/>
-<regionV nom="Vins de Pays"nom_pays="france"/>
-<regionV nom="Andalucia"nom_pays="Espagne"/>
-<regionV nom="Aragon"nom_pays="Espagne"/>
-<regionV nom="Baleares"nom_pays="Espagne"/>
-<regionV nom="CanariesAhr"nom_pays="Espagne"/>
-<regionV nom="Baden"nom_pays="Espagne"/>
-<regionV nom="Franken"nom_pays="Espagne"/>
-<regionV nom="Mittelrhein"nom_pays="Espagne"/>
-<regionV nom="Mosel-Saar-Ruwer"nom_pays="Espagne"/>
-<regionV nom="Nahe"nom_pays="Espagne"/>
-<regionV nom="Pfalz"nom_pays="Espagne"/>
-<regionV nom="Rheingau"nom_pays="Espagne"/>
-<regionV nom="Rheinhessen"nom_pays="Espagne"/>
-<regionV nom="Saale-Unstrut"nom_pays="Espagne"/>
-<regionV nom="Sachsen"nom_pays="Espagne"/>
-<regionV nom="Württemberg"nom_pays="Espagne"/>
-<regionV nom="Castilla y Leon"nom_pays="Espagne"/>
-<regionV nom="Castilla-La Mancha"nom_pays="Espagne"/>
-<regionV nom="Catalogne"nom_pays="Espagne"/>
-<regionV nom="Cava"nom_pays="Espagne"/>
-<regionV nom="Extremadure"nom_pays="Espagne"/>
-<regionV nom="Galice"nom_pays="Espagne"/>
-<regionV nom="La Rioja"nom_pays="Espagne"/>
-<regionV nom="Madrid"nom_pays="Espagne"/>
-<regionV nom="Murcie"nom_pays="Espagne"/>
-<regionV nom="Navarre"nom_pays="Espagne"/>
-<regionV nom="Pays Basque"nom_pays="Espagne"/>
-<regionV nom="Valence"nom_pays="Espagne"/>
-<regionV nom="Vinos de la Tierra"nom_pays="Espagne"/>
-<regionV nom="Vinos de Mesa"nom_pays="Espagne"/>
-<regionV nom="Abruzzes"nom_pays="ITALIE"/>
-<regionV nom="Basilicata"nom_pays="ITALIE"/>
-<regionV nom="Calabre"nom_pays="ITALIE"/>
-<regionV nom="Campanie"nom_pays="ITALIE"/>
-<regionV nom="Emilie-Romagne"nom_pays="ITALIE"/>
-<regionV nom="Frioul"nom_pays="ITALIE"/>
-<regionV nom="Lazio"nom_pays="ITALIE"/>
-<regionV nom="Ligurie"nom_pays="ITALIE"/>
-<regionV nom="Lombardie"nom_pays="ITALIE"/>
-<regionV nom="Marche"nom_pays="ITALIE"/>
-<regionV nom="Molise"nom_pays="ITALIE"/>
-<regionV nom="Ombrie"nom_pays="ITALIE"/>
-<regionV nom="Piémont"nom_pays="ITALIE"/>
-<regionV nom="Pouilles"nom_pays="ITALIE"/>
-<regionV nom="Sardaigne"nom_pays="ITALIE"/>
-<regionV nom="Sicile"nom_pays="ITALIE"/>
-<regionV nom="Toscane"nom_pays="ITALIE"/>
-<regionV nom="Trentin-Haut-Adige"nom_pays="ITALIE"/>
-<regionV nom="Vallée d'Aoste"nom_pays="ITALIE"/>
-<regionV nom="Vénétie"nom_pays="ITALIE"/>
-<regionV nom="Vino da Tavola"nom_pays="ITALIE"/>
-<regionV nom="Açores"nom_pays="PORTUGAL"/>
-<regionV nom="Alentejano"nom_pays="PORTUGAL"/>
-<regionV nom="Alentejo"nom_pays="PORTUGAL"/>
-<regionV nom="Algarve"nom_pays="PORTUGAL"/>
-<regionV nom="Beiras"nom_pays="PORTUGAL"/>
-<regionV nom="Borba"nom_pays="PORTUGAL"/>
-<regionV nom="Duriense"nom_pays="PORTUGAL"/>
-<regionV nom="Estramadura"nom_pays="PORTUGAL"/>
-<regionV nom="Minho"nom_pays="PORTUGAL"/>
-<regionV nom="Ribatejo"nom_pays="PORTUGAL"/>
-<regionV nom="Terras do Sado"nom_pays="PORTUGAL"/>
-<regionV nom="Terras Madeira"nom_pays="PORTUGAL"/>
-<regionV nom="Transmontano"nom_pays="PORTUGAL"/>
-<regionV nom="Vinhos de Mesa"nom_pays="PORTUGAL"/>
-<regionV nom="Aconcagua Valley"nom_pays="CHILI"/>
-<regionV nom="Bío-Bío Valley"nom_pays="CHILI"/>
-<regionV nom="Cachapoal Valley"nom_pays="CHILI"/>
-<regionV nom="Casablanca Valley"nom_pays="CHILI"/>
-<regionV nom="Central Valley"nom_pays="CHILI"/>
-<regionV nom="Colchagua Valley"nom_pays="CHILI"/>
-<regionV nom="Curicó Valley"nom_pays="CHILI"/>
-<regionV nom="Elqui Valley"nom_pays="CHILI"/>
-<regionV nom="Leyda Valley"nom_pays="CHILI"/>
-<regionV nom="Limari Valley"nom_pays="CHILI"/>
-<regionV nom="Locomilla Valley"nom_pays="CHILI"/>
-<regionV nom="Lontue Valley"nom_pays="CHILI"/>
-<regionV nom="Maipo Valley"nom_pays="CHILI"/>
-<regionV nom="Maule Valley"nom_pays="CHILI"/>
-<regionV nom="Rapel Valley"nom_pays="CHILI"/>
-<regionV nom="San Antonio Valley"nom_pays="CHILI"/>
-<regionV nom="Cafayate Valley"nom_pays="ARGENTINE"/>
-<regionV nom="Catamarca"nom_pays="ARGENTINE"/>
-<regionV nom="La Rioja"nom_pays="ARGENTINE"/>
-<regionV nom="Mendoza"nom_pays="ARGENTINE"/>
-<regionV nom="Patagonie"nom_pays="ARGENTINE"/>
-<regionV nom="Rio Negro"nom_pays="ARGENTINE"/>
-<regionV nom="Salta"nom_pays="ARGENTINE"/>
-<regionV nom="San Juan"nom_pays="ARGENTINE"/>
-<regionV nom="Breedekloof"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Cape Agulhas"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Coastal Region"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Constantia"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Darling"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Durbanville"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Elgin"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Franschhoek"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Groenekloof"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Little Karoo"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Noord Kaap"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Olifants River"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Overberg"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Paarl"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Robertson"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Stellenbosch"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Swartland"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Tulbagh"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Walker Bay"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Wellington"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Western Cape"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="Worcester"nom_pays="AFRIQUE DU SUD"/>
-<regionV nom="New South Wales"nom_pays="AUSTRALIE"/>
-<regionV nom="Queensland"nom_pays="AUSTRALIE"/>
-<regionV nom="South Australia"nom_pays="AUSTRALIE"/>
-<regionV nom="Southeast Australia"nom_pays="AUSTRALIE"/>
-<regionV nom="Tasmania"nom_pays="AUSTRALIE"/>
-<regionV nom="Victoria"nom_pays="AUSTRALIE"/>
-<regionV nom="Western Australia"nom_pays="AUSTRALIE"/>
-<regionV nom="Alabama"nom_pays="USA"/>
-<regionV nom="Arizona"nom_pays="USA"/>
-<regionV nom="Californie"nom_pays="USA"/>
-<regionV nom="Idaho"nom_pays="USA"/>
-<regionV nom="Mississippi"nom_pays="USA"/>
-<regionV nom="Montana"nom_pays="USA"/>
-<regionV nom="New Mexico"nom_pays="USA"/>
-<regionV nom="New York"nom_pays="USA"/>
-<regionV nom="North Dakota"nom_pays="USA"/>
-<regionV nom="Ohio"nom_pays="USA"/>
-<regionV nom="Oregon"nom_pays="USA"/>
-<regionV nom="South Dakota"nom_pays="USA"/>
-<regionV nom="Texas"nom_pays="USA"/>
-<regionV nom="Virginie"nom_pays="USA"/>
-<regionV nom="Washington"nom_pays="USA"/>
-<regionV nom="Ahr"nom_pays="ALLEMAGNE"/>
-<regionV nom="Baden"nom_pays="ALLEMAGNE"/>
-<regionV nom="Franken"nom_pays="ALLEMAGNE"/>
-<regionV nom="Mittelrhein"nom_pays="ALLEMAGNE"/>
-<regionV nom="Mosel-Saar-Ruwer"nom_pays="ALLEMAGNE"/>
-<regionV nom="Nahe"nom_pays="ALLEMAGNE"/>
-<regionV nom="Pfalz"nom_pays="ALLEMAGNE"/>
-<regionV nom="Rheingau"nom_pays="ALLEMAGNE"/>
-<regionV nom="Rheinhessen"nom_pays="ALLEMAGNE"/>
-<regionV nom="Saale-Unstrut"nom_pays="ALLEMAGNE"/>
-<regionV nom="Sachsen"nom_pays="ALLEMAGNE"/>
-<regionV nom="Württemberg"nom_pays="ALLEMAGNE"/>
+<regionV nom="Alsace" nom_pays="france" isInDB="false"/>
+<regionV nom="Beaujolais" nom_pays="france"isInDB="false"/>
+<regionV nom="Bordeaux" nom_pays="france"isInDB="false"/>
+<regionV nom="Bourgogne" nom_pays="france"isInDB="false"/>
+<regionV nom="Bugey" nom_pays="france"isInDB="false"/>
+<regionV nom="Champagne" nom_pays="france"isInDB="false"/>
+<regionV nom="Corse" nom_pays="france"isInDB="false"/>
+<regionV nom="Jura" nom_pays="france"isInDB="false"/>
+<regionV nom="Languedoc-Roussillon" nom_pays="france"isInDB="false"/>
+<regionV nom="Loire" nom_pays="france"isInDB="false"/>
+<regionV nom="Lorraine" nom_pays="france"isInDB="false"/>
+<regionV nom="Poitou-Charentes" nom_pays="france"isInDB="false"/>
+<regionV nom="Provence" nom_pays="france"isInDB="false"/>
+<regionV nom="Rhône" nom_pays="france"isInDB="false"/>
+<regionV nom="Savoie" nom_pays="france"isInDB="false"/>
+<regionV nom="Sud-Ouest" nom_pays="france"isInDB="false"/>
+<regionV nom="Vin de Table" nom_pays="france"isInDB="false"/>
+<regionV nom="Vins de Pays" nom_pays="france"isInDB="false"/>
+<regionV nom="Andalucia" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Aragon" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Baleares" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="CanariesAhr" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Baden" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Franken" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Mittelrhein" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Mosel-Saar-Ruwer" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Nahe" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Pfalz" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Rheingau" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Rheinhessen" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Saale-Unstrut" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Sachsen" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Württemberg" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Castilla y Leon" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Castilla-La Mancha" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Catalogne" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Cava" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Extremadure" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Galice" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="La Rioja" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Madrid" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Murcie" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Navarre" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Pays Basque" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Valence" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Vinos de la Tierra" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Vinos de Mesa" nom_pays="Espagne"isInDB="false"/>
+<regionV nom="Abruzzes" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Basilicata" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Calabre" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Campanie" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Emilie-Romagne" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Frioul" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Lazio" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Ligurie" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Lombardie" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Marche" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Molise" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Ombrie" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Piémont" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Pouilles" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Sardaigne" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Sicile" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Toscane" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Trentin-Haut-Adige" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Vallée d'Aoste" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Vénétie" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Vino da Tavola" nom_pays="ITALIE"isInDB="false"/>
+<regionV nom="Açores" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Alentejano" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Alentejo" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Algarve" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Beiras" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Borba" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Duriense" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Estramadura" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Minho" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Ribatejo" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Terras do Sado" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Terras Madeira" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Transmontano" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Vinhos de Mesa" nom_pays="PORTUGAL"isInDB="false"/>
+<regionV nom="Aconcagua Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Bío-Bío Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Cachapoal Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Casablanca Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Central Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Colchagua Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Curicó Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Elqui Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Leyda Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Limari Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Locomilla Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Lontue Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Maipo Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Maule Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Rapel Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="San Antonio Valley" nom_pays="CHILI"isInDB="false"/>
+<regionV nom="Cafayate Valley" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="Catamarca" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="La Rioja" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="Mendoza" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="Patagonie" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="Rio Negro" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="Salta" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="San Juan" nom_pays="ARGENTINE"isInDB="false"/>
+<regionV nom="Breedekloof" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Cape Agulhas" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Coastal Region" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Constantia" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Darling" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Durbanville" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Elgin" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Franschhoek" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Groenekloof" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Little Karoo" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Noord Kaap" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Olifants River" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Overberg" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Paarl" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Robertson" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Stellenbosch" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Swartland" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Tulbagh" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Walker Bay" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Wellington" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Western Cape" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="Worcester" nom_pays="AFRIQUE DU SUD"isInDB="false"/>
+<regionV nom="New South Wales" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="Queensland" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="South Australia" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="Southeast Australia" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="Tasmania" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="Victoria" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="Western Australia" nom_pays="AUSTRALIE"isInDB="false"/>
+<regionV nom="Alabama" nom_pays="USA"isInDB="false"/>
+<regionV nom="Arizona" nom_pays="USA"isInDB="false"/>
+<regionV nom="Californie" nom_pays="USA"isInDB="false"/>
+<regionV nom="Idaho" nom_pays="USA"isInDB="false"/>
+<regionV nom="Mississippi" nom_pays="USA"isInDB="false"/>
+<regionV nom="Montana" nom_pays="USA"isInDB="false"/>
+<regionV nom="New Mexico" nom_pays="USA"isInDB="false"/>
+<regionV nom="New York" nom_pays="USA"isInDB="false"/>
+<regionV nom="North Dakota" nom_pays="USA"isInDB="false"/>
+<regionV nom="Ohio" nom_pays="USA"isInDB="false"/>
+<regionV nom="Oregon" nom_pays="USA"isInDB="false"/>
+<regionV nom="South Dakota" nom_pays="USA"isInDB="false"/>
+<regionV nom="Texas" nom_pays="USA"isInDB="false"/>
+<regionV nom="Virginie" nom_pays="USA"isInDB="false"/>
+<regionV nom="Washington" nom_pays="USA"isInDB="false"/>
+<regionV nom="Ahr" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Baden" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Franken" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Mittelrhein" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Mosel-Saar-Ruwer" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Nahe" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Pfalz" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Rheingau" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Rheinhessen" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Saale-Unstrut" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Sachsen" nom_pays="ALLEMAGNE"isInDB="false"/>
+<regionV nom="Württemberg" nom_pays="ALLEMAGNE"isInDB="false"/>
 </liste_regionV>
 
 
