@@ -9,12 +9,12 @@ public class Couleur extends BaseEntity{
 
 	@Column(nullable=false,unique=true)
 	@NotBlank
-	private String nomCouleur;
+	private String nom;
 	
 	public String getNom() {
-		return nomCouleur;
+		return nom;
 	}
 	public void setNom(String nom) {
-		this.nomCouleur = nom;
+		this.nom = nom;
 	}
 }
