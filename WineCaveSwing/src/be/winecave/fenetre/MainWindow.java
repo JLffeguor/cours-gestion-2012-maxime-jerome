@@ -16,6 +16,11 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
+import be.winecave.main.GUIConnector;
+import be.winecave.model.Categorie;
+import be.winecave.model.Vin;
+import be.winecave.service.VinService;
+
 public class MainWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
 	
@@ -32,11 +37,16 @@ public class MainWindow extends JFrame {
 	private JLabel lblBandeau;
 	private JButton btnAnnuler;
 	private JButton btnEnregistrer;
-
+	
+	private static GUIConnector guiConnector;
+	
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void drawWindow(GUIConnector connector) {
+
+		MainWindow.setConnector(connector);
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -253,7 +263,35 @@ public class MainWindow extends JFrame {
 		if (btnEnregistrer == null) {
 			btnEnregistrer = new JButton("Enregistrer");
 			btnEnregistrer.setBounds(125, 633, 100, 23);
+			lblInformations.addMouseListener(new MouseAdapter(){
+				//clic de la souris
+				public void mouseClicked(MouseEvent e) {
+					Vin vin = new Vin();
+					vin.setNom(((EditWine) mainPanel).getTxtNomVin().getText());
+					vin.setMillesime(((EditWine) mainPanel).getFTxtMillesime().getText());
+					vin.setProducteur((String) ((EditWine) mainPanel).getComboBoxProducteur().getSelectedItem());
+					vin.setDegre(Double.parseDouble(((EditWine) mainPanel).getFTxtDegre().getText()));
+					vin.setCuvee(((EditWine) mainPanel).getTxtCuvee().getText());
+					vin.setCepage((String) ((EditWine) mainPanel).getComboBoxCepage().getSelectedItem());
+					vin.setCommentaire(((EditWine) mainPanel).getTxtAreaCommentaire().getText());
+					
+					getConnector().getVinService().creerVin(
+							((Categorie) ((EditWine) mainPanel).getComboBoxRegion().getSelectedItem()).getNom(), 
+							((Categorie) ((EditWine) mainPanel).getComboBoxCategorie().getSelectedItem()).getNom(), 
+							((Categorie) ((EditWine) mainPanel).getComboBoxCouleur().getSelectedItem()).getNom(), 
+							((Categorie) ((EditWine) mainPanel).getComboBoxBouteille().getSelectedItem()).getNom(), 
+							((Categorie) ((EditWine) mainPanel).getComboBoxClassement().getSelectedItem()).getNom(), 
+							((EditWine) mainPanel).getFTxtBoireDe().getText(), 
+							((EditWine) mainPanel).getFTxtBoireA().getText(),  
+							((EditWine) mainPanel).getFTxtApogeeDe().getText(), 
+							((EditWine) mainPanel).getFTxtApogeeA().getText(),  
+							Double.parseDouble(((EditWine) mainPanel).getFTxtTempDe().getText()),
+							//((EditWine) mainPanel).getFTxtTempA(), A RAJOUTER !!
+							vin);
+				}
+			});
 		}
+		
 		return btnEnregistrer;
 	}
 	
@@ -263,6 +301,16 @@ public class MainWindow extends JFrame {
 			mainPanel = new EditWine();
 		}
 		return mainPanel;
+	}
+
+	
+/** GUICONNECTOR getter **/
+	public static GUIConnector getConnector() {
+		return guiConnector;
+	}
+
+	public static void setConnector(GUIConnector connector) {
+		MainWindow.guiConnector = connector;
 	}
 	
 }

@@ -2,6 +2,7 @@ package be.winecave.fenetre;
 
 import java.awt.Color;
 import java.text.ParseException;
+import java.util.List;
 
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
@@ -16,6 +17,8 @@ import javax.swing.text.MaskFormatter;
 
 import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 
+import be.winecave.model.PaysViticole;
+
 public class EditWine extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
@@ -24,9 +27,7 @@ public class EditWine extends JPanel {
 	
 	String[] producteur = {" (vide)", "Alain Peytel", "Altos", "Andre Chalandon", "etc..."};
 	
-	String[] pays = {" (vide)", "Afrique du Sud", "Allemagne", "Argentine", "Australie", "Autriche", "Brésil", "Bulgarie", "Canada", "Chili", "Chine", "Chypre", 
-			"Corée du Sud", "Espagne", "Etats-Unis", "France", "Géorgie", "Hongrie", "Hulistan", "Inde", "Israel", "Italie", "Japon", "Liban", "Maroc",
-			"Mexique", "Nouvelle Zélande", "Pérou", "Portugal", "Slovénie", "Tunisie", "Ukraine", "Uruguay"};
+	List<PaysViticole> pays = MainWindow.getConnector().getPaysViticoleRepository().findAll();
 	
 	String[] region = {" (vide)", "Alsace", "Autres", "Barolo", "Barossa", "Barossa Valley", "Beaujolais", "Bordeaux", "Bordeaux (Médoc)", "Bourgogne",
 			"California", "Castilla Y Leon", "Champagne", "Corse", "Jura/Savoie", "Languedoc-Roussillon", "Murcie", "Provence", "Rhône", "Sud-Ouest",
@@ -165,7 +166,7 @@ public class EditWine extends JPanel {
 	/**
 	 * TextField Référence
 	 */
-	private JTextField getTxtReference() {
+	public JTextField getTxtReference() {
 		if (txtReference == null) {
 			txtReference = new JTextField();
 			txtReference.setBounds(100, 57, 120, 20);
@@ -176,7 +177,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Millésime
 	 */
-	private JFormattedTextField getFTxtMillesime() {
+	public JFormattedTextField getFTxtMillesime() {
 		if (fTxtMillesime == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("####");
@@ -192,7 +193,7 @@ public class EditWine extends JPanel {
 	/**
 	 * TextField Nom
 	 */
-	private JTextField getTxtNomVin() {
+	public JTextField getTxtNomVin() {
 		if (txtNomVin == null) {
 			txtNomVin = new JTextField();
 			txtNomVin.setBounds(100, 88, 338, 20);
@@ -203,7 +204,7 @@ public class EditWine extends JPanel {
 	/**
 	 * TextField Cuvée
 	 */
-	private JTextField getTxtCuvee() {
+	public JTextField getTxtCuvee() {
 		if (txtCuvee == null) {
 			txtCuvee = new JTextField();
 			txtCuvee.setBounds(300, 247, 139, 20);
@@ -214,7 +215,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Boire de 
 	 */
-	private JFormattedTextField getFTxtBoireDe() {
+	public JFormattedTextField getFTxtBoireDe() {
 		if (fTxtBoireDe == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("####");
@@ -230,7 +231,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Boire à 
 	 */
-	private JFormattedTextField getFTxtBoireA() {
+	public JFormattedTextField getFTxtBoireA() {
 		if (fTxtBoireA == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("####");
@@ -246,7 +247,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Apogée de 
 	 */
-	private JFormattedTextField getFTxtApogeeDe() {
+	public JFormattedTextField getFTxtApogeeDe() {
 		if (fTxtApogeeDe == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("####");
@@ -262,7 +263,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Apogée à 
 	 */
-	private JFormattedTextField getFTxtApogeeA() {
+	public JFormattedTextField getFTxtApogeeA() {
 		if (fTxtApogeeA == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("####");
@@ -278,7 +279,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Prixd'achat
 	 */
-	private JFormattedTextField getFTxtPrixAchat() {
+	public JFormattedTextField getFTxtPrixAchat() {
 		if (fTxtPrixAchat == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("*******");
@@ -295,7 +296,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Estimation
 	 */
-	private JFormattedTextField getFTxtEstimation() {
+	public JFormattedTextField getFTxtEstimation() {
 		if (fTxtEstimation == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("*******");
@@ -312,7 +313,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Degré
 	 */
-	private JFormattedTextField getFTxtDegre() {
+	public JFormattedTextField getFTxtDegre() {
 		if (fTxtDegre == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("****");
@@ -329,7 +330,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Température de
 	 */
-	private JFormattedTextField getFTxtTempDe() {
+	public JFormattedTextField getFTxtTempDe() {
 		if (fTxtTempDe == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("##");
@@ -345,7 +346,7 @@ public class EditWine extends JPanel {
 	/**
 	 * FormattedTextField Température de
 	 */
-	private JFormattedTextField getFTxtTempA() {
+	public JFormattedTextField getFTxtTempA() {
 		if (fTxtTempA == null) {
 			try {
 				MaskFormatter mask = new MaskFormatter("##");
@@ -361,7 +362,7 @@ public class EditWine extends JPanel {
 	/**
 	 * TextArea Commentaire
 	 */
-	private JTextArea getTxtAreaCommentaire() {
+	public JTextArea getTxtAreaCommentaire() {
 		if (txtAreaCommentaire == null) {
 			txtAreaCommentaire = new JTextArea();
 			txtAreaCommentaire.setBorder(border2);
@@ -377,7 +378,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Producteur
 	 */
-	private JComboBox<?> getComboBoxProducteur() {
+	public JComboBox<?> getComboBoxProducteur() {
 		if (comboBoxProducteur == null) {
 			comboBoxProducteur = new JComboBox<Object>(producteur);
 			comboBoxProducteur.setEditable(true);
@@ -389,9 +390,10 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Pays
 	 */
-	private JComboBox<?> getComboBoxPays() {
+	public JComboBox<?> getComboBoxPays() {
 		if (comboBoxPays == null) {
-			comboBoxPays = new JComboBox<Object>(pays);
+			pays.add(0 ,new PaysViticole(" (vide) "));
+			comboBoxPays = new JComboBox<Object>(pays.toArray());
 			comboBoxPays.setEditable(true);
 			comboBoxPays.setBounds(100, 185, 130, 20);
 			AutoCompleteDecorator.decorate(comboBoxPays);
@@ -401,7 +403,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Région
 	 */
-	private JComboBox<?> getComboBoxRegion() {
+	public JComboBox<?> getComboBoxRegion() {
 		if (comboBoxRegion == null) {
 			comboBoxRegion = new JComboBox<Object>(region);
 			comboBoxRegion.setEditable(true);
@@ -413,7 +415,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Appellation
 	 */
-	private JComboBox<?> getComboBoxAppellation() {
+	public JComboBox<?> getComboBoxAppellation() {
 		if (comboBoxAppellation == null) {
 			comboBoxAppellation = new JComboBox<Object>(appellation);
 			comboBoxAppellation.setEditable(true);
@@ -425,7 +427,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Cépage
 	 */
-	private JComboBox<?> getComboBoxCepage() {
+	public JComboBox<?> getComboBoxCepage() {
 		if (comboBoxCepage == null) {
 			comboBoxCepage = new JComboBox<Object>(cepage);
 			comboBoxCepage.setEditable(true);
@@ -437,7 +439,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Catégorie
 	 */
-	private JComboBox<?> getComboBoxCategorie() {
+	public JComboBox<?> getComboBoxCategorie() {
 		if (comboBoxCategorie == null) {
 			comboBoxCategorie = new JComboBox<Object>(categorie);
 			comboBoxCategorie.setEditable(true);
@@ -449,7 +451,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Couleur
 	 */
-	private JComboBox<?> getComboBoxCouleur() {
+	public JComboBox<?> getComboBoxCouleur() {
 		if (comboBoxCouleur == null) {
 			comboBoxCouleur = new JComboBox<Object>(couleur);
 			comboBoxCouleur.setEditable(false);
@@ -461,7 +463,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Classement
 	 */
-	private JComboBox<?> getComboBoxClassement() {
+	public JComboBox<?> getComboBoxClassement() {
 		if (comboBoxClassement == null) {
 			comboBoxClassement = new JComboBox<Object>(classement);
 			comboBoxClassement.setEditable(true);
@@ -473,7 +475,7 @@ public class EditWine extends JPanel {
 	/**
 	 * ComboBox Bouteille
 	 */
-	private JComboBox<?> getComboBoxBouteille() {
+	public JComboBox<?> getComboBoxBouteille() {
 		if (comboBoxBouteille == null) {
 			comboBoxBouteille = new JComboBox<Object>(bouteille);
 			comboBoxBouteille.setEditable(true);
