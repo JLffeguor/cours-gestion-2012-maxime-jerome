@@ -9,7 +9,7 @@ public class Bouteille extends BaseEntity{
 
 	@Column(nullable=false,unique=true)
 	@NotBlank
-	private String nom_bouteille;
+	private String nom;
 	
 	@Column(nullable=false)
 	private Double capaciteLitre;
@@ -21,10 +21,10 @@ public class Bouteille extends BaseEntity{
 		this.capaciteLitre = capaciteLitre;
 	}
 	public String getNom() {
-		return nom_bouteille;
+		return nom;
 	}
 	public void setNom(String nom) {
-		this.nom_bouteille = nom;
+		this.nom = nom;
 	}
 	
 }
