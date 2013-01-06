@@ -6,6 +6,7 @@ import java.util.List;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import be.winecave.model.BaseEntity;
 import be.winecave.repository.PaysViticoleRepository;
@@ -52,7 +53,7 @@ public abstract class PostInstallData<E extends BaseEntity>{
 		elementList = buildElementList(dataList);
 	}
 	
-	
+	@Transactional
 	private final void persistDataList() {
 		for(Element element : elementList) {
 			String isINDB = element.getAttributeValue("isInDB");
