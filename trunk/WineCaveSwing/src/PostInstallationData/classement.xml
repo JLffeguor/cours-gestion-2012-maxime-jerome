@@ -2,25 +2,25 @@
 <!DOCTYPE vin SYSTEM "data.dtd">
 
 <liste_classement>
-<classement nom="1er Cru"/>
-<classement nom="1er Cru Classe"/>
-<classement nom="1er Cru Superieur"/>
-<classement nom="1er Grand Cru A"/>
-<classement nom="1er Grand Cru B"/>
-<classement nom="1er Grand Cru Classe"/>
-<classement nom="2eme Cru Classe"/>
-<classement nom="3eme Cru Classe"/>
-<classement nom="4eme Cru Classe"/>
-<classement nom="5eme Cru Classe"/>
-<classement nom="A.O.V.D.Q.S."/>
-<classement nom="Cru Artisan"/>
-<classement nom="Cru Bourgeois"/>
-<classement nom="Cru Bourgeois Exceptionnel"/>
-<classement nom="Cru Bourgeois Superieur"/>
-<classement nom="Cru Classe"/>
-<classement nom="Grand Cru"/>
-<classement nom="Grand Cru Bourgeois"/>
-<classement nom="Grand Cru Classe"/>
-<classement nom="Vin de pays"/>
-<classement nom="Vin de table"/>
+<classement nom="1er Cru" isInDB="false"/>
+<classement nom="1er Cru Classe" isInDB="false"/>
+<classement nom="1er Cru Superieur" isInDB="false"/>
+<classement nom="1er Grand Cru A" isInDB="false"/>
+<classement nom="1er Grand Cru B" isInDB="false"/>
+<classement nom="1er Grand Cru Classe" isInDB="false"/>
+<classement nom="2eme Cru Classe" isInDB="false"/>
+<classement nom="3eme Cru Classe" isInDB="false"/>
+<classement nom="4eme Cru Classe" isInDB="false"/>
+<classement nom="5eme Cru Classe" isInDB="false"/>
+<classement nom="A.O.V.D.Q.S." isInDB="false"/>
+<classement nom="Cru Artisan" isInDB="false"/>
+<classement nom="Cru Bourgeois" isInDB="false"/>
+<classement nom="Cru Bourgeois Exceptionnel" isInDB="false"/>
+<classement nom="Cru Bourgeois Superieur" isInDB="false"/>
+<classement nom="Cru Classe" isInDB="false"/>
+<classement nom="Grand Cru" isInDB="false"/>
+<classement nom="Grand Cru Bourgeois" isInDB="false"/>
+<classement nom="Grand Cru Classe" isInDB="false"/>
+<classement nom="Vin de pays" isInDB="false"/>
+<classement nom="Vin de table" isInDB="false"/>
 </liste_classement>

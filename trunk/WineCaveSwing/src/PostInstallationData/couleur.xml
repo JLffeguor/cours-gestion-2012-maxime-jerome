@@ -2,10 +2,10 @@
 <!DOCTYPE vin SYSTEM "data.dtd">
 
 <liste_couleur>
-<couleur nom="Rouge"/>
-<couleur nom="Blanc"/>
-<couleur nom="Rose"/>
-<couleur nom="Champagne"/>
-<couleur nom="Liquoreux"/>
-<couleur nom="Autre"/>
+<couleur nom="Rouge" isInDB="false"/>
+<couleur nom="Blanc" isInDB="false"/>
+<couleur nom="Rose" isInDB="false"/>
+<couleur nom="Champagne" isInDB="false"/>
+<couleur nom="Liquoreux" isInDB="false"/>
+<couleur nom="Autre" isInDB="false"/>
 </liste_couleur>

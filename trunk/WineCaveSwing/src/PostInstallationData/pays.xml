@@ -2,15 +2,14 @@
 <!DOCTYPE vin SYSTEM "data.dtd">
 
 <liste_pays>
-    
-	<pays nom ="FRANCE" continent="Europe" devise="Euro"/>
-	<pays nom ="ESPAGNE" continent="Europe" devise="Euro"/>
-	<pays nom ="ITALIE" continent="Europe" devise="Euro"/>
-	<pays nom ="PORTUGAL" continent="Europe" devise="Euro"/>
-	<pays nom ="CHILI" continent="Amerique de Sud" devise=""/>
-	<pays nom ="ARGENTINE" continent="Amerique de Sud" devise=""/>
-	<pays nom ="AFRIQUE DU SUD" continent="Amerique de Sud" devise=""/>
-	<pays nom ="AUSTRALIE" continent="Amerique de Sud" devise=""/>
-	<pays nom ="USA" continent="Amerique de Sud" devise=""/>
-	<pays nom ="ALLEMAGNE" continent="Europe" devise="Euro"/>
+	<pays nom ="FRANCE" continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="ESPAGNE" continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="ITALIE" continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="PORTUGAL" continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="CHILI" continent="Amerique de Sud" devise="" isInDB="false"/>
+	<pays nom ="ARGENTINE" continent="Amerique de Sud" devise="" isInDB="false"/>
+	<pays nom ="AFRIQUE DU SUD" continent="Amerique de Sud" devise="" isInDB="false"/>
+	<pays nom ="AUSTRALIE" continent="Amerique de Sud" devise="" isInDB="false"/>
+	<pays nom ="USA" continent="Amerique de Sud" devise="" isInDB="false"/>
+	<pays nom ="ALLEMAGNE" continent="Europe" devise="Euro" isInDB="false"/>
 </liste_pays>
