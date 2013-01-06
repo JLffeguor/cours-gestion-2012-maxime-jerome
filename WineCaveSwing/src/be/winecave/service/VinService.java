@@ -1,10 +1,13 @@
 package be.winecave.service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import be.winecave.exception.NonImplementedException;
 import be.winecave.model.Bouteille;
 import be.winecave.model.Categorie;
 import be.winecave.model.Classement;
@@ -15,9 +18,11 @@ import be.winecave.model.Vin;
 import be.winecave.repository.BouteilleRepository;
 import be.winecave.repository.CategorieRepository;
 import be.winecave.repository.ClassementRepository;
+import be.winecave.repository.ConservationRepository;
 import be.winecave.repository.CouleurRepository;
 import be.winecave.repository.PaysViticoleRepository;
 import be.winecave.repository.RegionViticoleRepository;
+import be.winecave.repository.VinRepository;
 
 @Service
 public class VinService {
@@ -28,27 +33,31 @@ public class VinService {
 	@Autowired
 	CategorieRepository categorieRepository;
 	@Autowired
+	ConservationRepository conservationRepository;
+	@Autowired
 	CouleurRepository couleurRepository;
 	@Autowired
 	BouteilleRepository bouteilleRepository;
 	@Autowired
 	ClassementRepository classementRepository;
+	@Autowired
+	VinRepository vinRepository;
 
 	public Vin creerVin(String nomRegion,
 						String nomCategorie,
 						String nomCouleur,
 						String nomBouteille,
 						String nomClassement,
-						Date minimumConservation,Date maximumConservation,Date debutApogee,Date finApogee,double temperature,
-			Vin vin) throws Exception {
+						String anneeMinimumConservation,String anneeMaximumConservation,Date debutApogee,Date finApogee,double temperature,
+						Vin vin) {
 		//TODO assert user can do this
 		//TODO check if special categrori "vin de pays , vin de table " user can add specific region but only land
 		if(vin == null){
-			throw new IllegalArgumentException("le nom ne doit pas être vide");//TODO créer une exception pour els champs empty ? --maxime 28/12/12
+			throw new IllegalArgumentException("le paramètre vin ne peut pas être null");
 		}
 		//un vin doit avoir au minimum un nom donc on regarde si le nom n'est pas null ou vide
 		if(vin.getNom() == null || vin.getNom().isEmpty()){
-			throw new Exception("le nom ne doit pas être vide");//TODO créer une exception pour els champs empty ? --maxime 28/12/12
+			throw new IllegalArgumentException("le nom du vin ne doit pas être vide");//TODO créer une exception pour els champs empty ? --maxime 28/12/12
 		}
 		
 		Region region = regionViticoleRepository.findByName(nomRegion);
@@ -61,10 +70,17 @@ public class VinService {
 		Bouteille bouteille = bouteilleRepository.findByName(nomBouteille);
 		Classement classement = classementRepository.findByName(nomClassement);
 		
-		//TODO chercher dans la db une conservation qui correspondrait en tout point à celle donnée
-		Conservation conservation = new Conservation(minimumConservation, maximumConservation, debutApogee, finApogee, temperature);
+		SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy");
 		
-		Vin result = new Vin();
+		//TODO chercher dans la db une conservation qui correspondrait en tout point à celle donnée
+		Conservation conservation = null;
+		try {
+			conservation = new Conservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), debutApogee, finApogee, temperature);
+		} catch (ParseException e) {
+			throw new IllegalArgumentException("la date de conservation du vin est dans un mauvais format");
+		}
+		
+		Vin result = vin;
 		
 		result.setRegion(region);
 		result.setCategorie(categorie);
@@ -73,6 +89,14 @@ public class VinService {
 		result.setClassement(classement);
 		result.setConservation(conservation);
 		
+		conservationRepository.persist(conservation);
+		vinRepository.persist(vin);
+		
 		return result;
+	}
+	
+	//TODO methode qui supprime le vin car le vin est lié à beacoup d'entités donc supprimé , ou pas , les entités liées
+	void supprimerVin() {
+		throw new NonImplementedException("supprimerVin()");
 	}
 }
