@@ -2,10 +2,21 @@ package be.winecave.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
+import org.hibernate.annotations.Type;
+@Entity
 public class EtatBouteille extends BaseEntity {
-	
-	private boolean consommee;
-	private boolean achete;//une bouteille est soit achetée ou reçu donc un seul boolean suffit
+	/*
+	 * type specified otherwise get a "Wrong column type [..]. Found: bit, expected: boolean" with mysql
+	 */
+	@Type(type = "org.hibernate.type.TrueFalseType")
+	private Boolean consommee;
+	/*
+	 * type specified otherwise get a "Wrong column type [..]. Found: bit, expected: boolean" with mysql
+	 */
+	@Type(type = "org.hibernate.type.TrueFalseType")
+	private Boolean achete;//une bouteille est soit achetée ou reçu donc un seul boolean suffit
 	private Date obtention;
 	
 	public boolean isConsommee() {
