@@ -10,11 +10,12 @@ public class Conservation extends BaseEntity {
 	private Date maximum;
 	private Date debutApogee;
 	private Date finApogee;
-	private double temperature;
-	//TODO tempretaure maximum
+	private double temperatureMinimum;
+	private double temperatureMaximum;
 	
 	//TODO classe de maintenance qui supprimerait les conservation non réliée a un vin
 	
+
 	//mise en place d'un constructeur (et un vide obligatoire pour spring/hibernate)
 	//et suppression des setters car si une conservation est partagée par plusieurs vin
 	//car il est obligatoire d'en créer une autre instance en cas de modification
@@ -25,8 +26,8 @@ public class Conservation extends BaseEntity {
 		this.maximum = maximum;
 		this.debutApogee = debutApogee;
 		this.finApogee = finApogee;
-		this.temperature = temperature;
-		//TODO tempretaure maximum
+		this.temperatureMinimum = temperature;
+		this.temperatureMaximum = temperatureMaximum;
 	}
 	
 	public Date getMinimum() {
@@ -41,7 +42,10 @@ public class Conservation extends BaseEntity {
 	public Date getFinApogee() {
 		return finApogee;
 	}
-	public double getTemperature() {
-		return temperature;
+	public double getTemperatureMinimum() {
+		return temperatureMinimum;
+	}
+	public double getTemperatureMaximum() {
+		return temperatureMaximum;
 	}
 }
