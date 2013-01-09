@@ -47,7 +47,7 @@ public class VinService {
 						String nomCouleur,
 						String nomBouteille,
 						String nomClassement,
-						String anneeMinimumConservation,String anneeMaximumConservation,String anneeDebutApogee,String anneeFinApogee,double temperature,
+						String anneeMinimumConservation,String anneeMaximumConservation,String anneeDebutApogee,String anneeFinApogee,double temperatureMinimum,double temperatureMaximum,
 						Vin vin) {
 		//TODO assert user can do this
 		//TODO check if special categrori "vin de pays , vin de table " user can add specific region but only land
@@ -74,7 +74,7 @@ public class VinService {
 		//TODO chercher dans la db une conservation qui correspondrait en tout point à celle donnée
 		Conservation conservation = null;
 		try {
-			conservation = new Conservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperature);
+			conservation = new Conservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperatureMinimum, temperatureMaximum);
 		} catch (ParseException e) {
 			throw new IllegalArgumentException("la date de conservation du vin est dans un mauvais format");
 		}
