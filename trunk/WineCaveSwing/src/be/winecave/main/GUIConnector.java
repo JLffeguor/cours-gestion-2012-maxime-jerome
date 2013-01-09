@@ -11,6 +11,7 @@ import be.winecave.repository.ClassementRepository;
 import be.winecave.repository.CouleurRepository;
 import be.winecave.repository.PaysViticoleRepository;
 import be.winecave.repository.RegionViticoleRepository;
+import be.winecave.repository.VinRepository;
 import be.winecave.service.VinService;
 /**
  * because gui classes aren't spring bean we need to have an util class who manage spring bean 
@@ -36,6 +37,8 @@ public class GUIConnector {
 	BouteilleRepository bouteilleRepository;
 	@Autowired
 	ClassementRepository classementRepository;
+	@Autowired
+	VinRepository vinRepository;
 	
 	
 	public VinService getVinService() {
@@ -58,5 +61,8 @@ public class GUIConnector {
 	}
 	public ClassementRepository getClassementRepository() {
 		return classementRepository;
+	}
+	public VinRepository getVinRepository() {
+		return vinRepository;
 	}
 }
