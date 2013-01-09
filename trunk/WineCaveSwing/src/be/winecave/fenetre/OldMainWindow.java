@@ -21,7 +21,7 @@ import be.winecave.model.Categorie;
 import be.winecave.model.Vin;
 import be.winecave.service.VinService;
 
-public class MainWindow extends JFrame {
+public class OldMainWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
 	
 	Border border = LineBorder.createBlackLineBorder();
@@ -45,12 +45,12 @@ public class MainWindow extends JFrame {
 	 */
 	public static void drawWindow(GUIConnector connector) {
 
-		MainWindow.setConnector(connector);
+		OldMainWindow.setConnector(connector);
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainWindow frame = new MainWindow();
+					OldMainWindow frame = new OldMainWindow();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -62,7 +62,7 @@ public class MainWindow extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public MainWindow() {
+	public OldMainWindow() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 700);
 		contentPane = new JPanel();
@@ -310,7 +310,7 @@ public class MainWindow extends JFrame {
 	}
 
 	public static void setConnector(GUIConnector connector) {
-		MainWindow.guiConnector = connector;
+		OldMainWindow.guiConnector = connector;
 	}
 	
 }
