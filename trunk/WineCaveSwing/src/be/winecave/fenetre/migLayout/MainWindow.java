@@ -20,7 +20,7 @@ import be.winecave.model.Categorie;
 import be.winecave.model.Vin;
 
 
-public abstract class TabbedWindow{
+public abstract class MainWindow{
 	
 	private static JPanel topPanel;
 	private static TabbedPane tabbedPanel;
