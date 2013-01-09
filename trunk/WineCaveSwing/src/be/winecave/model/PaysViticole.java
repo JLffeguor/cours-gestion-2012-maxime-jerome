@@ -17,9 +17,4 @@ public class PaysViticole extends Region {
 	public List<RegionViticole> getRegions() {
 		return super.getEnfants();
 	}
-	
-	@Override
-	public String toString() {
-		return getNom();
-	}
 }

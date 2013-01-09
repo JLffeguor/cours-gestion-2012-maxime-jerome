@@ -52,4 +52,10 @@ public abstract class Region extends BaseEntity {
 	public List<RegionViticole> getEnfants() {
 		return enfants;
 	}
+	
+	@Override
+	public String toString() {
+		return nom;
+	}
+	
 }

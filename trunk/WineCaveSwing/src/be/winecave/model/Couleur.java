@@ -17,4 +17,9 @@ public class Couleur extends BaseEntity{
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
+	@Override
+	public String toString() {
+		return nom;
+	}
 }
