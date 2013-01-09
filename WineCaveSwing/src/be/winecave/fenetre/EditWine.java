@@ -27,7 +27,7 @@ public class EditWine extends JPanel {
 	
 	String[] producteur = {" (vide)", "Alain Peytel", "Altos", "Andre Chalandon", "etc..."};
 	
-	List<PaysViticole> pays = MainWindow.getConnector().getPaysViticoleRepository().findAll();
+	List<PaysViticole> pays = OldMainWindow.getConnector().getPaysViticoleRepository().findAll();
 	
 	String[] region = {" (vide)", "Alsace", "Autres", "Barolo", "Barossa", "Barossa Valley", "Beaujolais", "Bordeaux", "Bordeaux (Médoc)", "Bourgogne",
 			"California", "Castilla Y Leon", "Champagne", "Corse", "Jura/Savoie", "Languedoc-Roussillon", "Murcie", "Provence", "Rhône", "Sud-Ouest",
