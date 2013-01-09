@@ -17,6 +17,8 @@ import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import be.winecave.fenetre.MainWindow;
+import be.winecave.fenetre.migLayout.TabbedPane;
+import be.winecave.fenetre.migLayout.TabbedWindow;
 import be.winecave.installation.PostInstallationBouteille;
 import be.winecave.installation.PostInstallationCategorie;
 import be.winecave.installation.PostInstallationClassement;
@@ -45,7 +47,7 @@ public class WineCave {
 		context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//TODO demarrer  la gui ici
-		MainWindow.drawWindow((GUIConnector) context.getBean("GUIConnector"));
+		TabbedWindow.drawWindow((GUIConnector) context.getBean("GUIConnector"));
 		
 	}
 	
