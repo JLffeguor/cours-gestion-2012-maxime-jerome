@@ -11,6 +11,7 @@ public class Conservation extends BaseEntity {
 	private Date debutApogee;
 	private Date finApogee;
 	private double temperature;
+	//TODO tempretaure maximum
 	
 	//TODO classe de maintenance qui supprimerait les conservation non réliée a un vin
 	
@@ -19,12 +20,13 @@ public class Conservation extends BaseEntity {
 	//car il est obligatoire d'en créer une autre instance en cas de modification
 	//sous peine de corrompre les données des vins dont la conservation n'est pas senée être modififée
 	public Conservation() {}
-	public Conservation(Date minimum, Date maximum,	Date debutApogee, Date finApogee, double temperature) {
+	public Conservation(Date minimum, Date maximum,	Date debutApogee, Date finApogee, double temperature, double temperatureMaximum) {
 		this.minimum = minimum;
 		this.maximum = maximum;
 		this.debutApogee = debutApogee;
 		this.finApogee = finApogee;
 		this.temperature = temperature;
+		//TODO tempretaure maximum
 	}
 	
 	public Date getMinimum() {
