@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Vector;
 
 import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -101,8 +102,7 @@ public class PanelHelper extends JPanel{
 		void enableWithData(List<? extends E> dataList){
 			System.out.println("is it thread safe? " + SwingUtilities.isEventDispatchThread());
 			this.setEnabled(true);
-			JComboBox<E> temp = new JComboBox<>(new Vector<E>(dataList)); 
-			this.setModel(temp.getModel());
+			this.setModel(new DefaultComboBoxModel<>(new Vector<E>(dataList)));
 		}
 	}
 	
@@ -117,6 +117,7 @@ public class PanelHelper extends JPanel{
 			super(new Vector<E>(dataList));
 			System.out.println("is it thread safe? " + SwingUtilities.isEventDispatchThread());
 			this.setSelectedIndex(-1);
+			this.setEditable(true);
 		}
 	}
 	
