@@ -50,13 +50,12 @@ import javax.swing.JTabbedPane;
 public class TabbedPane extends JTabbedPane {
 	
 	private EditWinePanel editWinePanel = new EditWinePanel();
+	private GraphicCave graphicCave = new GraphicCave();
 
 	public TabbedPane() {
-		this.addTab("Tab 1",  editWinePanel);
+		this.addTab("Informations",  editWinePanel);
 
-		JComponent panel2 = makeTextPanel("Panel #2");
-		this.addTab("Tab 2",  panel2);
-		this.setMnemonicAt(1, KeyEvent.VK_2);
+		this.addTab("Emplacements",  graphicCave);
 
 		JComponent panel3 = makeTextPanel("Panel #3");
 		this.addTab("Tab 3",  panel3);
