@@ -16,8 +16,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import be.winecave.fenetre.MainWindow;
-import be.winecave.fenetre.migLayout.TabbedPane;
 import be.winecave.fenetre.migLayout.TabbedWindow;
 import be.winecave.installation.PostInstallationBouteille;
 import be.winecave.installation.PostInstallationCategorie;
