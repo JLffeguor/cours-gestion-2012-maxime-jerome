@@ -2,20 +2,15 @@ package be.winecave.fenetre.migLayout;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
-import java.util.Vector;
 
-import javax.swing.ComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 import net.miginfocom.swing.MigLayout;
-import be.winecave.fenetre.EditWine;
 import be.winecave.model.Bouteille;
 import be.winecave.model.Categorie;
 import be.winecave.model.Classement;
@@ -24,14 +19,15 @@ import be.winecave.model.PaysViticole;
 import be.winecave.model.Region;
 import be.winecave.model.Vin;
 
+@SuppressWarnings("serial")
 public class EditWinePanel extends PanelHelper{
 	
 	private JTextField jtfReference = createTextField("");
 	private JTextField jtfNom = createTextField("");
-	private JComboBox<String> comboProducteur = new UnselectedJCombobox<>();
+	private JComboBox<String> comboProducteur = new UnselectedJCombobox<>(getGuiConnector().getVinRepository().findAllProducteur());
 	private JComboBox<PaysViticole> comboPays = new UnselectedJCombobox<>(getGuiConnector().getPaysViticoleRepository().findAll());
 	private DisabledJCombobox<Region> comboRegion = new DisabledJCombobox<>();
-	private JComboBox<String> comboAppellation = new UnselectedJCombobox<>();
+	private JComboBox<String> comboAppellation = new DisabledJCombobox<>();
 	private JTextField jtfCepage = createTextField("");
 	private JComboBox<Categorie> comboCategorie = new UnselectedJCombobox<>(getGuiConnector().getCategorieRepository().findAll());
 	private JComboBox<Couleur> comboCouleur = new UnselectedJCombobox<>(getGuiConnector().getCouleurRepository().findAll());
@@ -54,11 +50,11 @@ public class EditWinePanel extends PanelHelper{
 		super(new MigLayout("","[pref!][grow 50,fill][pref!][grow 50,fill]","[grow, fill]"));
 		System.out.println(SwingUtilities.isEventDispatchThread());
 		this.add(createLabel("Reference"), "");
-		this.add(createTextField(""), "");
+		this.add(jtfReference, "");
 		this.add(createLabel("Millesime"), "");
-		this.add(createTextField(""), "width 20:50:50, wrap");
+		this.add(jtfMillesime, "width 20:50:50, wrap");
 		this.add(createLabel("Producteur"), "");//span merge cells
-		this.add(createTextField(""), "span, growx");
+		this.add(comboProducteur, "span, growx");
 
 		addSeparator(this, "Autres informations");
 
@@ -71,10 +67,11 @@ public class EditWinePanel extends PanelHelper{
 				System.out.println(SwingUtilities.isEventDispatchThread());
 				System.out.println("i select  " + ((JComboBox<PaysViticole>)e.getSource()).getSelectedItem().toString());
 				comboRegion.enableWithData(((Region) comboPays.getSelectedItem()).getEnfants());
+				comboRegion.setSelectedIndex(-1);
 			}
 
 		});
-		this.add((comboPays), "");
+		this.add(comboPays, "");
 		this.add(createLabel("Region"), "");
 		this.add(comboRegion, "wrap");
 		this.add(createLabel("Appelation"), "");
@@ -82,7 +79,7 @@ public class EditWinePanel extends PanelHelper{
 		this.add(createLabel("Cépage"));
 		this.add(jtfCepage,"");
 		this.add(createLabel("Cuvée"));
-		this.add(jtfMillesime,"wrap");
+		this.add(createTextField(""),"wrap");//TODO mettre jtfCuvée
 		
 		addSeparator(this, "Classification");
 		
@@ -142,11 +139,11 @@ public class EditWinePanel extends PanelHelper{
 		vin.setCommentaire(jtaCommentaire.getText());
 
 		getGuiConnector().getVinService().creerVin(
-				((Region) comboRegion.getSelectedItem()).getNom(), //TODO an exception is throwed when no item is selected . find solution
-				((Categorie)comboCategorie.getSelectedItem()).getNom(), //TODO an exception is throwed when no item is selected . find solution
-				((Couleur)comboCouleur.getSelectedItem()).getNom(), //TODO an exception is throwed when no item is selected . find solution
-				((Bouteille)comboBouteille.getSelectedItem()).getNom(), //TODO an exception is throwed when no item is selected . find solution
-				((Classement)comboClassement.getSelectedItem()).getNom(), //TODO an exception is throwed when no item is selected . find solution
+				(Region) comboRegion.getSelectedItem(), 
+				(Categorie)comboCategorie.getSelectedItem(), 
+				(Couleur)comboCouleur.getSelectedItem(), 
+				(Bouteille)comboBouteille.getSelectedItem(), 
+				(Classement)comboClassement.getSelectedItem(),
 				jtfBoireDe.getText(), jtfBoireA.getText(), jtfApogeeDe.getText(), jtfApogeeA.getText(), Double.parseDouble(jtfTempDe.getText()), Double.parseDouble(jtfTempA.getText()),//TODO an exception is throwed when field empty . find solution
 				vin);
 		
