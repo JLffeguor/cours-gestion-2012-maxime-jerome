@@ -1,6 +1,7 @@
 package be.winecave.fenetre.migLayout;
 
-import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -10,50 +11,46 @@ import net.miginfocom.swing.MigLayout;
 
 public class GraphicCave extends PanelHelper {
 	
-	int x;
-	int y;
+	private int max_x = 8;
+	private int max_y = 10;
+	
+
 	boolean rondVide = true;
-	JLabel[][] rond = new JLabel[10][10] ;
+	Rond[][] rond = new Rond[max_x+1][max_y+1] ;
 
 	
 	public GraphicCave() {
 		super(new MigLayout("","",""));
-		System.out.println("bonjour");
 	   
-		for(x=0; x<10 ; x++){
-			for(y=0; y<10 ; y++){
-				System.out.println("bonjour"+ x + " " + y);
-				rond[x][y] = new JLabel();
-				rond[x][y].setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));
-//				rond[x][y].addMouseListener(new MouseAdapter(){
-//					//clic de la souris
-//					public void mouseClicked(MouseEvent e) {
-//						if(rondVide == true) {
-//							rond[x][y].setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVert.png")));
-//							rondVide = false;
-//						}
-//						else {
-//							rond[x][y].setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));
-//							rondVide = true;
-//						}
-//						System.out.println("je suis " + x + " " + y);
-//					}
-//				});
-				this.add(rond[x][y]);
-				rond[x][y].addMouseListener(this);
+		for(int y=max_y; y != 0 ; y--){//pour avoir les coordonnées comme un graphe mathematique : (0,0) en bas à gauche
+			for(int x=0; x != max_x+1 ; x++){// "!=" plutot que "<" car cela est plus rapide en javascript , j'espère que c'est la même chsoe en java ^^//TODO tester la véracité de ceci
+				rond[x][y] = new Rond(x, y);
+				this.add(rond[x][y],x==max_x?"wrap":"");//on revient à al ligne lorsque l'on arrive au amx de l'abscisse
 		   }
 		   
 	   }
-
 	}
 	
-	public void actionPerformed (ActionEvent a) {
-		 
-		if(a.getActionCommand().equals("1"))
-		  {
-		  //traitement pour le bouton 1
-		  }
-		 
+	class Rond extends JLabel{
+		int x;
+		int y;
+		
+		public Rond(int x,int y) {
+			this.x = x;
+			this.y = y;
+			this.setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));
+			this.addMouseListener(new MouseAdapter(){
+				//clic de la souris
+				public void mouseClicked(MouseEvent e) {
+					System.out.println(e.getComponent());
+				}
+			});
 		}
+		
+		@Override
+		public String toString() {
+			return "coordonnée : (" + x + ", " + y + ")";
+		}
+	}
 
 }
