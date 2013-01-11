@@ -1,15 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE vin SYSTEM "data.dtd">
 
+<!--******************************************************************************************-->
+<!--**************************************LISTE DES PAYS**************************************-->
+<!--******************************************************************************************-->
+
 <liste_pays>
+
+
+<!--******************************************************************************************-->
+<!--*******************************************EUROPE*****************************************-->
+<!--******************************************************************************************-->
+
+
 	<pays nom ="FRANCE" continent="Europe" devise="Euro" isInDB="false"/>
 	<pays nom ="ESPAGNE" continent="Europe" devise="Euro" isInDB="false"/>
 	<pays nom ="ITALIE" continent="Europe" devise="Euro" isInDB="false"/>
 	<pays nom ="PORTUGAL" continent="Europe" devise="Euro" isInDB="false"/>
-	<pays nom ="CHILI" continent="Amerique de Sud" devise="" isInDB="false"/>
-	<pays nom ="ARGENTINE" continent="Amerique de Sud" devise="" isInDB="false"/>
-	<pays nom ="AFRIQUE DU SUD" continent="Amerique de Sud" devise="" isInDB="false"/>
-	<pays nom ="AUSTRALIE" continent="Amerique de Sud" devise="" isInDB="false"/>
-	<pays nom ="USA" continent="Amerique de Sud" devise="" isInDB="false"/>
 	<pays nom ="ALLEMAGNE" continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="AUTRICHE"continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="BELGIQUE"continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="SUISSE"continent="Europe" devise="Franc Suisse" isInDB="false"/>
+	<pays nom ="GRECE"continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="HONGRIE"continent="Europe" devise="Forint Hongrois" isInDB="false"/>
+	<pays nom ="BULGARIE"continent="Europe" devise="Lev Bulgare" isInDB="false"/>
+	<pays nom ="LUXEMBOURG"continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="SLOVENIE"continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="PAYS-BAS"continent="Europe" devise="Euro" isInDB="false"/>
+	<pays nom ="CHYPRE"continent="Europe" devise="Euro" isInDB="false"/>
+	
+	
+<!--******************************************************************************************-->
+<!--*************************************AMERIQUE DU NORD**************************************-->
+<!--******************************************************************************************-->
+
+
+	<pays nom ="MEXIQUE"continent="Amerique du Nord" devise="Peso Mexicain" isInDB="false"/>
+	<pays nom ="CANADA"continent="Amérique du Nord" devise="Dollar Canadien" isInDB="false"/>
+	<pays nom ="ETATS-UNIS" continent="Amerique de Nord" devise="Dollar Américain" isInDB="false"/>
+	
+	
+<!--******************************************************************************************-->
+<!--*************************************AMERIQUE DU SUD***************************************-->
+<!--******************************************************************************************-->
+
+
+	<pays nom ="BRESIL"continent="Amerique du Sud" devise="Réal Brésilien" isInDB="false"/>
+	<pays nom ="CHILI" continent="Amerique de Sud" devise="Peso Chilien" isInDB="false"/>
+	<pays nom ="ARGENTINE" continent="Amerique de Sud" devise="Peso Argentin" isInDB="false"/>
+	
+	
+<!--******************************************************************************************-->
+<!--*******************************************OCEANIE*****************************************-->
+<!--******************************************************************************************-->
+
+
+	<pays nom ="NOUVELLE-ZELANDE"continent="Océanie" devise="Dollar Néo-Zélandais" isInDB="false"/>
+	<pays nom ="AUSTRALIE" continent="Océanie" devise="Dollar Australien" isInDB="false"/>
+	
+	
+<!--******************************************************************************************-->
+<!--*******************************************AFRIQUE*****************************************-->
+<!--******************************************************************************************-->
+
+
+	<pays nom ="AFRIQUE DU SUD" continent="Afrique" devise="Rand Sud-Africain" isInDB="false"/>
+	<pays nom ="TUNISIE"continent="Afrique" devise="Dinar Tunisien" isInDB="false"/>
+	<pays nom ="MAROC"continent="Afrique" devise="Dirham Marocain" isInDB="false"/>
+	
+
+<!--******************************************************************************************-->
+<!--*********************************************ASIE******************************************-->
+<!--******************************************************************************************-->
+
+
+	<pays nom ="JAPON"continent="Asie" devise="Yen" isInDB="false"/>
+	<pays nom ="LIBAN"continent="Asie" devise="Livre Libanaise" isInDB="false"/>
+	<pays nom ="ISRAEL"continent="Asie" devise="Shekel" isInDB="false"/>
+
 </liste_pays>
+
+
