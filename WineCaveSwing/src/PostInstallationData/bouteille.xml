@@ -2,12 +2,10 @@
 <!DOCTYPE vin SYSTEM "data.dtd">
 
 <liste_bouteille>
-<!-- <bouteille nom_bouteille="magnum" capaciteLitre="1.5" isInDB="false"/> -->
 <bouteille nom_bouteille="magnum" capaciteLitre="1.6" isInDB="false"/>
 <bouteille nom_bouteille="balthazar" capaciteLitre="12.8" isInDB="false"/>
 <bouteille nom_bouteille="nabuchodonosor" capaciteLitre="16" isInDB="false"/>
 <bouteille nom_bouteille="double magnum" capaciteLitre="3" isInDB="false"/>
-<!-- <bouteille nom_bouteille="jeroboam" capaciteLitre="3.2" isInDB="false"/> -->
 <bouteille nom_bouteille="jeroboam" capaciteLitre="4" isInDB="false"/>
 <bouteille nom_bouteille="rehoboam" capaciteLitre="4.8" isInDB="false"/>
 <bouteille nom_bouteille="imperiale" capaciteLitre="6" isInDB="false"/>
