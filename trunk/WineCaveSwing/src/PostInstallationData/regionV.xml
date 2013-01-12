@@ -112,90 +112,90 @@
 
 <!--******************************************AUTRICHE*****************************************-->
 
-	<regionV nom="Bergland"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Burgenland"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Carnuntum"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Donauland"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Kamptal"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Kremstal"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Mittelburgenland"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Neusiedlersee"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Neusiedlersee-Hügelland"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Niederösterreich"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Styrie"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Südburgenland"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Thermenregion"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Traisental"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Vienne"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Wachau"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Wagram"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Weinland "nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Weinviertel"nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Wagram"nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Bergland" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Burgenland" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Carnuntum" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Donauland" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Kamptal" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Kremstal" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Mittelburgenland" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Neusiedlersee" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Neusiedlersee-Hügelland" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Niederösterreich" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Styrie" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Südburgenland" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Thermenregion" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Traisental" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Vienne" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Wachau" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Wagram" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Weinland " nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Weinviertel" nom_pays="AUTRICHE" isInDB="false"/>
+	<regionV nom="Wagram" nom_pays="AUTRICHE" isInDB="false"/>
 
 <!--******************************************BELGIQUE*****************************************-->
 
-	<regionV nom="Côtes de Sambre et Meuse"nom_pays="BELGIQUE" isInDB="false"/>
-	<regionV nom="Hageland"nom_pays="BELGIQUE" isInDB="false"/>
-	<regionV nom="Haspengauw"nom_pays="BELGIQUE" isInDB="false"/>	
-	<regionV nom="Côtes de Sambre et Meuse"nom_pays="BELGIQUE" isInDB="false"/>
-	<regionV nom="Heuvelland"nom_pays="BELGIQUE" isInDB="false"/>	
-	<regionV nom="Côtes de Sambre et Meuse"nom_pays="BELGIQUE" isInDB="false"/>
-	<regionV nom="Vin de pays des jardins de Wallonie"nom_pays="BELGIQUE" isInDB="false"/>
-	<regionV nom="Vlaamse Landwijn"nom_pays="BELGIQUE" isInDB="false"/>
+	<regionV nom="Côtes de Sambre et Meuse" nom_pays="BELGIQUE" isInDB="false"/>
+	<regionV nom="Hageland" nom_pays="BELGIQUE" isInDB="false"/>
+	<regionV nom="Haspengauw" nom_pays="BELGIQUE" isInDB="false"/>	
+	<regionV nom="Côtes de Sambre et Meuse" nom_pays="BELGIQUE" isInDB="false"/>
+	<regionV nom="Heuvelland" nom_pays="BELGIQUE" isInDB="false"/>	
+	<regionV nom="Côtes de Sambre et Meuse" nom_pays="BELGIQUE" isInDB="false"/>
+	<regionV nom="Vin de pays des jardins de Wallonie" nom_pays="BELGIQUE" isInDB="false"/>
+	<regionV nom="Vlaamse Landwijn" nom_pays="BELGIQUE" isInDB="false"/>
 	
 	
 <!--******************************************SUISSE*****************************************-->
 	
-	<regionV nom="Canton d'Argovie"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Bâle"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Fribourg"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Genève"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Neuchâtel"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Schaffhouse"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Tessin"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton de Vaud"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton des Grisons"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Canton du Valais"nom_pays="SUISSE" isInDB="false"/>
-	<regionV nom="Lac de Bienne"nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton d'Argovie" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Bâle" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Fribourg" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Genève" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Neuchâtel" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Schaffhouse" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Tessin" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton de Vaud" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton des Grisons" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Canton du Valais" nom_pays="SUISSE" isInDB="false"/>
+	<regionV nom="Lac de Bienne" nom_pays="SUISSE" isInDB="false"/>
 	
 <!--******************************************GRECE*****************************************-->
 	
-	<regionV nom="Grèce Centrale"nom_pays="GRECE" isInDB="false"/>
-	<regionV nom="Iles Egéennes"nom_pays="GRECE" isInDB="false"/>
-	<regionV nom="Iles Ioniennes"nom_pays="GRECE" isInDB="false"/>
-	<regionV nom="Macédoine"nom_pays="GRECE" isInDB="false"/>
-	<regionV nom="Peloponnèse"nom_pays="GRECE" isInDB="false"/>
-	<regionV nom="Thessalia"nom_pays="GRECE" isInDB="false"/>
+	<regionV nom="Grèce Centrale" nom_pays="GRECE" isInDB="false"/>
+	<regionV nom="Iles Egéennes" nom_pays="GRECE" isInDB="false"/>
+	<regionV nom="Iles Ioniennes" nom_pays="GRECE" isInDB="false"/>
+	<regionV nom="Macédoine" nom_pays="GRECE" isInDB="false"/>
+	<regionV nom="Peloponnèse" nom_pays="GRECE" isInDB="false"/>
+	<regionV nom="Thessalia" nom_pays="GRECE" isInDB="false"/>
 	
 <!--*****************************************HONGRIE****************************************-->
 
-	<regionV nom="Tokaj-hegyalja"nom_pays="HONGRIE" isInDB="false"/>
-	<regionV nom="Villany-Siklos"nom_pays="HONGRIE" isInDB="false"/>
+	<regionV nom="Tokaj-hegyalja" nom_pays="HONGRIE" isInDB="false"/>
+	<regionV nom="Villany-Siklos" nom_pays="HONGRIE" isInDB="false"/>
 	
 <!--****************************************BULGARIE****************************************-->
 
-	<regionV nom="Eastern Region"nom_pays="BULGARIE" isInDB="false"/>
-	<regionV nom="Southern Region"nom_pays="BULGARIE" isInDB="false"/>
+	<regionV nom="Eastern Region" nom_pays="BULGARIE" isInDB="false"/>
+	<regionV nom="Southern Region" nom_pays="BULGARIE" isInDB="false"/>
 	
 <!--***************************************LUXEMBOURG***************************************-->
 
-	<regionV nom="Crémant-de-luxembourg"nom_pays="LUXEMBOURG" isInDB="false"/>
-	<regionV nom="Moselle Luxembourgeoise"nom_pays="LUXEMBOURG" isInDB="false"/>
+	<regionV nom="Crémant-de-luxembourg" nom_pays="LUXEMBOURG" isInDB="false"/>
+	<regionV nom="Moselle Luxembourgeoise" nom_pays="LUXEMBOURG" isInDB="false"/>
 	
 <!--****************************************SLOVENIE****************************************-->
 
-	<regionV nom="Podrajve"nom_pays="SLOVENIE" isInDB="false"/>
-	<regionV nom="Primorje"nom_pays="SLOVENIE" isInDB="false"/>
+	<regionV nom="Podrajve" nom_pays="SLOVENIE" isInDB="false"/>
+	<regionV nom="Primorje" nom_pays="SLOVENIE" isInDB="false"/>
 	
 <!--*****************************************PAYS-BAS****************************************-->
 
-	<regionV nom="Zuid-Holland"nom_pays="PAYS-BAS" isInDB="false"/>
-	<regionV nom="Noord-Brabant"nom_pays="PAYS-BAS" isInDB="false"/>
+	<regionV nom="Zuid-Holland" nom_pays="PAYS-BAS" isInDB="false"/>
+	<regionV nom="Noord-Brabant" nom_pays="PAYS-BAS" isInDB="false"/>
 
 <!--*******************************************CHYPRE****************************************-->
 
-	<regionV nom="Commandaria"nom_pays="CHYPRE" isInDB="false"/>
+	<regionV nom="Commandaria" nom_pays="CHYPRE" isInDB="false"/>
 
 	
 	
@@ -213,9 +213,9 @@
 
 <!--*********************************************CANADA*******************************************-->
 	
-	<regionV nom="Colombie-Britannique"nom_pays="CANADA" isInDB="false"/>
-	<regionV nom="Ontario"nom_pays="CANADA" isInDB="false"/>
-	<regionV nom="Québec"nom_pays="CANADA" isInDB="false"/>
+	<regionV nom="Colombie-Britannique" nom_pays="CANADA" isInDB="false"/>
+	<regionV nom="Ontario" nom_pays="CANADA" isInDB="false"/>
+	<regionV nom="Québec" nom_pays="CANADA" isInDB="false"/>
 	
 <!--*********************************************USA*******************************************-->
 
@@ -287,18 +287,18 @@
 
 <!--*************************************NOUVELLE ZELANDE**************************************-->
 
-	<regionV nom="Auckland"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Canterbury"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Gisborne"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Hawkes bay"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Matakana"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Nelson"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Marlborough"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Northland"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Otago"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="South Island"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Waiheke Island"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
-	<regionV nom="Wairarapa"nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Auckland" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Canterbury" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Gisborne" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Hawkes bay" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Matakana" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Nelson" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Marlborough" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Northland" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Otago" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="South Island" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Waiheke Island" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
+	<regionV nom="Wairarapa" nom_pays="NOUVELLE-ZELANDE" isInDB="false"/>
 
 <!--*****************************************AUSTRALIE***************************************-->
 

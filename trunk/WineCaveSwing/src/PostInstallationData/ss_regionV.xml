@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ss_regionV SYSTEM "data.dtd">
 
+
 <!--*******************************************************************************************-->
 <!--***********************************LISTE DES SOUS-REGIONS**********************************-->
 <!--*******************************************************************************************-->
@@ -14,242 +15,242 @@
 
 <!--*******************************************FRANCE******************************************-->
 
-	<ss_regionV nom="Alsace Grands Crus"  region="Alsace" isInDB="false"/>
-	<ss_regionV nom="Crémant-d'Alsace"  region="Alsace" isInDB="false"/>
+	<ss_regionV nom="Alsace Grands Crus" region="Alsace" isInDB="false"/>
+	<ss_regionV nom="Crémant-d'Alsace" region="Alsace" isInDB="false"/>
 
-	<ss_regionV nom="Beaujolais Supérieur"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Beaujolais Village"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Brouilly"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Chénas"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Chiroubles"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Coteaux-du-Lyonnais"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-Brouilly"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Fleurie"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Juliénas"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Morgon"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Moulin-à-vent"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Régnié"  region="Beaujolais" isInDB="false"/>
-	<ss_regionV nom="Saint-Amour"  region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Beaujolais Supérieur" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Beaujolais Village" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Brouilly" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Chénas" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Chiroubles" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Coteaux-du-Lyonnais" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-Brouilly" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Fleurie" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Juliénas" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Morgon" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Moulin-à-vent" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Régnié" region="Beaujolais" isInDB="false"/>
+	<ss_regionV nom="Saint-Amour" region="Beaujolais" isInDB="false"/>
 
-	<ss_regionV nom="Blancs Liquoreux"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Blayais et Bourgeais"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Bordeaux Clairet"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Bordeaux Supérieur"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Cotes de Bordeaux"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Crémant-de-Bordeaux"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Dordogne et Garonne"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Graves"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Libournais"  region="Bordeaux" isInDB="false"/>
-	<ss_regionV nom="Médoc"  region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Blancs Liquoreux" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Blayais et Bourgeais" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Bordeaux Clairet" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Bordeaux Supérieur" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Cotes de Bordeaux" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Crémant-de-Bordeaux" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Dordogne et Garonne" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Graves" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Libournais" region="Bordeaux" isInDB="false"/>
+	<ss_regionV nom="Médoc" region="Bordeaux" isInDB="false"/>
 
-	<ss_regionV nom="Aligoté"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Bourgogne Côtes du Couchois"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Chablisien"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Chitry"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Côte Chalonnaise"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Côte de Beaune"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Côte de Nuits"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Côte-de-nuits-villages"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Coteaux Bourguignons"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Coulanges-la-Vineuse"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Crémant-de-Bourgogne"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Epineuil"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Hautes-côtes-de-beaune"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Hautes-côtes-de-nuits"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Irancy"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Mâconnais"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Passe-tout-grains"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Saint-Bris"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Tonnerre"  region="Bourgogne" isInDB="false"/>
-	<ss_regionV nom="Vézelay"  region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Aligoté" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Bourgogne Côtes du Couchois" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Chablisien" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Chitry" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Côte Chalonnaise" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Côte de Beaune" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Côte de Nuits" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Côte-de-nuits-villages" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Coteaux Bourguignons" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Coulanges-la-Vineuse" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Crémant-de-Bourgogne" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Epineuil" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Hautes-côtes-de-beaune" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Hautes-côtes-de-nuits" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Irancy" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Mâconnais" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Passe-tout-grains" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Saint-Bris" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Tonnerre" region="Bourgogne" isInDB="false"/>
+	<ss_regionV nom="Vézelay" region="Bourgogne" isInDB="false"/>
 
-	<ss_regionV nom="Côteaux-Champenois"  region="Champagne" isInDB="false"/>
-	<ss_regionV nom="Rosé-des-Riceys"  region="Champagne" isInDB="false"/>
+	<ss_regionV nom="Côteaux-Champenois" region="Champagne" isInDB="false"/>
+	<ss_regionV nom="Rosé-des-Riceys" region="Champagne" isInDB="false"/>
 
-	<ss_regionV nom="Ajaccio"  region="Corse" isInDB="false"/>
-	<ss_regionV nom="Muscat-du-Cap-Corse"  region="Corse" isInDB="false"/>
-	<ss_regionV nom="Patrimonio"  region="Corse" isInDB="false"/>
-	<ss_regionV nom="Vins-de-corse"  region="Corse" isInDB="false"/>
+	<ss_regionV nom="Ajaccio" region="Corse" isInDB="false"/>
+	<ss_regionV nom="Muscat-du-Cap-Corse" region="Corse" isInDB="false"/>
+	<ss_regionV nom="Patrimonio" region="Corse" isInDB="false"/>
+	<ss_regionV nom="Vins-de-corse" region="Corse" isInDB="false"/>
 
-	<ss_regionV nom="Arbois"  region="Jura" isInDB="false"/>
-	<ss_regionV nom="Arbois-Pupillin"  region="Jura" isInDB="false"/>
-	<ss_regionV nom="Château-Chalon"  region="Jura" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-Jura"  region="Jura" isInDB="false"/>
-	<ss_regionV nom="Crémant du Jura"  region="Jura" isInDB="false"/>
-	<ss_regionV nom="L'étoile"  region="Jura" isInDB="false"/>
-	<ss_regionV nom="Macvin du Jura"  region="Jura" isInDB="false"/>
+	<ss_regionV nom="Arbois" region="Jura" isInDB="false"/>
+	<ss_regionV nom="Arbois-Pupillin" region="Jura" isInDB="false"/>
+	<ss_regionV nom="Château-Chalon" region="Jura" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-Jura" region="Jura" isInDB="false"/>
+	<ss_regionV nom="Crémant du Jura" region="Jura" isInDB="false"/>
+	<ss_regionV nom="L'étoile" region="Jura" isInDB="false"/>
+	<ss_regionV nom="Macvin du Jura" region="Jura" isInDB="false"/>
 
-	<ss_regionV nom="Languedoc"  region="Languedoc-Roussillon" isInDB="false"/>
-	<ss_regionV nom="Roussillon"  region="Languedoc-Roussillon" isInDB="false"/>
+	<ss_regionV nom="Languedoc" region="Languedoc-Roussillon" isInDB="false"/>
+	<ss_regionV nom="Roussillon" region="Languedoc-Roussillon" isInDB="false"/>
 
-	<ss_regionV nom="Anjou"  region="Loire" isInDB="false"/>
-	<ss_regionV nom="Crémant-de-loire"  region="Loire" isInDB="false"/>
-	<ss_regionV nom="Région du Centre"  region="Loire" isInDB="false"/>
-	<ss_regionV nom="Région Nantaise"  region="Loire" isInDB="false"/>
-	<ss_regionV nom="Région Touraine"  region="Loire" isInDB="false"/>
-	<ss_regionV nom="Rosé-de-loire"  region="Loire" isInDB="false"/>
-	<ss_regionV nom="Saumur"  region="Loire" isInDB="false"/>
+	<ss_regionV nom="Anjou" region="Loire" isInDB="false"/>
+	<ss_regionV nom="Crémant-de-loire" region="Loire" isInDB="false"/>
+	<ss_regionV nom="Région du Centre" region="Loire" isInDB="false"/>
+	<ss_regionV nom="Région Nantaise" region="Loire" isInDB="false"/>
+	<ss_regionV nom="Région Touraine" region="Loire" isInDB="false"/>
+	<ss_regionV nom="Rosé-de-loire" region="Loire" isInDB="false"/>
+	<ss_regionV nom="Saumur" region="Loire" isInDB="false"/>
 
-	<ss_regionV nom="Côtes-de-toul"  region="Lorraine" isInDB="false"/>
-	<ss_regionV nom="Moselle"  region="Lorraine" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-toul" region="Lorraine" isInDB="false"/>
+	<ss_regionV nom="Moselle" region="Lorraine" isInDB="false"/>
 
-	<ss_regionV nom="Haut-poitou"  region="Poitou-Charentes" isInDB="false"/>
-	<ss_regionV nom="Pineau-des-charentes"  region="Poitou-Charentes" isInDB="false"/>
+	<ss_regionV nom="Haut-poitou" region="Poitou-Charentes" isInDB="false"/>
+	<ss_regionV nom="Pineau-des-charentes" region="Poitou-Charentes" isInDB="false"/>
 
-	<ss_regionV nom="Bandol"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Bellet"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Cassis"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Coteaux-d'aix-en-provence"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Coteaux-varois-en-provence"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-provence"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Les baux-de-provence"  region="Provence" isInDB="false"/>
-	<ss_regionV nom="Palette"  region="Provence" isInDB="false"/>
+	<ss_regionV nom="Bandol" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Bellet" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Cassis" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Coteaux-d'aix-en-provence" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Coteaux-varois-en-provence" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-provence" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Les baux-de-provence" region="Provence" isInDB="false"/>
+	<ss_regionV nom="Palette" region="Provence" isInDB="false"/>
 
-	<ss_regionV nom="Beaumes-de-venise"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Châtillon-en-diois"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Clairette-de-bellegarde"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Clairette-de-Die"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Costières-de-Nîmes"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Coteaux-de-pierrevert"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Côteaux-du-Tricastin"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-luberon"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-Rhône"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-Rhône-Villages"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-ventoux"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-vivarais"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Crémant-de-die"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Grignan-les-Adhémar"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Muscat de Beaumes-de-Venise"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Rasteau"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Rhône Méridional"  region="Rhône" isInDB="false"/>
-	<ss_regionV nom="Rhône Septentrional"  region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Beaumes-de-venise" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Châtillon-en-diois" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Clairette-de-bellegarde" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Clairette-de-Die" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Costières-de-Nîmes" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Coteaux-de-pierrevert" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Côteaux-du-Tricastin" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-luberon" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-Rhône" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-Rhône-Villages" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-ventoux" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-vivarais" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Crémant-de-die" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Grignan-les-Adhémar" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Muscat de Beaumes-de-Venise" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Rasteau" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Rhône Méridional" region="Rhône" isInDB="false"/>
+	<ss_regionV nom="Rhône Septentrional" region="Rhône" isInDB="false"/>
 
-	<ss_regionV nom="Crépy"  region="Savoie" isInDB="false"/>
-	<ss_regionV nom="Roussette-de-savoie"  region="Savoie" isInDB="false"/>
-	<ss_regionV nom="Roussette-du-Bugey"  region="Savoie" isInDB="false"/>
-	<ss_regionV nom="Seyssel"  region="Savoie" isInDB="false"/>
-	<ss_regionV nom="Vin-de-savoie"  region="Savoie" isInDB="false"/>
+	<ss_regionV nom="Crépy" region="Savoie" isInDB="false"/>
+	<ss_regionV nom="Roussette-de-savoie" region="Savoie" isInDB="false"/>
+	<ss_regionV nom="Roussette-du-Bugey" region="Savoie" isInDB="false"/>
+	<ss_regionV nom="Seyssel" region="Savoie" isInDB="false"/>
+	<ss_regionV nom="Vin-de-savoie" region="Savoie" isInDB="false"/>
 
-	<ss_regionV nom="Béarn"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Bergerac"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Buzet"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Cahors"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Coteaux-du-quercy"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-bergerac"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-duras"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-millau"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-Montravel"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-de-saint-mont"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-brulhois"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-frontonnais"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Côtes-du-marmandais"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Entraygues-le-fel"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Floc-de-gascogne"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Fronton"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Gaillac"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Haut-Montravel"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Irouleguy"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Jurançon"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Jurançon Sec"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Lavilledieu"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Madiran"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Marcillac"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Monbazillac"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Montravel"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Pacherenc-du-vic-bilh"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Pécharmant"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Rosette"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Saussignac"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Tursan"  region="Sud-Ouest" isInDB="false"/>
-	<ss_regionV nom="Vins-d'estaing"  region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Béarn" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Bergerac" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Buzet" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Cahors" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Coteaux-du-quercy" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-bergerac" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-duras" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-millau" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-Montravel" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-de-saint-mont" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-brulhois" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-frontonnais" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Côtes-du-marmandais" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Entraygues-le-fel" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Floc-de-gascogne" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Fronton" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Gaillac" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Haut-Montravel" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Irouleguy" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Jurançon" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Jurançon Sec" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Lavilledieu" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Madiran" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Marcillac" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Monbazillac" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Montravel" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Pacherenc-du-vic-bilh" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Pécharmant" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Rosette" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Saussignac" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Tursan" region="Sud-Ouest" isInDB="false"/>
+	<ss_regionV nom="Vins-d'estaing" region="Sud-Ouest" isInDB="false"/>
 
-	<ss_regionV nom="VdP Cathare"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Charentais"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Coteaux Charitois"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Côteaux d'Enserune"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Coteaux de Fontcaude"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Coteaux de Murviel"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Coteaux et terrasses de Montauban"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Côtes de Lastours"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Allobrogie"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Ariège"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Hauterive"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Oc"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Oleron"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Orange"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP d'Urfé"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Cassan"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Caux"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Cessenon"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Franche-Comté"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de l'Ardèche"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de l'Aude"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de l'Hérault"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de l'Ile de Beauté"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Bénovie"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Cité de Carcassonne"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la côte Vermeille"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Drôme"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Haute Vallée de l'Aude"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Haute Vallée de l'Orb"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Sainte-Baume"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Vallée du Paradis"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de la Vienne"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Lot"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Méditerranée"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Saint Guilhem le Désert"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Saint-Sardos"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP de Sainte Marie La Blanche"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Alpes Maritimes"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Alpilles"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Balmes dauphinoises"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des bouches du Rhone"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Cévennes"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Collines de la Moure"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Collines Rhodaniennes"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux de Bessilles"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côteaux de Cèze"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux de Fenouillèdes"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux de l'Ardèche"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux de Montelimar"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux de Peyriac"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux de Salagou"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des côteaux des Baronnies"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux du Libron"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux du Verdon"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux Flaviens"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Coteaux-de-Miramont"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes Catalanes"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes de Gascogne"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes de Meuse"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes de Prouilhe"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes de Thau"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes de Thongue"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Côtes du Brian"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des côtes du Ceressou"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Cotes du Condomois"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des cotes du Tarn"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Maures"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Pyrénées-Orientales"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP des Sables du Golfe du Lion"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Comté de Grignan"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Comté Tolosan"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Gard"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Jardin de la France"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Loir-et-Cher"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Mont Baudile"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Mont Caume"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Périgord"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Puy-de-Dôme"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Torgan"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Val de Cesse"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Val de Loire"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Val de Montferrand"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Var"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP du Vaucluse"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Duché d'Uzès"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Portes de Méditerranée"  region="Vins de Pays" isInDB="false"/>
-	<ss_regionV nom="VdP Pyrénées-Atlantiques"  region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Cathare" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Charentais" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Coteaux Charitois" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Côteaux d'Enserune" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Coteaux de Fontcaude" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Coteaux de Murviel" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Coteaux et terrasses de Montauban" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Côtes de Lastours" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Allobrogie" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Ariège" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Hauterive" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Oc" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Oleron" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Orange" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP d'Urfé" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Cassan" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Caux" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Cessenon" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Franche-Comté" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de l'Ardèche" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de l'Aude" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de l'Hérault" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de l'Ile de Beauté" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Bénovie" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Cité de Carcassonne" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la côte Vermeille" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Drôme" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Haute Vallée de l'Aude" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Haute Vallée de l'Orb" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Sainte-Baume" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Vallée du Paradis" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de la Vienne" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Lot" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Méditerranée" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Saint Guilhem le Désert" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Saint-Sardos" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP de Sainte Marie La Blanche" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Alpes Maritimes" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Alpilles" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Balmes dauphinoises" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des bouches du Rhone" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Cévennes" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Collines de la Moure" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Collines Rhodaniennes" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux de Bessilles" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côteaux de Cèze" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux de Fenouillèdes" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux de l'Ardèche" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux de Montelimar" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux de Peyriac" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux de Salagou" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des côteaux des Baronnies" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux du Libron" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux du Verdon" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux Flaviens" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Coteaux-de-Miramont" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes Catalanes" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes de Gascogne" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes de Meuse" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes de Prouilhe" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes de Thau" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes de Thongue" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Côtes du Brian" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des côtes du Ceressou" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Cotes du Condomois" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des cotes du Tarn" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Maures" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Pyrénées-Orientales" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP des Sables du Golfe du Lion" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Comté de Grignan" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Comté Tolosan" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Gard" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Jardin de la France" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Loir-et-Cher" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Mont Baudile" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Mont Caume" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Périgord" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Puy-de-Dôme" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Torgan" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Val de Cesse" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Val de Loire" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Val de Montferrand" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Var" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP du Vaucluse" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Duché d'Uzès" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Portes de Méditerranée" region="Vins de Pays" isInDB="false"/>
+	<ss_regionV nom="VdP Pyrénées-Atlantiques" region="Vins de Pays" isInDB="false"/>
 
 <!--******************************************ESPAGNE***************************************-->
 
@@ -782,9 +783,9 @@
 	
 <!--******************************************AUTRICHE*****************************************-->
 
-	<ss_regionV nom="Südoststeiermark"region="Styrie" isInDB="false"/>				
-	<ss_regionV nom="Südsteiermark"region="Styrie" isInDB="false"/>				
-	<ss_regionV nom="Weststeiermak"region="Styrie" isInDB="false"/>		
+	<ss_regionV nom="Südoststeiermark" region="Styrie" isInDB="false"/>				
+	<ss_regionV nom="Südsteiermark" region="Styrie" isInDB="false"/>				
+	<ss_regionV nom="Weststeiermak" region="Styrie" isInDB="false"/>		
 
 <!--*********************************************SUISSE***************************************-->
 
@@ -988,9 +989,9 @@
 
 <!--*************************************NOUVELLE ZELANDE***************************************-->
 
-	<ss_regionV nom="Awatere Valley"region="Marlborough" isInDB="false"/>
+	<ss_regionV nom="Awatere Valley" region="Marlborough" isInDB="false"/>
 
-	<ss_regionV nom="Martinborough"region="Wairarapa" isInDB="false"/>
+	<ss_regionV nom="Martinborough" region="Wairarapa" isInDB="false"/>
 
 <!--*********************************************AUSTRALIE******************************************-->
 
