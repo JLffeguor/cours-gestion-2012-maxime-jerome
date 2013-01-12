@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import be.winecave.model.PaysViticole;
+import be.winecave.model.Region;
 import be.winecave.model.RegionViticole;
 import be.winecave.repository.PaysViticoleRepository;
 import be.winecave.repository.RegionViticoleRepository;
@@ -51,8 +52,8 @@ public class PostInstallationRegionViticole extends PostInstallData<RegionVitico
 	protected void persistData(RegionViticole data) {
 		regionViticoleRepository.persist(data);
 		//assuming parent already set
-		PaysViticole parent = paysViticoleRepository.findByName(data.getParent().getNom());
-		parent.getEnfants().add(data);
+		PaysViticole parent = paysViticoleRepository.findByName(((Region) data.getPaysViticoleParente()).getNom());
+		parent.getRegionsEnfant().add(data);
 		paysViticoleRepository.merge(parent);
 	}
 

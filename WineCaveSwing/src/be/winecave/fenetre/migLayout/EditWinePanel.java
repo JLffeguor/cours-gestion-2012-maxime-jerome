@@ -11,7 +11,6 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 import net.miginfocom.swing.MigLayout;
-import be.winecave.model.Appelation;
 import be.winecave.model.Bouteille;
 import be.winecave.model.Categorie;
 import be.winecave.model.Classement;
@@ -69,7 +68,7 @@ public class EditWinePanel extends PanelHelper{
 			public void actionPerformed(ActionEvent e) {
 				System.out.println(SwingUtilities.isEventDispatchThread());
 				System.out.println("i select  " + ((JComboBox<PaysViticole>)e.getSource()).getSelectedItem().toString());
-				comboRegion.enableWithData(((Region) comboPays.getSelectedItem()).getEnfants());
+				comboRegion.enableWithData(((PaysViticole) comboPays.getSelectedItem()).getRegionsEnfant());
 				comboRegion.setSelectedIndex(-1);
 			}
 

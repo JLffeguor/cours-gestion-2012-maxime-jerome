@@ -38,14 +38,14 @@ public class PostInstallationSousRegionViticole extends PostInstallData<RegionVi
 	@Override
 	protected void persistData(RegionViticole data) {
 		regionViticoleRepository.persist(data);
-		regionViticoleRepository.merge((RegionViticole) data.getParent());
+		regionViticoleRepository.merge(data.getRegionViticoleParente());
 		
 	}
 
 	@Override
 	protected Element buildElement(Element element, RegionViticole data) {
 		element.setAttribute("nom", data.getNom());
-		element.setAttribute("region", data.getParent().getNom());
+		element.setAttribute("region", data.getRegionViticoleParente().getNom());
 		return null;
 	}
 
