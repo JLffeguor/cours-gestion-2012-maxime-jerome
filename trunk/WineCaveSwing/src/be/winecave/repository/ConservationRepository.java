@@ -9,7 +9,7 @@ import be.winecave.model.Conservation;
 public class ConservationRepository extends BaseRepository<Conservation> {
 	
 	public Conservation findAnExactConservation(Date minimum, Date maximum,	Date debutApogee, Date finApogee, double temperatureMinimum, double temperatureMaximum) {
-		return getSingleOrNullResult(em.createQuery("select c from Conservation where c.minimum=:minimum and c.maximum=:maximum and c.debutApogee and c.finApogee and c.temperatureMinimum and c.temperatureMaximum")
+		return getSingleOrNullResult(em.createQuery("select c from Conservation c where c.minimum=:minimum and c.maximum=:maximum and c.debutApogee=:debutApogee and c.finApogee=:finApogee and c.temperatureMinimum=:temperatureMinimum and c.temperatureMaximum=:temperatureMaximum")
 									 .setParameter("minimum", minimum)
 									 .setParameter("maximum", maximum)
 									 .setParameter("debutApogee", debutApogee)

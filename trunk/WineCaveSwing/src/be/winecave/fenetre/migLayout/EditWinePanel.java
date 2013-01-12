@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 import net.miginfocom.swing.MigLayout;
+import be.winecave.model.Appelation;
 import be.winecave.model.Bouteille;
 import be.winecave.model.Categorie;
 import be.winecave.model.Classement;
@@ -24,10 +25,10 @@ public class EditWinePanel extends PanelHelper{
 	
 	private JTextField jtfReference = createTextField("");
 	private JTextField jtfNom = createTextField("");
-	private JComboBox<String> comboProducteur = new UnselectedJCombobox<>(getGuiConnector().getVinRepository().findAllProducteur());
+	private JComboBox<String> comboProducteur = new EditableUnselectedJCombobox<>(getGuiConnector().getVinRepository().findAllProducteur());
 	private JComboBox<PaysViticole> comboPays = new UnselectedJCombobox<>(getGuiConnector().getPaysViticoleRepository().findAll());
 	private DisabledJCombobox<Region> comboRegion = new DisabledJCombobox<>();
-	private JComboBox<String> comboAppellation = new DisabledJCombobox<>();
+	private JComboBox<String> comboAppellation = new EditableUnselectedJCombobox<>();
 	private JTextField jtfCepage = createTextField("");
 	private JComboBox<Categorie> comboCategorie = new UnselectedJCombobox<>(getGuiConnector().getCategorieRepository().findAll());
 	private JComboBox<Couleur> comboCouleur = new UnselectedJCombobox<>(getGuiConnector().getCouleurRepository().findAll());
@@ -53,6 +54,8 @@ public class EditWinePanel extends PanelHelper{
 		this.add(jtfReference, "");
 		this.add(createLabel("Millesime"), "");
 		this.add(jtfMillesime, "width 20:50:50, wrap");
+		this.add(createLabel("Nom"), "");//span merge cells
+		this.add(jtfNom, "span, growx");
 		this.add(createLabel("Producteur"), "");//span merge cells
 		this.add(comboProducteur, "span, growx");
 
@@ -132,8 +135,10 @@ public class EditWinePanel extends PanelHelper{
 		Vin vin = new Vin();
 		vin.setNom(jtfNom.getText());
 		vin.setMillesime(jtfMillesime.getText());
-//		vin.setProducteur(comboProducteur.getSelectedItem().toString());//TODO an exception is throwed when no item is selected . find solution
-//		vin.setDegre(Double.parseDouble(jtfDegre.getText()));//TODO an exception is throwed when field empty . find solution
+		vin.setProducteur((String) comboProducteur.getSelectedItem());//TODO an exception is throwed when no item is selected . find solution
+		if(!jtfDegre.getText().trim().isEmpty()) {
+			vin.setDegre(Double.parseDouble(jtfDegre.getText()));
+		}
 		vin.setCuvee(jtfCuvee.getText());
 		vin.setCepage(jtfCepage.getText());
 		vin.setCommentaire(jtaCommentaire.getText());
@@ -144,7 +149,7 @@ public class EditWinePanel extends PanelHelper{
 				(Couleur)comboCouleur.getSelectedItem(), 
 				(Bouteille)comboBouteille.getSelectedItem(), 
 				(Classement)comboClassement.getSelectedItem(),
-				jtfBoireDe.getText(), jtfBoireA.getText(), jtfApogeeDe.getText(), jtfApogeeA.getText(), Double.parseDouble(jtfTempDe.getText()), Double.parseDouble(jtfTempA.getText()),//TODO an exception is throwed when field empty . find solution
+				jtfBoireDe.getText(), jtfBoireA.getText(), jtfApogeeDe.getText(), jtfApogeeA.getText(), !jtfTempDe.getText().trim().isEmpty()?Double.parseDouble(jtfTempDe.getText()):0.0d, !jtfTempA.getText().trim().isEmpty()?Double.parseDouble(jtfTempA.getText()):0.0d,//TODO an exception is throwed when field empty . find solution
 				vin);
 		
 	}

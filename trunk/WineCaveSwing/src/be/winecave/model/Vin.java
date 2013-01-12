@@ -31,7 +31,13 @@ public class Vin extends BaseEntity {
 	private Classement classement;
 	@ManyToOne
 	private Conservation conservation;
+	@ManyToOne
+	private Appelation appelation;
 	
+	
+	///*********getters and setters**************///
+	
+	/////fields/////
 	public String getMillesime() {
 		return millesime;
 	}
@@ -81,6 +87,8 @@ public class Vin extends BaseEntity {
 		this.commentaire = commentaire;
 	}
 	
+	
+	//////linked entities//////
 	public Region getRegion() {
 		return region;
 	}
@@ -116,5 +124,11 @@ public class Vin extends BaseEntity {
 	}
 	public void setConservation(Conservation conservation) {
 		this.conservation = conservation;
+	}
+	public Appelation getAppelation() {
+		return appelation;
+	}
+	public void setAppelation(Appelation appelation) {
+		this.appelation = appelation;
 	}
 }

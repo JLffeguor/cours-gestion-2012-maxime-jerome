@@ -102,9 +102,17 @@ public class VinService {
 		SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy");
 		Conservation conservation = null;
 		try {
-			conservation = conservationRepository.findAnExactConservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperatureMinimum, temperatureMaximum);
+			try {
+				conservation = conservationRepository.findAnExactConservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperatureMinimum, temperatureMaximum);
+			} catch (ParseException e1) {
+				//log.warn("can't search conservation when can't parse dates");
+			}
 			if ( conservation == null ) {
-				conservation = new Conservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperatureMinimum, temperatureMaximum);
+				conservation = new Conservation(!anneeMinimumConservation.trim().isEmpty()?yearFormat.parse(anneeMinimumConservation):null, 
+												!anneeMaximumConservation.trim().isEmpty()?yearFormat.parse(anneeMaximumConservation):null, 
+												!anneeDebutApogee.trim().isEmpty()?yearFormat.parse(anneeDebutApogee):null, 
+												!anneeFinApogee.trim().isEmpty()?yearFormat.parse(anneeFinApogee):null, 
+												temperatureMinimum, temperatureMaximum);
 			}
 		} catch (ParseException e1) {
 			throw new IllegalArgumentException("la date de conservation du vin est dans un mauvais format");
