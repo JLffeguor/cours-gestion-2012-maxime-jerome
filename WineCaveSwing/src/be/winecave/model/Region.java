@@ -7,7 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -19,19 +22,28 @@ import org.hibernate.validator.constraints.NotBlank;
  */
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
+@Table(uniqueConstraints=@UniqueConstraint(columnNames={"nom", "parent_id"}))
 public abstract class Region extends BaseEntity {
 
 	//TODO definire une taille maximum --maxime 11/12/12
-	@Column(nullable=false,unique=true)
+	@Column(nullable=false)
 	@NotBlank
 	private String nom;
+	
+	/**
+	 * une région peut avoir comme parent :
+	 * -une région viticole si c'est donc une sous-région
+	 * -un pays si c'est une région viticole
+	 */
+	@ManyToOne
+	private Region parent;
 	
 	/**
 	 * un pays a des enfants de type RegionViticole 
 	 * et une régionViticole peut en avoir aussi
 	 */
 	@OneToMany(mappedBy="parent",fetch=FetchType.EAGER)
-	private List<RegionViticole> enfants;
+	private List<Region> enfants;
 	
 	public Region() {
 		
@@ -48,11 +60,19 @@ public abstract class Region extends BaseEntity {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
+	Region getParent() {
+		return parent;
+	}
 
-	public List<RegionViticole> getEnfants() {
-		return enfants;
+	void setParent(Region parent) {
+		this.parent = parent;
 	}
 	
+	List<Region> getEnfants() {
+		return enfants;
+	}
+
 	@Override
 	public String toString() {
 		return nom;

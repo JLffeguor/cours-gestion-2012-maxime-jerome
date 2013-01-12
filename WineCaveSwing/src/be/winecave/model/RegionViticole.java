@@ -1,9 +1,9 @@
 package be.winecave.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 /**
  * entité représentant soit une région viticole soit une sous région viticole
  * à determiner en fonction du parent
@@ -12,18 +12,8 @@ import javax.persistence.ManyToOne;
  */
 @Entity
 public class RegionViticole extends Region {
-
-	/**
-	 * une région viticole peut avoir comme parent :
-	 * -une autre région viticole , elle est donc une sous-région
-	 * -un pays c'est donc une région viticole
-	 * 
-	 * ces deux parents sont tous les deux de type region 
-	 * ce qui permet de savoir si la présente région viticole est une région ou une sous-région 
-	 */
-	@ManyToOne
-	private Region parent;
 	
+
 	public RegionViticole() {
 	}
 	
@@ -35,27 +25,36 @@ public class RegionViticole extends Region {
 		super(nom);
 		this.setParent(parent);
 	}
-
-	public Region getParent() {
-		return parent;
+	
+	
+	public RegionViticole getRegionViticoleParente() {
+		return getParent(); //appel de la methode overridée pour appliqué des contraintes spécifiques
+	}
+	
+	public PaysViticole getPaysViticoleParente() {
+		return (PaysViticole) super.getParent();
 	}
 
-	public void setParent(Region region) {
-		this.parent = region;
+	public List<RegionViticole> getSousRegionViticoleEnfantes() {
+		if(getParent() instanceof RegionViticole &&// si c'est une sous région 
+		   getEnfants() != null) { // et si elle a des sous régions
+			throw new RuntimeException("bug : une sous région ne peut contenir d'autres sous régions");
+		}
+		ArrayList<RegionViticole> result = new ArrayList<>(getEnfants().size());
+		for(Region region : getEnfants()) {
+			if(region instanceof RegionViticole) {
+				result.add((RegionViticole)region);
+			}
+		}
+		
+		return result;
 	}
 	
 	@Override
-	public List<RegionViticole> getEnfants() {
-		//TODO à placer dans une classe service
-		if(parent instanceof RegionViticole // si c'est une sous région 
-			&& super.getEnfants() != null) { // et si elle a des sous régions
-			throw new RuntimeException("bug : " + 
-					"une sous région en peut contenir d'autres sous régions");
+	RegionViticole getParent() {
+		if(super.getEnfants() != null) {
+			throw new RuntimeException("bug : une sous région ne peut avoir d'enfants");
 		}
-		return super.getEnfants();
-	}
-	
-	public List<RegionViticole> getSousRegionsViticole() {
-		return getEnfants();
+		return (RegionViticole) super.getParent();
 	}
 }
