@@ -3,6 +3,10 @@ package be.winecave.main;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -105,6 +109,32 @@ public class WineCave {
 		}
 	}
 	
+	private static void dropDatabase(String driver, String url, String user, String passwd){
+		try {
+		      Class.forName(driver);
+		 
+		      Connection connection = DriverManager.getConnection(url, user, passwd);
+
+		      PreparedStatement pstmt = connection.prepareStatement("DROP DATABASE IF EXISTS winecave");
+		      pstmt.execute();
+		    } catch (SQLException | ClassNotFoundException e) {
+		      throw new RuntimeException("cannot drop database", e);
+		    }  
+	}
+	
+	private static void createDatabase(String driver, String url, String user, String passwd){
+		try {
+		      Class.forName(driver);
+		 
+		      Connection connection = DriverManager.getConnection(url, user, passwd);
+
+		      PreparedStatement pstmt = connection.prepareStatement("CREATE DATABASE IF NOT EXISTS winecave");
+		      pstmt.execute();
+		    } catch (SQLException | ClassNotFoundException e) {
+		      throw new RuntimeException("cannot create table", e);
+		    }  
+	}
+	
 	@SuppressWarnings("deprecation")
 	private static void ExportDbSchema(boolean dropBefore) {
 		// Empty map. We add no additional property, everything is already in the persistence.xml
@@ -114,7 +144,19 @@ public class WineCave {
 		SchemaExport schemaExport = new SchemaExport(conf.getHibernateConfiguration());
 		
 		if(dropBefore) {
-			schemaExport.drop(debugMode, true);
+			
+			Properties prop = conf.getHibernateConfiguration().getProperties();
+			
+			dropDatabase(prop.getProperty("hibernate.connection.driver_class"),
+					     prop.getProperty("hibernate.connection.url"),
+					     prop.getProperty("hibernate.connection.username"),
+					     prop.getProperty("hibernate.connection.password"));
+			
+			createDatabase(prop.getProperty("hibernate.connection.driver_class"),
+						   "jdbc:mysql://127.0.0.1/",
+					  	   prop.getProperty("hibernate.connection.username"),
+					  	   prop.getProperty("hibernate.connection.password"));
+			
 		}
 		schemaExport.create(debugMode, true);
 	}
