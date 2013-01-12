@@ -131,16 +131,13 @@
 	<regionV nom="Wagram" nom_pays="AUTRICHE" isInDB="false"/>
 	<regionV nom="Weinland " nom_pays="AUTRICHE" isInDB="false"/>
 	<regionV nom="Weinviertel" nom_pays="AUTRICHE" isInDB="false"/>
-	<regionV nom="Wagram" nom_pays="AUTRICHE" isInDB="false"/>
 
 <!--******************************************BELGIQUE*****************************************-->
 
 	<regionV nom="Côtes de Sambre et Meuse" nom_pays="BELGIQUE" isInDB="false"/>
 	<regionV nom="Hageland" nom_pays="BELGIQUE" isInDB="false"/>
 	<regionV nom="Haspengauw" nom_pays="BELGIQUE" isInDB="false"/>	
-	<regionV nom="Côtes de Sambre et Meuse" nom_pays="BELGIQUE" isInDB="false"/>
 	<regionV nom="Heuvelland" nom_pays="BELGIQUE" isInDB="false"/>	
-	<regionV nom="Côtes de Sambre et Meuse" nom_pays="BELGIQUE" isInDB="false"/>
 	<regionV nom="Vin de pays des jardins de Wallonie" nom_pays="BELGIQUE" isInDB="false"/>
 	<regionV nom="Vlaamse Landwijn" nom_pays="BELGIQUE" isInDB="false"/>
 	
