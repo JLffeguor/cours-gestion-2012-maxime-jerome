@@ -95,12 +95,10 @@ public class PanelHelper extends JPanel{
 	class DisabledJCombobox<E> extends JComboBox<E> {
 		DisabledJCombobox() {
 			super();
-			System.out.println("is it thread safe? " + SwingUtilities.isEventDispatchThread());
 			this.setEnabled(false);
 		}
 		
 		void enableWithData(List<? extends E> dataList){
-			System.out.println("is it thread safe? " + SwingUtilities.isEventDispatchThread());
 			this.setEnabled(true);
 			this.setModel(new DefaultComboBoxModel<>(new Vector<E>(dataList)));
 		}
@@ -109,14 +107,23 @@ public class PanelHelper extends JPanel{
 	class UnselectedJCombobox<E> extends JComboBox<E> {
 		UnselectedJCombobox() {
 			super();
-			System.out.println("is it thread safe? " + SwingUtilities.isEventDispatchThread());
 			this.setSelectedIndex(-1);
 		}
 		
 		UnselectedJCombobox(List<E> dataList) {
 			super(new Vector<E>(dataList));
-			System.out.println("is it thread safe? " + SwingUtilities.isEventDispatchThread());
 			this.setSelectedIndex(-1);
+		}
+	}
+	
+	class EditableUnselectedJCombobox<E> extends UnselectedJCombobox<E> {
+		EditableUnselectedJCombobox() {
+			super();
+			this.setEditable(true);
+		}
+		
+		EditableUnselectedJCombobox(List<E> dataList) {
+			super(dataList);
 			this.setEditable(true);
 		}
 	}
