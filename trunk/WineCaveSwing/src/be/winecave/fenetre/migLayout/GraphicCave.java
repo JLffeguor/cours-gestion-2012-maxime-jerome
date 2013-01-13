@@ -1,11 +1,13 @@
 package be.winecave.fenetre.migLayout;
 
-import java.awt.Font;
-import java.awt.SystemColor;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import net.miginfocom.swing.MigLayout;
@@ -16,6 +18,7 @@ public class GraphicCave extends PanelHelper {
 	private int max_x = 8;
 	private int max_y = 10;
 	
+	JFrame vinPopup;
 
 	boolean rondVide = true;
 	Rond[][] rond = new Rond[max_x+1][max_y+1] ;
@@ -41,6 +44,10 @@ public class GraphicCave extends PanelHelper {
 		public Rond(int x,int y) {
 			this.x = x;
 			this.y = y;
+			vinPopup = new JFrame("popup");
+			vinPopup.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+			
+			
 			this.setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));
 			this.addMouseListener(new MouseAdapter(){
 				//clic de la souris
@@ -59,6 +66,8 @@ public class GraphicCave extends PanelHelper {
 				public void mouseEntered(MouseEvent e) {
 					//afficher le vin dans un cadre
 					System.out.println("Je suis dans le rond aux coordonnée " + e.getComponent());
+					//TODO mettre un timer pour l'apparition de la popup 'de sorte de ne aps avoir trop de popup qui s'affiche
+					showpopup(getScreenPosition());
 				}
 				//sortie de la zone survolée par la souris
 				public void mouseExited(MouseEvent e) {
@@ -68,6 +77,23 @@ public class GraphicCave extends PanelHelper {
 			});
 		}
 		
+		public Point getScreenPosition() {
+			return this.getLocationOnScreen();
+		}
+		
+		public void showpopup(Point pointLocation) { 
+			//TODO ajouter el vin au contenu de le popup
+			//TODO afficher un message s'il n'y a pas de vin dans cette place ou ne pas afficher de popup du tout
+			vinPopup.setVisible(false);
+			JLabel textLabel = new JLabel("info: ceci est un vin"); 
+			textLabel.setPreferredSize(new Dimension(50, 100)); 
+			vinPopup.getContentPane().add(textLabel, BorderLayout.CENTER); 
+			vinPopup.setLocation(pointLocation);
+			vinPopup.pack();
+			vinPopup.revalidate();
+			vinPopup.setVisible(true); 
+		}
+
 		@Override
 		public String toString() {
 			return "coordonnée : (" + x + ", " + y + ")";
