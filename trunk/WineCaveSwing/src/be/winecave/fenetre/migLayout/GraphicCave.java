@@ -34,6 +34,7 @@ public class GraphicCave extends PanelHelper {
 	class Rond extends JLabel{
 		int x;
 		int y;
+		boolean b = false;//pour vérifier si le rond est plein ou vide
 		
 		public Rond(int x,int y) {
 			this.x = x;
@@ -43,6 +44,14 @@ public class GraphicCave extends PanelHelper {
 				//clic de la souris
 				public void mouseClicked(MouseEvent e) {
 					System.out.println(e.getComponent());
+					if(b == false){//si rond vide
+						setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVert.png")));//on le remplit
+						b = true;
+					}
+					else{//sinon il est plein, donc...
+						setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));//...on le vide
+						b = false;
+					}
 				}
 			});
 		}
