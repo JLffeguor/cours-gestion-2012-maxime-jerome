@@ -1,12 +1,9 @@
 import static org.junit.Assert.assertTrue;
 
-import java.util.Date;
-
 import javax.annotation.Resource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -22,15 +19,13 @@ public class CreationVin {
 	//TODO test if NullObjectException throwed when add vin whit unexisting : Region(pays,region,sous) , categorie, couleur, bouteille, classement
 	//TODO test notauthorized user cannot create
 	
-	private static ApplicationContext context;
-	
 	@Resource
 	VinService vinService;
 
 	@Test
 	public void nullVin() {
 		try {
-			vinService.creerVin(null, null, null, null, null, null, null, null, null, 0, null);
+			vinService.creerVin("", null, null, null, null, null, null, null, null, 0, 0, null);
 		} catch (IllegalArgumentException e) {
 			String message = e.getMessage();
 			assertTrue(message.equalsIgnoreCase("le paramètre vin ne peut pas être null"));
@@ -42,7 +37,7 @@ public class CreationVin {
 		Vin test = new Vin();
 		test.setNom(null);
 		try {
-			vinService.creerVin(null, null, null, null, null, null, null, null, null, 0, test);
+			vinService.creerVin("", null, null, null, null, null, null, null, null, 0, 0, test);
 		} catch (IllegalArgumentException e) {
 			String message = e.getMessage();
 			assertTrue(message.equalsIgnoreCase("le nom du vin ne doit pas être vide"));
@@ -61,7 +56,7 @@ public class CreationVin {
 		test.setCepage("50% moi");
 		test.setProducteur("lui");
 		
-		test = vinService.creerVin("France", "Bieres", "rouge", "magnum", "Cru Artisan", "2012", "2013", "2015", "2016", 0.5, test);
+		test = vinService.creerVin("France", "Bieres", "rouge", "magnum", "Cru Artisan", "2012", "2013", "2015", "2016", 0.5, 0.5, test);
 		
 		System.out.println(test.getId());
 		//todo retrouver le vin dans la db et vérifié les infos

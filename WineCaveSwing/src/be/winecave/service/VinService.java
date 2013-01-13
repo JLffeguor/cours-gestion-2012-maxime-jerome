@@ -3,9 +3,6 @@ package be.winecave.service;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +12,11 @@ import be.winecave.model.Categorie;
 import be.winecave.model.Classement;
 import be.winecave.model.Conservation;
 import be.winecave.model.Couleur;
+import be.winecave.model.Emplacement;
+import be.winecave.model.EtatBouteille;
+import be.winecave.model.EtatBouteille_Vin_Place;
 import be.winecave.model.PaysViticole;
+import be.winecave.model.Place;
 import be.winecave.model.Region;
 import be.winecave.model.RegionViticole;
 import be.winecave.model.Vin;
@@ -24,15 +25,16 @@ import be.winecave.repository.CategorieRepository;
 import be.winecave.repository.ClassementRepository;
 import be.winecave.repository.ConservationRepository;
 import be.winecave.repository.CouleurRepository;
+import be.winecave.repository.EmplacementRepository;
+import be.winecave.repository.EtatBouteilleRepository;
+import be.winecave.repository.EtatBouteille_Vin_PlaceRepository;
 import be.winecave.repository.PaysViticoleRepository;
+import be.winecave.repository.PlaceRepository;
 import be.winecave.repository.RegionViticoleRepository;
 import be.winecave.repository.VinRepository;
 
 @Service
 public class VinService {
-    @PersistenceContext
-    EntityManager em;//only used to check state of entity
-	
 	@Autowired
 	RegionViticoleRepository regionViticoleRepository;
 	@Autowired
@@ -49,6 +51,14 @@ public class VinService {
 	ClassementRepository classementRepository;
 	@Autowired
 	VinRepository vinRepository;
+	@Autowired
+	PlaceRepository placeRepository;
+	@Autowired
+	EtatBouteille_Vin_PlaceRepository etatBouteille_Vin_PlaceRepository;
+	@Autowired
+	EtatBouteilleRepository etatBouteilleRepository;
+	@Autowired
+	EmplacementRepository emplacementRepository;
 
 	public Vin creerVin(String nomRegion,
 						String nomCategorie,
@@ -58,7 +68,7 @@ public class VinService {
 						String anneeMinimumConservation,String anneeMaximumConservation,String anneeDebutApogee,String anneeFinApogee,double temperatureMinimum,double temperatureMaximum,
 						Vin vin) {
 		//TODO assert user can do this
-		//TODO check if special categorie "vin de pays , vin de table " user can add specific region but only land
+		//TODO check if special categorie "vin de pays , vin de table " user add specific region but only land
 		///check right vin parameter
 		if(vin == null){
 			throw new IllegalArgumentException("le paramètre vin ne peut pas être null");
@@ -103,7 +113,12 @@ public class VinService {
 		Conservation conservation = null;
 		try {
 			try {
-				conservation = conservationRepository.findAnExactConservation(yearFormat.parse(anneeMinimumConservation), yearFormat.parse(anneeMaximumConservation), yearFormat.parse(anneeDebutApogee), yearFormat.parse(anneeFinApogee), temperatureMinimum, temperatureMaximum);
+				conservation = conservationRepository
+						.findAnExactConservation(!anneeMinimumConservation.trim().isEmpty()?yearFormat.parse(anneeMinimumConservation):null, 
+												 !anneeMaximumConservation.trim().isEmpty()?yearFormat.parse(anneeMaximumConservation):null, 
+												 !anneeDebutApogee.trim().isEmpty()?yearFormat.parse(anneeDebutApogee):null, 
+												 !anneeFinApogee.trim().isEmpty()?yearFormat.parse(anneeFinApogee):null, 
+												 temperatureMinimum, temperatureMaximum);
 			} catch (ParseException e1) {
 				//log.warn("can't search conservation when can't parse dates");
 			}
@@ -186,8 +201,69 @@ public class VinService {
 
 	}
 	
+	
+	/**
+	 * methode pour placer un nouveau vin
+	 * @param nouvBouteille a true crée une nouvelle bouteille pour ce vin , à false ne place le vin que s'il reste des bouteilles non placées et crée un historique le cas échéant
+	 */
+	public Vin placerVin(Vin vin,Emplacement emplacement, int xPosition, int yPosition, boolean nouvBouteille) {
+
+		if(vin == null || vin.getId() == null) {
+			throw new IllegalArgumentException("un vin doit d'abord être persisté avant d'être placé");
+		}
+		if(emplacement == null) {
+			throw new IllegalArgumentException("un emplacement ne peut être null");
+		}
+		////1. vérifié s'il reste de la place
+		Place place = null;
+		if(emplacement.getId() != null) {//ne sert à rien de chercher dans la db si l'emplaceent est nouveau
+			place = placeRepository.findExactPlace(emplacement, xPosition, yPosition);
+		} else {
+			emplacementRepository.persist(emplacement);
+		}
+		if (place == null) {
+			place = new Place(Integer.valueOf(xPosition), Integer.valueOf(yPosition), emplacement);
+		}
+		//TODO check if there's already a bottle at this place
+		
+		////2. créer une bouteille ou en utiliser une non encore placée
+		EtatBouteille etatBouteille =  null;
+		EtatBouteille_Vin_Place bouteille_Vin_Place = null;
+		if (nouvBouteille) {
+			etatBouteille = new EtatBouteille();
+			bouteille_Vin_Place = new EtatBouteille_Vin_Place(etatBouteille,place,vin);
+		} else {
+			//TODO vérifié s'il reste des bouteilles non placées sinon exception
+		}
+		
+		////3. sauver dans la db
+		if(place.getId() == null) {
+			placeRepository.persist(place);
+		} else {
+			placeRepository.merge(place);
+		}
+		
+		vinRepository.merge(vin);
+		
+		if(etatBouteille.getId() == null) {
+			etatBouteilleRepository.persist(etatBouteille);
+		} else {
+			etatBouteilleRepository.merge(etatBouteille);
+		}
+		
+		if(bouteille_Vin_Place.getId() == null) {
+			etatBouteille_Vin_PlaceRepository.persist(bouteille_Vin_Place);
+		} else {
+			etatBouteille_Vin_PlaceRepository.merge(bouteille_Vin_Place);
+		}
+		
+		
+		
+		return vin;
+	}
+	
 	//TODO methode qui supprime le vin car le vin est lié à beacoup d'entités donc supprimé , ou pas , les entités liées
-	void supprimerVin() {
+	public void supprimerVin() {
 		throw new NonImplementedException("supprimerVin()");
 	}
 }

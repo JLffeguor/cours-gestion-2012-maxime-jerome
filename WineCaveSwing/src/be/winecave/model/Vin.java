@@ -34,6 +34,11 @@ public class Vin extends BaseEntity {
 	@ManyToOne
 	private Appelation appelation;
 	
+	public Vin() {}
+	public Vin(String nom) {
+		this.nom = nom;
+	}
+	
 	
 	///*********getters and setters**************///
 	
