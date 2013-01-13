@@ -1,5 +1,7 @@
 package be.winecave.fenetre.migLayout;
 
+import java.awt.Font;
+import java.awt.SystemColor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -52,6 +54,16 @@ public class GraphicCave extends PanelHelper {
 						setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));//...on le vide
 						b = false;
 					}
+				}
+				//survol de la souris
+				public void mouseEntered(MouseEvent e) {
+					//afficher le vin dans un cadre
+					System.out.println("Je suis dans le rond aux coordonnée " + e.getComponent());
+				}
+				//sortie de la zone survolée par la souris
+				public void mouseExited(MouseEvent e) {
+					//ne plus afficher le cadre
+					System.out.println("Je sort du rond aux coordonnées " + e.getComponent());
 				}
 			});
 		}
