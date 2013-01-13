@@ -18,8 +18,14 @@ public class Emplacement extends BaseEntity {
 	@Column(nullable=false,unique=true)
 	@NotBlank
 	private String nom;
+	
 	@OneToMany(mappedBy="emplacement")
 	private List<Place> places;
+	
+	public Emplacement() {}
+	public Emplacement(String nom) {
+		this.nom = nom;
+	}
 
 	public Cave getCave() {
 		return cave;
