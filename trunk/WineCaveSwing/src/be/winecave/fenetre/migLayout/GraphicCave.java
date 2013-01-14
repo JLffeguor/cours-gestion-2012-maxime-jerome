@@ -5,6 +5,8 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -40,6 +42,7 @@ public class GraphicCave extends PanelHelper {
 		int x;
 		int y;
 		boolean b = false;//pour vérifier si le rond est plein ou vide
+		TimerBeforeShowPopup timer;
 		
 		public Rond(int x,int y) {
 			this.x = x;
@@ -64,21 +67,48 @@ public class GraphicCave extends PanelHelper {
 				}
 				//survol de la souris
 				public void mouseEntered(MouseEvent e) {
-					//afficher le vin dans un cadre
-					System.out.println("Je suis dans le rond aux coordonnée " + e.getComponent());
-					//TODO mettre un timer pour l'apparition de la popup 'de sorte de ne aps avoir trop de popup qui s'affiche
-					showpopup(getScreenPosition());
+					//affiche le vin dans un cadre
+					timer = new TimerBeforeShowPopup(1);
+					System.out.println("Je suis dans le rond aux coordonnée " + e.getComponent());			
 				}
 				//sortie de la zone survolée par la souris
 				public void mouseExited(MouseEvent e) {
 					//ne plus afficher le cadre
 					System.out.println("Je sort du rond aux coordonnées " + e.getComponent());
+					timer.StopTimer();
+					vinPopup.setVisible(false);
 				}
 			});
 		}
 		
+		//timer pour afficher le popup
+		public class TimerBeforeShowPopup {
+			Timer timer;
+
+			public TimerBeforeShowPopup(int seconds) {
+				timer = new Timer();
+				timer.schedule(new ShowPopupNow(), seconds * 1000);
+			}
+
+			class ShowPopupNow extends TimerTask {
+				public void run() {
+					System.out.println("Time's up!");
+					showpopup(getScreenPosition());
+				}
+			}
+			
+			public void StopTimer() {
+				timer.cancel();
+			}
+
+		}
+		
 		public Point getScreenPosition() {
-			return this.getLocationOnScreen();
+			Point locationOnScreen = this.getLocationOnScreen();
+			locationOnScreen.x = locationOnScreen.x + 15;
+			locationOnScreen.y = locationOnScreen.y + this.getHeight();
+			return locationOnScreen;
+			//return this.getLocationOnScreen();
 		}
 		
 		public void showpopup(Point pointLocation) { 
@@ -87,7 +117,7 @@ public class GraphicCave extends PanelHelper {
 			vinPopup.setVisible(false);
 			JLabel textLabel = new JLabel("info: ceci est un vin"); 
 			textLabel.setPreferredSize(new Dimension(50, 100)); 
-			vinPopup.getContentPane().add(textLabel, BorderLayout.CENTER); 
+			vinPopup.getContentPane().add(textLabel, BorderLayout.CENTER);
 			vinPopup.setLocation(pointLocation);
 			vinPopup.pack();
 			vinPopup.revalidate();
