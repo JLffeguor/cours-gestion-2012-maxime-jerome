@@ -1,11 +1,8 @@
 package be.winecave.fenetre.migLayout;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
-import java.net.URISyntaxException;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -14,10 +11,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
 import net.miginfocom.swing.MigLayout;
-import be.winecave.fenetre.EditWine;
 import be.winecave.main.GUIConnector;
-import be.winecave.model.Categorie;
-import be.winecave.model.Vin;
 
 
 public abstract class MainWindow{

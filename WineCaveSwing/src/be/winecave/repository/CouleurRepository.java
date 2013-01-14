@@ -6,12 +6,14 @@ import org.springframework.stereotype.Repository;
 
 import be.winecave.model.Couleur;
 @Repository
+@SuppressWarnings("unchecked")
 public class CouleurRepository extends BaseRepository<Couleur> {
 
 	public Couleur findByName(String nomCouleur) {
 		return getSingleOrNullResult(em.createQuery("select c from Couleur c where c.nom=:nom").setParameter("nom", nomCouleur));
 	}
 
+	
 	public List<Couleur> findAll() {
 		return em.createQuery("select c from Couleur c order by c.nom").getResultList();
 	}

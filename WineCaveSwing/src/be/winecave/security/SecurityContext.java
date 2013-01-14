@@ -30,7 +30,7 @@ public  class SecurityContext {
     }
 
 
-    private static  void setUser(User userParam) {
+	private static  void setUser(User userParam) {
         //Security constraint
         if (user != null) {
             throw new IllegalStateException("Bug: Could not set a new user on the security context once a user has already been set");

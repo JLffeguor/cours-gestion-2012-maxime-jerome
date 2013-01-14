@@ -6,7 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import be.winecave.model.Vin;
 @Repository
+@SuppressWarnings("unchecked")
 public class VinRepository extends BaseRepository<Vin> {
+	
 	
 	public List<String> findAllProducteur() {
 		return em.createQuery("select producteur from Vin v order by v.producteur").getResultList();
