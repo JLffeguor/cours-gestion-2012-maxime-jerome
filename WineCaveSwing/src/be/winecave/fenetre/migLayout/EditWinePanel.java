@@ -1,7 +1,7 @@
 package be.winecave.fenetre.migLayout;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
@@ -61,18 +61,32 @@ public class EditWinePanel extends PanelHelper{
 		addSeparator(this, "Autres informations");
 
 		this.add(createLabel("Pays"), "");
-		comboPays.addActionListener(new ActionListener() {
+//		comboPays.addActionListener(new ActionListener() {
+//			
+//			@SuppressWarnings("unchecked")
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				System.out.println(SwingUtilities.isEventDispatchThread());
+//				System.out.println("i select  " + ((JComboBox<PaysViticole>)e.getSource()).getSelectedItem().toString());
+//				comboRegion.enableWithData(((PaysViticole) comboPays.getSelectedItem()).getRegionsEnfant());
+//				comboRegion.setSelectedIndex(-1);
+//			}
+//
+//		});
+		
+		comboPays.addItemListener(new ItemListener() {
 			
-			@SuppressWarnings("unchecked")
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				System.out.println(SwingUtilities.isEventDispatchThread());
-				System.out.println("i select  " + ((JComboBox<PaysViticole>)e.getSource()).getSelectedItem().toString());
-				comboRegion.enableWithData(((PaysViticole) comboPays.getSelectedItem()).getRegionsEnfant());
+			public void itemStateChanged(ItemEvent  e) {
+				if(comboPays.getSelectedItem() != null) {
+					System.out.println(SwingUtilities.isEventDispatchThread());
+					System.out.println("i select  " + ((PaysViticole) comboPays.getSelectedItem()).toString());
+					comboRegion.enableWithData(((PaysViticole) comboPays.getSelectedItem()).getRegionsEnfant());
+				}
 				comboRegion.setSelectedIndex(-1);
 			}
 
 		});
+
 		this.add(comboPays, "");
 		this.add(createLabel("Region"), "");
 		this.add(comboRegion, "wrap");
@@ -151,6 +165,33 @@ public class EditWinePanel extends PanelHelper{
 				jtfBoireDe.getText(), jtfBoireA.getText(), jtfApogeeDe.getText(), jtfApogeeA.getText(), !jtfTempDe.getText().trim().isEmpty()?Double.parseDouble(jtfTempDe.getText()):0.0d, !jtfTempA.getText().trim().isEmpty()?Double.parseDouble(jtfTempA.getText()):0.0d,//TODO an exception is throwed when field empty . find solution
 				vin);
 		
+	}
+	
+	void clearData() {
+		jtfReference.setText("");
+		jtfNom.setText("");
+		comboProducteur.setSelectedIndex(-1);
+		comboPays.setSelectedIndex(-1);
+		comboRegion.setSelectedIndex(-1);
+		comboAppellation.setSelectedIndex(-1);
+		jtfCepage.setText("");
+		comboCategorie.setSelectedIndex(-1);
+		comboCouleur.setSelectedIndex(-1);
+		comboClassement.setSelectedIndex(-1);
+		comboBouteille.setSelectedIndex(-1);
+		jtfCuvee.setText(""); //Le champs cuvée ne se vide pas.... 
+		jtfBoireDe.setText("");
+		jtfBoireA.setText("");
+		jtfApogeeDe.setText("");
+		jtfApogeeA.setText("");
+		jtfMillesime.setText("");
+		jtfMillesime.setText("");
+		jtfPrixAchat.setText("");
+		jtfEstimation.setText("");
+		jtfDegre.setText("");
+		jtfTempDe.setText("");
+		jtfTempA.setText("");
+		jtaCommentaire.setText("");
 	}
 
 }

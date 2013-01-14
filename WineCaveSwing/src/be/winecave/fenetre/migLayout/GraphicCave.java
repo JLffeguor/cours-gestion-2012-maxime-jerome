@@ -75,8 +75,8 @@ public class GraphicCave extends PanelHelper {
 				public void mouseExited(MouseEvent e) {
 					//ne plus afficher le cadre
 					System.out.println("Je sort du rond aux coordonnées " + e.getComponent());
-					timer.StopTimer();
 					vinPopup.setVisible(false);
+					timer.StopTimer();
 				}
 			});
 		}
