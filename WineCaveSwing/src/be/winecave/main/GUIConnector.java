@@ -5,10 +5,12 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import be.winecave.model.Vin;
 import be.winecave.repository.BouteilleRepository;
 import be.winecave.repository.CategorieRepository;
 import be.winecave.repository.ClassementRepository;
 import be.winecave.repository.CouleurRepository;
+import be.winecave.repository.EmplacementRepository;
 import be.winecave.repository.PaysViticoleRepository;
 import be.winecave.repository.RegionViticoleRepository;
 import be.winecave.repository.VinRepository;
@@ -21,6 +23,19 @@ import be.winecave.service.VinService;
 @Lazy
 @Scope("singleton")
 public class GUIConnector {
+	
+	private Vin currentVin;
+
+	public Vin getCurrentVin() {
+		if (currentVin == null) {
+			throw new RuntimeException("currentVin is null");
+		}
+		return currentVin;
+	}
+
+	public void setCurrentVin(Vin currentVin) {
+		this.currentVin = currentVin;
+	}
 
 	@Autowired
 	VinService vinService;
@@ -39,8 +54,13 @@ public class GUIConnector {
 	ClassementRepository classementRepository;
 	@Autowired
 	VinRepository vinRepository;
+	@Autowired
+	EmplacementRepository emplacementRepository;
 	
 	
+	public EmplacementRepository getEmplacementRepository() {
+		return emplacementRepository;
+	}
 	public VinService getVinService() {
 		return vinService;
 	}
