@@ -207,20 +207,21 @@ public class VinService {
 	 * @param nouvBouteille a true crée une nouvelle bouteille pour ce vin , à false ne place le vin que s'il reste des bouteilles non placées et crée un historique le cas échéant
 	 */
 	public Vin placerVin(Vin vin,Emplacement emplacement, int xPosition, int yPosition, boolean nouvBouteille) {
-
+		////0. faire planter l'application si nécessaire		
 		if(vin == null || vin.getId() == null) {
 			throw new IllegalArgumentException("un vin doit d'abord être persisté avant d'être placé");
 		}
 		if(emplacement == null) {
 			throw new IllegalArgumentException("un emplacement ne peut être null");
 		}
-		////1. vérifié s'il reste de la place
-		Place place = null;
-		if(emplacement.getId() != null) {//ne sert à rien de chercher dans la db si l'emplaceent est nouveau
-			place = placeRepository.findExactPlace(emplacement, xPosition, yPosition);
-		} else {
-			emplacementRepository.persist(emplacement);
+		if(xPosition >= emplacement.getNombreColonne() || yPosition >= emplacement.getNombreLigne()) {
+			throw new IllegalArgumentException("les coordonnées de la place sorte de l'emplacement");
 		}
+		
+		
+		////1. vérifier s'il reste de la place
+		Place place = null;
+		place = placeRepository.findExactPlace(emplacement, xPosition, yPosition);
 		if (place == null) {
 			place = new Place(Integer.valueOf(xPosition), Integer.valueOf(yPosition), emplacement);
 		}
