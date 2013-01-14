@@ -3,35 +3,17 @@ package be.winecave.fenetre.migLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
-import java.awt.Frame;
-import java.awt.KeyEventDispatcher;
-import java.awt.KeyboardFocusManager;
 import java.awt.LayoutManager;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Vector;
 
-import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSeparator;
@@ -41,23 +23,11 @@ import javax.swing.JToggleButton;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-import javax.swing.Timer;
 import javax.swing.UIManager;
-import javax.swing.border.EtchedBorder;
-import javax.swing.event.ListDataListener;
 import javax.swing.text.MaskFormatter;
 
-import com.sun.xml.internal.bind.v2.model.impl.ModelBuilder;
-
-import be.winecave.main.GUIConnector;
-
-import net.miginfocom.layout.AC;
-import net.miginfocom.layout.CC;
-import net.miginfocom.layout.ConstraintParser;
-import net.miginfocom.layout.IDEUtil;
-import net.miginfocom.layout.LC;
-import net.miginfocom.layout.PlatformDefaults;
 import net.miginfocom.swing.MigLayout;
+import be.winecave.main.GUIConnector;
 
 @SuppressWarnings("serial")
 public class PanelHelper extends JPanel{
@@ -182,7 +152,6 @@ public class PanelHelper extends JPanel{
 		return b;
 	}
 
-	private static final Font BUTT_FONT = new Font("monospaced", Font.PLAIN, 12);
 	JButton createButton()
 	{
 		return createButton("");
@@ -195,7 +164,6 @@ public class PanelHelper extends JPanel{
 
 	JButton createButton(String text, boolean bold)
 	{
-		@SuppressWarnings("serial")
 		JButton b = new JButton(text) {
 			public void addNotify()
 			{

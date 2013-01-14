@@ -32,6 +32,7 @@ import be.winecave.util.AppConfig;
 import be.winecave.util.FileUtil;
 import be.winecave.util.JarUtils;
 
+@SuppressWarnings("deprecation")
 public class WineCave {
 	private static Log log = LogFactory.getLog(FileUtil.class);
 	private static ApplicationContext context;
@@ -135,7 +136,6 @@ public class WineCave {
 		    }  
 	}
 	
-	@SuppressWarnings("deprecation")
 	private static void ExportDbSchema(boolean dropBefore) {
 		// Empty map. We add no additional property, everything is already in the persistence.xml
 		Map<String,Object> map=new HashMap<String,Object>(); 

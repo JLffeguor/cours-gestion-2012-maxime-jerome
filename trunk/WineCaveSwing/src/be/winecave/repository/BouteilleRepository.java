@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import be.winecave.model.Bouteille;
 @Repository
+@SuppressWarnings("unchecked")
 public class BouteilleRepository extends BaseRepository<Bouteille> {
 
 	public Bouteille findByName(String nomBouteille) {
