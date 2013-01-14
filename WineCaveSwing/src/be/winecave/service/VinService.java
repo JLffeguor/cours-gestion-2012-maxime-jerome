@@ -235,6 +235,7 @@ public class VinService {
 			bouteille_Vin_Place = new EtatBouteille_Vin_Place(etatBouteille,place,vin);
 		} else {
 			//TODO vérifié s'il reste des bouteilles non placées sinon exception
+			throw new NonImplementedException();
 		}
 		
 		////3. sauver dans la db
