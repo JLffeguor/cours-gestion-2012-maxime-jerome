@@ -156,14 +156,17 @@ public class EditWinePanel extends PanelHelper{
 		vin.setCepage(jtfCepage.getText());
 		vin.setCommentaire(jtaCommentaire.getText());
 
-		getGuiConnector().getVinService().creerVin(
-				(Region) comboRegion.getSelectedItem(), 
-				(Categorie)comboCategorie.getSelectedItem(), 
-				(Couleur)comboCouleur.getSelectedItem(), 
-				(Bouteille)comboBouteille.getSelectedItem(), 
-				(Classement)comboClassement.getSelectedItem(),
-				jtfBoireDe.getText(), jtfBoireA.getText(), jtfApogeeDe.getText(), jtfApogeeA.getText(), !jtfTempDe.getText().trim().isEmpty()?Double.parseDouble(jtfTempDe.getText()):0.0d, !jtfTempA.getText().trim().isEmpty()?Double.parseDouble(jtfTempA.getText()):0.0d,//TODO an exception is throwed when field empty . find solution
-				vin);
+		getGuiConnector().setCurrentVin(
+				getGuiConnector().getVinService().creerVin(
+						(Region) comboRegion.getSelectedItem(), 
+						(Categorie)comboCategorie.getSelectedItem(), 
+						(Couleur)comboCouleur.getSelectedItem(), 
+						(Bouteille)comboBouteille.getSelectedItem(), 
+						(Classement)comboClassement.getSelectedItem(),
+						jtfBoireDe.getText(), jtfBoireA.getText(), jtfApogeeDe.getText(), jtfApogeeA.getText(), !jtfTempDe.getText().trim().isEmpty()?Double.parseDouble(jtfTempDe.getText()):0.0d, !jtfTempA.getText().trim().isEmpty()?Double.parseDouble(jtfTempA.getText()):0.0d,//TODO an exception is throwed when field empty . find solution
+						vin
+						)
+		);
 		
 	}
 	
