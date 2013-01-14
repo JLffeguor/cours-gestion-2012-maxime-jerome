@@ -95,4 +95,11 @@ public class TabbedPane extends JTabbedPane {
 		
 		
 	}
+	
+	void clearData() {
+		editWinePanel.clearData();
+		//TODO other panel
+		
+		
+	}
 }

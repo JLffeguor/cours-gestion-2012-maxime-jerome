@@ -84,12 +84,13 @@ public abstract class MainWindow{
 		saveButton.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
 				saveData();
+				clearData();
 			}
 		});
 		bottomPanel.add(saveButton);
 		
 		JButton cancelButton = ((PanelHelper) bottomPanel).createButton("Annuler");
-		saveButton.addMouseListener(new MouseAdapter() {
+		cancelButton.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
 				clearData();
 			}
@@ -100,7 +101,7 @@ public abstract class MainWindow{
 	}
 	
 	private static void clearData() {
-		// TODO effacer tous les champs ou modification
+		tabbedPanel.clearData();
 	}
 
 	private static void saveData() {
