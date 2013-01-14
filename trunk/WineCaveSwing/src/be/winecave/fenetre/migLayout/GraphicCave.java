@@ -13,40 +13,65 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import net.miginfocom.swing.MigLayout;
+import be.winecave.model.Emplacement;
+import be.winecave.model.Vin;
 
 
+@SuppressWarnings("serial")
 public class GraphicCave extends PanelHelper {
 	
-	private int max_x = 8;
-	private int max_y = 10;
+	private int max_x;
+	private int max_y;
+	private Emplacement emplacement;
 	
 	JFrame vinPopup;
 
 	boolean rondVide = true;
-	Rond[][] rond = new Rond[max_x+1][max_y+1] ;
+	Rond[][] rond ;
 
 	
 	public GraphicCave() {
 		super(new MigLayout("","",""));
+		if((emplacement = getGuiConnector().getEmplacementRepository().findByName("test")) == null ) {
+			emplacement = new Emplacement("test",8,10);
+			getGuiConnector().getEmplacementRepository().persist(emplacement);
+		}
+		max_x = emplacement.getNombreColonne()-1;
+		max_y = emplacement.getNombreLigne()-1;
+		
+		rond = new Rond[emplacement.getNombreColonne()][emplacement.getNombreLigne()];
 	   
-		for(int y=max_y; y != 0 ; y--){//pour avoir les coordonnées comme un graphe mathematique : (0,0) en bas à gauche
+		for(int y=max_y; y != -1 ; y--){//pour avoir les coordonnées comme un graphe mathematique : (0,0) en bas à gauche
 			for(int x=0; x != max_x+1 ; x++){// "!=" plutot que "<" car cela est plus rapide en javascript , j'espère que c'est la même chsoe en java ^^//TODO tester la véracité de ceci
 				rond[x][y] = new Rond(x, y);
 				this.add(rond[x][y],x==max_x?"wrap":"");//on revient à al ligne lorsque l'on arrive au amx de l'abscisse
 		   }
-		   
-	   }
+		}
+
+	}
+	
+	void saveData(){
+		Vin vin = getGuiConnector().getCurrentVin();
+		for(int i = 0;i != rond.length;i++)  {
+			for(int j = 0;j != rond[i].length;j++)  {
+				if (rond[i][j].isSelected()) {
+					getGuiConnector().getVinService().placerVin(vin, emplacement, rond[i][j].getxPosition(), rond[i][j].getyPosition(), true);
+				}
+			}
+		}
 	}
 	
 	class Rond extends JLabel{
-		int x;
-		int y;
-		boolean b = false;//pour vérifier si le rond est plein ou vide
+		int xPosition;
+		int yPosition;
+
+		boolean selected = false;//pour vérifier si le rond est plein ou vide
+
 		TimerBeforeShowPopup timer;
 		
 		public Rond(int x,int y) {
-			this.x = x;
-			this.y = y;
+			this.xPosition = x;
+			this.yPosition = y;
 			vinPopup = new JFrame("popup");
 			vinPopup.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 			
@@ -56,13 +81,13 @@ public class GraphicCave extends PanelHelper {
 				//clic de la souris
 				public void mouseClicked(MouseEvent e) {
 					System.out.println(e.getComponent());
-					if(b == false){//si rond vide
+					if(selected == false){//si rond vide
 						setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVert.png")));//on le remplit
-						b = true;
+						selected = true;
 					}
 					else{//sinon il est plein, donc...
 						setIcon(new ImageIcon(GraphicCave.class.getResource("/images/rondVide.png")));//...on le vide
-						b = false;
+						selected = false;
 					}
 				}
 				//survol de la souris
@@ -75,10 +100,22 @@ public class GraphicCave extends PanelHelper {
 				public void mouseExited(MouseEvent e) {
 					//ne plus afficher le cadre
 					System.out.println("Je sort du rond aux coordonnées " + e.getComponent());
-					vinPopup.setVisible(false);
 					timer.StopTimer();
+					vinPopup.setVisible(false);
 				}
 			});
+		}
+		
+		public int getxPosition() {
+			return xPosition;
+		}
+
+		public int getyPosition() {
+			return yPosition;
+		}
+		
+		public boolean isSelected() {
+			return selected;
 		}
 		
 		//timer pour afficher le popup
@@ -126,7 +163,7 @@ public class GraphicCave extends PanelHelper {
 
 		@Override
 		public String toString() {
-			return "coordonnée : (" + x + ", " + y + ")";
+			return "coordonnée : (" + xPosition + ", " + yPosition + ")";
 		}
 	}
 
