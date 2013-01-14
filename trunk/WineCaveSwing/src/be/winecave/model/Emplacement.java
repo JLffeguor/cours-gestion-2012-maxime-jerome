@@ -20,12 +20,16 @@ public class Emplacement extends BaseEntity {
 	@Column(nullable=false,unique=true)
 	@NotBlank
 	private String nom;
+	@Column(nullable=false,unique=true)
 	private int nombreColonne; //valeur de x maximum pour les places contenues
+	@Column(nullable=false,unique=true)
 	private int nombreLigne; //valeur de y maximum pour les places contenues
 	
 	public Emplacement() {}
-	public Emplacement(String nom) {
+	public Emplacement(String nom, int nombreColonne, int nombreLigne) {
 		this.nom = nom;
+		this.nombreColonne = nombreColonne;
+		this.nombreLigne = nombreLigne;
 	}
 
 	public Cave getCave() {
