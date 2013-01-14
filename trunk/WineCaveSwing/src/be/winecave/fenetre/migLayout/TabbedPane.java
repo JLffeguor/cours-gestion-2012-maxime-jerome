@@ -91,6 +91,7 @@ public class TabbedPane extends JTabbedPane {
 	
 	void saveData() {
 		editWinePanel.saveData();
+		graphicCave.saveData();
 		//TODO other panel
 		
 		
