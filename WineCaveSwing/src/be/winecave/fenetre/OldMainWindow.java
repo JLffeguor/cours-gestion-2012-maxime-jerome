@@ -80,7 +80,7 @@ public class OldMainWindow extends JFrame {
 		contentPane.add(getLblDegustation());
 		contentPane.add(getLblIllustration());
 		contentPane.add(getBtnAnnuler());
-		contentPane.add(getBtnEnregistrer());
+		//contentPane.add(getBtnEnregistrer());
 		contentPane.add(getMainPanel());
 	}
 	
@@ -259,41 +259,41 @@ public class OldMainWindow extends JFrame {
 		}
 		return btnAnnuler;
 	}
-	private JButton getBtnEnregistrer() {
-		if (btnEnregistrer == null) {
-			btnEnregistrer = new JButton("Enregistrer");
-			btnEnregistrer.setBounds(125, 633, 100, 23);
-			lblInformations.addMouseListener(new MouseAdapter(){
-				//clic de la souris
-				public void mouseClicked(MouseEvent e) {
-					Vin vin = new Vin();
-					vin.setNom(((EditWine) mainPanel).getTxtNomVin().getText());
-					vin.setMillesime(((EditWine) mainPanel).getFTxtMillesime().getText());
-					vin.setProducteur((String) ((EditWine) mainPanel).getComboBoxProducteur().getSelectedItem());
-					vin.setDegre(Double.parseDouble(((EditWine) mainPanel).getFTxtDegre().getText()));
-					vin.setCuvee(((EditWine) mainPanel).getTxtCuvee().getText());
-					vin.setCepage((String) ((EditWine) mainPanel).getComboBoxCepage().getSelectedItem());
-					vin.setCommentaire(((EditWine) mainPanel).getTxtAreaCommentaire().getText());
-					
-					getConnector().getVinService().creerVin(
-							((Categorie) ((EditWine) mainPanel).getComboBoxRegion().getSelectedItem()).getNom(), 
-							((Categorie) ((EditWine) mainPanel).getComboBoxCategorie().getSelectedItem()).getNom(), 
-							((Categorie) ((EditWine) mainPanel).getComboBoxCouleur().getSelectedItem()).getNom(), 
-							((Categorie) ((EditWine) mainPanel).getComboBoxBouteille().getSelectedItem()).getNom(), 
-							((Categorie) ((EditWine) mainPanel).getComboBoxClassement().getSelectedItem()).getNom(), 
-							((EditWine) mainPanel).getFTxtBoireDe().getText(), 
-							((EditWine) mainPanel).getFTxtBoireA().getText(),  
-							((EditWine) mainPanel).getFTxtApogeeDe().getText(), 
-							((EditWine) mainPanel).getFTxtApogeeA().getText(),  
-							Double.parseDouble(((EditWine) mainPanel).getFTxtTempDe().getText()),
-							//((EditWine) mainPanel).getFTxtTempA(), A RAJOUTER !!
-							vin);
-				}
-			});
-		}
-		
-		return btnEnregistrer;
-	}
+//	private JButton getBtnEnregistrer() {
+//		if (btnEnregistrer == null) {
+//			btnEnregistrer = new JButton("Enregistrer");
+//			btnEnregistrer.setBounds(125, 633, 100, 23);
+//			lblInformations.addMouseListener(new MouseAdapter(){
+//				//clic de la souris
+//				public void mouseClicked(MouseEvent e) {
+//					Vin vin = new Vin();
+//					vin.setNom(((EditWine) mainPanel).getTxtNomVin().getText());
+//					vin.setMillesime(((EditWine) mainPanel).getFTxtMillesime().getText());
+//					vin.setProducteur((String) ((EditWine) mainPanel).getComboBoxProducteur().getSelectedItem());
+//					vin.setDegre(Double.parseDouble(((EditWine) mainPanel).getFTxtDegre().getText()));
+//					vin.setCuvee(((EditWine) mainPanel).getTxtCuvee().getText());
+//					vin.setCepage((String) ((EditWine) mainPanel).getComboBoxCepage().getSelectedItem());
+//					vin.setCommentaire(((EditWine) mainPanel).getTxtAreaCommentaire().getText());
+//					
+//					getConnector().getVinService().creerVin(
+//							((Categorie) ((EditWine) mainPanel).getComboBoxRegion().getSelectedItem()).getNom(), 
+//							((Categorie) ((EditWine) mainPanel).getComboBoxCategorie().getSelectedItem()).getNom(), 
+//							((Categorie) ((EditWine) mainPanel).getComboBoxCouleur().getSelectedItem()).getNom(), 
+//							((Categorie) ((EditWine) mainPanel).getComboBoxBouteille().getSelectedItem()).getNom(), 
+//							((Categorie) ((EditWine) mainPanel).getComboBoxClassement().getSelectedItem()).getNom(), 
+//							((EditWine) mainPanel).getFTxtBoireDe().getText(), 
+//							((EditWine) mainPanel).getFTxtBoireA().getText(),  
+//							((EditWine) mainPanel).getFTxtApogeeDe().getText(), 
+//							((EditWine) mainPanel).getFTxtApogeeA().getText(),  
+//							Double.parseDouble(((EditWine) mainPanel).getFTxtTempDe().getText()),
+//							//((EditWine) mainPanel).getFTxtTempA(), A RAJOUTER !!
+//							vin);
+//				}
+//			});
+//		}
+//		
+//		return btnEnregistrer;
+//	}
 	
 	
 	private JPanel getMainPanel() {
