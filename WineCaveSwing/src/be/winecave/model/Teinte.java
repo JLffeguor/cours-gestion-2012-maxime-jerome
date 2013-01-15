@@ -7,4 +7,12 @@ public class Teinte extends BaseEntity{
 	
 	private String nomTeinte;
 
+	public String getNomTeinte() {
+		return nomTeinte;
+	}
+
+	public void setNomTeinte(String nomTeinte) {
+		this.nomTeinte = nomTeinte;
+	}
+
 }

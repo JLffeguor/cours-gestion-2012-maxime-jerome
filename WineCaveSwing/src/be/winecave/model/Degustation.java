@@ -22,4 +22,44 @@ public class Degustation extends BaseEntity {
 	public void setDate_degustation(Date date_degustation) {
 		this.date_degustation = date_degustation;
 	}
+
+	public Carafage getCarafage() {
+		return carafage;
+	}
+
+	public void setCarafage(Carafage carafage) {
+		this.carafage = carafage;
+	}
+
+	public QualiteEnsemble getQualiteEnsemble() {
+		return qualiteEnsemble;
+	}
+
+	public void setQualiteEnsemble(QualiteEnsemble qualiteEnsemble) {
+		this.qualiteEnsemble = qualiteEnsemble;
+	}
+
+	public ObservationGustative getObservationGustative() {
+		return observationGustative;
+	}
+
+	public void setObservationGustative(ObservationGustative observationGustative) {
+		this.observationGustative = observationGustative;
+	}
+
+	public ObservationOlphactive getObservationOlphactive() {
+		return observationOlphactive;
+	}
+
+	public void setObservationOlphactive(ObservationOlphactive observationOlphactive) {
+		this.observationOlphactive = observationOlphactive;
+	}
+
+	public ObservationVisuelle getObservationVisuelle() {
+		return observationVisuelle;
+	}
+
+	public void setObservationVisuelle(ObservationVisuelle observationVisuelle) {
+		this.observationVisuelle = observationVisuelle;
+	}
 }
