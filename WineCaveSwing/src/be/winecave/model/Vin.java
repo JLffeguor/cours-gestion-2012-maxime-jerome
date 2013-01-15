@@ -3,6 +3,7 @@ package be.winecave.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 import org.hibernate.validator.constraints.NotBlank;
 @Entity
@@ -33,6 +34,8 @@ public class Vin extends BaseEntity {
 	private Conservation conservation;
 	@ManyToOne
 	private Appelation appelation;
+	@OneToOne
+	private Degustation degustation;
 	
 	public Vin() {}
 	public Vin(String nom) {
@@ -135,5 +138,11 @@ public class Vin extends BaseEntity {
 	}
 	public void setAppelation(Appelation appelation) {
 		this.appelation = appelation;
+	}
+	public Degustation getDegustation(){
+		return degustation;
+	}
+	public void setDegustation(Degustation degustation){
+		this.degustation = degustation;
 	}
 }
