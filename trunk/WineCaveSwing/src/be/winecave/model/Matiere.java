@@ -5,13 +5,13 @@ import javax.persistence.Entity;
 @Entity
 public class Matiere extends BaseEntity{
 
-	private String Nom_matiere;
+	private String nom_matiere;
 
 	public String getNom_matiere() {
-		return Nom_matiere;
+		return nom_matiere;
 	}
 
 	public void setNom_matiere(String nom_matiere) {
-		Nom_matiere = nom_matiere;
+		nom_matiere = nom_matiere;
 	}
 }
