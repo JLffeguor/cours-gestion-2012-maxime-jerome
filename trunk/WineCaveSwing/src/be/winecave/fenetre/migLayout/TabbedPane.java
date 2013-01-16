@@ -51,15 +51,14 @@ public class TabbedPane extends JTabbedPane {
 	
 	private EditWinePanel editWinePanel = new EditWinePanel();
 	private GraphicCave graphicCave = new GraphicCave();
+	private WineLabel wineLabel = new WineLabel();
 
 	public TabbedPane() {
 		this.addTab("Informations",  editWinePanel);
 
 		this.addTab("Emplacements",  graphicCave);
 
-		JComponent panel3 = makeTextPanel("Panel #3");
-		this.addTab("Tab 3",  panel3);
-		this.setMnemonicAt(2, KeyEvent.VK_3);
+		this.addTab("Etiquette",  wineLabel);
 
 		JComponent panel4 = makeTextPanel(
 				"Panel #4 (has a preferred size of 410 x 50).");
