@@ -1,13 +1,18 @@
 package be.winecave.model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class ObservationVisuelle extends BaseEntity{
 
 	private String commentaires;
+	@ManyToOne
 	private Teinte teinte;
+	@ManyToOne
 	private IntensiteVisuelle intensiteVisuelle;
+	
+	
 	public String getCommentaires() {
 		return commentaires;
 	}

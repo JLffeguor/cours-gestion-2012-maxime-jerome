@@ -1,12 +1,14 @@
 package be.winecave.model;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 
 @Entity
 public class QualiteEnsemble extends BaseEntity {
 
 	private String commentaire;
 	private String leLendemain;
+	@OneToOne//FIXME check if good
 	private Harmonie harmonie;
 	public String getCommentaire() {
 		return commentaire;
