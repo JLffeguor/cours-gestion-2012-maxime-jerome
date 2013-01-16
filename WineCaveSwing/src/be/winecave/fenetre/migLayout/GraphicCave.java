@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import net.miginfocom.swing.MigLayout;
+import be.winecave.main.ProgressDialog;
 import be.winecave.model.Emplacement;
 import be.winecave.model.Vin;
 
@@ -32,6 +33,9 @@ public class GraphicCave extends PanelHelper {
 	
 	public GraphicCave() {
 		super(new MigLayout("","",""));
+		
+
+		
 		if((emplacement = getGuiConnector().getEmplacementRepository().findByName("test")) == null ) {
 			emplacement = new Emplacement("test",8,10);
 			getGuiConnector().getEmplacementRepository().persist(emplacement);

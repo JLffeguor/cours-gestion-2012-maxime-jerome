@@ -12,13 +12,15 @@ import javax.swing.UIManager;
 
 import net.miginfocom.swing.MigLayout;
 import be.winecave.main.GUIConnector;
+import be.winecave.main.ProgressDialog;
 
 
 public abstract class MainWindow{
 	
 	private static JPanel topPanel;
 	private static TabbedPane tabbedPanel;
-	private static JPanel bottomPanel;	
+	private static JPanel bottomPanel;
+	
 	
 	private static JFrame frame;
 
@@ -28,13 +30,16 @@ public abstract class MainWindow{
 	 * the event dispatch thread.
 	 */
 	private static void createAndShowGUI(GUIConnector connector) {
+		
 		if (frame != null) {
 			throw new RuntimeException("the JFrame can be instanciate only once");
 		}
 		PanelHelper.setConnector(connector);
 		
+		
+		
 		//Create and set up the window.
-		frame = new JFrame("TabbedPaneDemo");
+		frame = new JFrame("Wine");
 		frame.setLayout(new MigLayout("","[grow, fill]","[][grow, fill][]"));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -64,6 +69,8 @@ public abstract class MainWindow{
 	}
 	
 	private static JPanel getTopPanel() {
+		
+		
 		if (topPanel == null) {
 			topPanel = new JPanel();
 			topPanel.setOpaque(true);
