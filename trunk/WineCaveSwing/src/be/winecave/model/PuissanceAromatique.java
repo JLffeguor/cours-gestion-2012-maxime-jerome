@@ -5,13 +5,13 @@ import javax.persistence.Entity;
 @Entity
 public class PuissanceAromatique extends BaseEntity{
 
-	private String Nom_Aromatique;
+	private String nom_Aromatique;
 
 	public String getNom_Aromatique() {
-		return Nom_Aromatique;
+		return nom_Aromatique;
 	}
 
 	public void setNom_Aromatique(String nom_Aromatique) {
-		Nom_Aromatique = nom_Aromatique;
+		this.nom_Aromatique = nom_Aromatique;
 	}
 }
