@@ -34,7 +34,7 @@ public class Vin extends BaseEntity {
 	private Conservation conservation;
 	@ManyToOne
 	private Appelation appelation;
-	@OneToOne
+	@OneToOne//FIXME peut-il y avoir plusieurs dégustation pour un même vin ?
 	private Degustation degustation;
 	
 	public Vin() {}

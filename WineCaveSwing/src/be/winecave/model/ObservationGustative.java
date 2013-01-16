@@ -1,6 +1,7 @@
 package be.winecave.model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -8,10 +9,16 @@ public class ObservationGustative extends BaseEntity {
 
 	private String commentaireEnBouche;
 	private String commentaireFinale;
+	@ManyToOne
 	private Squelette squelette;
+	@ManyToOne
 	private Matiere matiere;
+	@ManyToOne
 	private DominanteGustative dominanteGustative;
+	@ManyToOne
 	private PuissanceAromatique puissanceAromatique;
+	
+	
 	public String getCommentaireEnBouche() {
 		return commentaireEnBouche;
 	}

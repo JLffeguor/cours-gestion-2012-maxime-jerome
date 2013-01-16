@@ -1,6 +1,7 @@
 package be.winecave.model;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -8,8 +9,12 @@ public class ObservationOlphactive extends BaseEntity{
 
 	private String composantes;
 	private String commentaires;
+	@ManyToOne
 	private Finesse finesse;
+	@ManyToOne
 	private Dominante dominante;
+	
+	
 	public String getComposantes() {
 		return composantes;
 	}

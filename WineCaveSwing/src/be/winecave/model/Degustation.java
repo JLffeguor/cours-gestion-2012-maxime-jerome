@@ -3,16 +3,23 @@ package be.winecave.model;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 
 @Entity
 public class Degustation extends BaseEntity {
 
 	private Date date_degustation;
+	@ManyToOne
 	private Carafage carafage;
+	@OneToOne
 	private QualiteEnsemble qualiteEnsemble;
+	@OneToOne
 	private ObservationGustative observationGustative;
+	@OneToOne
 	private ObservationOlphactive observationOlphactive;
+	@OneToOne
 	private ObservationVisuelle observationVisuelle;
 
 	public Date getDate_degustation() {
