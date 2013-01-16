@@ -12,6 +12,11 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.jar.JarFile;
 
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.ejb.Ejb3Configuration;
@@ -32,6 +37,8 @@ import be.winecave.util.AppConfig;
 import be.winecave.util.FileUtil;
 import be.winecave.util.JarUtils;
 
+
+
 @SuppressWarnings("deprecation")
 public class WineCave {
 	private static Log log = LogFactory.getLog(FileUtil.class);
@@ -39,8 +46,32 @@ public class WineCave {
 	
 	private static boolean debugMode;
 
-	public static void main(String[] args) throws URISyntaxException, IOException {
+	
+	public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException {
 		
+	      
+		 JImagePanel imagePanel = new JImagePanel("images/acceuil.jpg");
+	        //Centrer l'image
+	        imagePanel.setStretch(false);
+	        //Etirer l'image
+	       // imagePanel.setStretch(true);
+
+	        JFrame frame = new JFrame();
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.add(imagePanel);
+	        frame.setSize(400, 400);
+	        frame.setLocation(200, 200);
+	        frame.setVisible(true);
+	        Thread.sleep(1000);
+	        frame.setVisible(false);
+
+		
+		 ProgressDialog frame1 = new ProgressDialog();
+	        frame1.pack();
+	        frame1.setVisible(true);
+	        frame1.loop1();
+	        frame1.setVisible(false);
+	        
 		if(log.isDebugEnabled()) { //TODO check console arg
 			activeDebugMode();
 		}
@@ -54,6 +85,11 @@ public class WineCave {
 		
 	}
 	
+	private static void Ecran_acceuil() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	private static void activeDebugMode(){
 		System.out.println("java system properties");
 		Properties props = System.getProperties();
@@ -68,6 +104,8 @@ public class WineCave {
 		
 		if( AppConfig.isFirstExecution() ) {
 			log.debug("this is first execution");
+			
+			
 			
 			ExportDbSchema(true);//TODO set to false in prod --maxime 24/12/12
 			

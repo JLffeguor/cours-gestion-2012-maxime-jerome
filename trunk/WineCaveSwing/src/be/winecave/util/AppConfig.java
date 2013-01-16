@@ -4,10 +4,17 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
+import be.winecave.main.ProgressDialog;
 
 /**
  * accède de manière trivial à la configuration de l'application
@@ -24,7 +31,16 @@ public class AppConfig {
 	
 	private static PropertiesConfiguration applicationProperties =  null;
 	
+
+	
 	private static void loadPropertiesConfiguration() {
+		
+		 ProgressDialog frame = new ProgressDialog();
+	     frame.pack();
+	     frame.setVisible(true);
+	     frame.loop2();
+	     frame.setVisible(false);
+	     
 		if ( applicationProperties != null ) {
 			return; //propertyFile already loaded : nothing to do!
 		}
