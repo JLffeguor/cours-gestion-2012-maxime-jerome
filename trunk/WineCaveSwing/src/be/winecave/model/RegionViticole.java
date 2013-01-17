@@ -36,7 +36,7 @@ public class RegionViticole extends Region {
 	}
 
 	public List<RegionViticole> getSousRegionViticoleEnfantes() {
-		if(getParent() instanceof RegionViticole &&// si c'est une sous région 
+		if(super.getParent() instanceof RegionViticole &&// si c'est une sous région 
 		   getEnfants() != null) { // et si elle a des sous régions
 			throw new RuntimeException("bug : une sous région ne peut contenir d'autres sous régions");
 		}
