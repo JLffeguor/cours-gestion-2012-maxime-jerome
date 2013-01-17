@@ -2,11 +2,11 @@
 
 CREATE DATABASE winecave;
 --create user winecave
-CREATE USER "winecave"@"localhost";
+--CREATE USER "winecave"@"localhost";
 --lui donner le password winecave
-SET password FOR "winecave"@"localhost" = password('winecave');
+--SET password FOR "winecave"@"localhost" = password('winecave');
 --OR
 CREATE USER "winecave"@"localhost" IDENTIFIED BY "winecave";
---donner tous les privilèges au user sur la db créée (pas top pour le moment mais va changer)
+--donner tous les privilï¿½ges au user sur la db crï¿½ï¿½e (pas top pour le moment mais va changer)
 
 GRANT ALL ON winecave.* TO "winecave"@"localhost"; 
