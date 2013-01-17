@@ -17,6 +17,7 @@ import be.winecave.model.Classement;
 import be.winecave.model.Couleur;
 import be.winecave.model.PaysViticole;
 import be.winecave.model.Region;
+import be.winecave.model.RegionViticole;
 import be.winecave.model.Vin;
 
 @SuppressWarnings("serial")
@@ -27,6 +28,7 @@ public class EditWinePanel extends PanelHelper{
 	private JComboBox<String> comboProducteur = new EditableUnselectedJCombobox<>(getGuiConnector().getVinRepository().findAllProducteur());
 	private JComboBox<PaysViticole> comboPays = new UnselectedJCombobox<>(getGuiConnector().getPaysViticoleRepository().findAll());
 	private DisabledJCombobox<Region> comboRegion = new DisabledJCombobox<>();
+	private DisabledJCombobox<Region> comboSousRegion = new DisabledJCombobox<>();
 	private JComboBox<String> comboAppellation = new EditableUnselectedJCombobox<>();
 	private JTextField jtfCepage = createTextField("");
 	private JComboBox<Categorie> comboCategorie = new UnselectedJCombobox<>(getGuiConnector().getCategorieRepository().findAll());
@@ -61,35 +63,29 @@ public class EditWinePanel extends PanelHelper{
 		addSeparator(this, "Autres informations");
 
 		this.add(createLabel("Pays"), "");
-//		comboPays.addActionListener(new ActionListener() {
-//			
-//			@SuppressWarnings("unchecked")
-//			@Override
-//			public void actionPerformed(ActionEvent e) {
-//				System.out.println(SwingUtilities.isEventDispatchThread());
-//				System.out.println("i select  " + ((JComboBox<PaysViticole>)e.getSource()).getSelectedItem().toString());
-//				comboRegion.enableWithData(((PaysViticole) comboPays.getSelectedItem()).getRegionsEnfant());
-//				comboRegion.setSelectedIndex(-1);
-//			}
-//
-//		});
-		
 		comboPays.addItemListener(new ItemListener() {
-			
 			public void itemStateChanged(ItemEvent  e) {
 				if(comboPays.getSelectedItem() != null) {
-					System.out.println(SwingUtilities.isEventDispatchThread());
-					System.out.println("i select  " + ((PaysViticole) comboPays.getSelectedItem()).toString());
 					comboRegion.enableWithData(((PaysViticole) comboPays.getSelectedItem()).getRegionsEnfant());
 				}
 				comboRegion.setSelectedIndex(-1);
 			}
-
 		});
 
 		this.add(comboPays, "");
-		this.add(createLabel("Region"), "");
+		this.add(createLabel("Région"), "");
 		this.add(comboRegion, "wrap");
+		comboRegion.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent  e) {
+				if(comboRegion.getSelectedItem() != null) {
+					comboSousRegion.enableWithData(((RegionViticole) comboRegion.getSelectedItem()).getSousRegionViticoleEnfantes());
+				}
+				comboSousRegion.setSelectedIndex(-1);
+			}
+		});
+		this.add(createLabel(""));this.add(createLabel(""));//this is for have two blank zone before sous-région
+		this.add(createLabel("Sous-région"), "");
+		this.add(comboSousRegion, "wrap");
 		this.add(createLabel("Appelation"), "");
 		this.add(comboAppellation, "span , growx, wrap");
 		this.add(createLabel("Cépage"));
@@ -155,10 +151,17 @@ public class EditWinePanel extends PanelHelper{
 		vin.setCuvee(jtfCuvee.getText());
 		vin.setCepage(jtfCepage.getText());
 		vin.setCommentaire(jtaCommentaire.getText());
+		
+		Region selectedRegion = null;
+		if((selectedRegion = (Region) comboSousRegion.getSelectedItem()) == null ) {
+			if ((selectedRegion = (Region) comboRegion.getSelectedItem()) == null) {
+				selectedRegion = (Region) comboPays.getSelectedItem();
+			}
+		}
 
 		getGuiConnector().setCurrentVin(
 				getGuiConnector().getVinService().creerVin(
-						(Region) comboRegion.getSelectedItem(), 
+						selectedRegion, 
 						(Categorie)comboCategorie.getSelectedItem(), 
 						(Couleur)comboCouleur.getSelectedItem(), 
 						(Bouteille)comboBouteille.getSelectedItem(), 
@@ -176,6 +179,7 @@ public class EditWinePanel extends PanelHelper{
 		comboProducteur.setSelectedIndex(-1);
 		comboPays.setSelectedIndex(-1);
 		comboRegion.setSelectedIndex(-1);
+		comboSousRegion.setSelectedIndex(-1);
 		comboAppellation.setSelectedIndex(-1);
 		jtfCepage.setText("");
 		comboCategorie.setSelectedIndex(-1);
