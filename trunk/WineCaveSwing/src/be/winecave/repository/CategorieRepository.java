@@ -10,12 +10,12 @@ import be.winecave.model.Categorie;
 public class CategorieRepository extends BaseRepository<Categorie> {
 
 	public Categorie findByName(String nomCategorie) {
-		return getSingleOrNullResult(em.createQuery("select c from Categorie c where c.nom_dominante=:nom").setParameter("nom",nomCategorie));
+		return getSingleOrNullResult(em.createQuery("select c from Categorie c where c.nom=:nom").setParameter("nom",nomCategorie));
 	}
 
 
 	public List<Categorie> findAll() {
-		return em.createQuery("select c from Categorie c order by c.nom_dominante").getResultList();
+		return em.createQuery("select c from Categorie c order by c.nom").getResultList();
 	}
 
 }
