@@ -19,8 +19,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
@@ -39,30 +37,15 @@ public class ImageUtil {
     static Log log = LogFactory.getLog(FileUtil.class);
     
 	public static void saveImageToFileAsJPEG(InputStream imageInputStream, String folderPath,
-			String imageName, float quality) throws FileNotFoundException, IOException {
+			String imageName, float quality) throws IOException {
 		saveImageToFileAsJPEG(ImageIO
 				.read(new BufferedInputStream(imageInputStream)), folderPath, imageName, quality);
 
 	}
 
-	/** fullUrl must be a full url like "http://www.knowledgeblackbelt.com/img/...", not just like "/img/..."
-	 * Use BlackBeltUriAnalyzer.getFullUrl() if you start from a Resource */
-	public static BufferedImage readImage(String fullUrl) {
-		BufferedImage bImg;
-		try {
-			bImg = ImageIO.read(new URL(fullUrl));
-		} catch (MalformedURLException e) {
-			throw new RuntimeException(e);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-		return bImg;
-	}
-
-
 	public static void saveImageToFileAsJPEG(RenderedImage image,
 			String folderPath, String fileName, float quality)
-					throws FileNotFoundException, IOException {
+					throws IOException {
 
 		JPEGImageWriteParam param = new JPEGImageWriteParam(null);
 		param.setCompressionMode(JPEGImageWriteParam.MODE_EXPLICIT);
