@@ -18,7 +18,7 @@ public abstract class AbstractTask extends BaseEntity {
 	private List<AbstractTask> children;
     
 	@ManyToOne(fetch=FetchType.LAZY) 
-	@JoinColumn(nullable = false)
+	@JoinColumn(nullable = true)
 	private AbstractTask parent;
 	
 	private String description;
