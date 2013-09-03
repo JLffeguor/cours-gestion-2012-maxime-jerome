@@ -1,5 +1,6 @@
 package be.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +16,7 @@ import be.model.User.Role;
 public abstract class AbstractTask extends BaseEntity {
     
 	@OneToMany(mappedBy = "parent", fetch=FetchType.LAZY)  
-	private List<AbstractTask> children;
+	private List<AbstractTask> children = new ArrayList<>();
     
 	@ManyToOne(fetch=FetchType.LAZY) 
 	@JoinColumn(nullable = true)

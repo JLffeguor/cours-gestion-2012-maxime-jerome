@@ -1,5 +1,6 @@
 package be.model;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +16,7 @@ import be.model.User.Role;
 public class Task extends AbstractTask {
 
 	@OneToMany
-	private List<User> assignedUser;
+	private List<User> assignedUser = new ArrayList<>();
 	private int plannedHours;
 	
 	@Override
