@@ -1,13 +1,11 @@
 package be.model;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
-import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.MapKey;
-import javax.persistence.OneToMany;
 
 import be.model.User.Role;
 
@@ -15,7 +13,7 @@ import be.model.User.Role;
 public class Project extends AbstractTask {
 	
 	@ElementCollection
-	private Map<User,Role> projectMembers;
+	private Map<User,Role> projectMembers = new HashMap<>();
 	
 	private String name;
 
