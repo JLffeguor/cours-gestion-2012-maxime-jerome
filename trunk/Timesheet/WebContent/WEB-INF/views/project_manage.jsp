@@ -8,6 +8,7 @@
 <title>project_manage</title>
 </head>
 <body>
+<a href="add_project"><div>ajouter projets</div></a>
 <c:forEach items="${projectList}" var="project">
 	${project.name}
 </c:forEach>
