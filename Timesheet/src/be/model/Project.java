@@ -1,5 +1,6 @@
 package be.model;
 
+import java.util.Collections;
 import java.util.Map;
 
 import javax.persistence.CascadeType;
@@ -19,11 +20,11 @@ public class Project extends AbstractTask {
 	private String name;
 
 	/**
-	 * retourne la liste des membres travaillant dans ce projety=
+	 * retourne la liste des membres travaillant dans ce projet
 	 */
 	@Override
 	public Map<User, Role> getAssignedUsers() {
-		return projectMembers;
+		return Collections.unmodifiableMap(projectMembers);
 	}
 
 	@Override
@@ -50,6 +51,10 @@ public class Project extends AbstractTask {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public void addMember(User user,Role role) {
+		projectMembers.put(user, role);
 	}
 
 }
