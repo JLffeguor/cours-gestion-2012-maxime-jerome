@@ -87,6 +87,22 @@ public class ProjectController extends BaseController<User> {
 		
 		return "redirect:project_manage";
 	}
+	
+    @RequestMapping("/project")
+    public ModelAndView projectManage(@RequestParam("projectId") Long projectId) {
+    	ModelAndView mv = new ModelAndView("project");
+    	Project project = projectRepository.find(projectId);
+    	
+    	if( SecurityContext.canCurrentUserChangeProject(project)) {
+    		
+    			mv.addObject("project", project);
+    			mv.addObject("TaskList", projectRepository.findAllTaskforProjetc(project));
+    	
+    	}
+    	
+    	
+		return mv;
+    } 
     
     @RequestMapping("/project_activity")
     public String projectActivity() {

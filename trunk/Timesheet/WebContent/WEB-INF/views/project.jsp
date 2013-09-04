@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@taglib uri="http://www.springframework.org/tags/form"  prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +8,25 @@
 <title>add user</title>
 </head>
 <body>
-<form action="project_submit">
-	<label for="projectName">name : </label> <input type="text" name="projectName"/><br/>
-	<label for="description">description : </label> <input type="text" name="description"/>
-	<label for="projectManagerUserName">projectManager userName : </label> <input type="text" name="projectManagerUserName"/>
-	<input type="submit" value="add project" />
-</form>
+	<h1>${project.name}</h1>
+	
+	<h2>Tâches du projet</h2>
+	<c:forEach items="${TaskList}" var="task">
+		<h3>description</h3>
+		<div>${task.description}</div>
+		<h3>user assignés à la tâche</h3>
+		<c:forEach items="${task.assignedUsers}" var="user">
+			<div>${user.key.userName}</div>
+		</c:forEach>
+	</c:forEach>
+	
+	<a href="task_add?projectId=${project.id}"><h3>ajouter une tâche</h3></a>
+	
+	<h2>users assignés au projet</h2>
+	<c:forEach items="${project.assignedUsers}" var="user">
+		<div>${user.key.userName}</div>
+		<div>${user.value.name}</div>
+	</c:forEach>
+
 </body>
 </html>
