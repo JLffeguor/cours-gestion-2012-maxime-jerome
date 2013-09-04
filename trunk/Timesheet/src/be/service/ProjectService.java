@@ -29,7 +29,7 @@ public class ProjectService {
 		for(String userName : assignedUser) {
 			user = userRepository.getUserByUserName(userName);
 			if(user != null) {
-				result.addMember(projectManager, Role.USER);
+				result.addMember(user, Role.USER);
 			}
 			//TODO make something when user not found
 		}
