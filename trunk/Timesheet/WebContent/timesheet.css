@@ -1,0 +1,53 @@
+
+body{
+	font-family:Arial,"Times New Roman",Georgia,Serif;
+	background-color:#000;
+	color:#FFF;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;}
+
+A {text-decoration: none;
+color:#FFF;}
+A:hover {text-decoration: underline;
+color: #1FA055;}
+
+#loginpanel{
+	width:208px;
+	margin:0 auto;
+}
+input[type=submit]{
+ width:100px;
+ margin-top:10px;
+ cursor:pointer;
+ }
+ label {
+padding :5px;
+display:block;
+}
+
+#project{
+	width:800px;
+	
+	/*  margin:0 auto;*/
+}
+#project_activity{
+	width:260px;
+	margin-left:105px;
+	
+}
+#project_manage{
+	width:260px;
+	margin-left:105px;
+	
+}
+
+#user_manage{
+	width:360px;
+	margin-left:105px;
+}
+#user_activity{
+	width:360px;
+	margin-left:105px;
+}
