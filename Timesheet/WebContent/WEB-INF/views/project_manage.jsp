@@ -13,7 +13,7 @@
 	</c:if>
 
 	<c:forEach items="${projectList}" var="project">
-		${project.name}
+		<a href="project?projectId=${project.id}"><div>${project.name}</div></a>
 	</c:forEach>
 </body>
 </html>
