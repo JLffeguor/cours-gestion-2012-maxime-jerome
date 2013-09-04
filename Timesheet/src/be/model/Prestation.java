@@ -15,8 +15,8 @@ public class Prestation extends AbstractTask {
 	private int workedHours;
 
 	@Override
-	public Map<User, Role> getAssignedUsers() {
-		Map<User, Role> result = new HashMap<>();
+	public Map<User, String> getAssignedUsers() {
+		Map<User, String> result = new HashMap<>();
 		result.put(prestataire, this.getParent().getAssignedUsers().get(prestataire));
 		
 		return Collections.unmodifiableMap(result);
