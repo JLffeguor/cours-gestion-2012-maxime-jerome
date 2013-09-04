@@ -7,9 +7,9 @@
 <title>dashBoard</title>
 </head>
 <body>
-<a href="project_manage"><div>gérer projets</div></a>
-<a href="project_activity"><div>activité des projets</div></a>
-<a href="user_manage"><div>gérer utilisateurs</div></a>
-<a href="user_activity"><div>prester</div></a>
+	<a href="project_manage"><div>gérer projets</div></a>
+	<a href="project_activity"><div>activité des projets</div></a>
+	<a href="user_manage"><div>gérer utilisateurs</div></a>
+	<a href="user_activity"><div>prester</div></a>
 </body>
 </html>
