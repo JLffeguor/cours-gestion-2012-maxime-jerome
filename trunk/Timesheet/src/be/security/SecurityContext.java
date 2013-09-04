@@ -42,7 +42,8 @@ public  class SecurityContext {
     public static void assertUserIsLoggedIn() {
         if (getUser() == null) {
             throw new UnauthorizedAccessException();
-        }
+        } 
+        System.out.println("user" + getUser().getUserName() + "loggé");
     }
 
 

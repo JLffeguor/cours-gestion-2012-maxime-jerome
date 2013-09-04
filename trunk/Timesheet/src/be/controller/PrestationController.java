@@ -1,10 +1,11 @@
 package be.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.text.ParseException;
+import java.util.Date;
 
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateUtils;
+import org.apache.commons.lang3.time.FastDateFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import be.exception.UnauthorizedAccessException;
-import be.exception.UserNotFoundException;
 import be.model.User;
 import be.repository.ProjectRepository;
 import be.repository.TaskRepository;
@@ -47,31 +47,31 @@ public class PrestationController extends BaseController<User> {
 	}
 	
 	@RequestMapping("/prestation_submit")
-	public String prestationSubmit(@RequestParam("projectId") long projectId,
-								@RequestParam("plannedHours") int plannedHours,
-    							@RequestParam(value="description",required=false) String description,
-    							@RequestParam(value="userNameList",required=false) String assignedUserUserName) throws UserNotFoundException {
+	public ModelAndView prestationSubmit(@RequestParam("taskId") long taskId,
+    							@RequestParam(value="description") String description,
+    							@RequestParam(value="start") String start,
+    							@RequestParam(value="end") String end) throws ParseException  {
 		try {
 			SecurityContext.assertUserIsLoggedIn();
 		} catch (UnauthorizedAccessException uae) {
-			return "redirect:login";
+			new ModelAndView("redirect:login");
 		}
+
+		Date startDate = DateUtils.parseDate(start, "dd/MM/yyyy HH:mm");
+		Date endDate = DateUtils.parseDate(end, "dd/MM/yyyy HH:mm");
 		
-		List<String> assignedUser = new ArrayList<>();
-		StringTokenizer userName  = new StringTokenizer(assignedUserUserName, ",");
-		while (userName.hasMoreElements()) {
-			assignedUser.add(StringUtils.trim(userName.nextToken()));
-		}
+		System.out.println(DateFormatUtils.ISO_DATETIME_TIME_ZONE_FORMAT.format(startDate));
+		taskService.addPrestation(taskId, description, startDate, endDate);
 		
-		taskService.createTask(projectId, plannedHours, description, assignedUser);
-		//TODO check if project is not null
-		
-		return "redirect:project_manage";
+		ModelAndView mv = new ModelAndView("user_activity","taskList",taskRepository.getAllTaskAssignedTocurrentUSer());
+		return mv;
 	}
-//    
-//    @RequestMapping("/project_activity")
-//    public String projectActivity() {
-//		return "dashboard";
-//    }   
+    
+    @RequestMapping("/prestation_add")
+    public ModelAndView projectActivity(@RequestParam("taskId") long taskId) {
+		ModelAndView mv = new ModelAndView("prestation_add");
+    	mv.addObject("taskId",taskId);
+		return mv;
+    }   
    
 }

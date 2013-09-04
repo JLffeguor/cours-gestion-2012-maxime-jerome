@@ -43,6 +43,9 @@ public class LoginController extends BaseController<User> {
     		WebRequest request) {
     	String errorMsg = null;
     	User user = null;
+    	
+    	loginService.logout();//to avoid two login at one time problem
+    	
     	try {
     		user = loginService.login(userNameOrMail, password, null);
 
