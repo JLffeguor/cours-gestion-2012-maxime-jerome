@@ -48,6 +48,7 @@ public class UserController extends BaseController<User> {
     	mv.addObject("user", user);
     	
     	if(user.hasAdminPrivileges() ) {
+    		mv.addObject("admin", true);
     		List<User> allUsers = userRepository.findAll();
     		mv.addObject("usersList", allUsers);
     	}

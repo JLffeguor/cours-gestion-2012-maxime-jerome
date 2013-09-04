@@ -8,9 +8,11 @@
 <title>project_manage</title>
 </head>
 <body>
-<a href="add_user"><div>ajouter user</div></a>
-<c:forEach items="${usersList}" var="user">
-	${user.userName}
-</c:forEach>
+<c:if test="${admin}">
+	<a href="add_user"><div>ajouter user</div></a>
+	<c:forEach items="${usersList}" var="user">
+		${user.userName}
+	</c:forEach>
+</c:if>
 </body>
 </html>
