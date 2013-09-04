@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -8,9 +8,12 @@
 <title>project_manage</title>
 </head>
 <body>
-<a href="add_project"><div>ajouter projets</div></a>
-<c:forEach items="${projectList}" var="project">
-	${project.name}
-</c:forEach>
+	<c:if test="${canCreateProject}">
+		<a href="project_add"><div>ajouter projets</div></a>
+	</c:if>
+
+	<c:forEach items="${projectList}" var="project">
+		${project.name}
+	</c:forEach>
 </body>
 </html>
