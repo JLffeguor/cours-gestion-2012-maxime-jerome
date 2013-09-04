@@ -20,21 +20,25 @@ public class ProjectCreation {
 		Project project = new Project();
 		
 		project.setName("projet 1");
+
+		
+		((ProjectRepository) ContextUtil.getSpringBean("projectRepository")).persist(project);
+		
 		project.addMember( ((UserRepository) ContextUtil.getSpringBean("userRepository")).getUserByUserName("plop") , Role.PROJECT_MANAGER);
 		project.addMember( ((UserRepository) ContextUtil.getSpringBean("userRepository")).getUserByUserName("plep") , Role.USER);
 		project.addMember( ((UserRepository) ContextUtil.getSpringBean("userRepository")).getUserByUserName("plup") , Role.USER);
 		
-		((ProjectRepository) ContextUtil.getSpringBean("projectRepository")).persist(project);
-		//user = ((UserRepository) ContextUtil.getSpringBean("userRepository")).merge(user);
+		((ProjectRepository) ContextUtil.getSpringBean("projectRepository")).merge(project);
 		
 		System.out.println("project id" + project.getId());
 		
 		project = new Project();
 		project.setName("projet 2");
-		project.addMember(((UserRepository) ContextUtil.getSpringBean("userRepository")).getUserByUserName("plop"), Role.PROJECT_MANAGER);
 		
 		((ProjectRepository) ContextUtil.getSpringBean("projectRepository")).persist(project);
-		//user = ((UserRepository) ContextUtil.getSpringBean("userRepository")).merge(user);
+		project.addMember(((UserRepository) ContextUtil.getSpringBean("userRepository")).getUserByUserName("plup"), Role.PROJECT_MANAGER);
+		((ProjectRepository) ContextUtil.getSpringBean("projectRepository")).merge(project);
+
 		
 		System.out.println("project id" + project.getId());
 	}
