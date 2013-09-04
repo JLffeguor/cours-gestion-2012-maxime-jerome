@@ -37,6 +37,7 @@ public class UserController extends BaseController<User> {
 		try {
 			SecurityContext.assertUserIsLoggedIn();
 		} catch (UnauthorizedAccessException uae) {
+			System.out.println("user non loggé");
 			return new ModelAndView("redirect:login");
 		}
 
@@ -52,6 +53,7 @@ public class UserController extends BaseController<User> {
 		mv.addObject("user", user);
 
 		if (user.hasAdminPrivileges()) {
+			System.out.println(user.getUserName() + "  je suis un amdin");
 			mv.addObject("admin", true);
 			List<User> allUsers = userRepository.findAll();
 			mv.addObject("usersList", allUsers);

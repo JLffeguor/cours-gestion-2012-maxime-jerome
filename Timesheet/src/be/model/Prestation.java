@@ -1,19 +1,35 @@
 package be.model;
 
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.persistence.Entity;
 
-import be.model.User.Role;
-
 @Entity
 public class Prestation extends AbstractTask {
 	
 	private User prestataire;
-	private int workedHours;
+	private Date startDate;
+	public Date getStartDate() {
+		return startDate;
+	}
 
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+
+	private Date endDate;
+	
 	@Override
 	public Map<User, String> getAssignedUsers() {
 		Map<User, String> result = new HashMap<>();
@@ -24,7 +40,8 @@ public class Prestation extends AbstractTask {
 
 	@Override
 	public Integer getWorkedHours() {
-		return workedHours;
+		long millisecondediff = endDate.getTime() - startDate.getTime();
+		return (int) (millisecondediff / 1000 / 60 / 60);
 	}
 
 	/**
