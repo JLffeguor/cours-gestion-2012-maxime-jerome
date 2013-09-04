@@ -44,7 +44,7 @@ public class LoginController extends BaseController<User> {
     	String errorMsg = null;
     	User user = null;
     	try {
-    		user = loginService.loginEncrypted(userNameOrMail, password, null);
+    		user = loginService.login(userNameOrMail, password, null);
 
     	} catch (UserNotFoundException e) {
     		errorMsg="L'utilisateur '"+userNameOrMail+"' n'existe pas";
