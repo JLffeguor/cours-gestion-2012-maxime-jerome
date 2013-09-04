@@ -39,6 +39,9 @@ public class UserCreation {
 		user = ((UserService) ContextUtil.getSpringBean("userService")).registerUser("plap", "plop");
 		System.out.println("user id" + user.getId());
 		
+		user = ((UserService) ContextUtil.getSpringBean("userService")).registerUser("plop", "plop");
+		System.out.println("user id" + user.getId());
+		
 		//must comment session init to work
 //		user = ((LoginService) ContextUtil.getSpringBean("loginService")).login("plap", "plop", user.getId());
 //		System.out.println("user logged by id" + user.getId());
