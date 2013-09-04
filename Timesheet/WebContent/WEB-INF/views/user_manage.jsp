@@ -9,7 +9,7 @@
 </head>
 <body>
 <c:if test="${admin}">
-	<a href="add_user"><div>ajouter user</div></a>
+	<a href="user_add"><div>ajouter user</div></a>
 	<c:forEach items="${usersList}" var="user">
 		${user.userName}
 	</c:forEach>
