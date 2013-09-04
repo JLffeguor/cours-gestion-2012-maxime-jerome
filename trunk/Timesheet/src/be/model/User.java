@@ -11,6 +11,9 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
@@ -27,14 +30,17 @@ import be.security.Privilege;
 public class User extends BaseEntity implements Cloneable, Serializable{
    
     public enum Role {
-        ADMIN("Administrator of all things"),
-        PROJECT_ADMIN("project-Administrator"),
-        PROJECT_MANAGER("project Administrator for current project"),
-        USER("User");
+        ADMIN(100l,"Administrator of all things"),
+        PROJECT_ADMIN(101l,"project-Administrator"),
+        PROJECT_MANAGER(102l,"project Administrator for current project"),
+        USER(103l,"User");
 
         String name;
+        
+        private Role() {
+        }
 
-        private Role(String aName) {
+        private Role(long id, String aName) {
             this.name = aName;
         }
 

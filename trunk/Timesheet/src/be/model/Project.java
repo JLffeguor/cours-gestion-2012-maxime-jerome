@@ -4,8 +4,15 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.persistence.CascadeType;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.MapKey;
+import javax.persistence.OneToMany;
 
 import be.model.User.Role;
 
@@ -13,7 +20,7 @@ import be.model.User.Role;
 public class Project extends AbstractTask {
 	
 	@ElementCollection
-	private Map<User,Role> projectMembers = new HashMap<>();
+	private Map<User,String> projectMembers = new HashMap<>();
 	
 	private String name;
 
@@ -21,7 +28,7 @@ public class Project extends AbstractTask {
 	 * retourne la liste des membres travaillant dans ce projet
 	 */
 	@Override
-	public Map<User, Role> getAssignedUsers() {
+	public Map<User, String> getAssignedUsers() {
 		return Collections.unmodifiableMap(projectMembers);
 	}
 
@@ -52,7 +59,7 @@ public class Project extends AbstractTask {
 	}
 	
 	public void addMember(User user,Role role) {
-		projectMembers.put(user, role);
+		projectMembers.put(user, role.getName());
 	}
 
 }

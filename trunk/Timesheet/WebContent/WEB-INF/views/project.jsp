@@ -25,7 +25,7 @@
 	<h2>users assignés au projet</h2>
 	<c:forEach items="${project.assignedUsers}" var="user">
 		<div>${user.key.userName}</div>
-		<div>${user.value.name}</div>
+		<div>${user.value}</div>
 	</c:forEach>
 
 </body>
