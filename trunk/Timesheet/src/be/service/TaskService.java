@@ -93,5 +93,27 @@ public class TaskService {
 		
 		return prestation;
 	}
+	
+	@Transactional
+	public void suspendTask(long taskId) throws Exception {
+		
+		Task task = taskRepository.find(taskId);
+		
+		if( task.getState().equals(State.WAIT) || task.getState().equals(State.WORKING)) {
+			task.setState(State.SUSPENDED);
+		} else if ( task.getState().equals(State.SUSPENDED)) {
+			
+			if(task.getWorkedHours() == 0) {
+				task.setState(State.WAIT);
+			} else {
+				task.setState(State.WORKING);
+			}
+		} else { 
+			throw new Exception("la tâche n'est pas dans un état qui permet cette opération");
+		}
+		
+		taskRepository.merge(task);
+		
+	}
 
 }

@@ -18,6 +18,7 @@ import be.repository.ProjectRepository;
 import be.repository.UserRepository;
 import be.security.SecurityContext;
 import be.service.TaskService;
+import be.util.NotificationUtil;
 
 
 @Controller
@@ -65,10 +66,20 @@ public class TaskController extends BaseController<User> {
 		
 		return "redirect:project_manage";
 	}
-//    
-//    @RequestMapping("/project_activity")
-//    public String projectActivity() {
-//		return "dashboard";
-//    }   
+
+    @RequestMapping("/task_suspend")
+    public String projectActivity(@RequestParam("taskId") long taskId,
+    		@RequestParam("projectId") long projectId) {
+		try {
+			taskService.suspendTask(taskId);
+		} catch (Exception e) {
+			NotificationUtil.addErrorMessage(e.getMessage());
+			return "redirect:project?projectId="+projectId;
+		}
+		
+		NotificationUtil.addNotificationMessage("la modification d'état à été correctement effectuée");
+		
+    	return "redirect:project?projectId="+projectId;
+    }   
    
 }

@@ -52,8 +52,8 @@ public class Task extends AbstractTask {
 	}
 
 	@Override
-	public Integer getWorkedHours() {
-		int result = 0;
+	public Double getWorkedHours() {
+		double result = 0;
 		for(AbstractTask child : this.getChildren()) {
 			result += child.getWorkedHours();
 		}
