@@ -18,7 +18,7 @@
 
 <% if (session.getAttribute("notifications") != null) {%>
 <c:forEach items="${sessionScope['notifications']}" var="notification">
-	<div class="errors">${notification.text}</div>
+	<div class="notifications">${notification.text}</div>
 </c:forEach>
 <%} NotificationUtil.reset();%>
 <a href="logout" id="dashboardLink">changer d'utilisateur (actuellement : ${current.user.userName})</a>
