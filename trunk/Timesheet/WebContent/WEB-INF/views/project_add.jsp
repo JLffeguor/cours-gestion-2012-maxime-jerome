@@ -9,11 +9,15 @@
 <title>add user</title>
 </head>
 <body>
+<div id='wrapper'>
+<div id='formu'>
 <form action="project_submit">
-	<label for="projectName">name : </label> <input type="text" name="projectName"/><br/>
-	<label for="description">description : </label> <input type="text" name="description"/>
-	<label for="projectManagerUserName">projectManager userName : </label> <input type="text" name="projectManagerUserName"/>
-	<input type="submit" value="add project" />
+	<label for="projectName">Name : </label> <input type="text" name="projectName"/><br/>
+	<label for="description">Description : </label> <input type="text" name="description"/>
+	<label for="projectManagerUserName">ProjectManager UserName : </label> <input type="text" name="projectManagerUserName"/>
+	<p><input type="submit" value="add project" /></p>
 </form>
+</div>
+</div>
 </body>
 </html>
