@@ -45,7 +45,7 @@ public class TaskController extends BaseController<User> {
 	
 	@RequestMapping("/task_submit")
 	public String projectSubmit(@RequestParam("projectId") long projectId,
-								@RequestParam("plannedHours") int plannedHours,
+								@RequestParam("plannedHours") double plannedHours,
     							@RequestParam(value="description",required=false) String description,
     							@RequestParam(value="userNameList",required=false) String assignedUserUserName) throws UserNotFoundException {
 		try {

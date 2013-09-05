@@ -19,7 +19,7 @@ public class Task extends AbstractTask {
 
 	@ManyToMany
 	private List<User> assignedUser = new ArrayList<>();
-	private int plannedHours;
+	private double plannedHours;
 	
     public enum State {
         WAIT("en attente"),
@@ -61,7 +61,7 @@ public class Task extends AbstractTask {
 	}
 
 	@Override
-	public Integer getPlannedHours() {
+	public double getPlannedHours() {
 		return plannedHours;
 	}
 	
@@ -76,8 +76,8 @@ public class Task extends AbstractTask {
 		assignedUser.add(user);
 	}
 	
-	public void setPlannedHours(int plannedHours) {
-		this.plannedHours = plannedHours;
+	public void setPlannedHours(double plannedHours2) {
+		this.plannedHours = plannedHours2;
 	}
 
 	public State getState() {

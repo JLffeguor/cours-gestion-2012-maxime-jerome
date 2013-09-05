@@ -27,13 +27,13 @@ public class TaskService {
 	@Autowired   private ProjectRepository projectRepository;
 	@Autowired	 private PrestationRepository prestationRepository;
 
-	public Task createTask(long relatedProjetId, int plannedHours, String description,List<String> assignedUser) throws UserNotFoundException {
+	public Task createTask(long relatedProjetId, double plannedHours, String description,List<String> assignedUser) throws UserNotFoundException {
 		
 		Project relatedProjet = projectRepository.find(relatedProjetId);
 		
 		Task result = new Task();
 		result.setDescription(description);
-
+		result.setPlannedHours(plannedHours);
 		result.setParent(relatedProjet);
 		
 		User user = null;
@@ -64,7 +64,11 @@ public class TaskService {
 		
 		Task task = taskRepository.find(taskId);
 		
-		int plannedHour = task.getPlannedHours();
+		if(task.getState().equals(State.FINISHED) || task.getState().equals(State.SUSPENDED)) {
+			throw new Exception("il est interdit de prester pour cette tâche");
+		}
+		
+		double plannedHour = task.getPlannedHours();
 		double workedHour = task.getWorkedHours();
 		System.out.println("en millisenconde : " + (endDate.getTime() - startDate.getTime()) );
 		workedHour += ((endDate.getTime() - startDate.getTime()) /1000.0 /60.0 /60.0);

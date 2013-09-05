@@ -39,7 +39,7 @@ public abstract class AbstractTask extends BaseEntity {
 	 * retourne les heures prévues
 	 * @return
 	 */
-	public abstract Integer getPlannedHours();
+	public abstract double getPlannedHours();
 	
 
 	public List<AbstractTask> getChildren() {
