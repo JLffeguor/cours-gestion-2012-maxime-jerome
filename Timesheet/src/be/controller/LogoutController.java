@@ -22,7 +22,7 @@ public class LogoutController extends BaseController<User>{
   
          loginService.logout();
          
-        return "redirect:/";
+        return "redirect:/login";
     }
    
 }
