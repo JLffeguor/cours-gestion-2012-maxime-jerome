@@ -134,8 +134,9 @@ public class ProjectController extends BaseController<User> {
 	}
     
     @RequestMapping("/project_activity")
-    public String projectActivity() {
-		return "dashboard";
+    public ModelAndView projectActivity() {
+    	ModelAndView mv = new ModelAndView("project_activity");
+		return mv;
     }   
    
 }
