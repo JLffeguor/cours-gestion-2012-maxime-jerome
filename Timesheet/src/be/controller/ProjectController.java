@@ -2,10 +2,10 @@ package be.controller;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
+import java.util.StringTokenizer;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -103,6 +103,35 @@ public class ProjectController extends BaseController<User> {
     	
 		return mv;
     } 
+    
+	@RequestMapping("/project_assigne_user")
+	public ModelAndView assigneUser(@RequestParam("projectId") Long projectId,
+				@RequestParam(value="userNameList") String assignedUserUserName) {
+		try {
+			SecurityContext.assertUserIsLoggedIn();
+		} catch (UnauthorizedAccessException uae) {
+			return new ModelAndView("redirect:login");
+		}
+		
+    	ModelAndView mv = new ModelAndView("project");
+    	
+    	Project project = projectRepository.find(projectId);
+    	if( SecurityContext.canCurrentUserChangeProject(project)) {
+    			mv.addObject("project", project);
+    			mv.addObject("TaskList", projectRepository.findAllTaskforProjetc(project));
+    	}
+    	
+		List<String> assignedUser = new ArrayList<>();
+		StringTokenizer userName  = new StringTokenizer(assignedUserUserName, ",");
+		while (userName.hasMoreElements()) {
+			assignedUser.add(StringUtils.trim(userName.nextToken()));
+		}
+		
+    	
+    	
+
+		return mv;
+	}
     
     @RequestMapping("/project_activity")
     public String projectActivity() {

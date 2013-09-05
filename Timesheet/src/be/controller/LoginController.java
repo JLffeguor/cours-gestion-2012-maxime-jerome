@@ -16,6 +16,8 @@ import be.exception.UserNotFoundException;
 import be.model.User;
 import be.repository.UserRepository;
 import be.service.LoginService;
+import be.util.NotificationUtil;
+import be.util.NotificationUtil.Notification;
 
 
 
@@ -70,6 +72,7 @@ public class LoginController extends BaseController<User> {
 
     	if (errorMsg != null) {
     		System.out.println(errorMsg);
+    		NotificationUtil.addErrorMessage(errorMsg);
     		ModelAndView mv = new ModelAndView("redirect:login");
     		return mv;
     	} else {

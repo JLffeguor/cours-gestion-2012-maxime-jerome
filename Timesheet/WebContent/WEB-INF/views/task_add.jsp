@@ -10,7 +10,7 @@
 </head>
 <body>
 	<form action="task_submit">
-		<input type="hidden" value="${taskId}" name="taskId"/>
+		<input type="hidden" value="${projectId}" name="projectId"/>
 		<label for="description">description : </label> <input type="text" name="description"/>
 		<label for="plannedHours">heures prévues : </label> <input type="number" name="plannedHours"/>
 		<label for="userNameList">utilisateurs assignés (séparé par des virgules)  : </label> <input type="text" name="userNameList"/>
