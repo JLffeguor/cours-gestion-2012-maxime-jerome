@@ -8,9 +8,11 @@
 <title>dashBoard</title>
 </head>
 <body>
-	<div id="project_manage"><a href="project_manage">gérer projets</a></div>
-	<div id="project_activity"><a href="project_activity">activité des projets</a></div>
-	<div id="user_manage"><a href="user_manage">gérer utilisateurs</a></div>
-	<div id="user_activity"><a href="user_activity">prester</a></div>
+<div id='wrapper'>
+	<div id="project_manage"><a href="project_manage">Gestion des projets Ajout/Suppression</a></div>
+	<div id="project_activity"><a href="project_activity">Vérifier l'activité du projet</a></div>
+	<div id="user_manage"><a href="user_manage">Gestion des utilisateur Ajout/Suppression</a></div>
+	<div id="user_activity"><a href="user_activity">Gestion des prestation des User</a></div>
+</div>
 </body>
 </html>
