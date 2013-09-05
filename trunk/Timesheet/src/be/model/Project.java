@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
@@ -23,7 +22,6 @@ public class Project extends AbstractTask {
 	/**
 	 * retourne la liste des membres travaillant dans ce projet
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public Map<User, Role> getAssignedUsers() {
 		Map<User, Role> result = new HashMap<>();

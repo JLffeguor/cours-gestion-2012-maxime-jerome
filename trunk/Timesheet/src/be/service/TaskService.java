@@ -3,13 +3,16 @@ package be.service;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import be.exception.UserNotFoundException;
 import be.model.Prestation;
 import be.model.Project;
 import be.model.Task;
+import be.model.Task.State;
 import be.model.User;
 import be.repository.PrestationRepository;
 import be.repository.ProjectRepository;
@@ -53,8 +56,22 @@ public class TaskService {
 
 	}
 
-	public Prestation addPrestation(long taskId, String description, Date startDate, Date endDate) {
+	@Transactional
+	public Prestation addPrestation(long taskId, String description, Date startDate, Date endDate) throws Exception {
+		if( startDate.getTime() > endDate.getTime() ) {
+			throw new Exception("l'heure de début de la prestation se situe après l'heure de fin");
+		}
+		
 		Task task = taskRepository.find(taskId);
+		
+		int plannedHour = task.getPlannedHours();
+		double workedHour = task.getWorkedHours();
+		System.out.println("en millisenconde : " + (endDate.getTime() - startDate.getTime()) );
+		workedHour += ((endDate.getTime() - startDate.getTime()) /1000.0 /60.0 /60.0);
+		System.out.println(workedHour);
+		if( workedHour > plannedHour ) {
+			throw new Exception("la prestation en peut être ajoutée car la somme des heures prestées dépasse les heures prévues");
+		}
 		
 		Prestation prestation = new Prestation();
 		prestation.setDescription(description);
@@ -65,8 +82,12 @@ public class TaskService {
 		
 		prestationRepository.persist(prestation);
 		
-		return prestation;
+		if(workedHour == plannedHour) {
+			task.setState(State.FINISHED);
+			taskRepository.merge(task);
+		}
 		
+		return prestation;
 	}
 
 }

@@ -31,14 +31,14 @@ public class NotificationUtil {
 	    HttpSession httpSession = ContextUtil.getHttpSession();
 	       
 	    @SuppressWarnings("unchecked")
-		List<Notification> notifications=(List<Notification>) httpSession.getAttribute("notifications");
+		List<Notification> errors=(List<Notification>) httpSession.getAttribute("errors");
 	    
-	    if(notifications==null){
-	    	notifications = new ArrayList<Notification>();
+	    if(errors==null){
+	    	errors = new ArrayList<Notification>();
 	    }
-    	notifications.add(new Notification(notification,Status.ERROR));
+    	errors.add(new Notification(notification,Status.ERROR));
 	    
-		httpSession.setAttribute("notifications",notifications);
+		httpSession.setAttribute("errors",errors);
 	}
 	
 	

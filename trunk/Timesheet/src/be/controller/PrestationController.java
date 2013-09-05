@@ -3,9 +3,7 @@ package be.controller;
 import java.text.ParseException;
 import java.util.Date;
 
-import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;
-import org.apache.commons.lang3.time.FastDateFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +17,7 @@ import be.repository.TaskRepository;
 import be.repository.UserRepository;
 import be.security.SecurityContext;
 import be.service.TaskService;
+import be.util.NotificationUtil;
 
 
 @Controller
@@ -60,11 +59,13 @@ public class PrestationController extends BaseController<User> {
 		Date startDate = DateUtils.parseDate(start, "dd/MM/yyyy HH:mm");
 		Date endDate = DateUtils.parseDate(end, "dd/MM/yyyy HH:mm");
 		
-		System.out.println(DateFormatUtils.ISO_DATETIME_TIME_ZONE_FORMAT.format(startDate));
-		//FIXME check if prestation doesn't exceed planned hours
-		taskService.addPrestation(taskId, description, startDate, endDate);
+		try {
+			taskService.addPrestation(taskId, description, startDate, endDate);
+		} catch (Exception e) {
+			NotificationUtil.addErrorMessage(e.getMessage());
+		}
 		
-		ModelAndView mv = new ModelAndView("user_activity","taskList",taskRepository.getAllTaskAssignedTocurrentUSer());
+		ModelAndView mv = new ModelAndView("redirect:user_activity","taskList",taskRepository.getAllTaskAssignedTocurrentUSer());
 		return mv;
 	}
     

@@ -9,6 +9,16 @@
 <title>add user</title>
 </head>
 <body>
+<% if (session.getAttribute("errors") != null) {%>
+<c:forEach items="${sessionScope['errors']}" var="error">
+	<div class="errors">${error.text}</div>
+</c:forEach>
+<%} %>
+<% if (session.getAttribute("notifications") != null) {%>
+<c:forEach items="${sessionScope['notifications']}" var="notification">
+	<div class="errors">${notification.text}</div>
+</c:forEach>
+<%} %>
 <div id='wrapper'>
 	<h1>${project.name}</h1>
 	
@@ -17,6 +27,7 @@
 		
 		<c:forEach items="${TaskList}" var="task">
 		<p>Description :  ${task.description}<p>
+		<p>Etât :  ${task.state.name}<p>
 		<div></div>
 		
 		<p>User assignés :<p>
