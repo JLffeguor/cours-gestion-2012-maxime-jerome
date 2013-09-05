@@ -18,7 +18,7 @@
 
 <% if (session.getAttribute("notifications") != null) {%>
 <c:forEach items="${sessionScope['notifications']}" var="notification">
-	<div class="errors">${notification.text}</div>
+	<div class="notifications">${notification.text}</div>
 </c:forEach>
 <%} NotificationUtil.reset();%>
 <a href="dashboard" id="dashboardLink">retourner à l'accueil</a>
@@ -29,9 +29,10 @@
 	<div id = 'tacheProject'>
 		
 		<c:forEach items="${TaskList}" var="task">
-		<p>Description :  ${task.description}<p>
-		<p>Etât :  ${task.state.name}<p>
-		<div></div>
+		<p>Description :  ${task.description}
+		<br/>heures prévues: ${task.getPlannedHours()}
+		<br/>heures déjà prestées: ${task.getWorkedHours()}
+		<br/>état de la tâche: ${task.state.name}</p>
 		
 		<p>User assignés :<p>
 		<c:forEach items="${task.assignedUsers}" var="user">

@@ -18,7 +18,7 @@
 
 <% if (session.getAttribute("notifications") != null) {%>
 <c:forEach items="${sessionScope['notifications']}" var="notification">
-	<div class="errors">${notification.text}</div>
+	<div class="notifications">${notification.text}</div>
 </c:forEach>
 <%} NotificationUtil.reset();%>
 <a href="dashboard" id="dashboardLink">retourner à l'accueil</a>
@@ -34,6 +34,7 @@
 		<h3>liste des prestations déjà effectuées</h3>
 		<c:forEach items="${task.getChildren()}" var="prestation">
 			<div>${prestation.description}</div>
+			<div>${prestation.getWorkedHours()}</div>
 			<div>${prestation.startDate}</div>
 			<div>${prestation.endDate}</div>
 		</c:forEach>

@@ -154,8 +154,9 @@ public class UserController extends BaseController<User> {
 			@RequestParam("identifier") String userNameOrMail,
 			@RequestParam(value = "password", required = false) String password,
 			WebRequest request) {
+		User newUser = null;
 		try {
-			userService.registerUser(userNameOrMail,password);
+			newUser = userService.registerUser(userNameOrMail,password);
 
 		} catch (UserAlreadyExistsException uaee) {
 			ModelAndView mv = new ModelAndView("register");
@@ -166,9 +167,12 @@ public class UserController extends BaseController<User> {
 				throw new RuntimeException("Bug - Unsupported type: "
 						+ uaee.getType());
 			}
+			
+			NotificationUtil.addErrorMessage("user déjà existant");
 
 			return mv;
 		}
+		NotificationUtil.addNotificationMessage("user " + newUser.getUserName() + " créé");
 
 		return new ModelAndView("redirect:user_manage");
 	}

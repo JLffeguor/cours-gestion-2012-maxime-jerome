@@ -18,17 +18,17 @@
 <%}%>
 <% if (session.getAttribute("notifications") != null) {%>
 <c:forEach items="${sessionScope['notifications']}" var="notification">
-	<div class="errors">${notification.text}</div>
+	<div class="notifications">${notification.text}</div>
 </c:forEach>
 <%} NotificationUtil.reset();%>
 <a href="dashboard" id="dashboardLink">retourner à l'accueil</a>
 <div id='wrapper'>
 <div id='formu'>
-
+<h1>création d'un utilisateur</h1>
 <form action="registersubmit">
 	<label for="identifier">login : </label> <input type="text" name="identifier"/><br/>
 	<label for="paswword">password : </label> <input type="password" name="password"/>
-	<p><input type="submit" value="register" /></p>
+	<p><input type="submit" value="enregistrer" /></p>
 </form>
 </div>
 </div>
