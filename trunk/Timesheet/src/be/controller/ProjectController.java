@@ -127,7 +127,7 @@ public class ProjectController extends BaseController<User> {
 			assignedUser.add(StringUtils.trim(userName.nextToken()));
 		}
 		
-    	
+    	projectService.assigneUserToProject(projectId, assignedUser);
     	
 
 		return mv;
