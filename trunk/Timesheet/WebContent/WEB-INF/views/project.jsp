@@ -9,18 +9,22 @@
 <title>add user</title>
 </head>
 <body>
+<div id='wrapper'>
 	<h1>${project.name}</h1>
 	
 	<h2>Tâches du projet</h2>
-	<c:forEach items="${TaskList}" var="task">
-		<h3>description</h3>
-		<div>${task.description}</div>
-		<h3>user assignés à la tâche</h3>
+	<div id = 'tacheProject'>
+		
+		<c:forEach items="${TaskList}" var="task">
+		<p>Description :  ${task.description}<p>
+		<div></div>
+		
+		<p>User assignés :<p>
 		<c:forEach items="${task.assignedUsers}" var="user">
-			<div>${user.key.userName}</div>
+				<div id='usernameTP'>${user.key.userName}</div>
+			</c:forEach>-------------
 		</c:forEach>
-	</c:forEach>
-	
+	</div>
 	<a href="task_add?projectId=${project.id}"><h3>ajouter une tâche</h3></a>
 	
 	<h2>users assignés au projet</h2>
@@ -35,6 +39,6 @@
 		<div>${user.key.userName}</div>
 		<div>${user.value}</div>
 	</c:forEach>
-
+</div>
 </body>
 </html>
