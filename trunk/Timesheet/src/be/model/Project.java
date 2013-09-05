@@ -41,7 +41,7 @@ public class Project extends AbstractTask {
 	}
 
 	@Override
-	public Integer getPlannedHours() {
+	public double getPlannedHours() {
 		int result = 0;
 		for(AbstractTask child : this.getChildren()) {
 			result += child.getPlannedHours();

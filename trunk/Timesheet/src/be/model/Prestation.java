@@ -50,7 +50,7 @@ public class Prestation extends AbstractTask {
 	 * retourne les heures prévues de la tâche
 	 */
 	@Override
-	public Integer getPlannedHours() {
+	public double getPlannedHours() {
 		return this.getParent().getPlannedHours();
 	}
 

@@ -23,6 +23,7 @@ import be.repository.UserRepository;
 import be.security.Privilege;
 import be.security.SecurityContext;
 import be.service.UserService;
+import be.util.NotificationUtil;
 
 @Controller
 public class UserController extends BaseController<User> {

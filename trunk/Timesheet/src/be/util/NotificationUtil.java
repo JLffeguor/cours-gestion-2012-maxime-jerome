@@ -8,6 +8,14 @@ import javax.servlet.http.HttpSession;
 import be.web.ContextUtil;
 
 public class NotificationUtil {
+	
+	/** erase all message*/
+	public static void reset(){	
+		HttpSession httpSession = ContextUtil.getHttpSession();
+		
+		httpSession.setAttribute("notifications",null);
+		httpSession.setAttribute("errors",null);
+	}
 
 	/** Sets a message string to be displayed by the next JSP in the Notification bar */
 	public static void addNotificationMessage(String notification){
