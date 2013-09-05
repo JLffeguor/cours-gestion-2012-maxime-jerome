@@ -36,8 +36,8 @@
 	</form>
 	</div>
 	<c:forEach items="${project.assignedUsers}" var="user">
-		<div>${user.key.userName}</div>
-		<div>${user.value}</div>
+		<div>UserName : ${user.key.userName}</div>
+		<div>Role : ${user.value}</div>--------
 	</c:forEach>
 </div>
 </body>
