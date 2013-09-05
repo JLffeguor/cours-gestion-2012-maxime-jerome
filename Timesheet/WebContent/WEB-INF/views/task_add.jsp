@@ -9,12 +9,16 @@
 <title>add user</title>
 </head>
 <body>
+<div id='wrapper'>
+<div id='formu'>
 	<form action="task_submit">
 		<input type="hidden" value="${projectId}" name="projectId"/>
 		<label for="description">description : </label> <input type="text" name="description"/>
 		<label for="plannedHours">heures prévues : </label> <input type="number" name="plannedHours"/>
 		<label for="userNameList">utilisateurs assignés (séparé par des virgules)  : </label> <input type="text" name="userNameList"/>
-		<input type="submit" value="add task" />
+		<p><input type="submit" value="add task" /></p>
 	</form>
+	</div>
+</div>
 </body>
 </html>
