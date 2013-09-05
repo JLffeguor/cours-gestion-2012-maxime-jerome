@@ -9,6 +9,7 @@
 <title>user_activity</title>
 </head>
 <body>
+<div id='wrapper'>
 	<h1>activité des projets</h1>
 	<h2>dernière tâches</h2>
 	<c:forEach items="${TaskList}" var="task">
@@ -21,5 +22,6 @@
 			<div>${user.key.userName}</div>
 		</c:forEach>
 	</c:forEach>
+</div>
 </body>
 </html>
