@@ -33,7 +33,7 @@ public abstract class AbstractTask extends BaseEntity {
 	 * retourne les heure prestées
 	 * @return
 	 */
-	public abstract Integer getWorkedHours();
+	public abstract Double getWorkedHours();
 	
 	/**
 	 * retourne les heures prévues

@@ -41,9 +41,9 @@ public class Prestation extends AbstractTask {
 	}
 
 	@Override
-	public Integer getWorkedHours() {
+	public Double getWorkedHours() {
 		long millisecondediff = endDate.getTime() - startDate.getTime();
-		return (int) (millisecondediff / 1000 / 60 / 60);
+		return (double) (millisecondediff / 1000.0 / 60.0 / 60.0);
 	}
 
 	/**

@@ -24,6 +24,10 @@
 <a href="dashboard" id="dashboardLink">retourner à l'accueil</a>
 <div id='wrapper'>
 	<h1>${project.name}</h1>
+	<p>Description :  ${project.description}
+	<br/>heures prévues: ${project.getPlannedHours()}
+	<br/>heures déjà prestées: ${project.getWorkedHours()}
+	</p>
 	
 	<h2>Tâches du projet</h2>
 	<div id = 'tacheProject'>
@@ -33,7 +37,7 @@
 		<br/>heures prévues: ${task.getPlannedHours()}
 		<br/>heures déjà prestées: ${task.getWorkedHours()}
 		<br/>état de la tâche: ${task.state.name}</p>
-		
+		<a href="task_suspend?taskId=${task.id}&projectId=${project.id}">suspendre / reprendre la tâche</a>
 		<p>User assignés :<p>
 		<c:forEach items="${task.assignedUsers}" var="user">
 				<div id='usernameTP'>${user.key.userName}</div>
