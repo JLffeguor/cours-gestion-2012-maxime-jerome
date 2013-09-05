@@ -61,6 +61,7 @@ public class PrestationController extends BaseController<User> {
 		Date endDate = DateUtils.parseDate(end, "dd/MM/yyyy HH:mm");
 		
 		System.out.println(DateFormatUtils.ISO_DATETIME_TIME_ZONE_FORMAT.format(startDate));
+		//FIXME check if prestation doesn't exceed planned hours
 		taskService.addPrestation(taskId, description, startDate, endDate);
 		
 		ModelAndView mv = new ModelAndView("user_activity","taskList",taskRepository.getAllTaskAssignedTocurrentUSer());
