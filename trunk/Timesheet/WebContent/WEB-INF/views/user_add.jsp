@@ -9,10 +9,14 @@
 <title>add user</title>
 </head>
 <body>
+<div id='wrapper'>
+<div id='formu'>
 <form action="registersubmit">
 	<label for="identifier">login : </label> <input type="text" name="identifier"/><br/>
 	<label for="paswword">password : </label> <input type="password" name="password"/>
-	<input type="submit" value="register" />
+	<p><input type="submit" value="register" /></p>
 </form>
+</div>
+</div>
 </body>
 </html>

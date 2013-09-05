@@ -4,15 +4,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel=stylesheet type="text/css" href="/Timesheet/timesheet.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>project_manage</title>
 </head>
 <body>
+<div id='wrapper'>
+<div id='lien'>
 <c:if test="${admin}">
-	<a href="user_add"><div>ajouter user</div></a>
+	<a href="user_add"><div>Creer un nouvel utilisateur</div></a>
 	<c:forEach items="${usersList}" var="user">
 		${user.userName}
 	</c:forEach>
-</c:if>
+	</c:if>
+	</div>
+</div>
 </body>
 </html>
