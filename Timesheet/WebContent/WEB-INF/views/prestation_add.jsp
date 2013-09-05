@@ -9,12 +9,16 @@
 <title>add prestation</title>
 </head>
 <body>
+<div id='wrapper'>
+<div id='formu'>
 	<form action="prestation_submit">
 		<input type="hidden" value="${taskId}" name="taskId"/>
 		<label for="description">description : </label> <input type="text" name="description"/>
 		<label for="start">dates de début (dd/MM/yyyy HH:MM): </label> <input type="text" name="start"/>
 		<label for="end">dates de fin   (dd/MM/yyyy HH:MM): </label> <input type="text" name="end"/>
-		<input type="submit" value="add prestation" />
+		<p><input type="submit" value="add prestation" /></p>
 	</form>
+	</div>
+	</div>
 </body>
 </html>
