@@ -9,7 +9,9 @@
 <title>user_activity</title>
 </head>
 <body>
-	<h1>liste des tâches assignées</h1>
+<div id='wrapper'>
+<div id='listetache'>
+	<h1>Liste des tâches assignées</h1>
 	<c:forEach items="${taskList}" var="task">
 		<h2>${task.description}</h2>
 		<a href="prestation_add?taskId=${task.id}">prester pour cette tâche</a>
@@ -20,5 +22,7 @@
 		<div>${prestation.endDate}</div>
 		</c:forEach>
 	</c:forEach>
+	</div>
+</div>
 </body>
 </html>
