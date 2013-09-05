@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
 import be.exception.UserNotFoundException;
@@ -15,7 +16,7 @@ import be.model.User.Role;
 @Entity
 public class Task extends AbstractTask {
 
-	@OneToMany
+	@ManyToMany
 	private List<User> assignedUser = new ArrayList<>();
 	private int plannedHours;
 	
