@@ -9,8 +9,19 @@
 <title>add user</title>
 </head>
 <body>
+<% if (session.getAttribute("errors") != null) {%>
+<c:forEach items="${sessionScope['errors']}" var="error">
+	<div class="errors">${error.text}</div>
+</c:forEach>
+<%} %>
+<% if (session.getAttribute("notifications") != null) {%>
+<c:forEach items="${sessionScope['notifications']}" var="notification">
+	<div class="errors">${notification.text}</div>
+</c:forEach>
+<%} %>
 <div id='wrapper'>
 <div id='formu'>
+
 <form action="registersubmit">
 	<label for="identifier">login : </label> <input type="text" name="identifier"/><br/>
 	<label for="paswword">password : </label> <input type="password" name="password"/>

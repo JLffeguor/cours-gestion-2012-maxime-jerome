@@ -9,11 +9,22 @@
 <title>user_activity</title>
 </head>
 <body>
+<% if (session.getAttribute("errors") != null) {%>
+<c:forEach items="${sessionScope['errors']}" var="error">
+	<div class="errors">${error.text}</div>
+</c:forEach>
+<%} %>
+<% if (session.getAttribute("notifications") != null) {%>
+<c:forEach items="${sessionScope['notifications']}" var="notification">
+	<div class="errors">${notification.text}</div>
+</c:forEach>
+<%} %>
 <div id='wrapper'>
 <div id='listetache'>
 	<h1>Liste des tâches assignées</h1>
 	<c:forEach items="${taskList}" var="task">
 		<h2>${task.description}</h2>
+		<p>heures prévues: ${task.getPlannedHours()}</p>
 		<a href="prestation_add?taskId=${task.id}">prester pour cette tâche</a>
 		<h3>liste des prestations déjà effectuées</h3>
 		<c:forEach items="${task.getChildren()}" var="prestation">

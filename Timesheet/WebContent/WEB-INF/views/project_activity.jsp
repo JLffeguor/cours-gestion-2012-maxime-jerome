@@ -9,6 +9,16 @@
 <title>user_activity</title>
 </head>
 <body>
+<% if (session.getAttribute("errors") != null) {%>
+<c:forEach items="${sessionScope['errors']}" var="error">
+	<div class="errors">${error.text}</div>
+</c:forEach>
+<%} %>
+<% if (session.getAttribute("notifications") != null) {%>
+<c:forEach items="${sessionScope['notifications']}" var="notification">
+	<div class="errors">${notification.text}</div>
+</c:forEach>
+<%} %>
 <div id='wrapper'>
 	<h1>activité des projets</h1>
 	<h2>dernière tâches</h2>

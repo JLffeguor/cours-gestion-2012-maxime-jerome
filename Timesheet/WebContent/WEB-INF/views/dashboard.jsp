@@ -8,6 +8,16 @@
 <title>dashBoard</title>
 </head>
 <body>
+<% if (session.getAttribute("errors") != null) {%>
+<c:forEach items="${sessionScope['errors']}" var="error">
+	<div class="errors">${error.text}</div>
+</c:forEach>
+<%} %>
+<% if (session.getAttribute("notifications") != null) {%>
+<c:forEach items="${sessionScope['notifications']}" var="notification">
+	<div class="errors">${notification.text}</div>
+</c:forEach>
+<%} %>
 <div id='wrapper'>
 	<div id="project_manage"><a href="project_manage">Gestion des projets Ajout/Suppression</a></div>
 	<div id="project_activity"><a href="project_activity">Vérifier l'activité du projet</a></div>

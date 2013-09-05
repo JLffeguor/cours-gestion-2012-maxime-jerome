@@ -7,8 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 
 import be.exception.UserNotFoundException;
 import be.model.User.Role;
@@ -20,6 +21,27 @@ public class Task extends AbstractTask {
 	private List<User> assignedUser = new ArrayList<>();
 	private int plannedHours;
 	
+    public enum State {
+        WAIT("en attente"),
+        WORKING("en cours"),
+        SUSPENDED("suspendue"),
+        FINISHED("terminée");
+
+        String name;
+        
+        private State(String aName) {
+            this.name = aName;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+    }
+	
+    @Enumerated(EnumType.STRING)
+    private State state = State.WAIT;
+    
 	@Override
 	public Map<User, Role> getAssignedUsers() {
 		Map<User, Role> result = new HashMap<>();
@@ -56,6 +78,14 @@ public class Task extends AbstractTask {
 	
 	public void setPlannedHours(int plannedHours) {
 		this.plannedHours = plannedHours;
+	}
+
+	public State getState() {
+		return state;
+	}
+
+	public void setState(State state) {
+		this.state = state;
 	}
 	
 
