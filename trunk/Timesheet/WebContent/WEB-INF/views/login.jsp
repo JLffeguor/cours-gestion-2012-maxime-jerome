@@ -10,6 +10,7 @@
 <title>Login</title>
 </head>
 <body>
+<div id='wrapper'>
 <div id="loginpanel" >
 <h3>Application Time Sheet</h3>
 	<form action="loginsubmit" >
@@ -17,6 +18,7 @@
 		<p><label for="paswword">password : </label> <input type="password" name="password"/></p>
 		<p><input type="submit" value="login" /></p>
 	</form>
+	</div>
 </div>
 </body>
 </html>
