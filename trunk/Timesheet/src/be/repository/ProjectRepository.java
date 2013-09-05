@@ -27,4 +27,11 @@ public class ProjectRepository extends BaseRepository<Project> {
 		return result;
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<Task> findLastTask(int maxResult) {
+		return em.createQuery("select t from Task t order by t.createdOn DESC")
+    			.setMaxResults(maxResult)
+    			.getResultList();
+	}
+
 }

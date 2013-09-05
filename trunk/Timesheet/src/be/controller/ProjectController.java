@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import be.exception.UnauthorizedAccessException;
 import be.model.Project;
+import be.model.Task;
 import be.model.User;
 import be.model.User.Role;
 import be.repository.ProjectRepository;
@@ -136,6 +137,7 @@ public class ProjectController extends BaseController<User> {
     @RequestMapping("/project_activity")
     public ModelAndView projectActivity() {
     	ModelAndView mv = new ModelAndView("project_activity");
+    	mv.addObject("TaskList",projectRepository.findLastTask(5));
 		return mv;
     }   
    

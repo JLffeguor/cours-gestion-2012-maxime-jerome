@@ -10,5 +10,16 @@
 </head>
 <body>
 	<h1>activité des projets</h1>
+	<h2>dernière tâches</h2>
+	<c:forEach items="${TaskList}" var="task">
+		<h3>description</h3>
+		<div>${task.description}</div>
+		<h3>date de création</h3>
+		<div>${task.createdOn}</div>
+		<h3>user assignés à la tâche</h3>
+		<c:forEach items="${task.assignedUsers}" var="user">
+			<div>${user.key.userName}</div>
+		</c:forEach>
+	</c:forEach>
 </body>
 </html>
