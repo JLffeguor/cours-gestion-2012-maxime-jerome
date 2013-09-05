@@ -69,6 +69,7 @@ public class LoginController extends BaseController<User> {
 
 
     	if (errorMsg != null) {
+    		System.out.println(errorMsg);
     		ModelAndView mv = new ModelAndView("redirect:login");
     		return mv;
     	} else {
