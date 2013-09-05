@@ -27,7 +27,7 @@ public abstract class AbstractTask extends BaseEntity {
 	/**
 	 * pour un projet ou pour une tâche retourne les utilisateurs assignés et pour une prestation , le prestataire
 	 */
-	public abstract Map<User, String> getAssignedUsers();
+	public abstract Map<User, Role> getAssignedUsers();
     
 	/**
 	 * retourne les heure prestées

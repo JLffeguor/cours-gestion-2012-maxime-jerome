@@ -20,8 +20,8 @@ public class Task extends AbstractTask {
 	private int plannedHours;
 	
 	@Override
-	public Map<User, String> getAssignedUsers() {
-		Map<User, String> result = new HashMap<>();
+	public Map<User, Role> getAssignedUsers() {
+		Map<User, Role> result = new HashMap<>();
 		for(User user : assignedUser) {
 			result.put(user, this.getParent().getAssignedUsers().get(user));
 		}

@@ -24,6 +24,11 @@
 	<a href="task_add?projectId=${project.id}"><h3>ajouter une tâche</h3></a>
 	
 	<h2>users assignés au projet</h2>
+	<form action="project_assigne_user">
+		<input type="hidden" value="${project.id}" name="projectId"/>
+		<label for="userNameList">assigner d'autre utlisateurs (séparé par des virgules)  : </label> <input type="text" name="userNameList"/>
+		<input type="submit" value="assigne user" />
+	</form>
 	<c:forEach items="${project.assignedUsers}" var="user">
 		<div>${user.key.userName}</div>
 		<div>${user.value}</div>

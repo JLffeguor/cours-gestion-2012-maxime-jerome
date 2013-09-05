@@ -7,6 +7,8 @@ import java.util.Map;
 
 import javax.persistence.Entity;
 
+import be.model.User.Role;
+
 @Entity
 public class Prestation extends AbstractTask {
 	
@@ -31,8 +33,8 @@ public class Prestation extends AbstractTask {
 	private Date endDate;
 	
 	@Override
-	public Map<User, String> getAssignedUsers() {
-		Map<User, String> result = new HashMap<>();
+	public Map<User, Role> getAssignedUsers() {
+		Map<User, Role> result = new HashMap<>();
 		result.put(prestataire, this.getParent().getAssignedUsers().get(prestataire));
 		
 		return Collections.unmodifiableMap(result);
