@@ -9,12 +9,16 @@
 <title>project_manage</title>
 </head>
 <body>
+	<div id='wrapper'>
+	<div id='lien'>
 	<c:if test="${canCreateProject}">
-		<a href="project_add"><div>ajouter projets</div></a>
-	</c:if>
+		<a href="project_add"><div>Ajouter un nouveau projet</div></a>
+		</c:if>
 
 	<c:forEach items="${projectList}" var="project">
 		<a href="project?projectId=${project.id}"><div>${project.name}</div></a>
 	</c:forEach>
+	</div>
+	</div>
 </body>
 </html>
